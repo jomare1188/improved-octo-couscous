@@ -126,28 +126,28 @@ colnames(G8M_W) <- "G8M_W"
 aggregated <- cbind(G5M_D, G8M_D, G5T_D, G8T_D, G5M_W, G8M_W)
 
 #temp <- as.data.frame(counts(aggregated))
-logic <-(apply(aggregated,c(1,2), function(x){x>0}))
-filter_genes <- rowSums(logic)>1
-fi <- round(as.matrix(aggregated[filter_genes,]))
-dim(fi)
+a.logic <-(apply(aggregated,c(1,2), function(x){x>0}))
+a.filter_genes <- rowSums(a.logic)>1
+a.fi <- round(as.matrix(aggregated[a.filter_genes,]))
+dim(a.fi)
 # normalize using vst transformation
-vst <- vst(fi)
+a.vst <- vst(a.fi)
 
 # PCA
-vst.pca <- prcomp(x = t(vst))
-var_explained <- vst.pca$sdev^2/sum(vst.pca$sdev^2)
-df <- vst.pca$x %>%  as.data.frame
+a.vst.pca <- prcomp(x = t(a.vst))
+a.var_explained <- a.vst.pca$sdev^2/sum(a.vst.pca$sdev^2)
+a.df <- a.vst.pca$x %>%  as.data.frame
 
 #rownames(df) <- sample_table$sample
-df <- df %>% mutate("Genotype" = as.factor(c("5000", "8008", "5000", "8008", "5000", "8008")))
-df <- df %>% mutate("Group" = as.factor(c("G5M_D", "G8M_D", "G5T_D", "G8T_D", "G5M_W", "G8M_W")))
-df <- df %>% mutate("Treatment" = as.factor(c("Drought", "Drought", "Drought", "Drought", "Watered", "Watered")))
-df <- df %>% mutate("State" = as.factor(c("Maturation", "Maturation", "Tillering", "Tillering", "Maturation", "Maturation")))
+a.df <- a.df %>% mutate("Genotype" = as.factor(c("5000", "8008", "5000", "8008", "5000", "8008")))
+a.df <- a.df %>% mutate("Group" = as.factor(c("G5M_D", "G8M_D", "G5T_D", "G8T_D", "G5M_W", "G8M_W")))
+a.df <- a.df %>% mutate("Treatment" = as.factor(c("Drought", "Drought", "Drought", "Drought", "Watered", "Watered")))
+a.df <- a.df %>% mutate("State" = as.factor(c("Maturation", "Maturation", "Tillering", "Tillering", "Maturation", "Maturation")))
 
 #PLOT PCA
-plot_pca(file = "../results/Agreggated_PCA_vst_Genotype-Group.png", data = df, color = df$Genotype , shape = df$Group, title = "PCA Genotype~Group", var = var_explained, lab_color = "Genotype")
-plot_pca(file = "../results/Agreggated_PCA_vst_Treatment-Group.png", data = df, color = df$Treatment , shape = df$Group, title = "PCA Treatment~Group", var = var_explained, lab_color = "Treatment")
-plot_pca(file = "../results/Agreggated_PCA_vst_State-Group.png", data = df, color = df$State , shape = df$Group, title = "PCA State~Group", var = var_explained, lab_color = "State")
+plot_pca(file = "../results/Agreggated_PCA_vst_Genotype-Group.png", data = a.df, color = a.df$Genotype , shape = a.df$Group, title = "PCA Genotype~Group", var = a.var_explained, lab_color = "Genotype")
+plot_pca(file = "../results/Agreggated_PCA_vst_Treatment-Group.png", data = a.df, color = a.df$Treatment , shape = a.df$Group, title = "PCA Treatment~Group", var = a.var_explained, lab_color = "Treatment")
+plot_pca(file = "../results/Agreggated_PCA_vst_State-Group.png", data = a.df, color = a.df$State , shape = a.df$Group, title = "PCA State~Group", var = a.var_explained, lab_color = "State")
 
 ##################################################################
 ##################### Differential expression analysis ###########
