@@ -22,6 +22,25 @@ register(MulticoreParam(cores))
 metadata="../data/metadata.csv"
 tx2gen2="../data/tx2gen.csv"
 
+## FUNCTION TO PLOT PCA USING PLOT PCA FUCTION FROM DESEQ
+
+plot_pca_deseq <- function(data, shape, title, name, path) {
+a <- plotPCA(data, intgroup = name) +
+theme_bw() +
+geom_point(size=4.5, aes( shape = shape))+
+scale_shape_manual(values = seq(0,8)) +
+labs(title = title, col= name, shape = "Group") +
+theme( text = element_text(size=22),
+panel.border = element_blank(),
+panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(),
+plot.title = element_text(hjust = 0.5),
+axis.line = element_line(colour = "black") )
+ggsave( a, filename = path ,units = "cm",width = 15*1.3, height = 15,dpi = 320)
+return(a)
+}
+
+
 ## FUNCTION TO PLOT PCA
 plot_pca <- function(data, color, shape, title, var, file, lab_color){
 ggplot(df, aes(x=PC1, y=PC2, colour = color, shape = shape)) +
@@ -148,6 +167,14 @@ df <- df %>% mutate("State" = as.factor(c("Maturation", "Maturation", "Tillering
 plot_pca(file = "../results/Agreggated_PCA_vst_Genotype-Group.png", data = df, color = df$Genotype , shape = df$Group, title = "PCA Genotype~Group", var = var_explained, lab_color = "Genotype")
 plot_pca(file = "../results/Agreggated_PCA_vst_Treatment-Group.png", data = df, color = df$Treatment , shape = df$Group, title = "PCA Treatment~Group", var = var_explained, lab_color = "Treatment")
 plot_pca(file = "../results/Agreggated_PCA_vst_State-Group.png", data = df, color = df$State , shape = df$Group, title = "PCA State~Group", var = var_explained, lab_color = "State")
+
+# PLOT PCA USING DESEQ FUNCTION
+plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Genotype~Group", name = "Genotype", path = "../results/DESEQ_PCA_vst_Genotype-Group.png")
+plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA State~Group", name = "State", path = "../results/DESEQ_PCA_vst_State-Group.png")
+plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Treatment~Group", name = "Treatment", path = "../results/DESEQ_PCA_vst_Treatment-Group.png")
+plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Sample~Group", name = "Sample", path = "../results/DESEQ_PCA_vst_Sample-Group.png")
+
+
 
 ##################################################################
 ##################### Differential expression analysis ###########
