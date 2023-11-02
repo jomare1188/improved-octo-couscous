@@ -1,0 +1,32 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0017111,nucleoside-triphosphatase activity,52,29,18.2,0.0012,0.0093
+GO:0022804,active transmembrane transporter activit...,28,18,9.8,0.0012,0.0093
+GO:0015399,primary active transmembrane transporter...,24,16,8.4,0.0013,0.0093
+GO:0016462,pyrophosphatase activity,53,29,18.55,0.0018,0.0093
+GO:0016817,hydrolase activity, acting on acid anhyd...,53,29,18.55,0.0018,0.0093
+GO:0016818,hydrolase activity, acting on acid anhyd...,53,29,18.55,0.0018,0.0093
+GO:0016887,ATPase activity,36,21,12.6,0.0029,0.0128
+GO:0042626,ATPase-coupled transmembrane transporter...,22,14,7.7,0.0051,0.0161
+GO:0140359,ABC-type transmembrane transporter activ...,14,10,4.9,0.0056,0.0161
+GO:0035251,UDP-glucosyltransferase activity,16,11,5.6,0.0057,0.0161
+GO:0046527,glucosyltransferase activity,16,11,5.6,0.0057,0.0161
+GO:0016757,transferase activity, transferring glyco...,32,18,11.2,0.0097,0.0239
+GO:0008194,UDP-glycosyltransferase activity,19,12,6.65,0.0105,0.0239
+GO:0003843,1,3-beta-D-glucan synthase activity,9,7,3.15,0.0108,0.0239
+GO:0004386,helicase activity,26,15,9.1,0.0135,0.027
+GO:0008081,phosphoric diester hydrolase activity,4,4,1.4,0.0148,0.027
+GO:0032451,demethylase activity,4,4,1.4,0.0148,0.027
+GO:0016758,transferase activity, transferring hexos...,22,13,7.7,0.0166,0.0286
+GO:0140097,catalytic activity, acting on DNA,16,10,5.6,0.0217,0.0323
+GO:0001882,nucleoside binding,6,5,2.1,0.0219,0.0323
+GO:0032549,ribonucleoside binding,6,5,2.1,0.0219,0.0323
+GO:0003774,motor activity,8,6,2.8,0.0247,0.0333
+GO:0003777,microtubule motor activity,8,6,2.8,0.0247,0.0333
+GO:0009678,pyrophosphate hydrolysis-driven proton t...,3,3,1.05,0.0426,0.0464
+GO:0015078,proton transmembrane transporter activit...,3,3,1.05,0.0426,0.0464
+GO:0016759,cellulose synthase activity,3,3,1.05,0.0426,0.0464
+GO:0016760,cellulose synthase (UDP-forming) activit...,3,3,1.05,0.0426,0.0464
+GO:0035514,DNA demethylase activity,3,3,1.05,0.0426,0.0464
+GO:0005215,transporter activity,46,22,16.1,0.0443,0.0464
+GO:0016874,ligase activity,22,12,7.7,0.0449,0.0464
+GO:0022853,active ion transmembrane transporter act...,11,7,3.85,0.0489,0.0489

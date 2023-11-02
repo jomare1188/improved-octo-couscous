@@ -1,0 +1,10 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000220,vacuolar proton-transporting V-type ATPa...,2,1,0.03,0.032,0.047
+GO:0031974,membrane-enclosed lumen,24,2,0.38,0.047,0.047
+GO:0031981,nuclear lumen,24,2,0.38,0.047,0.047
+GO:0043233,organelle lumen,24,2,0.38,0.047,0.047
+GO:0070013,intracellular organelle lumen,24,2,0.38,0.047,0.047
+GO:0005773,vacuole,3,1,0.05,0.047,0.047
+GO:0033176,proton-transporting V-type ATPase comple...,3,1,0.05,0.047,0.047
+GO:0033177,proton-transporting two-sector ATPase co...,3,1,0.05,0.047,0.047
+GO:0033179,proton-transporting V-type ATPase, V0 do...,3,1,0.05,0.047,0.047

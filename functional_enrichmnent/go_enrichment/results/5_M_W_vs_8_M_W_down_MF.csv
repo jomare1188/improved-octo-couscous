@@ -1,0 +1,11 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016705,oxidoreductase activity, acting on paire...,8,6,1.39,0.00052,0.0044
+GO:0016209,antioxidant activity,4,4,0.7,0.00089,0.0044
+GO:0003729,mRNA binding,9,6,1.57,0.00134,0.0045
+GO:0016491,oxidoreductase activity,32,12,5.58,0.00462,0.0104
+GO:0016810,hydrolase activity, acting on carbon-nit...,3,3,0.52,0.00520,0.0104
+GO:0004601,peroxidase activity,2,2,0.35,0.03019,0.0302
+GO:0008418,protein-N-terminal asparagine amidohydro...,2,2,0.35,0.03019,0.0302
+GO:0016684,oxidoreductase activity, acting on perox...,2,2,0.35,0.03019,0.0302
+GO:0016811,hydrolase activity, acting on carbon-nit...,2,2,0.35,0.03019,0.0302
+GO:1990465,aldehyde oxygenase (deformylating) activ...,2,2,0.35,0.03019,0.0302

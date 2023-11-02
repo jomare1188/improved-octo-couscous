@@ -1,0 +1,3 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0030029,actin filament-based process,7,6,2.65,0.013,0.026
+GO:0006354,DNA-templated transcription, elongation,6,5,2.27,0.031,0.031

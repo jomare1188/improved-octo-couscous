@@ -1,0 +1,15 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0050896,response to stimulus,82,15,8.61,0.0098,0.042
+GO:0051716,cellular response to stimulus,47,10,4.93,0.0143,0.042
+GO:0007165,signal transduction,41,9,4.3,0.0168,0.042
+GO:0023052,signaling,41,9,4.3,0.0168,0.042
+GO:0007154,cell communication,44,9,4.62,0.0268,0.042
+GO:0016458,gene silencing,7,3,0.73,0.0277,0.042
+GO:0031047,gene silencing by RNA,7,3,0.73,0.0277,0.042
+GO:0009733,response to auxin,13,4,1.36,0.0368,0.042
+GO:0009734,auxin-activated signaling pathway,13,4,1.36,0.0368,0.042
+GO:0071365,cellular response to auxin stimulus,13,4,1.36,0.0368,0.042
+GO:0050789,regulation of biological process,94,15,9.87,0.0369,0.042
+GO:0009755,hormone-mediated signaling pathway,26,6,2.73,0.0420,0.042
+GO:0032870,cellular response to hormone stimulus,26,6,2.73,0.0420,0.042
+GO:0071495,cellular response to endogenous stimulus,26,6,2.73,0.0420,0.042

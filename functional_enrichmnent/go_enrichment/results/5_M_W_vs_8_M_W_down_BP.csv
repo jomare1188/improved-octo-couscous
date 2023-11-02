@@ -1,0 +1,11 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006950,response to stress,31,11,4.79,0.0032,0.032
+GO:0050896,response to stimulus,82,20,12.67,0.0103,0.0336
+GO:0006952,defense response,22,8,3.4,0.0108,0.0336
+GO:0006334,nucleosome assembly,2,2,0.31,0.0235,0.0336
+GO:0034728,nucleosome organization,2,2,0.31,0.0235,0.0336
+GO:0080188,gene silencing by RNA-directed DNA methy...,2,2,0.31,0.0235,0.0336
+GO:0140458,pre-transcriptional gene silencing by RN...,2,2,0.31,0.0235,0.0336
+GO:0032196,transposition,5,3,0.77,0.0278,0.0347
+GO:0009620,response to fungus,6,3,0.93,0.0496,0.0496
+GO:0050832,defense response to fungus,6,3,0.93,0.0496,0.0496

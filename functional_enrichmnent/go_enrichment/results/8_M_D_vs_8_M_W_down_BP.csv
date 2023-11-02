@@ -1,0 +1,40 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0034641,cellular nitrogen compound metabolic pro...,106,36,24.72,0.0017,0.0205
+GO:0044237,cellular metabolic process,144,45,33.59,0.0025,0.0205
+GO:0006139,nucleobase-containing compound metabolic...,100,34,23.32,0.0025,0.0205
+GO:0016071,mRNA metabolic process,24,12,5.6,0.0028,0.0205
+GO:0046483,heterocycle metabolic process,101,34,23.56,0.0031,0.0205
+GO:0065008,regulation of biological quality,11,7,2.57,0.0043,0.0205
+GO:0043170,macromolecule metabolic process,127,40,29.62,0.0048,0.0205
+GO:0090304,nucleic acid metabolic process,96,32,22.39,0.0055,0.0205
+GO:0006725,cellular aromatic compound metabolic pro...,104,34,24.26,0.0058,0.0205
+GO:1901360,organic cyclic compound metabolic proces...,104,34,24.26,0.0058,0.0205
+GO:0071704,organic substance metabolic process,153,46,35.69,0.0059,0.0205
+GO:0044260,cellular macromolecule metabolic process,89,30,20.76,0.0063,0.0205
+GO:0006807,nitrogen compound metabolic process,121,38,28.22,0.0071,0.0213
+GO:0044238,primary metabolic process,135,41,31.49,0.0096,0.0228
+GO:0000184,nuclear-transcribed mRNA catabolic proce...,3,3,0.7,0.0123,0.0228
+GO:0032507,maintenance of protein location in cell,3,3,0.7,0.0123,0.0228
+GO:0034067,protein localization to Golgi apparatus,3,3,0.7,0.0123,0.0228
+GO:0045053,protein retention in Golgi apparatus,3,3,0.7,0.0123,0.0228
+GO:0045185,maintenance of protein location,3,3,0.7,0.0123,0.0228
+GO:0051235,maintenance of location,3,3,0.7,0.0123,0.0228
+GO:0051651,maintenance of location in cell,3,3,0.7,0.0123,0.0228
+GO:0000956,nuclear-transcribed mRNA catabolic proce...,8,5,1.87,0.0190,0.0322
+GO:0006402,mRNA catabolic process,8,5,1.87,0.0190,0.0322
+GO:0008152,metabolic process,161,46,37.55,0.0210,0.0341
+GO:0048519,negative regulation of biological proces...,20,9,4.66,0.0232,0.0362
+GO:0015074,DNA integration,27,11,6.3,0.0276,0.0388
+GO:0006401,RNA catabolic process,9,5,2.1,0.0350,0.0388
+GO:0019439,aromatic compound catabolic process,9,5,2.1,0.0350,0.0388
+GO:0034655,nucleobase-containing compound catabolic...,9,5,2.1,0.0350,0.0388
+GO:0044270,cellular nitrogen compound catabolic pro...,9,5,2.1,0.0350,0.0388
+GO:0046700,heterocycle catabolic process,9,5,2.1,0.0350,0.0388
+GO:1901361,organic cyclic compound catabolic proces...,9,5,2.1,0.0350,0.0388
+GO:0009892,negative regulation of metabolic process,18,8,4.2,0.0351,0.0388
+GO:0010605,negative regulation of macromolecule met...,18,8,4.2,0.0351,0.0388
+GO:0010629,negative regulation of gene expression,18,8,4.2,0.0351,0.0388
+GO:0009057,macromolecule catabolic process,12,6,2.8,0.0371,0.0388
+GO:0044265,cellular macromolecule catabolic process,12,6,2.8,0.0371,0.0388
+GO:0006259,DNA metabolic process,35,13,8.16,0.0378,0.0388
+GO:1902531,regulation of intracellular signal trans...,4,3,0.93,0.0409,0.0409

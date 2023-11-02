@@ -1,0 +1,20 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006631,fatty acid metabolic process,1,1,0.02,0.020,0.0317
+GO:0006633,fatty acid biosynthetic process,1,1,0.02,0.020,0.0317
+GO:0016197,endosomal transport,1,1,0.02,0.020,0.0317
+GO:0031407,oxylipin metabolic process,1,1,0.02,0.020,0.0317
+GO:0031408,oxylipin biosynthetic process,1,1,0.02,0.020,0.0317
+GO:0032509,endosome transport via multivesicular bo...,1,1,0.02,0.020,0.0317
+GO:0032511,late endosome to vacuole transport via m...,1,1,0.02,0.020,0.0317
+GO:0032787,monocarboxylic acid metabolic process,1,1,0.02,0.020,0.0317
+GO:0043162,ubiquitin-dependent protein catabolic pr...,1,1,0.02,0.020,0.0317
+GO:0043328,protein transport to vacuole involved in...,1,1,0.02,0.020,0.0317
+GO:0071985,multivesicular body sorting pathway,1,1,0.02,0.020,0.0317
+GO:0072330,monocarboxylic acid biosynthetic process,1,1,0.02,0.020,0.0317
+GO:0009735,response to cytokinin,2,1,0.04,0.040,0.04
+GO:0009736,cytokinin-activated signaling pathway,2,1,0.04,0.040,0.04
+GO:0016053,organic acid biosynthetic process,2,1,0.04,0.040,0.04
+GO:0046394,carboxylic acid biosynthetic process,2,1,0.04,0.040,0.04
+GO:0071368,cellular response to cytokinin stimulus,2,1,0.04,0.040,0.04
+GO:0072665,protein localization to vacuole,2,1,0.04,0.040,0.04
+GO:0072666,establishment of protein localization to...,2,1,0.04,0.040,0.04

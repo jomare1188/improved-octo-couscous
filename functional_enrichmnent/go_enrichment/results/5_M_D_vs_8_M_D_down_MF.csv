@@ -1,0 +1,9 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0140359,ABC-type transmembrane transporter activ...,14,2,0.19,0.014,0.048
+GO:0043531,ADP binding,18,2,0.24,0.022,0.048
+GO:0004144,diacylglycerol O-acyltransferase activit...,2,1,0.03,0.027,0.048
+GO:0016411,acylglycerol O-acyltransferase activity,2,1,0.03,0.027,0.048
+GO:0042626,ATPase-coupled transmembrane transporter...,22,2,0.3,0.033,0.048
+GO:0015399,primary active transmembrane transporter...,24,2,0.32,0.039,0.048
+GO:0030554,adenyl nucleotide binding,27,2,0.36,0.048,0.048
+GO:0032559,adenyl ribonucleotide binding,27,2,0.36,0.048,0.048

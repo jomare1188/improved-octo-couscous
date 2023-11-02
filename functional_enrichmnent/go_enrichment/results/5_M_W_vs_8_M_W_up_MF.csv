@@ -1,0 +1,13 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0004521,endoribonuclease activity,8,5,1.14,0.0021,0.0084
+GO:0016891,endoribonuclease activity, producing 5'-...,8,5,1.14,0.0021,0.0084
+GO:0016893,endonuclease activity, active with eithe...,8,5,1.14,0.0021,0.0084
+GO:0004519,endonuclease activity,9,5,1.28,0.0041,0.0123
+GO:0004540,ribonuclease activity,11,5,1.56,0.0119,0.0269
+GO:0004525,ribonuclease III activity,2,2,0.28,0.0200,0.0269
+GO:0005543,phospholipid binding,2,2,0.28,0.0200,0.0269
+GO:0032296,double-stranded RNA-specific ribonucleas...,2,2,0.28,0.0200,0.0269
+GO:0008233,peptidase activity,36,10,5.11,0.0219,0.0269
+GO:0004523,RNA-DNA hybrid ribonuclease activity,5,3,0.71,0.0224,0.0269
+GO:0004518,nuclease activity,14,5,1.99,0.0363,0.0396
+GO:0070011,peptidase activity, acting on L-amino ac...,34,9,4.82,0.0396,0.0396

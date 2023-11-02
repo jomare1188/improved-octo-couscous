@@ -1,0 +1,7 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016772,transferase activity, transferring phosp...,107,16,8.53,0.0059,0.0338
+GO:0016773,phosphotransferase activity, alcohol gro...,78,12,6.22,0.0147,0.0338
+GO:0016740,transferase activity,194,23,15.47,0.0174,0.0338
+GO:0016301,kinase activity,96,13,7.65,0.0309,0.0338
+GO:0008047,enzyme activator activity,4,2,0.32,0.0338,0.0338
+GO:0017018,myosin phosphatase activity,4,2,0.32,0.0338,0.0338

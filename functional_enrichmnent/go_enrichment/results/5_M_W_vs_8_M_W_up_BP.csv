@@ -1,0 +1,11 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009845,seed germination,2,2,0.27,0.018,0.03
+GO:0010029,regulation of seed germination,2,2,0.27,0.018,0.03
+GO:0051186,cofactor metabolic process,2,2,0.27,0.018,0.03
+GO:0051188,cofactor biosynthetic process,2,2,0.27,0.018,0.03
+GO:0090351,seedling development,2,2,0.27,0.018,0.03
+GO:1900140,regulation of seedling development,2,2,0.27,0.018,0.03
+GO:0000003,reproduction,14,5,1.92,0.030,0.035
+GO:0022414,reproductive process,14,5,1.92,0.030,0.035
+GO:0032501,multicellular organismal process,24,7,3.29,0.032,0.035
+GO:0009791,post-embryonic development,10,4,1.37,0.035,0.035

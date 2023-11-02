@@ -1,0 +1,18 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0003873,6-phosphofructo-2-kinase activity,1,1,0.02,0.020,0.034
+GO:0004324,ferredoxin-NADP+ reductase activity,1,1,0.02,0.020,0.034
+GO:0004605,phosphatidate cytidylyltransferase activ...,1,1,0.02,0.020,0.034
+GO:0005484,SNAP receptor activity,1,1,0.02,0.020,0.034
+GO:0008937,ferredoxin-NAD(P) reductase activity,1,1,0.02,0.020,0.034
+GO:0016730,oxidoreductase activity, acting on iron-...,1,1,0.02,0.020,0.034
+GO:0016731,oxidoreductase activity, acting on iron-...,1,1,0.02,0.020,0.034
+GO:0030674,protein-macromolecule adaptor activity,1,1,0.02,0.020,0.034
+GO:0060090,molecular adaptor activity,1,1,0.02,0.020,0.034
+GO:0070567,cytidylyltransferase activity,1,1,0.02,0.020,0.034
+GO:0004553,hydrolase activity, hydrolyzing O-glycos...,15,2,0.3,0.035,0.04
+GO:0016798,hydrolase activity, acting on glycosyl b...,15,2,0.3,0.035,0.04
+GO:0003989,acetyl-CoA carboxylase activity,2,1,0.04,0.040,0.04
+GO:0004650,polygalacturonase activity,2,1,0.04,0.040,0.04
+GO:0016421,CoA carboxylase activity,2,1,0.04,0.040,0.04
+GO:0016885,ligase activity, forming carbon-carbon b...,2,1,0.04,0.040,0.04
+GO:0102726,DIMBOA glucoside beta-D-glucosidase acti...,2,1,0.04,0.040,0.04

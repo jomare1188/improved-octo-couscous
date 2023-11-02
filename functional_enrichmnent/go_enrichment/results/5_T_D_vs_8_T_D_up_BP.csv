@@ -1,0 +1,21 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006352,DNA-templated transcription, initiation,1,1,0.01,0.0087,0.0217
+GO:0006906,vesicle fusion,1,1,0.01,0.0087,0.0217
+GO:0016050,vesicle organization,1,1,0.01,0.0087,0.0217
+GO:0048280,vesicle fusion with Golgi apparatus,1,1,0.01,0.0087,0.0217
+GO:0061024,membrane organization,1,1,0.01,0.0087,0.0217
+GO:0061025,membrane fusion,1,1,0.01,0.0087,0.0217
+GO:0070897,transcription preinitiation complex asse...,1,1,0.01,0.0087,0.0217
+GO:0090174,organelle membrane fusion,1,1,0.01,0.0087,0.0217
+GO:0006611,protein export from nucleus,2,1,0.02,0.0174,0.0317
+GO:0051168,nuclear export,2,1,0.02,0.0174,0.0317
+GO:0016043,cellular component organization,30,2,0.26,0.0210,0.0317
+GO:0006810,transport,32,2,0.28,0.0239,0.0317
+GO:0051234,establishment of localization,32,2,0.28,0.0239,0.0317
+GO:0048284,organelle fusion,3,1,0.03,0.0261,0.0317
+GO:0065004,protein-DNA complex assembly,3,1,0.03,0.0261,0.0317
+GO:0071824,protein-DNA complex subunit organization,3,1,0.03,0.0261,0.0317
+GO:0051179,localization,35,2,0.31,0.0285,0.0317
+GO:0071840,cellular component organization or bioge...,35,2,0.31,0.0285,0.0317
+GO:0006913,nucleocytoplasmic transport,5,1,0.04,0.0432,0.0432
+GO:0051169,nuclear transport,5,1,0.04,0.0432,0.0432

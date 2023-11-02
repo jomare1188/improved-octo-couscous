@@ -1,0 +1,13 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010468,regulation of gene expression,35,4,0.92,0.0080,0.0152
+GO:0060255,regulation of macromolecule metabolic pr...,35,4,0.92,0.0080,0.0152
+GO:0019222,regulation of metabolic process,37,4,0.97,0.0098,0.0152
+GO:0009889,regulation of biosynthetic process,20,3,0.52,0.0114,0.0152
+GO:0010556,regulation of macromolecule biosynthetic...,20,3,0.52,0.0114,0.0152
+GO:0031326,regulation of cellular biosynthetic proc...,20,3,0.52,0.0114,0.0152
+GO:0051171,regulation of nitrogen compound metaboli...,20,3,0.52,0.0114,0.0152
+GO:0080090,regulation of primary metabolic process,20,3,0.52,0.0114,0.0152
+GO:2000112,regulation of cellular macromolecule bio...,20,3,0.52,0.0114,0.0152
+GO:0031323,regulation of cellular metabolic process,22,3,0.58,0.0150,0.018
+GO:0010467,gene expression,70,5,1.84,0.0198,0.0216
+GO:0044271,cellular nitrogen compound biosynthetic ...,31,3,0.81,0.0387,0.0387

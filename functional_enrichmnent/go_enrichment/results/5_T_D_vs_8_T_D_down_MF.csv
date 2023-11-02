@@ -1,0 +1,17 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0004176,ATP-dependent peptidase activity,1,1,0.01,0.0095,0.0317
+GO:0047631,ADP-ribose diphosphatase activity,1,1,0.01,0.0095,0.0317
+GO:0016462,pyrophosphatase activity,53,3,0.5,0.0099,0.0317
+GO:0016817,hydrolase activity, acting on acid anhyd...,53,3,0.5,0.0099,0.0317
+GO:0016818,hydrolase activity, acting on acid anhyd...,53,3,0.5,0.0099,0.0317
+GO:0004144,diacylglycerol O-acyltransferase activit...,2,1,0.02,0.0188,0.043
+GO:0016411,acylglycerol O-acyltransferase activity,2,1,0.02,0.0188,0.043
+GO:0001091,RNA polymerase II general transcription ...,3,1,0.03,0.0281,0.045
+GO:0001098,basal transcription machinery binding,3,1,0.03,0.0281,0.045
+GO:0001099,basal RNA polymerase II transcription ma...,3,1,0.03,0.0281,0.045
+GO:0070011,peptidase activity, acting on L-amino ac...,34,2,0.32,0.0372,0.0465
+GO:0016787,hydrolase activity,156,4,1.48,0.0392,0.0465
+GO:0008233,peptidase activity,36,2,0.34,0.0414,0.0465
+GO:0016887,ATPase activity,36,2,0.34,0.0414,0.0465
+GO:0008134,transcription factor binding,5,1,0.05,0.0465,0.0465
+GO:0140296,general transcription initiation factor ...,5,1,0.05,0.0465,0.0465

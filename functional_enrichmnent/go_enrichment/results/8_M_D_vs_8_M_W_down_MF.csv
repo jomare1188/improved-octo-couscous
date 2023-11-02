@@ -1,0 +1,6 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046873,metal ion transmembrane transporter acti...,5,4,1.16,0.012,0.03
+GO:0052742,phosphatidylinositol kinase activity,3,3,0.7,0.012,0.03
+GO:0005388,calcium transmembrane transporter activi...,4,3,0.93,0.041,0.047
+GO:0015085,calcium ion transmembrane transporter ac...,4,3,0.93,0.041,0.047
+GO:0016874,ligase activity,22,9,5.11,0.047,0.047

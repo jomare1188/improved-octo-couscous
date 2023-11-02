@@ -1,0 +1,12 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0003678,DNA helicase activity,1,1,0.01,0.012,0.0264
+GO:0003983,UTP:glucose-1-phosphate uridylyltransfer...,1,1,0.01,0.012,0.0264
+GO:0008094,DNA-dependent ATPase activity,1,1,0.01,0.012,0.0264
+GO:0051748,UTP-monosaccharide-1-phosphate uridylylt...,1,1,0.01,0.012,0.0264
+GO:0070569,uridylyltransferase activity,1,1,0.01,0.012,0.0264
+GO:0016538,cyclin-dependent protein serine/threonin...,2,1,0.02,0.024,0.037
+GO:0004190,aspartic-type endopeptidase activity,3,1,0.04,0.036,0.037
+GO:0019207,kinase regulator activity,3,1,0.04,0.036,0.037
+GO:0019887,protein kinase regulator activity,3,1,0.04,0.036,0.037
+GO:0070001,aspartic-type peptidase activity,3,1,0.04,0.036,0.037
+GO:0004386,helicase activity,26,2,0.32,0.037,0.037
