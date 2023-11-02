@@ -55,6 +55,8 @@ write.table(results.table.bh, file = paste0("../results/", contrast, "_", ontolo
 ntop <- 12
 ggdata <- all_res_final[1:ntop,]
 
+ggdata <- ggdata[complete.cases(ggdata), ]
+
 aux <- go2term(all_res_final$GO.ID)
 colnames(aux) <- c("GO.ID", "Lterm")
 
@@ -65,7 +67,7 @@ ggdata$Classic <- as.numeric(ggdata$Classic)
 ggdata <- ggdata[order(ggdata$Classic),]
 ggdata$Lterm <- factor(ggdata$Lterm, levels = rev(ggdata$Lterm)) # fixes order
 
-gg1 <- ggplot(ggdata[1:ntop,], aes(x = Lterm, y = -log10(Classic)))+
+gg1 <- ggplot(ggdata, aes(x = Lterm, y = -log10(Classic)))+
   geom_point(size = 6, colour = "black") +
   scale_size(range = c(2.5,12.5)) +
   xlab('GO Term') +
@@ -74,7 +76,7 @@ gg1 <- ggplot(ggdata[1:ntop,], aes(x = Lterm, y = -log10(Classic)))+
   coord_flip() +
   theme_bw(base_size = 24)
 
-ggsave(paste0("../results/", contrast, "_", ontology, ".png"), device = "png", width = 35, height = 30, dpi = 300, units = "cm")
+ggsave(paste0("../results/", contrast, "_", ontology, ".png"), device = "png", width = 60, height = 30, dpi = 300, units = "cm")
 }
 # 5_M_D_vs_5_M_W
 GOenrichment("5_M_D_vs_5_M_W_up", "BP")
