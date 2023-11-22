@@ -116,9 +116,9 @@ library(svglite, lib= "/Storage/data1/jorge.munoz/NRGSC.new/libraries")
 cols <- c("#ECCBAE", "#D69C4E")
 df3$Contrast <- factor(df3$Contrast, levels = c("5_M_W_vs_5_T_D", "8_M_W_vs_8_T_D"))
 DEG_PLOT <- ggplot(df3, aes(x=Contrast, y=DEGs, fill=Type, label = DEGs)) +
-  geom_bar(stat="identity", position = "stack", size = 3)+
+  geom_bar(stat="identity", position = "stack", size = 1)+
   geom_text(size = 6, position = position_stack(vjust = 0.5)) +	
-  coord_flip() +
+#  coord_flip() +
   xlab("Contrast") +
 #  scale_x_discrete(breaks= df3$Contrast )+
   scale_fill_manual(values = cols)+
