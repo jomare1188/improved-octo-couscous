@@ -1,0 +1,4 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016020,membrane,90,23,15.96,0.0079,0.0237
+GO:0009507,chloroplast,4,3,0.71,0.0182,0.0273
+GO:0009536,plastid,5,3,0.89,0.0399,0.0399

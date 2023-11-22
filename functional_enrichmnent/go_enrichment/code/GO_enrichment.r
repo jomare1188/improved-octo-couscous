@@ -125,3 +125,17 @@ GOenrichment("8_M_D_vs_8_M_W_down", "CC")
 GOenrichment("8_M_D_vs_8_M_W_up", "MF")
 GOenrichment("8_M_D_vs_8_M_W_down", "MF")
 
+# 5_M_W_vs_5_T_D
+GOenrichment("5_M_W_vs_5_T_D_up", "BP")
+GOenrichment("5_M_W_vs_5_T_D_down", "BP")
+GOenrichment("5_M_W_vs_5_T_D_up", "CC")
+GOenrichment("5_M_W_vs_5_T_D_down", "CC")
+GOenrichment("5_M_W_vs_5_T_D_up", "MF")
+GOenrichment("5_M_W_vs_5_T_D_down", "MF")
+# 8_M_W_vs_8_T_D
+GOenrichment("8_M_W_vs_8_T_D_up", "BP")
+GOenrichment("8_M_W_vs_8_T_D_down", "BP")
+GOenrichment("8_M_W_vs_8_T_D_up", "CC")
+GOenrichment("8_M_W_vs_8_T_D_down", "CC")
+GOenrichment("8_M_W_vs_8_T_D_up", "MF")
+GOenrichment("8_M_W_vs_8_T_D_down", "MF")

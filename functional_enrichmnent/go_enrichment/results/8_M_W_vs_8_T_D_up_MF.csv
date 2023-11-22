@@ -1,0 +1,4 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016787,hydrolase activity,107,52,40.52,0.0077,0.0231
+GO:0016877,ligase activity, forming carbon-sulfur b...,6,5,2.27,0.0312,0.0324
+GO:0008233,peptidase activity,22,13,8.33,0.0324,0.0324

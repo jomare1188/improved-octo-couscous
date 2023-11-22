@@ -75,7 +75,7 @@ dea_by_group <- function(group1, group2) {
 	
 	filtered <- res %>% filter(pvalue < 0.05 & abs(log2FoldChange) > 1)
 
-        write.table(filtered, file = paste0(outdir, "/",  group1, "_vs_", group2, "/", "," ,group1, "_vs_", group2, ".DESeq.DE_results"), sep = "\t", quote = F )
+        write.table(filtered, file = paste0(outdir, "/",  group1, "_vs_", group2, "/" ,group1, "_vs_", group2, ".DESeq.DE_results"), sep = "\t", quote = F )
         ### More tables
         df_fi <- assay(fi)
         df_vst <- assay(vst)	
@@ -89,3 +89,10 @@ dea_by_group("5_M_W", "8_M_W")
 dea_by_group("5_T_D", "8_T_D")
 dea_by_group("5_M_D", "5_M_W")
 dea_by_group("8_M_D", "8_M_W")
+# NEW CONTRASTAS
+dea_by_group("5_M_W", "5_T_D")
+dea_by_group("8_M_W", "8_T_D")
+
+
+
+

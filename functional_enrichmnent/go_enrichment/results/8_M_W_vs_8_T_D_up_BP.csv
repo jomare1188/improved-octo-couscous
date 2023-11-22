@@ -1,0 +1,26 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000184,nuclear-transcribed mRNA catabolic proce...,5,5,1.49,0.0022,0.0071
+GO:0000956,nuclear-transcribed mRNA catabolic proce...,7,6,2.09,0.0033,0.0071
+GO:0006401,RNA catabolic process,7,6,2.09,0.0033,0.0071
+GO:0006402,mRNA catabolic process,7,6,2.09,0.0033,0.0071
+GO:0019439,aromatic compound catabolic process,7,6,2.09,0.0033,0.0071
+GO:0034655,nucleobase-containing compound catabolic...,7,6,2.09,0.0033,0.0071
+GO:0044270,cellular nitrogen compound catabolic pro...,7,6,2.09,0.0033,0.0071
+GO:0046700,heterocycle catabolic process,7,6,2.09,0.0033,0.0071
+GO:1901361,organic cyclic compound catabolic proces...,7,6,2.09,0.0033,0.0071
+GO:0009057,macromolecule catabolic process,11,8,3.29,0.0034,0.0071
+GO:0044265,cellular macromolecule catabolic process,11,8,3.29,0.0034,0.0071
+GO:1901575,organic substance catabolic process,11,8,3.29,0.0034,0.0071
+GO:0044260,cellular macromolecule metabolic process,67,28,20.02,0.0107,0.0206
+GO:0044237,cellular metabolic process,102,39,30.48,0.0124,0.0221
+GO:0016071,mRNA metabolic process,21,11,6.27,0.0206,0.0343
+GO:0015074,DNA integration,22,11,6.57,0.0311,0.0486
+GO:0010468,regulation of gene expression,28,13,8.37,0.0381,0.0497
+GO:0043170,macromolecule metabolic process,95,35,28.39,0.0417,0.0497
+GO:0008152,metabolic process,118,42,35.26,0.0423,0.0497
+GO:0090304,nucleic acid metabolic process,73,28,21.81,0.0433,0.0497
+GO:0009056,catabolic process,15,8,4.48,0.0437,0.0497
+GO:0044248,cellular catabolic process,15,8,4.48,0.0437,0.0497
+GO:0071704,organic substance metabolic process,112,40,33.47,0.0473,0.0499
+GO:0044238,primary metabolic process,99,36,29.58,0.0480,0.0499
+GO:0034641,cellular nitrogen compound metabolic pro...,80,30,23.9,0.0499,0.0499

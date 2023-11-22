@@ -1,3 +1,12 @@
+# old
 5_M_D_vs_8_M_D
 5_M_W_vs_8_M_W
 5_T_D_vs_8_T_D
+
+# old intra genotype
+5_M_D_vs_5_M_W
+8_M_D_vs_8_M_W
+
+# good
+5_M_W_vs_5_T_D
+8_M_W_vs_8_T_D

@@ -1,0 +1,5 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006950,response to stress,13,7,2.07,0.0013,0.0052
+GO:0033554,cellular response to stress,6,4,0.96,0.0066,0.0117
+GO:0050896,response to stimulus,54,15,8.61,0.0088,0.0117
+GO:0051716,cellular response to stimulus,37,10,5.9,0.0452,0.0452
