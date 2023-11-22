@@ -117,7 +117,7 @@ cols <- c("#ECCBAE", "#D69C4E")
 df3$Contrast <- factor(df3$Contrast, levels = c("5_M_W_vs_5_T_D", "8_M_W_vs_8_T_D"))
 DEG_PLOT <- ggplot(df3, aes(x=Contrast, y=DEGs, fill=Type, label = DEGs)) +
   geom_bar(stat="identity", position = "stack", size = 3)+
-  geom_text(size = 3, position = position_stack(vjust = 0.5)) +	
+  geom_text(size = 6, position = position_stack(vjust = 0.5)) +	
   coord_flip() +
   xlab("Contrast") +
 #  scale_x_discrete(breaks= df3$Contrast )+
@@ -126,17 +126,18 @@ DEG_PLOT <- ggplot(df3, aes(x=Contrast, y=DEGs, fill=Type, label = DEGs)) +
   #facet_wrap(~Treatment, drop = T, ncol = 4, nrow = 1)+
   labs(fill="")+
   theme_bw()+
-  theme( text = element_text(family = "Times new roman", size=18),
+  theme( text = element_text(family = "Times new roman", size=30),
      	 legend.position = "top",
-	 legend.text = element_text(size = 10),
+	 legend.text = element_text(size = 20),
          panel.border = element_blank(),
          panel.grid.major = element_blank(),
          panel.grid.minor = element_blank(),
          axis.line = element_line(colour = "#030303", size = 2),
 	 axis.ticks = element_line(size = 2, color="#030303"),
+	 axis.text=element_text(size=30), 
          axis.text.x = element_text(angle=0, size=12, color = "black"),
 	 axis.text.y = element_text(angle=0, size=12, color = "black"),
          plot.title = element_text(hjust = 0.5))
 
 
-ggsave(DEG_PLOT, filename = "../results/DEG_stackplot_ok.svg", device= "svg" ,units = "cm",width = 52/1.5, height = 17,dpi = 320)
+ggsave(DEG_PLOT, filename = "../results/DEG_stackplot_ok.png", device= "png" ,units = "cm",width = 45/1.5, height = 17,dpi = 320)
