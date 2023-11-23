@@ -1,0 +1,9 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0032451,demethylase activity,4,3,0.5,0.0068,0.0301
+GO:0017111,nucleoside-triphosphatase activity,45,11,5.62,0.0159,0.0301
+GO:0016462,pyrophosphatase activity,46,11,5.75,0.0188,0.0301
+GO:0016817,hydrolase activity, acting on acid anhyd...,46,11,5.75,0.0188,0.0301
+GO:0016818,hydrolase activity, acting on acid anhyd...,46,11,5.75,0.0188,0.0301
+GO:0035514,DNA demethylase activity,3,2,0.38,0.0425,0.0452
+GO:0003774,motor activity,7,3,0.88,0.0452,0.0452
+GO:0003777,microtubule motor activity,7,3,0.88,0.0452,0.0452

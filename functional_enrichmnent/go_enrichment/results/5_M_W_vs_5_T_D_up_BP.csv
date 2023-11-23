@@ -1,0 +1,14 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006354,DNA-templated transcription, elongation,5,4,0.72,0.0016,0.0158
+GO:0006351,transcription, DNA-templated,18,7,2.58,0.0069,0.0158
+GO:0032774,RNA biosynthetic process,18,7,2.58,0.0069,0.0158
+GO:0034654,nucleobase-containing compound biosynthe...,18,7,2.58,0.0069,0.0158
+GO:0097659,nucleic acid-templated transcription,18,7,2.58,0.0069,0.0158
+GO:0018130,heterocycle biosynthetic process,19,7,2.73,0.0097,0.0158
+GO:0019438,aromatic compound biosynthetic process,19,7,2.73,0.0097,0.0158
+GO:1901362,organic cyclic compound biosynthetic pro...,19,7,2.73,0.0097,0.0158
+GO:0032784,regulation of DNA-templated transcriptio...,2,2,0.29,0.0201,0.029
+GO:0016070,RNA metabolic process,45,11,6.45,0.0336,0.0437
+GO:0044271,cellular nitrogen compound biosynthetic ...,24,7,3.44,0.0381,0.045
+GO:0048519,negative regulation of biological proces...,15,5,2.15,0.0469,0.047
+GO:0010467,gene expression,53,12,7.6,0.0470,0.047

@@ -92,7 +92,7 @@ dea_by_group("8_M_D", "8_M_W")
 # NEW CONTRASTAS
 dea_by_group("5_M_W", "5_T_D")
 dea_by_group("8_M_W", "8_T_D")
-
-
-
+## GOOD CONTRASTS
+dea_by_group("5_T_D", "5_M_D")
+dea_by_group("8_T_D", "8_M_D")
 

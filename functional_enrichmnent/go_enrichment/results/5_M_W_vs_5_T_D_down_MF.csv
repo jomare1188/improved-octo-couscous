@@ -1,0 +1,9 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0004371,glycerone kinase activity,1,1,0.02,0.020,0.032
+GO:0016160,amylase activity,1,1,0.02,0.020,0.032
+GO:0016161,beta-amylase activity,1,1,0.02,0.020,0.032
+GO:0046524,sucrose-phosphate synthase activity,1,1,0.02,0.020,0.032
+GO:0061863,microtubule plus end polymerase,1,1,0.02,0.020,0.032
+GO:0035251,UDP-glucosyltransferase activity,17,2,0.34,0.043,0.048
+GO:0046527,glucosyltransferase activity,17,2,0.34,0.043,0.048
+GO:0008194,UDP-glycosyltransferase activity,18,2,0.36,0.048,0.048

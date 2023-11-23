@@ -1,0 +1,3 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0005737,cytoplasm,39,12,6.72,0.015,0.017
+GO:0030135,coated vesicle,4,3,0.69,0.017,0.017
