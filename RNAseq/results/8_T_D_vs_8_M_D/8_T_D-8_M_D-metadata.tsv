@@ -1,0 +1,7 @@
+Files	Genotype	State	Treatment	Replicate	Sample	Group
+1	21DH8_S24	8008	Maturation	Drought	1	8M_D_1	8_M_D
+2	22DH8_S25	8008	Maturation	Drought	2	8M_D_2	8_M_D
+3	23DH8_S26	8008	Maturation	Drought	3	8M_D_3	8_M_D
+4	FIDH1800_S30	8008	Tillering	Drought	1	8T_D_1	8_T_D
+5	FIDH28000_S31	8008	Tillering	Drought	2	8T_D_2	8_T_D
+6	FIDH38000_S32	8008	Tillering	Drought	3	8T_D_3	8_T_D
