@@ -1,0 +1,1432 @@
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0004809	tRNA (guanine-N2-)-methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0030488	tRNA methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0005634	nucleus
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016423	tRNA (guanine) methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0001510	RNA methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0043231	intracellular membrane-bounded organelle
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008175	tRNA methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006400	tRNA modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0043227	membrane-bounded organelle
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008170	N-methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043414	macromolecule methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0043229	intracellular organelle
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008173	RNA methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0008033	tRNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0043226	organelle
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0000049	tRNA binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009451	RNA modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0005622	intracellular anatomical structure
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140101	catalytic activity, acting on a tRNA
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034470	ncRNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	CC	GO:0110165	cellular anatomical entity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008757	S-adenosylmethionine-dependent methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006399	tRNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008168	methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0032259	methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016741	transferase activity, transferring one-carbon groups
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043412	macromolecule modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140098	catalytic activity, acting on RNA
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034660	ncRNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006396	RNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003723	RNA binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0016070	RNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0090304	nucleic acid metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016740	transferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0010467	gene expression
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003676	nucleic acid binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006139	nucleobase-containing compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:1901363	heterocyclic compound binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009059	macromolecule biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0097159	organic cyclic compound binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0002940	tRNA N2-guanine methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0005488	binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006725	cellular aromatic compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003824	catalytic activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0046483	heterocycle metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:1901360	organic cyclic compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034641	cellular nitrogen compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043170	macromolecule metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044249	cellular biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:1901576	organic substance biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009058	biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006807	nitrogen compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044238	primary metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044237	cellular metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0071704	organic substance metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0008152	metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009987	cellular process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0004809	tRNA (guanine-N2-)-methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0030488	tRNA methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016423	tRNA (guanine) methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0001510	RNA methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008175	tRNA methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006400	tRNA modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008170	N-methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043414	macromolecule methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008173	RNA methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0008033	tRNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0000049	tRNA binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009451	RNA modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140101	catalytic activity, acting on a tRNA
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034470	ncRNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008757	S-adenosylmethionine-dependent methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006399	tRNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0008168	methyltransferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0032259	methylation
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016741	transferase activity, transferring one-carbon groups
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043412	macromolecule modification
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140098	catalytic activity, acting on RNA
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034660	ncRNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006396	RNA processing
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003723	RNA binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0016070	RNA metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0090304	nucleic acid metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0016740	transferase activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0010467	gene expression
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003676	nucleic acid binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006139	nucleobase-containing compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:1901363	heterocyclic compound binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009059	macromolecule biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0097159	organic cyclic compound binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006725	cellular aromatic compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0005488	binding
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0046483	heterocycle metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	MF	GO:0003824	catalytic activity
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:1901360	organic cyclic compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0034641	cellular nitrogen compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0043170	macromolecule metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044249	cellular biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:1901576	organic substance biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009058	biosynthetic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0006807	nitrogen compound metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044238	primary metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0044237	cellular metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0071704	organic substance metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0008152	metabolic process
+Co8021_k31_TRINITY_DN54103_c0_g1_i18	BP	GO:0009987	cellular process
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0016592	mediator complex
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0140513	nuclear protein-containing complex
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0005634	nucleus
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0032991	protein-containing complex
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0043231	intracellular membrane-bounded organelle
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0043227	membrane-bounded organelle
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0043229	intracellular organelle
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0043226	organelle
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0005622	intracellular anatomical structure
+RB855156_k25_TRINITY_DN2538_c0_g2_i11	CC	GO:0110165	cellular anatomical entity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0047769	arogenate dehydratase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009094	L-phenylalanine biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0009570	chloroplast stroma
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0004664	prephenate dehydratase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1902223	erythrose 4-phosphate/phosphoenolpyruvate family amino acid biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0009532	plastid stroma
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0006558	L-phenylalanine metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0016836	hydro-lyase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0009507	chloroplast
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1902221	erythrose 4-phosphate/phosphoenolpyruvate family amino acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0016835	carbon-oxygen lyase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0009536	plastid
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009095	aromatic amino acid family biosynthetic process, prephenate pathway
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0016829	lyase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0043231	intracellular membrane-bounded organelle
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009073	aromatic amino acid family biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0043227	membrane-bounded organelle
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0004106	chorismate mutase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009072	aromatic amino acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0005737	cytoplasm
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0016866	intramolecular transferase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901607	alpha-amino acid biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0043229	intracellular organelle
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0016853	isomerase activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0008652	amino acid biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0043226	organelle
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	MF	GO:0003824	catalytic activity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901605	alpha-amino acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0005622	intracellular anatomical structure
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0046394	carboxylic acid biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	CC	GO:0110165	cellular anatomical entity
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0016053	organic acid biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0006520	amino acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0044283	small molecule biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0019752	carboxylic acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0043436	oxoacid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0006082	organic acid metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0019438	aromatic compound biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901362	organic cyclic compound biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0044281	small molecule metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901566	organonitrogen compound biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0006725	cellular aromatic compound metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901360	organic cyclic compound metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901564	organonitrogen compound metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0044249	cellular biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:1901576	organic substance biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009058	biosynthetic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0006807	nitrogen compound metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0044238	primary metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0044237	cellular metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0071704	organic substance metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0008152	metabolic process
+KQ08-2850_k31_TRINITY_DN34900_c0_g1_i4	BP	GO:0009987	cellular process
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003724	RNA helicase activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:1990904	ribonucleoprotein complex
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0008186	ATP-dependent activity, acting on RNA
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0005634	nucleus
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0004386	helicase activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0032991	protein-containing complex
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0140098	catalytic activity, acting on RNA
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0140657	ATP-dependent activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0043227	membrane-bounded organelle
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0005737	cytoplasm
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0005524	ATP binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0043229	intracellular organelle
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032559	adenyl ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0043226	organelle
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0035639	purine ribonucleoside triphosphate binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0005622	intracellular anatomical structure
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0030554	adenyl nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	CC	GO:0110165	cellular anatomical entity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032555	purine ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032553	ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0097367	carbohydrate derivative binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0017076	purine nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0043168	anion binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0000166	nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:1901265	nucleoside phosphate binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0036094	small molecule binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0016787	hydrolase activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003676	nucleic acid binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0043167	ion binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:1901363	heterocyclic compound binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0097159	organic cyclic compound binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0005488	binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003824	catalytic activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003723	RNA binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0004386	helicase activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0140657	ATP-dependent activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0005524	ATP binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032559	adenyl ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0035639	purine ribonucleoside triphosphate binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0030554	adenyl nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032555	purine ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0032553	ribonucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0097367	carbohydrate derivative binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0017076	purine nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0043168	anion binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0000166	nucleotide binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:1901265	nucleoside phosphate binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0036094	small molecule binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0016787	hydrolase activity
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003676	nucleic acid binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0043167	ion binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:1901363	heterocyclic compound binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0097159	organic cyclic compound binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0005488	binding
+KQB07-23990_k31_TRINITY_DN5420_c0_g1_i9	MF	GO:0003824	catalytic activity
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0046983	protein dimerization activity
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0006357	regulation of transcription by RNA polymerase II
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0005634	nucleus
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0005515	protein binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0043231	intracellular membrane-bounded organelle
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0006355	regulation of DNA-templated transcription
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0000978	RNA polymerase II cis-regulatory region sequence-specific DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0043227	membrane-bounded organelle
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:2001141	regulation of RNA biosynthetic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0000987	cis-regulatory region sequence-specific DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0051252	regulation of RNA metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0043229	intracellular organelle
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0000977	RNA polymerase II transcription regulatory region sequence-specific DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0019219	regulation of nucleobase-containing compound metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0043226	organelle
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0000976	transcription cis-regulatory region binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0051171	regulation of nitrogen compound metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0005622	intracellular anatomical structure
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0001067	transcription regulatory region nucleic acid binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0080090	regulation of primary metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	CC	GO:0110165	cellular anatomical entity
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:1990837	sequence-specific double-stranded DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0010468	regulation of gene expression
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0010556	regulation of macromolecule biosynthetic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0003690	double-stranded DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0031326	regulation of cellular biosynthetic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0043565	sequence-specific DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0009889	regulation of biosynthetic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0005488	binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0060255	regulation of macromolecule metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0003700	DNA-binding transcription factor activity
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0031323	regulation of cellular metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0140110	transcription regulator activity
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0019222	regulation of metabolic process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0003677	DNA binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0050794	regulation of cellular process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0050789	regulation of biological process
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0003676	nucleic acid binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	BP	GO:0065007	biological regulation
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:1901363	heterocyclic compound binding
+ROC22_k31_TRINITY_DN15759_c0_g1_i2	MF	GO:0097159	organic cyclic compound binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005669	transcription factor TFIID complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0008237	metallopeptidase activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006413	translational initiation
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0016591	RNA polymerase II, holoenzyme
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0003743	translation initiation factor activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006412	translation
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0090575	RNA polymerase II transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0008270	zinc ion binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043043	peptide biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0055029	nuclear DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0008135	translation factor activity, RNA binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006518	peptide metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005667	transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0090079	translation regulator activity, nucleic acid binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043604	amide biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005654	nucleoplasm
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0045182	translation regulator activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043603	amide metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0000428	DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0008233	peptidase activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0019538	protein metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0030880	RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0046914	transition metal ion binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0010467	gene expression
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0061695	transferase complex, transferring phosphorus-containing groups
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0140096	catalytic activity, acting on a protein
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901566	organonitrogen compound biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031981	nuclear lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0046872	metal ion binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044271	cellular nitrogen compound biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140513	nuclear protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0043169	cation binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009059	macromolecule biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0070013	intracellular organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0016787	hydrolase activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901564	organonitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043233	organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0043167	ion binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0034641	cellular nitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031974	membrane-enclosed lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0003676	nucleic acid binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043170	macromolecule metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1990234	transferase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0005488	binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044249	cellular biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140535	intracellular protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901576	organic substance biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:1901363	heterocyclic compound binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1902494	catalytic complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009058	biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0097159	organic cyclic compound binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005634	nucleus
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006807	nitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0003824	catalytic activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0032991	protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044238	primary metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044237	cellular metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043227	membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0071704	organic substance metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043229	intracellular organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0008152	metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043226	organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009987	cellular process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005622	intracellular anatomical structure
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0110165	cellular anatomical entity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005669	transcription factor TFIID complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0016591	RNA polymerase II, holoenzyme
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0090575	RNA polymerase II transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0055029	nuclear DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005667	transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005654	nucleoplasm
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0000428	DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0030880	RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0061695	transferase complex, transferring phosphorus-containing groups
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031981	nuclear lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140513	nuclear protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0070013	intracellular organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043233	organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031974	membrane-enclosed lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1990234	transferase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140535	intracellular protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1902494	catalytic complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005634	nucleus
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0032991	protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043227	membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043229	intracellular organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043226	organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005622	intracellular anatomical structure
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0110165	cellular anatomical entity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005669	transcription factor TFIID complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0003743	translation initiation factor activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006413	translational initiation
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0016591	RNA polymerase II, holoenzyme
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0008135	translation factor activity, RNA binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006412	translation
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0090575	RNA polymerase II transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0090079	translation regulator activity, nucleic acid binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043043	peptide biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0055029	nuclear DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0045182	translation regulator activity
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006518	peptide metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005667	transcription regulator complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043604	amide biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0003676	nucleic acid binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005654	nucleoplasm
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043603	amide metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:1901363	heterocyclic compound binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0000428	DNA-directed RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0019538	protein metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0097159	organic cyclic compound binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0030880	RNA polymerase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0010467	gene expression
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	MF	GO:0005488	binding
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0061695	transferase complex, transferring phosphorus-containing groups
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901566	organonitrogen compound biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031981	nuclear lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044271	cellular nitrogen compound biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140513	nuclear protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009059	macromolecule biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0070013	intracellular organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901564	organonitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043233	organelle lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0034641	cellular nitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0031974	membrane-enclosed lumen
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0043170	macromolecule metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1990234	transferase complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044249	cellular biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0140535	intracellular protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:1901576	organic substance biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:1902494	catalytic complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009058	biosynthetic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005634	nucleus
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0006807	nitrogen compound metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0032991	protein-containing complex
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044238	primary metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0044237	cellular metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043227	membrane-bounded organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0071704	organic substance metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043229	intracellular organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0008152	metabolic process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0043226	organelle
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	BP	GO:0009987	cellular process
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0005622	intracellular anatomical structure
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0016020	membrane
+KQB09-20432_k25_TRINITY_DN2741_c0_g1_i14	CC	GO:0110165	cellular anatomical entity
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0001164	RNA polymerase I core promoter sequence-specific DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0070860	RNA polymerase I core factor complex
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0001188	RNA polymerase I preinitiation complex assembly
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0001163	RNA polymerase I transcription regulatory region sequence-specific DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0000120	RNA polymerase I transcription regulator complex
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006361	transcription initiation at RNA polymerase I promoter
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0001046	core promoter sequence-specific DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006360	transcription by RNA polymerase I
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0005667	transcription regulator complex
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0070897	transcription preinitiation complex assembly
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0000976	transcription cis-regulatory region binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0005730	nucleolus
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0065004	protein-DNA complex assembly
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0001067	transcription regulatory region nucleic acid binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0031981	nuclear lumen
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:1990837	sequence-specific double-stranded DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0071824	protein-DNA complex organization
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0140513	nuclear protein-containing complex
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0003690	double-stranded DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006352	DNA-templated transcription initiation
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0070013	intracellular organelle lumen
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0043565	sequence-specific DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043233	organelle lumen
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0065003	protein-containing complex assembly
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0031974	membrane-enclosed lumen
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0043933	protein-containing complex organization
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0003677	DNA binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0022607	cellular component assembly
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0005634	nucleus
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0046872	metal ion binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006351	DNA-templated transcription
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0032991	protein-containing complex
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0043169	cation binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0032774	RNA biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043231	intracellular membrane-bounded organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0003676	nucleic acid binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0044085	cellular component biogenesis
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043227	membrane-bounded organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0043167	ion binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0016043	cellular component organization
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043232	intracellular non-membrane-bounded organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:1901363	heterocyclic compound binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0071840	cellular component organization or biogenesis
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043228	non-membrane-bounded organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0097159	organic cyclic compound binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0034654	nucleobase-containing compound biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043229	intracellular organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	MF	GO:0005488	binding
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0016070	RNA metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0043226	organelle
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0019438	aromatic compound biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0005622	intracellular anatomical structure
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0018130	heterocycle biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0016020	membrane
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:1901362	organic cyclic compound biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	CC	GO:0110165	cellular anatomical entity
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0090304	nucleic acid metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0010467	gene expression
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006139	nucleobase-containing compound metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0044271	cellular nitrogen compound biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0009059	macromolecule biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006725	cellular aromatic compound metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0046483	heterocycle metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:1901360	organic cyclic compound metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0042790	nucleolar large rRNA transcription by RNA polymerase I
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0009303	rRNA transcription
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0098781	ncRNA transcription
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0034641	cellular nitrogen compound metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0043170	macromolecule metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0044249	cellular biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:1901576	organic substance biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0009058	biosynthetic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0006807	nitrogen compound metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0044238	primary metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0044237	cellular metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0071704	organic substance metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0016072	rRNA metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0008152	metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0034660	ncRNA metabolic process
+QS99-2014_k31_TRINITY_DN51024_c0_g1_i5	BP	GO:0009987	cellular process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0003714	transcription corepressor activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0045892	negative regulation of DNA-templated transcription
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	CC	GO:0016020	membrane
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0003712	transcription coregulator activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:1902679	negative regulation of RNA biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	CC	GO:0110165	cellular anatomical entity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051253	negative regulation of RNA metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0140110	transcription regulator activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0045934	negative regulation of nucleobase-containing compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051172	negative regulation of nitrogen compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010558	negative regulation of macromolecule biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031327	negative regulation of cellular biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009890	negative regulation of biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010605	negative regulation of macromolecule metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031324	negative regulation of cellular metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009892	negative regulation of metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0048523	negative regulation of cellular process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0048519	negative regulation of biological process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0006355	regulation of DNA-templated transcription
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:2001141	regulation of RNA biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051252	regulation of RNA metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0019219	regulation of nucleobase-containing compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051171	regulation of nitrogen compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0080090	regulation of primary metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010468	regulation of gene expression
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010556	regulation of macromolecule biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031326	regulation of cellular biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009889	regulation of biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0060255	regulation of macromolecule metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031323	regulation of cellular metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0019222	regulation of metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0050794	regulation of cellular process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0050789	regulation of biological process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0065007	biological regulation
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0003714	transcription corepressor activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0045892	negative regulation of DNA-templated transcription
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0003712	transcription coregulator activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:1902679	negative regulation of RNA biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051253	negative regulation of RNA metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	MF	GO:0140110	transcription regulator activity
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0045934	negative regulation of nucleobase-containing compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051172	negative regulation of nitrogen compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010558	negative regulation of macromolecule biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031327	negative regulation of cellular biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009890	negative regulation of biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010605	negative regulation of macromolecule metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031324	negative regulation of cellular metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009892	negative regulation of metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0048523	negative regulation of cellular process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0048519	negative regulation of biological process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0006355	regulation of DNA-templated transcription
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:2001141	regulation of RNA biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051252	regulation of RNA metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0019219	regulation of nucleobase-containing compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0051171	regulation of nitrogen compound metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0080090	regulation of primary metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010468	regulation of gene expression
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0010556	regulation of macromolecule biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031326	regulation of cellular biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0009889	regulation of biosynthetic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0060255	regulation of macromolecule metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0031323	regulation of cellular metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0019222	regulation of metabolic process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0050794	regulation of cellular process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0050789	regulation of biological process
+QN05-803_k31_TRINITY_DN2145_c0_g1_i12	BP	GO:0065007	biological regulation
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0003677	DNA binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	BP	GO:0060255	regulation of macromolecule metabolic process
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	CC	GO:0043229	intracellular organelle
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0008270	zinc ion binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	BP	GO:0019222	regulation of metabolic process
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	CC	GO:0043226	organelle
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0046914	transition metal ion binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	BP	GO:0050789	regulation of biological process
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	CC	GO:0005622	intracellular anatomical structure
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0003676	nucleic acid binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	BP	GO:0065007	biological regulation
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	CC	GO:0110165	cellular anatomical entity
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0046872	metal ion binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0043169	cation binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:1901363	heterocyclic compound binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0097159	organic cyclic compound binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0005488	binding
+QC02-402_k31_TRINITY_DN2443_c0_g1_i9	MF	GO:0043167	ion binding
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0004842	ubiquitin-protein transferase activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0019787	ubiquitin-like protein transferase activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0016755	aminoacyltransferase activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0016746	acyltransferase activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0140096	catalytic activity, acting on a protein
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0016740	transferase activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0046872	metal ion binding
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0043169	cation binding
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0003824	catalytic activity
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0043167	ion binding
+KQB07-24739_k25_TRINITY_DN4759_c0_g1_i6	MF	GO:0005488	binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0004674	protein serine/threonine kinase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0016310	phosphorylation
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	CC	GO:0016020	membrane
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0004672	protein kinase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0006796	phosphate-containing compound metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	CC	GO:0110165	cellular anatomical entity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0006793	phosphorus metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016301	kinase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0044237	cellular metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0008152	metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0140096	catalytic activity, acting on a protein
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0009987	cellular process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0005524	ATP binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0032559	adenyl ribonucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0035639	purine ribonucleoside triphosphate binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0030554	adenyl nucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0032555	purine ribonucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0032553	ribonucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0097367	carbohydrate derivative binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0017076	purine nucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0043168	anion binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0000166	nucleotide binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:1901265	nucleoside phosphate binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0036094	small molecule binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016740	transferase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0043167	ion binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:1901363	heterocyclic compound binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0097159	organic cyclic compound binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0005488	binding
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0003824	catalytic activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016301	kinase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0016310	phosphorylation
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0006796	phosphate-containing compound metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0006793	phosphorus metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0016740	transferase activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0044237	cellular metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	MF	GO:0003824	catalytic activity
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0008152	metabolic process
+QN05-1509_k31_TRINITY_DN417_c0_g2_i4	BP	GO:0009987	cellular process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0004672	protein kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0016310	phosphorylation
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006796	phosphate-containing compound metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016301	kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006793	phosphorus metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0044237	cellular metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0140096	catalytic activity, acting on a protein
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0008152	metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0005524	ATP binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0009987	cellular process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032559	adenyl ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0035639	purine ribonucleoside triphosphate binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0030554	adenyl nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032555	purine ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032553	ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0097367	carbohydrate derivative binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0017076	purine nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0043168	anion binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0000166	nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:1901265	nucleoside phosphate binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0036094	small molecule binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016740	transferase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0043167	ion binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:1901363	heterocyclic compound binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0097159	organic cyclic compound binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0005488	binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0003824	catalytic activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0004672	protein kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0016310	phosphorylation
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006796	phosphate-containing compound metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016301	kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006793	phosphorus metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0044237	cellular metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0140096	catalytic activity, acting on a protein
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0008152	metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0005524	ATP binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0009987	cellular process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032559	adenyl ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0035639	purine ribonucleoside triphosphate binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0030554	adenyl nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032555	purine ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0032553	ribonucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0097367	carbohydrate derivative binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0017076	purine nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0043168	anion binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0000166	nucleotide binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:1901265	nucleoside phosphate binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0036094	small molecule binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016740	transferase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0043167	ion binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:1901363	heterocyclic compound binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0097159	organic cyclic compound binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0005488	binding
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0003824	catalytic activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0004712	protein serine/threonine/tyrosine kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016301	kinase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0016310	phosphorylation
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006796	phosphate-containing compound metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0006793	phosphorus metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0016740	transferase activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0044237	cellular metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	MF	GO:0003824	catalytic activity
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0008152	metabolic process
+QA02-1009_k31_TRINITY_DN7344_c0_g2_i23	BP	GO:0009987	cellular process
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	MF	GO:0022857	transmembrane transporter activity
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	BP	GO:0055085	transmembrane transport
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	CC	GO:0016020	membrane
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	MF	GO:0005215	transporter activity
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	BP	GO:0006810	transport
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	CC	GO:0110165	cellular anatomical entity
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	BP	GO:0051234	establishment of localization
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	BP	GO:0051179	localization
+KQ08-2850_k31_TRINITY_DN5082_c0_g2_i8	BP	GO:0009987	cellular process
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0005783	endoplasmic reticulum
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	BP	GO:0016192	vesicle-mediated transport
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0012505	endomembrane system
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	BP	GO:0006810	transport
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0016020	membrane
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	BP	GO:0051234	establishment of localization
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0043231	intracellular membrane-bounded organelle
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	BP	GO:0051179	localization
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0043227	membrane-bounded organelle
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	BP	GO:0009987	cellular process
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0005737	cytoplasm
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0043229	intracellular organelle
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0043226	organelle
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0005622	intracellular anatomical structure
+KQ08-2850_k25_TRINITY_DN42549_c0_g1_i3	CC	GO:0110165	cellular anatomical entity
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0006541	glutamine metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	MF	GO:0016740	transferase activity
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	CC	GO:0016020	membrane
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0009064	glutamine family amino acid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	MF	GO:0003824	catalytic activity
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	CC	GO:0110165	cellular anatomical entity
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:1901605	alpha-amino acid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0006520	amino acid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0019752	carboxylic acid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0043436	oxoacid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0006082	organic acid metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0044281	small molecule metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:1901564	organonitrogen compound metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0006807	nitrogen compound metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0044238	primary metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0044237	cellular metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0071704	organic substance metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0008152	metabolic process
+KQB08-32953_k25_TRINITY_DN6909_c0_g1_i2	BP	GO:0009987	cellular process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0004672	protein kinase activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0016310	phosphorylation
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	CC	GO:0016020	membrane
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0006796	phosphate-containing compound metabolic process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	CC	GO:0110165	cellular anatomical entity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0016301	kinase activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0006793	phosphorus metabolic process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0044237	cellular metabolic process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0140096	catalytic activity, acting on a protein
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0008152	metabolic process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0005524	ATP binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	BP	GO:0009987	cellular process
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0032559	adenyl ribonucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0035639	purine ribonucleoside triphosphate binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0030554	adenyl nucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0032555	purine ribonucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0032553	ribonucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0097367	carbohydrate derivative binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0017076	purine nucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0004674	protein serine/threonine kinase activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0016740	transferase activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0043168	anion binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0000166	nucleotide binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:1901265	nucleoside phosphate binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0036094	small molecule binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0004713	protein tyrosine kinase activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0043167	ion binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:1901363	heterocyclic compound binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0097159	organic cyclic compound binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0005488	binding
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0003824	catalytic activity
+MT11-610_k31_TRINITY_DN8104_c0_g1_i5	MF	GO:0030246	carbohydrate binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0004386	helicase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0005634	nucleus
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003724	RNA helicase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043231	intracellular membrane-bounded organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0008186	ATP-dependent activity, acting on RNA
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043227	membrane-bounded organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140657	ATP-dependent activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043229	intracellular organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043226	organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140098	catalytic activity, acting on RNA
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0005622	intracellular anatomical structure
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0005524	ATP binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0110165	cellular anatomical entity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0032559	adenyl ribonucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0035639	purine ribonucleoside triphosphate binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0030554	adenyl nucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0032555	purine ribonucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0032553	ribonucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0097367	carbohydrate derivative binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0017076	purine nucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0043168	anion binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0000166	nucleotide binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:1901265	nucleoside phosphate binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0036094	small molecule binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016787	hydrolase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0043167	ion binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:1901363	heterocyclic compound binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0097159	organic cyclic compound binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003824	catalytic activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003676	nucleic acid binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0005488	binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003723	RNA binding
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003724	RNA helicase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0009536	plastid
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0008186	ATP-dependent activity, acting on RNA
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043231	intracellular membrane-bounded organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0004386	helicase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043227	membrane-bounded organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140657	ATP-dependent activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0005737	cytoplasm
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140098	catalytic activity, acting on RNA
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043229	intracellular organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0043226	organelle
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0003824	catalytic activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0005622	intracellular anatomical structure
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016887	ATP hydrolysis activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0016020	membrane
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0017111	ribonucleoside triphosphate phosphatase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	CC	GO:0110165	cellular anatomical entity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016462	pyrophosphatase activity
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016818	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016817	hydrolase activity, acting on acid anhydrides
+QBYN04-26041_k31_TRINITY_DN19129_c1_g1_i1	MF	GO:0016787	hydrolase activity
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0003824	catalytic activity
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006281	DNA repair
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0004519	endonuclease activity
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006974	DNA damage response
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0004518	nuclease activity
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0033554	cellular response to stress
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006950	response to stress
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0016788	hydrolase activity, acting on ester bonds
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006259	DNA metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0003677	DNA binding
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0051716	cellular response to stimulus
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0016787	hydrolase activity
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0050896	response to stimulus
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0003676	nucleic acid binding
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0090304	nucleic acid metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:1901363	heterocyclic compound binding
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006139	nucleobase-containing compound metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0097159	organic cyclic compound binding
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006725	cellular aromatic compound metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	MF	GO:0005488	binding
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0046483	heterocycle metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:1901360	organic cyclic compound metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0034641	cellular nitrogen compound metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0043170	macromolecule metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0006807	nitrogen compound metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0044238	primary metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0044237	cellular metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0071704	organic substance metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0008152	metabolic process
+ROC20_k31_TRINITY_DN29353_c0_g1_i3	BP	GO:0009987	cellular process
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0006865	amino acid transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0005886	plasma membrane
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0015179	L-amino acid transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0046942	carboxylic acid transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0071944	cell periphery
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0015171	amino acid transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0015849	organic acid transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0005774	vacuolar membrane
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0046943	carboxylic acid transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0015711	organic anion transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0005773	vacuole
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0005342	organic acid transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0071705	nitrogen compound transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0008514	organic anion transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0098588	bounding membrane of organelle
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0071702	organic substance transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0016020	membrane
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0022857	transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0006810	transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0031090	organelle membrane
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0005215	transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0051234	establishment of localization
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0043231	intracellular membrane-bounded organelle
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0015293	symporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0051179	localization
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0043227	membrane-bounded organelle
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0015291	secondary active transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:1902475	L-alpha-amino acid transmembrane transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0005737	cytoplasm
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	MF	GO:0022804	active transmembrane transporter activity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0015807	L-amino acid transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0043229	intracellular organelle
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0003333	amino acid transmembrane transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0043226	organelle
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:1905039	carboxylic acid transmembrane transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0005622	intracellular anatomical structure
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:1903825	organic acid transmembrane transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	CC	GO:0110165	cellular anatomical entity
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0055085	transmembrane transport
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009734	auxin-activated signaling pathway
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0071365	cellular response to auxin stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009733	response to auxin
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009755	hormone-mediated signaling pathway
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0032870	cellular response to hormone stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009725	response to hormone
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0071495	cellular response to endogenous stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009719	response to endogenous stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0071310	cellular response to organic substance
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0010033	response to organic substance
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0070887	cellular response to chemical stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0042221	response to chemical
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0007165	signal transduction
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0023052	signaling
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0007154	cell communication
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0051716	cellular response to stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0050896	response to stimulus
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0050794	regulation of cellular process
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0050789	regulation of biological process
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0065007	biological regulation
+F1-Bulk-2_k25_TRINITY_DN2580_c0_g1_i3	BP	GO:0009987	cellular process
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	MF	GO:0016301	kinase activity
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0016310	phosphorylation
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	CC	GO:0016020	membrane
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0006796	phosphate-containing compound metabolic process
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	CC	GO:0110165	cellular anatomical entity
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0006793	phosphorus metabolic process
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	MF	GO:0016740	transferase activity
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0044237	cellular metabolic process
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	MF	GO:0003824	catalytic activity
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0008152	metabolic process
+GT96-167_k31_TRINITY_DN1431_c0_g1_i14	BP	GO:0009987	cellular process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0005509	calcium ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0016310	phosphorylation
+Q241_k25_TRINITY_DN1809_c0_g2_i1	CC	GO:0016020	membrane
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0046872	metal ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0006796	phosphate-containing compound metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	CC	GO:0110165	cellular anatomical entity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0043169	cation binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0006793	phosphorus metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0043167	ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0044237	cellular metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0005488	binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0008152	metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016301	kinase activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0009987	cellular process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0004672	protein kinase activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0140096	catalytic activity, acting on a protein
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016740	transferase activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0005524	ATP binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0032559	adenyl ribonucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0035639	purine ribonucleoside triphosphate binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0030554	adenyl nucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0032555	purine ribonucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0032553	ribonucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0097367	carbohydrate derivative binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0017076	purine nucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0043168	anion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0000166	nucleotide binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:1901265	nucleoside phosphate binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0036094	small molecule binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:1901363	heterocyclic compound binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0097159	organic cyclic compound binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0003824	catalytic activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0005509	calcium ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0016310	phosphorylation
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0046872	metal ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0006796	phosphate-containing compound metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0043169	cation binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0006793	phosphorus metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016301	kinase activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0044237	cellular metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0043167	ion binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0008152	metabolic process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+Q241_k25_TRINITY_DN1809_c0_g2_i1	BP	GO:0009987	cellular process
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0016740	transferase activity
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0005488	binding
+Q241_k25_TRINITY_DN1809_c0_g2_i1	MF	GO:0003824	catalytic activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0004843	cysteine-type deubiquitinase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0101005	deubiquitinase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0019783	ubiquitin-like protein peptidase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0008234	cysteine-type peptidase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0008233	peptidase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0140096	catalytic activity, acting on a protein
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0016787	hydrolase activity
+GXU-34140_k25_TRINITY_DN12423_c1_g1_i2	MF	GO:0003824	catalytic activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0102500	beta-maltose 4-alpha-glucanotransferase activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	BP	GO:0005975	carbohydrate metabolic process
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0004134	4-alpha-glucanotransferase activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	BP	GO:0044238	primary metabolic process
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0016758	hexosyltransferase activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	BP	GO:0071704	organic substance metabolic process
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0016757	glycosyltransferase activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	BP	GO:0008152	metabolic process
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0016740	transferase activity
+KQ08-2850_k25_TRINITY_DN2910_c0_g1_i6	MF	GO:0003824	catalytic activity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	MF	GO:0004124	cysteine synthase activity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006535	cysteine biosynthetic process from serine
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	CC	GO:0005737	cytoplasm
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0019344	cysteine biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	MF	GO:0016765	transferase activity, transferring alkyl or aryl (other than methyl) groups
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	CC	GO:0005622	intracellular anatomical structure
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006563	L-serine metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	MF	GO:0016740	transferase activity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	CC	GO:0016020	membrane
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006534	cysteine metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	MF	GO:0003824	catalytic activity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	CC	GO:0110165	cellular anatomical entity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0009070	serine family amino acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	MF	GO:0016829	lyase activity
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0000097	sulfur amino acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0000096	sulfur amino acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0009069	serine family amino acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044272	sulfur compound biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006790	sulfur compound metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:1901607	alpha-amino acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0008652	amino acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:1901605	alpha-amino acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0046394	carboxylic acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0016053	organic acid biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006520	amino acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044283	small molecule biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0019752	carboxylic acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0043436	oxoacid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006082	organic acid metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044281	small molecule metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:1901566	organonitrogen compound biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:1901564	organonitrogen compound metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044249	cellular biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:1901576	organic substance biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0009058	biosynthetic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0006807	nitrogen compound metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044238	primary metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0044237	cellular metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0071704	organic substance metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0008152	metabolic process
+KQB07-24739_k31_TRINITY_DN631_c0_g1_i1	BP	GO:0009987	cellular process
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006606	protein import into nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005634	nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	MF	GO:0031267	small GTPase binding
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051170	import into nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	MF	GO:0051020	GTPase binding
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0034504	protein localization to nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	MF	GO:0019899	enzyme binding
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043227	membrane-bounded organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006913	nucleocytoplasmic transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005737	cytoplasm
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	MF	GO:0005515	protein binding
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051169	nuclear transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043229	intracellular organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	MF	GO:0005488	binding
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0072594	establishment of protein localization to organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043226	organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0033365	protein localization to organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005622	intracellular anatomical structure
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006886	intracellular protein transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0110165	cellular anatomical entity
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0046907	intracellular transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051649	establishment of localization in cell
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0015031	protein transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0045184	establishment of protein localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0008104	protein localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0070727	cellular macromolecule localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051641	cellular localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0033036	macromolecule localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0071705	nitrogen compound transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0071702	organic substance transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006810	transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051234	establishment of localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051179	localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0009987	cellular process
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006606	protein import into nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005634	nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051170	import into nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043231	intracellular membrane-bounded organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0034504	protein localization to nucleus
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043227	membrane-bounded organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006913	nucleocytoplasmic transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005737	cytoplasm
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051169	nuclear transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043229	intracellular organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0072594	establishment of protein localization to organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0043226	organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0033365	protein localization to organelle
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0005622	intracellular anatomical structure
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006886	intracellular protein transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	CC	GO:0110165	cellular anatomical entity
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0046907	intracellular transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051649	establishment of localization in cell
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0015031	protein transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0045184	establishment of protein localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0008104	protein localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0070727	cellular macromolecule localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051641	cellular localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0033036	macromolecule localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0071705	nitrogen compound transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0071702	organic substance transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0006810	transport
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051234	establishment of localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0051179	localization
+KQB07-24739_k31_TRINITY_DN1514_c1_g1_i9	BP	GO:0009987	cellular process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0032549	ribonucleoside binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:0000428	DNA-directed RNA polymerase complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0006351	DNA-templated transcription
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0001882	nucleoside binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:0030880	RNA polymerase complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0032774	RNA biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0003899	DNA-directed 5'-3' RNA polymerase activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:0061695	transferase complex, transferring phosphorus-containing groups
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0034654	nucleobase-containing compound biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0034062	5'-3' RNA polymerase activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:1990234	transferase complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0016070	RNA metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0097747	RNA polymerase activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:0140535	intracellular protein-containing complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0019438	aromatic compound biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0016779	nucleotidyltransferase activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:1902494	catalytic complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0018130	heterocycle biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0140098	catalytic activity, acting on RNA
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:1901362	organic cyclic compound biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	CC	GO:0032991	protein-containing complex
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0140640	catalytic activity, acting on a nucleic acid
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0090304	nucleic acid metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0010467	gene expression
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0003677	DNA binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0006139	nucleobase-containing compound metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0097367	carbohydrate derivative binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0044271	cellular nitrogen compound biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0046872	metal ion binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0009059	macromolecule biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0043169	cation binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0006725	cellular aromatic compound metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0036094	small molecule binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0046483	heterocycle metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0016740	transferase activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:1901360	organic cyclic compound metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0003676	nucleic acid binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0034641	cellular nitrogen compound metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0043167	ion binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0043170	macromolecule metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0044249	cellular biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:1901363	heterocyclic compound binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:1901576	organic substance biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0097159	organic cyclic compound binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0009058	biosynthetic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0005488	binding
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0006807	nitrogen compound metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	MF	GO:0003824	catalytic activity
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0044238	primary metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0044237	cellular metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0071704	organic substance metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0008152	metabolic process
+QC02-402_k25_TRINITY_DN563_c0_g1_i12	BP	GO:0009987	cellular process
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0031011	Ino80 complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0097346	INO80-type complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0070603	SWI/SNF superfamily-type complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0000228	nuclear chromosome
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0000785	chromatin
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0032993	protein-DNA complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:1904949	ATPase complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0031981	nuclear lumen
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0005694	chromosome
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0140513	nuclear protein-containing complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0070013	intracellular organelle lumen
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043233	organelle lumen
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0031974	membrane-enclosed lumen
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:1902494	catalytic complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0005634	nucleus
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0032991	protein-containing complex
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043231	intracellular membrane-bounded organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043227	membrane-bounded organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043232	intracellular non-membrane-bounded organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043228	non-membrane-bounded organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043229	intracellular organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0043226	organelle
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0005622	intracellular anatomical structure
+MS6847_k31_TRINITY_DN13478_c0_g1_i4	CC	GO:0110165	cellular anatomical entity
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	MF	GO:0016301	kinase activity
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0016310	phosphorylation
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0006796	phosphate-containing compound metabolic process
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0006793	phosphorus metabolic process
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	MF	GO:0016740	transferase activity
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0044237	cellular metabolic process
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	MF	GO:0003824	catalytic activity
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0008152	metabolic process
+MS6847_k25_TRINITY_DN7665_c0_g2_i9	BP	GO:0009987	cellular process
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0003993	acid phosphatase activity
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	BP	GO:0006950	response to stress
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	CC	GO:0016020	membrane
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0016791	phosphatase activity
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	BP	GO:0050896	response to stimulus
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	CC	GO:0110165	cellular anatomical entity
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0042578	phosphoric ester hydrolase activity
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0016788	hydrolase activity, acting on ester bonds
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0046872	metal ion binding
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0043169	cation binding
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0016787	hydrolase activity
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0043167	ion binding
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0005488	binding
+RB72454_k25_TRINITY_DN2345_c0_g1_i20	MF	GO:0003824	catalytic activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0004672	protein kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0016310	phosphorylation
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0016020	membrane
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006796	phosphate-containing compound metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0005886	plasma membrane
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016301	kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006793	phosphorus metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0071944	cell periphery
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044237	cellular metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0110165	cellular anatomical entity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0140096	catalytic activity, acting on a protein
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0008152	metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0005524	ATP binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009755	hormone-mediated signaling pathway
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032559	adenyl ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0032870	cellular response to hormone stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0035639	purine ribonucleoside triphosphate binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009725	response to hormone
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0030554	adenyl nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0071495	cellular response to endogenous stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032555	purine ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009719	response to endogenous stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032553	ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0071310	cellular response to organic substance
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0097367	carbohydrate derivative binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0010033	response to organic substance
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0017076	purine nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009987	cellular process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0004674	protein serine/threonine kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0070887	cellular response to chemical stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0043168	anion binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0042221	response to chemical
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0000166	nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050832	defense response to fungus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:1901265	nucleoside phosphate binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009620	response to fungus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0036094	small molecule binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050896	response to stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016740	transferase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0007165	signal transduction
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0043167	ion binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0023052	signaling
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:1901363	heterocyclic compound binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0007154	cell communication
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0097159	organic cyclic compound binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051716	cellular response to stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0005488	binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0098542	defense response to other organism
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0003824	catalytic activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006952	defense response
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0038023	signaling receptor activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050794	regulation of cellular process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0060089	molecular transducer activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051707	response to other organism
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0043207	response to external biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0004407	histone deacetylase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009607	response to biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0033558	protein lysine deacetylase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050789	regulation of biological process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0019213	deacetylase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0065007	biological regulation
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0140993	histone modifying activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009605	response to external stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016811	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044419	biological process involved in interspecies interaction between organisms
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016810	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006950	response to stress
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016787	hydrolase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006338	chromatin remodeling
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006325	chromatin organization
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0071824	protein-DNA complex organization
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0043933	protein-containing complex organization
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0016043	cellular component organization
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0071840	cellular component organization or biogenesis
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0004672	protein kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0016310	phosphorylation
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0016020	membrane
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006796	phosphate-containing compound metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0005886	plasma membrane
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016301	kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006793	phosphorus metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0071944	cell periphery
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044237	cellular metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	CC	GO:0110165	cellular anatomical entity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0140096	catalytic activity, acting on a protein
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0008152	metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0005524	ATP binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050832	defense response to fungus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032559	adenyl ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009620	response to fungus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0035639	purine ribonucleoside triphosphate binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009987	cellular process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0030554	adenyl nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0098542	defense response to other organism
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032555	purine ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006952	defense response
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032553	ribonucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051707	response to other organism
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0097367	carbohydrate derivative binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0043207	response to external biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0017076	purine nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009607	response to biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0043168	anion binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009605	response to external stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0000166	nucleotide binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044419	biological process involved in interspecies interaction between organisms
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:1901265	nucleoside phosphate binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006950	response to stress
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016740	transferase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050896	response to stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0036094	small molecule binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006357	regulation of transcription by RNA polymerase II
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0004674	protein serine/threonine kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006355	regulation of DNA-templated transcription
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0043167	ion binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:2001141	regulation of RNA biosynthetic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:1901363	heterocyclic compound binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051252	regulation of RNA metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0097159	organic cyclic compound binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0019219	regulation of nucleobase-containing compound metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0005488	binding
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051171	regulation of nitrogen compound metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0003824	catalytic activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0080090	regulation of primary metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0032440	2-alkenal reductase [NAD(P)+] activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0010468	regulation of gene expression
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0008353	RNA polymerase II CTD heptapeptide repeat kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0010556	regulation of macromolecule biosynthetic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0140994	RNA polymerase II CTD heptapeptide repeat modifying activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0031326	regulation of cellular biosynthetic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016628	oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009889	regulation of biosynthetic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016627	oxidoreductase activity, acting on the CH-CH group of donors
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0060255	regulation of macromolecule metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0031323	regulation of cellular metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016491	oxidoreductase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0019222	regulation of metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050794	regulation of cellular process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050789	regulation of biological process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0065007	biological regulation
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016301	kinase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0016310	phosphorylation
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006796	phosphate-containing compound metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006793	phosphorus metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0016740	transferase activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006952	defense response
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	MF	GO:0003824	catalytic activity
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0051707	response to other organism
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0043207	response to external biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009607	response to biotic stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009605	response to external stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044419	biological process involved in interspecies interaction between organisms
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0006950	response to stress
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0050896	response to stimulus
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0044237	cellular metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0008152	metabolic process
+ROC22_k31_TRINITY_DN15810_c0_g3_i4	BP	GO:0009987	cellular process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0005509	calcium ion binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0016310	phosphorylation
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0005634	nucleus
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0004672	protein kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0006796	phosphate-containing compound metabolic process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0005737	cytoplasm
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0016773	phosphotransferase activity, alcohol group as acceptor
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0006793	phosphorus metabolic process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0043231	intracellular membrane-bounded organelle
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0010857	calcium-dependent protein kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0035556	intracellular signal transduction
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0043227	membrane-bounded organelle
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0016301	kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0044237	cellular metabolic process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0005622	intracellular anatomical structure
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0016772	transferase activity, transferring phosphorus-containing groups
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0007165	signal transduction
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0043229	intracellular organelle
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0140096	catalytic activity, acting on a protein
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0023052	signaling
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0043226	organelle
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0005524	ATP binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0007154	cell communication
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	CC	GO:0110165	cellular anatomical entity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0032559	adenyl ribonucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0051716	cellular response to stimulus
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0035639	purine ribonucleoside triphosphate binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0050896	response to stimulus
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0030554	adenyl nucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0008152	metabolic process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0032555	purine ribonucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0050794	regulation of cellular process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0032553	ribonucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0050789	regulation of biological process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0097367	carbohydrate derivative binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0065007	biological regulation
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0017076	purine nucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	BP	GO:0009987	cellular process
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0046872	metal ion binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0043169	cation binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0043168	anion binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0000166	nucleotide binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:1901265	nucleoside phosphate binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0009931	calcium-dependent protein serine/threonine kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0036094	small molecule binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0016740	transferase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0004683	calmodulin-dependent protein kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0005516	calmodulin binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0004674	protein serine/threonine kinase activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0043167	ion binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:1901363	heterocyclic compound binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0097159	organic cyclic compound binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0005515	protein binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0005488	binding
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0003824	catalytic activity
+ROC22_k25_TRINITY_DN4697_c0_g1_i1	MF	GO:0106310	protein serine kinase activity
