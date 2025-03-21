@@ -1,0 +1,9 @@
+Here we run bbduk to filterout rRNA, adapters (see folder ../data/) 
+forcetrimleft=11: This forces the removal of exactly 11 bases from the beginning (left end) of each read, regardless of the quality scores
+forcetrimright2=3: In paired-end mode, this forces the removal of exactly 3 bases from the right end of the second read (read 2)
+minlength=80: After trimming, any read shorter than 80 bases will be discarded
+trimq=20: Bases with a quality score lower than 20 will be trimmed off during the quality-based trimming process
+tpe=t: If one read of a pair is trimmed, this option forces the mate to be trimmed to the same length, keeping the lenght of paired reads
+tbo=t: This enables "trim by overlap," which uses the overlapping region between paired-end reads to more accurately remove adapter contamination.
+
+in results/plots/ there are the scripts to make report tables and plots	
