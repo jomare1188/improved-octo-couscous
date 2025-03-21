@@ -1,0 +1,2 @@
+in panzzer directory we assing GO terms to peptides corresponding to transcripts with longest cds per orthogroup
+go_enrichment directory has the code and the results to make go enrcihment test given a list of ids (ids of differential expressed genes up or down in different contrasts), these id lists came from ../RNAseq/ directory
