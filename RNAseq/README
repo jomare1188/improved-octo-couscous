@@ -1,0 +1,6 @@
+in code directory 
+preliminaranalysis.r: plot raw vst transcformed data and check the grouping of the samples correspond to main variation factors of experiment
+RemoveUnwantedVariation.r: try RUVr (k=1), RUVs (k=1) and RUVg (EC = 1000, k=1)
+make_DEA_by_groups.r: make differential expression analysis with DESEQ2 for two given contrasts (lfcThreshold= 1, altHypothesis="greaterAbs"), there is a separate directory for each contrasts, returns differentially genes, raw counts, vst counts and metadata for that each analysis.
+make_stack_plots.r: based on make_DEA_by_groups.r makes ids lists of down and up regulated genes for each contrasts and makes a stacked plot for the given contrasts to show the amount of genes up and downregulated in each contrasts.
+
