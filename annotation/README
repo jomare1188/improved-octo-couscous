@@ -1,0 +1,5 @@
+Here we run blastn for protein coding transcripts of sugarcane pantranscriptome against sorghum (Phytozome: Sorghum bicolor v5.1), Maize (Phythozome: Zea mays RefGen_V4) and Arabidopsis(Phythozome Arabidopsis thaliana Araport11)
+In the blast we used -max_target_seqs 1 -max_hsps, therefor, for each query sequence, BLAST provides only the single best matching sequence from the database and only its best alignment segment. code/run_BLAST.sh
+Then parse and merge the blasts results in one table using code/merge_tables.r results/sugarcane_sorghum_maize_arabidopsis.csv
+
+
