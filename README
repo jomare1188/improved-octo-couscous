@@ -1,16 +1,16 @@
-## Repository with DOLORES RNAseq analysis
-#
-# In short: the code here preproccess data (fastqc-bbduk), quanify (salmon), annotate (pannzer and blast), Differential expression analysis, GO functional erichment and venn diagrams.
-#
-# each directory has a small README describing what is there
-#
-# The data used is located in RAWDATA/ that was the initial data provided by DOLORES
-# RAWDATA2 and RAWDATA3 are unused
-#
+# Repository with DOLORES RNAseq analysis
+
+In short: the code here preproccess data (fastqc-bbduk), quanify (salmon), annotate (pannzer and blast), Differential expression analysis, GO functional erichment and venn diagrams.
+
+each directory has a small README describing what is there
+
+The data used is located in RAWDATA/ that was the initial data provided by DOLORES
+RAWDATA2 and RAWDATA3 are unused
+
 # pipeline
-# pre_FastQC -> pre_multiqc -> bbduk -> post_FastQC -> post_multiqc -> quant_test
-#
-# The results from quant_test shows that longest_transcript performed very similary to protein_coding and all_transcripts, mapping almost all our sequences in the smallest set
-# We choose longest_transcript
-#
-# In RNAseq directory we found scripts for RNAseq pipeline (see RNAseq README.MD)
+pre_FastQC -> pre_multiqc -> bbduk -> post_FastQC -> post_multiqc -> quant_test
+
+The results from quant_test shows that longest_transcript performed very similary to protein_coding and all_transcripts, mapping almost all our sequences in the smallest set
+We choose longest_transcript
+
+In RNAseq directory we found scripts for RNAseq pipeline (see RNAseq README.MD)
