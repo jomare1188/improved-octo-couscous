@@ -1,7 +1,0 @@
-Files	Genotype	State	Treatment	Replicate	Sample	Group
-1	FIDH15000_S27	5000	Tillering	Drought	1	5T_D_1	5_T_D
-2	FIDH25000_S28	5000	Tillering	Drought	2	5T_D_2	5_T_D
-3	FIDH35000_S29	5000	Tillering	Drought	3	5T_D_3	5_T_D
-4	F25C1_S6	5000	Maturation	Watered	1	5M_W_1	5_M_W
-5	F25C2_S7	5000	Maturation	Watered	2	5M_W_2	5_M_W
-6	F25C3_S8	5000	Maturation	Watered	3	5M_W_3	5_M_W
