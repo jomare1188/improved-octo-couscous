@@ -1,78 +1,87 @@
-wd = "/Storage/data1/jorge.munoz/DOLORES/RNAseq/code"
-outdir = "/Storage/data1/jorge.munoz/DOLORES/RNAseq/results"
-libraries = "/Storage/data1/jorge.munoz/NRGSC.new/libraries"
+# RNA-seq Preliminary Analysis Script
+# DOLORES Project
+# Author: Your Name
 
-# set working directory
-setwd(wd)
-# make results dir
-dir.create(outdir)
-## load libraries 
+# Setup -------------------------------------------------------------------
 
-library(readr, lib.loc =  libraries)
-library(dplyr, lib.loc =  libraries)
-library(magrittr,  lib.loc = libraries)
-library(tximport, lib.loc = libraries)
-library(DESeq2, lib.loc = libraries)
-library(ggplot2, lib.loc =  libraries)
-library(hexbin, lib.loc =  libraries)
-library(EDASeq, lib.loc =  libraries)
-library(RUVSeq, lib.loc =  libraries)
+## Variables
+cores <- 5
+outdir <- "../results/PCA/"  # Define your output directory
 
-metadata="../data/metadata.csv"
-tx2gen2="../data/tx2gen.csv"
+# Create results directory
+dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
 
-plot_pca_deseq <- function(data, shape, title, name, path) {
-a <- plotPCA(data, intgroup = name) +
-theme_bw() +
-geom_point(size=4.5, aes( shape = shape))+
-scale_shape_manual(values = seq(0,8)) +
-labs(title = title, col= name, shape = "Group") +
-theme( text = element_text(size=22),
-panel.border = element_blank(),
-panel.grid.major = element_blank(),
-panel.grid.minor = element_blank(),
-plot.title = element_text(hjust = 0.5),
-axis.line = element_line(colour = "black") )
-ggsave( a, filename = path ,units = "cm",width = 15*1.3, height = 15*1.4,dpi = 320)
-return(a)
-}
+## Load libraries
+library(tximport)
+library(DESeq2)
+library(tidyverse)
+library(BiocParallel)
+library(wesanderson)
+library(tibble)
+library(ggrepel)
+library(RUVSeq)
 
+# Set up parallel environment
+register(MulticoreParam(cores))
 
-sample_table <-read.table(metadata, sep = ",", header = T)
-tx2gene = read.table(tx2gen2, sep = ",", col.names =c("transid","geneid"))
+# Source custom functions
+source("pca_functions.r")
 
-sample_files = paste0("/Storage/data1/jorge.munoz/DOLORES/quant_test/longest_transcript_orthogroup/results/", pull(sample_table, "Files"), "/quant.sf")
-# filter by groups
-# sample_files = paste0("/Storage/data1/jorge.munoz/NRGSC/", pull(filter , "Sample_file"), "/quant.sf")
-# name table columns
-names(sample_files) = pull(sample_table, "Files")
-count_data = tximport( files = sample_files,
-        type = "salmon",
-        tx2gene =  tx2gene,
-        ignoreTxVersion = F)
+# File paths
+metadata <- "../data/ALL_meta_data_dolores.csv"
+tx2gen2 <- "../data/tx2gen_longest.csv"
 
-sample_table$Treatment <- as.factor((sample_table$Treatment))
-sample_table$Genotype <- as.factor((sample_table$Genotype))
-sample_table$State <- as.factor((sample_table$State))
-sample_table$Replicate <- as.factor((sample_table$Replicate))
-sample_table$Sample <- as.factor((sample_table$Sample))
-sample_table$Group <- as.factor((sample_table$Group))
+# Data Import and Processing ----------------------------------------------
+
+# Load metadata and gene mapping
+sample_table <- read.table(metadata, sep = ",", header = TRUE) %>%
+  filter(Exist == "YES")
+
+tx2gene <- read.table(tx2gen2, sep = ",", col.names = c("transid", "geneid"))
+
+# Prepare file paths for salmon quantification files
+sample_files <- paste0("/Storage/data1/jorge.munoz/DOLORES/nf/R2C/results/9_salmonQuant/",
+                       pull(sample_table, "Sample"), "/quant.sf")
+names(sample_files) <- pull(sample_table, "Sample")
+
+# Import count data using tximport
+count_data <- tximport(files = sample_files,
+                       type = "salmon",
+                       tx2gene = tx2gene,
+                       ignoreTxVersion = FALSE)
+
+# Prepare sample metadata
+sample_table$Treatment <- as.factor(sample_table$Treatment)
+sample_table$Genotype <- as.factor(sample_table$Genotype)
+sample_table$Group <- as.factor(sample_table$Group)
+sample_table$Generation <- as.factor(sample_table$Generation)
+sample_table$Tissue <- as.factor(sample_table$Tissue)
+
+# DESeq2 Analysis ---------------------------------------------------------
 
 raw <- DESeqDataSetFromTximport(txi = count_data,
-        colData = sample_table,
-        design = ~ Genotype)
+                                colData = sample_table,
+                                design = ~ Group)
 
-dim(raw)
+# Quality control: filter genes with low expression
+cat("Original dimensions:", dim(raw), "\n")
+temp <- as.data.frame(counts(raw))
+logic <- apply(temp, c(1, 2), function(x) {x > 0})
+filter_genes <- rowSums(logic) > 5
+fi <- raw[filter_genes, ]
+cat("Filtered dimensions:", dim(fi), "\n")
+rm(temp)  # Clean up memory
 
-# RUVg 
+
+# RUVg ---------------------------------------------------------------------
 EC = 1000
-dea <- DESeq(raw)
+dea <- DESeq(fi)
 
 results_table <- as.data.frame(results(dea))
 filtered_results_table <- results_table %>% filter(padj < 0.05 ) %>% arrange(abs(log2FoldChange))
 
 empirical_control <- rownames(head(filtered_results_table), EC)
-RUVgSet <- RUVg(as.matrix(assay(raw)), empirical_control, k = 1)
+RUVgSet <- RUVg(as.matrix(assay(fi)), empirical_control, k = 1)
 dataRUVg<- DESeqDataSetFromMatrix(countData = RUVgSet$normalizedCounts,
                                  colData = sample_table,
                                  design = ~ Genotype)
@@ -80,25 +89,59 @@ dataRUVg<- DESeqDataSetFromMatrix(countData = RUVgSet$normalizedCounts,
 dataRUVg <- estimateSizeFactors(dataRUVg)
 RUVg_vst <- vst(dataRUVg)
 
-plot_pca_deseq(data = RUVg_vst, shape = RUVg_vst$Group, title = "RUVg PCA Genotype~Group", name = "Genotype", path = "../results/RUVg_Genotype-Group.png")
+# plot PCAs with all samples together
+plot_pca_deseq_custom(data = RUVg_vst, 
+                      title = "PCA Genotype - Group - Treatment",
+                      grouping_vars = c("Group", "Genotype", "Treatment"),
+		      n_top = 500,
+                      color_var = "Group",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/RUVg_Genotype-Group-Treatment.png")
 
-## RUVs
+plot_pca_deseq_custom(data = RUVg_vst, 
+                      title = "PCA Generation - Treatment - Genotype",
+                      grouping_vars = c("Generation", "Treatment", "Genotype"),
+		      n_top = 500,
+                      color_var = "Treatment",
+                      shape_var = "Generation",
+		      size_var = "Genotype",
+                      path = "../results/PCA/RUVg_Treatment-Generation-Genotype.png")
+
+## RUVs --------------------------------------------------------------------------
 
 differences <- makeGroups(sample_table$Group)
-genes <- row.names(raw)
-setRUVs <- RUVs(as.matrix(assay(raw)), genes, k=1, differences)
+genes <- row.names(fi)
+setRUVs <- RUVs(as.matrix(assay(fi)), genes, k=1, differences)
 dataRUVs <- DESeqDataSetFromMatrix(countData = setRUVs$normalizedCounts,
                                   colData = sample_table,
                                   design = ~ Group)
 dataRUVs <- estimateSizeFactors(dataRUVs)
 RUVs_vst <- vst(dataRUVs)
 
-plot_pca_deseq(data = RUVs_vst, shape = RUVs_vst$Group, title = "RUVs PCA Genotype~Group", name = "Genotype", path = "../results/RUVs_Genotype-Group.png")
+# plot PCAs with all samples together
+plot_pca_deseq_custom(data = RUVs_vst, 
+                      title = "PCA Genotype - Group - Treatment",
+                      grouping_vars = c("Group", "Genotype", "Treatment"),
+		      n_top = 500,
+                      color_var = "Group",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/RUVs_Genotype-Group-Treatment.png")
 
-# RUVr residuals
+plot_pca_deseq_custom(data = RUVs_vst, 
+                      title = "PCA Generation - Treatment - Genotype",
+                      grouping_vars = c("Generation", "Treatment", "Genotype"),
+		      n_top = 500,
+                      color_var = "Treatment",
+                      shape_var = "Generation",
+		      size_var = "Genotype",
+                      path = "../results/PCA/RUVs_Treatment-Generation-Genotype.png")
+
+# RUVr residuals --------------------------------------------------------------------
 
 design <- model.matrix(~sample_table$Group)
-y <- DGEList(counts=counts(raw), group=sample_table$Group)
+y <- DGEList(counts=counts(fi), group=sample_table$Group)
 keep <- filterByExpr(y)
 y <- y[keep, , keep.lib.sizes=FALSE]
 y <- calcNormFactors(y, method="upperquartile")
@@ -107,11 +150,36 @@ y <- estimateGLMTagwiseDisp(y, design)
 fit <- glmFit(y, design)
 res <- residuals(fit, type="deviance")
 
-set_RUVr <- RUVr(y$counts,rownames(y), k=1, res)
-dataRUVr <- DESeqDataSetFromMatrix(countData = set_RUVr$normalizedCounts,
-                                   colData = sample_table,
-                                   design = ~ Group)
+# Loop several k values
 
-RUVr_vst <- varianceStabilizingTransformation(dataRUVr)
-plot_pca_deseq(data = RUVr_vst, shape = RUVr_vst$Group, title = "RUVr PCA Genotype~Group", name = "Genotype", path = "../results/RUVr_Genotype-Group.png")
+for (i in 1:6) {
+  # Create RUVr set with current k value
+  set_RUVr <- RUVr(y$counts, rownames(y), k=i, res)
 
+  # Create DESeq dataset
+  dataRUVr <- DESeqDataSetFromMatrix(countData = set_RUVr$normalizedCounts,
+                                     colData = sample_table,
+                                     design = ~ Group)
+
+  # Apply variance stabilizing transformation
+  RUVr_vst <- varianceStabilizingTransformation(dataRUVr)
+
+  # Generate PCA plot with k value in filename
+  plot_pca_deseq_custom(data = RUVr_vst,
+	         title = paste0("PCA Generation - Treatment - Genotype", " k = ", i),
+		 grouping_vars = c("Generation", "Treatment", "Genotype"),
+		 n_top = 500,
+		 color_var = "Treatment",
+		 shape_var = "Generation",
+                 size_var = "Genotype",
+                 path = paste0("../results/PCA/RUVr_Treatment-Generation-Genotype_k", i, ".png"))
+
+  plot_pca_deseq_custom(data = RUVr_vst,
+                 title = paste0("PCA Genotype - Group - Treatment", " k = ", i),
+		 grouping_vars = c("Genotype", "Group",  "Treatment"),
+		 n_top = 500,
+		 color_var = "Group",
+		 shape_var = "Treatment",
+                 size_var = "Genotype",
+                 path = paste0("../results/PCA/RUVr_Genotype-Group-Treatment_k", i, ".png"))
+}

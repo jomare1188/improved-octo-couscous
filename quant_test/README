@@ -1,7 +1,0 @@
-Here we made a quantification test for three references 
-
-1) all pantranscriptome transcripts
-2) protein coding transcripts
-3) transcript of longest cds per orthogroup
-
-in pretty_results directory we summarize all the test in one table and make plots

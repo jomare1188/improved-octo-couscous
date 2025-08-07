@@ -1,47 +1,22 @@
 ## variables
-wd = "/Storage/data1/jorge.munoz/DOLORES/RNAseq/code"
-outdir = "/Storage/data1/jorge.munoz/DOLORES/RNAseq/code"
-libraries = "/Storage/data1/jorge.munoz/NRGSC.new/libraries"
-cores = 15
-# set working directory
-setwd(wd)
+cores = 5
 # make results dir
 dir.create(outdir)
 ## load libraries 
-library(tximport, lib.loc = libraries)
-library(DESeq2, lib.loc = libraries)
-library(backports, lib.loc = libraries)
-library(tidyverse, lib.loc = libraries)
-library(BiocParallel, lib.loc = libraries)
-library(wesanderson, lib.loc = libraries)
-library(tibble, lib.loc = libraries)
-library(ggrepel, lib.loc = libraries)
+library(tximport)
+library(DESeq2)
+library(tidyverse)
+library(BiocParallel)
+library(wesanderson)
+library(tibble)
+library(ggrepel)
 # parallel envirorment
 register(MulticoreParam(cores))
-# define fuction to make DEA analysis in DESeq2
-metadata="../data/metadata.csv"
-tx2gen2="../data/tx2gen.csv"
-
-## FUNCTION TO PLOT PCA USING PLOT PCA FUCTION FROM DESEQ
-
-plot_pca_deseq <- function(data, shape, title, name, path) {
-a <- plotPCA(data, intgroup = name) +
-theme_bw() +
-geom_point(size=4.5, aes( shape = shape))+
-scale_shape_manual(values = seq(0,8)) +
-labs(title = title, col= name, shape = "Group") +
-theme( text = element_text(size=22),
-panel.border = element_blank(),
-panel.grid.major = element_blank(),
-panel.grid.minor = element_blank(),
-plot.title = element_text(hjust = 0.5),
-axis.line = element_line(colour = "black") )
-ggsave( a, filename = path ,units = "cm",width = 15*1.3, height = 15,dpi = 320)
-return(a)
-}
+metadata="../data/ALL_meta_data_dolores.csv"
+tx2gen2="../data/tx2gen_longest.csv"
 
 
-## FUNCTION TO PLOT PCA
+## Function to plot PCA from raw R
 plot_pca <- function(data, color, shape, title, var, file, lab_color){
 ggplot(df, aes(x=PC1, y=PC2, colour = color, shape = shape)) +
 geom_point(size = 4.5) +
@@ -60,28 +35,105 @@ theme( text = element_text(size=20),
 ggsave(filename = file ,units = "cm", width = 25, height = 25,dpi = 320)
 }
 
+# Alternative version that lets you specify which variables map to which aesthetics using deseq2 function plotPCA
+plot_pca_deseq_custom <- function(data, title, grouping_vars, n_top, path,
+                                  color_var = NULL, shape_var = NULL,
+                                  size_var = NULL) {
+
+  pca_data <- plotPCA(data, intgroup = grouping_vars, returnData = TRUE, ntop = n_top)
+  percentVar <- round(100 * attr(pca_data, "percentVar"))
+
+  # Create aesthetic mapping
+  aes_mapping <- aes(PC1, PC2)
+
+  if (!is.null(color_var) && color_var %in% grouping_vars) {
+    aes_mapping$colour <- sym(color_var)
+    aes_mapping$fill <- sym(color_var)
+  }
+
+  if (!is.null(shape_var) && shape_var %in% grouping_vars) {
+    aes_mapping$shape <- sym(shape_var)
+  }
+
+  if (!is.null(size_var) && size_var %in% grouping_vars) {
+    aes_mapping$size <- sym(size_var)
+  }
+
+  # Base plot with dynamic aesthetics
+  p <- ggplot(pca_data, aes_mapping) +
+    theme_bw() +
+    labs(title = title,
+         x = paste0("PC1: ", percentVar[1], "% variance"),
+         y = paste0("PC2: ", percentVar[2], "% variance")) +
+    theme(text = element_text(size = 22),
+          panel.border = element_blank(),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5),
+          axis.line = element_line(colour = "black"))
+
+  # Add geom_point with conditional size
+  if (!is.null(size_var) && size_var %in% grouping_vars) {
+    p <- p + geom_point(stroke = 1)  # No fixed size when using size aesthetic
+  } else {
+    p <- p + geom_point(size = 4.5, stroke = 1)  # Fixed size when not using size aesthetic
+  }
+
+  # Add labels and scales
+  if (!is.null(color_var) && color_var %in% grouping_vars) {
+    p <- p + labs(color = color_var) +
+      guides(fill = "none")
+  }
+
+  if (!is.null(shape_var) && shape_var %in% grouping_vars) {
+    p <- p + labs(shape = shape_var) +
+      scale_shape_manual(values = c(21, 22, 23, 24, 25, 8))
+  }
+
+  if (!is.null(size_var) && size_var %in% grouping_vars) {
+    p <- p + labs(size = size_var) +
+      scale_size_manual(values = c(4, 6))  # Customize sizes for better differentiation
+  }
+
+  # Save plot
+  ggsave(plot = p, filename = path, units = "cm",
+         width = 15*2, height = 15*2, dpi = 320)
+
+  return(p)
+}
+
 #dir.create(paste0(outdir, group1, "_vs_", group2))
-sample_table <-read.table(metadata, sep = ",", header = T)
+sample_table <-read.table(metadata, sep = ",", header = T) %>% filter(Exist == "YES")
 tx2gene = read.table(tx2gen2, sep = ",", col.names =c("transid","geneid"))
 
 #filter <- sample_table %>% filter( Group == group1 | Group == group2 )
 # all files
-sample_files = paste0("/Storage/data1/jorge.munoz/DOLORES/quant_test/longest_transcript_orthogroup/results/", pull(sample_table, "Files"), "/quant.sf")
+sample_files = paste0("/Storage/data1/jorge.munoz/DOLORES/nf/R2C/results/9_salmonQuant/", pull(sample_table, "Sample"), "/quant.sf")
 # filter by groups
 # sample_files = paste0("/Storage/data1/jorge.munoz/NRGSC/", pull(filter , "Sample_file"), "/quant.sf")
 # name table columns
-names(sample_files) = pull(sample_table, "Files")
-count_data = tximport( files = sample_files,
-	type = "salmon",
-        tx2gene =  tx2gene,
-        ignoreTxVersion = F)
+
+names(sample_files) = pull(sample_table, "Sample")
+count_data = tximport( files = sample_files, type = "salmon", tx2gene =  tx2gene, ignoreTxVersion = F)
         
+# Extract TPM counts from tximport object
+tpm_counts <- count_data$abundance
+
+
+# Write TPM counts table
+write.table(tpm_counts, "../results/PCA/tpm_counts.csv", col.names = T, row.names = T, sep = ",", quote = F)
+
+
 sample_table$Treatment <- as.factor((sample_table$Treatment))
 sample_table$Genotype <- as.factor((sample_table$Genotype))
-sample_table$State <- as.factor((sample_table$State))
-sample_table$Replicate <- as.factor((sample_table$Replicate))
-sample_table$Sample <- as.factor((sample_table$Sample))
+#sample_table$Phenological_stage <- as.factor((sample_table$State))
+#sample_table$Repetition <- as.factor((sample_table$Replicate))
+#sample_table$Sample <- as.factor((sample_table$Sample))
 sample_table$Group <- as.factor((sample_table$Group))
+sample_table$Generation <- as.factor((sample_table$Generation))
+sample_table$Tissue <- as.factor((sample_table$Tissue))
+
+
 
 raw <- DESeqDataSetFromTximport(txi = count_data,
 	colData = sample_table,
@@ -91,90 +143,89 @@ raw <- DESeqDataSetFromTximport(txi = count_data,
 dim(raw)
 temp <- as.data.frame(counts(raw))
 logic <-(apply(temp,c(1,2), function(x){x>0}))
-filter_genes <- rowSums(logic)>2
+filter_genes <- rowSums(logic)>5
 fi <- raw[filter_genes,]
 dim(fi)
 temp <- NULL
+
 # normalize using vst transformation
 vst <- vst(fi)
 df <- assay(raw)
+
 # Write raw counts table
 write.table(df, "../results/PCA/raw_counts.csv", col.names = T, row.names = T, sep = ",", quote = F)
-##################################################################
-##################### MakePCA ####################################
-##################################################################
 
-vst.pca <- prcomp(x = t(assay(vst)), scale = TRUE)
-var_explained <- vst.pca$sdev^2/sum(vst.pca$sdev^2)
+# Write tmp counts
+tpm_filtered <- tpm_counts[filter_genes,]
+write.table(tpm_filtered, "../results/PCA/tpm_counts_filtered.csv", col.names = T, row.names = T, sep = ",", quote = F)
+write.table(tpm_counts, "../results/PCA/tpm_counts_raw.csv", col.names = T, row.names = T, sep = ",", quote = F)
 
-df <- vst.pca$x %>%  as.data.frame
-rownames(df) <- sample_table$sample
-df <- df %>% mutate("Genotype" = as.factor(sample_table$Genotype))
-df <- df %>% mutate("Group" = as.factor(sample_table$Group))
-df <- df %>% mutate("Sample" = as.factor(sample_table$Sample))
-df <- df %>% mutate("Treatment" = as.factor(sample_table$Treatment))
-df <- df %>% mutate("State" = as.factor(sample_table$State))
+# filter vst matrices for each batch 
+vst_mothers <- vst(fi[, fi$Tissue == "Bud"])
+vst_sons <- vst(fi[, fi$Tissue == "Leaf"])
 
-# PLOT PCA 
-plot_pca(file = "../results/PCA_vst_Genotype-Group.png", data = df, color = df$Genotype , shape = df$Group, title = "PCA Genotype~Group", var = var_explained, lab_color = "Genotype")
-plot_pca(file = "../results/PCA_vst_Sample-Group.png", data = df, color = df$Sample , shape = df$Group, title = "PCA Sample~Group", var = var_explained, lab_color = "Sample")
-plot_pca(file = "../results/PCA_vst_Treatment-Group.png", data = df, color = df$Treatment , shape = df$Group, title = "PCA Treatment~Group", var = var_explained, lab_color = "Treatment")
-plot_pca(file = "../results/PCA_vst_State-Group.png", data = df, color = df$State , shape = df$Group, title = "PCA State~Group", var = var_explained, lab_color = "State")
+# write vst matrices for each batch
+write.table(assay(vst_mothers), "../results/PCA/vst_mothers.csv", col.names = T, row.names = T, sep = ",", quote = F)
+write.table(assay(vst_sons), "../results/PCA/vst_sons.csv", col.names = T, row.names = T, sep = ",", quote = F)
 
-##################################################################
-##################### make aggregated PCA ########################
-##################################################################
 
-# get mean of replicates
-G5M_D <- as.data.frame(assay(raw)) %>% select("21DH5_S21", "22DH5_S22", "23DH5_S23") %>% rowMeans() %>% as.data.frame()
-colnames(G5M_D) <- "G5M_D"
 
-G8M_D <- as.data.frame(assay(raw)) %>% select("21DH8_S24", "22DH8_S25", "23DH8_S26" ) %>% rowMeans() %>% as.data.frame()
-colnames(G8M_D) <- "G8M_D"
+# plot PCAs with all samples together
+plot_pca_deseq_custom(data = vst, 
+                      title = "PCA Genotype - Group - Treatment",
+                      grouping_vars = c("Group", "Genotype", "Treatment"),
+		      n_top = 500,
+                      color_var = "Group",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/DESEQ_PCA_vst_Genotype-Group-Treatment.png")
 
-G5T_D <- as.data.frame(assay(raw)) %>% select("FIDH15000_S27", "FIDH25000_S28", "FIDH35000_S29" ) %>% rowMeans() %>% as.data.frame()
-colnames(G5T_D) <- "G5T_D"
+plot_pca_deseq_custom(data = vst, 
+                      title = "PCA Generation - Treatment - Genotype",
+                      grouping_vars = c("Generation", "Treatment", "Genotype"),
+		      n_top = 500,
+                      color_var = "Treatment",
+                      shape_var = "Generation",
+		      size_var = "Genotype",
+                      path = "../results/PCA/DESEQ_PCA_vst_Treatment-Generation-Genotype.png")
 
-G8T_D <- as.data.frame(assay(raw)) %>% select("FIDH1800_S30", "FIDH28000_S31", "FIDH38000_S32" ) %>% rowMeans() %>% as.data.frame()
-colnames(G8T_D) <- "G8T_D"
+# plot PCAs for each batch of experiments (mothers and sons)
+# mothers
+plot_pca_deseq_custom(data = vst_mothers, 
+                      title = "PCA Genotype - Group - Treatment",
+                      grouping_vars = c("Group", "Genotype", "Treatment"),
+		      n_top = 500,
+                      color_var = "Group",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/mothers_DESEQ_PCA_vst_Genotype-Group-Treatment.png")
 
-G5M_W <- as.data.frame(assay(raw)) %>% select("F25C1_S6", "F25C2_S7", "F25C3_S8" ) %>% rowMeans() %>% as.data.frame()
-colnames(G5M_W) <- "G5M_W"
+plot_pca_deseq_custom(data = vst_mothers, 
+                      title = "PCA Phenological stage - Treatment - Genotype",
+                      grouping_vars = c("Phenological_stage", "Treatment", "Genotype"),
+		      n_top = 500,
+                      color_var = "Treatment",
+                      shape_var = "Phenological_stage",
+		      size_var = "Genotype",
+                      path = "../results/PCA/mothers_DESEQ_PCA_vst_Treatment-Phenological_stage-Genotype.png")
 
-G8M_W <- as.data.frame(assay(raw)) %>% select("F28C1_S9", "F28C2_S10", "F28C3_S11" ) %>% rowMeans() %>% as.data.frame()
-colnames(G8M_W) <- "G8M_W"
-# make new matrix
-aggregated <- cbind(G5M_D, G8M_D, G5T_D, G8T_D, G5M_W, G8M_W)
+# sons 
+plot_pca_deseq_custom(data = vst_sons, 
+                      title = "PCA Genotype - Group - Treatment",
+                      grouping_vars = c("Group", "Genotype", "Treatment"),
+		      n_top = 500,
+                      color_var = "Group",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/sons_DESEQ_PCA_vst_Genotype-Group-Treatment.png")
 
-# write aggregated raw matrix
-write.table(aggregated, "../results/PCA/raw_aggragated_counts.csv", col.names = T, row.names = T, sep = ",", quote = F)
+plot_pca_deseq_custom(data = vst_sons, 
+                      title = "PCA Generation - Treatment - Genotype",
+                      grouping_vars = c("Generation", "Treatment", "Genotype"),
+		      n_top = 500,
+                      color_var = "Generation",
+                      shape_var = "Treatment",
+		      size_var = "Genotype",
+                      path = "../results/PCA/sons_DESEQ_PCA_vst_Generation-Treatment-Genotype.png")
 
-#temp <- as.data.frame(counts(aggregated))
-logic <-(apply(aggregated,c(1,2), function(x){x>0}))
-filter_genes <- rowSums(logic)>1
-fi <- round(as.matrix(aggregated[filter_genes,]))
-dim(fi)
-# normalize using vst transformation
-vst <- vst(fi)
 
-# PCA
-vst.pca <- prcomp(x = t(vst))
-var_explained <- vst.pca$sdev^2/sum(vst.pca$sdev^2)
-df <- vst.pca$x %>%  as.data.frame
-
-#rownames(df) <- sample_table$sample
-df <- df %>% mutate("Genotype" = as.factor(c("5000", "8008", "5000", "8008", "5000", "8008")))
-df <- df %>% mutate("Group" = as.factor(c("G5M_D", "G8M_D", "G5T_D", "G8T_D", "G5M_W", "G8M_W")))
-df <- df %>% mutate("Treatment" = as.factor(c("Drought", "Drought", "Drought", "Drought", "Watered", "Watered")))
-df <- df %>% mutate("State" = as.factor(c("Maturation", "Maturation", "Tillering", "Tillering", "Maturation", "Maturation")))
-
-#PLOT PCA
-plot_pca(file = "../results/Agreggated_PCA_vst_Genotype-Group.png", data = df, color = df$Genotype , shape = df$Group, title = "PCA Genotype~Group", var = var_explained, lab_color = "Genotype")
-plot_pca(file = "../results/Agreggated_PCA_vst_Treatment-Group.png", data = df, color = df$Treatment , shape = df$Group, title = "PCA Treatment~Group", var = var_explained, lab_color = "Treatment")
-plot_pca(file = "../results/Agreggated_PCA_vst_State-Group.png", data = df, color = df$State , shape = df$Group, title = "PCA State~Group", var = var_explained, lab_color = "State")
-
-# PLOT PCA USING DESEQ FUNCTION
-plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Genotype~Group", name = "Genotype", path = "../results/DESEQ_PCA_vst_Genotype-Group.png")
-plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA State~Group", name = "State", path = "../results/DESEQ_PCA_vst_State-Group.png")
-plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Treatment~Group", name = "Treatment", path = "../results/DESEQ_PCA_vst_Treatment-Group.png")
-plot_pca_deseq(data = vst, shape = vst$Group, title = "PCA Sample~Group", name = "Sample", path = "../results/DESEQ_PCA_vst_Sample-Group.png")
