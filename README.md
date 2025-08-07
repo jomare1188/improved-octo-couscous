@@ -6,7 +6,7 @@ Three-month-old sugarcane seedlings of genotypes **IACSP95-5000** (productive ma
 
 ## Treatment Groups
 
-At five months of age (from transplant date), plants were divided into three experimental groups per genotype (total of six groups) (Fig. 1):
+At five months of age (from transplant date), plants were divided into three experimental groups per genotype (total of six groups).
 
 ### a) W (Well-watered)
 - **Treatment**: Maintained under daily irrigation
@@ -30,8 +30,9 @@ At five months of age (from transplant date), plants were divided into three exp
 
 This experimental design allows for the evaluation of genotype-specific responses to drought stress at two different developmental stages in sugarcane.
 
-![Drought cycle 1](figs/dry_cycle_2.png)
-*Figure 1. Schematic showing drought cycles in two sugarcane genotypes (IACCTC08-8008 and IACSP95-5000) and in two phenological phases (tillering and maturation). W (control), plants maintained with irrigation throughout the experiment; T, plants subjected to three drought cycles (D1, D2, D3) during the tillering phase; M, plants subjected to three drought cycles (D1, D2, D3) during the maturation phase. Green arrows indicate leaf sample (NOT AVAIABLE) collection and red arrows indicate bud collection. (AVAIABLE)*
+![Drought cycle 1](figs/dry_cycle_1.png)
+
+*Figure 1. Schematic showing drought cycles in two sugarcane genotypes (IACCTC08-8008 and IACSP95-5000) and in two phenological phases (tillering and maturation). W (control), plants maintained with irrigation throughout the experiment; T, plants subjected to three drought cycles (D1, D2, D3) during the tillering phase; M, plants subjected to three drought cycles (D1, D2, D3) during the maturation phase. Green arrows indicate leaf sample (NOT AVAIABLE) collection and red arrows indicate bud collection (AVAIABLE)*
 
 # Propagule Experiment
 
@@ -39,7 +40,7 @@ At the end of the experiment, stem cuttings were collected and new seedlings wer
 
 Three-month-old sugarcane seedlings of genotypes IACSP95-5000 and IACCTC07-8008 obtained through vegetative propagation from groups W, T and M were transplanted into 12 L pots containing red-yellow latosol and fertilized. Cultivation was carried out in a greenhouse with daily irrigation.
 
-At two months of age (from transplant), plants were divided and drought treatment was initiated in both genotypes (total of 12 groups) (Fig. 2):
+At two months of age (from transplant), plants were divided and drought treatment was initiated in both genotypes (total of 12 groups):
 
 ## Treatment Groups
 
@@ -74,6 +75,7 @@ At two months of age (from transplant), plants were divided and drought treatmen
 **Recovery period**: Plants re-irrigated after the cycle completion (**6 days** recovery)
 
 ![Drought cycle 2](figs/dry_cycle_2.png)
+
 *Figure 2. Experimental scheme of sugarcane propagules from two genotypes (IACCTC08-8008 and IACSP95-5000) subjected to one drought cycle. Green arrows indicate leaf sample collection for transcriptomic analysis*
 
 
