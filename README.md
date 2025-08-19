@@ -186,7 +186,12 @@ Reads were then cleaned with **BBDuk**, using the SILVA and Rfam databases to re
 - `tpe=t` → trims both reads in a pair equally.  
 - `tbo=t` → trims adapters based on pair overlap.  
 
-![Data cleaning](figs/FASTQC.pdf)
+![Data cleaning](figs/FASTQC.png)
+Fastqc stats. A) Before bbduk. B) After bbduk
+
+The absence of adapters and the red color in per base sequence content column in B. suggest possible contamination in all libraries.
+ 
+
 
 
 
