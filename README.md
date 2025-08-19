@@ -80,7 +80,11 @@ At two months of age (from transplant), plants were divided and drought treatmen
 
 # So, what do we have?
 
-According to the to the experimental desgin description in the first experiment we should have 6 groups and 18 samples (3 biological replicates for each group), and for the second experiment 12 groups and 36 samples. In total we have 18/18 samples for the first experiment and 33/36 samples for the second. (17/18 groups and 51/54 samples). This is strange because the original metadata table (references to original pdf) suggest in total 26 groups and 78 samples. Follows the table crossing the files information and metadata information.
+According to the to description of the experimental desgin, in the first experiment we should have 6 groups and 18 samples (1 sample = 1 biological replicate, 3 samples compose one group).
+For the second experiment we should have 12 groups and 36 samples. In total we have 18/18 samples for the first experiment and 33/36 samples for the second. (17/18 groups and 51/54 samples). This is strange
+because the original metadata table ([experimental desing](Esquema_experimental_RNAseq.pdf)) suggest in total 26 groups and 78 samples.
+
+Follows the table crossing the information frmom the fastq files and metadata provided information, where "Generation " Mt = Mother tillering, Mm = Mother maturing, Fw = Son watered, Fm = Son maturing, Ft = Son tillering, G1 = first experiment, W = watered, D, D1 and D3 = dry periods, the column "Exist" tells if there is a file for that sample. In Phenological_stage "A" denotes the second experiment.
 
 
 | Sample | Genotype | Generation | Treatment | Repetition | Group | Tissue | Exist | Phenological_stage |
@@ -163,4 +167,25 @@ According to the to the experimental desgin description in the first experiment 
 | F28C1_S9 | 8008 | G1 | W | 1 | 8008_Maturation_W | Bud | YES | Maturation |
 | F28C2_S10 | 8008 | G1 | W | 2 | 8008_Maturation_W | Bud | YES | Maturation |
 | F28C3_S11 | 8008 | G1 | W | 3 | 8008_Maturation_W | Bud | YES | Maturation |
+
+# Results
+
+We can divide our analysis in three steps: data cleaning, preliminary analysis and analysis.
+
+## Data cleaning
+
+We assessed the quality of the raw sequencing data using **FastQC**, and summarized the results across all samples with **MultiQC**.  
+
+Reads were then cleaned with **BBDuk**, using the SILVA and Rfam databases to remove rRNA contamination. The following parameters were applied:  
+
+- `forcetrimleft=11` → removes the first 11 bases from the 5′ end.  
+- `forcetrimright2=3` → removes 3 bases from the 3′ end.  
+- `minlength=80` → discards reads shorter than 80 bp after trimming.  
+- `qtrim=w` → trims both ends of the read based on quality.  
+- `trimq=20` → sets the quality threshold for trimming (Phred score 20).  
+- `tpe=t` → trims both reads in a pair equally.  
+- `tbo=t` → trims adapters based on pair overlap.  
+
+([Data cleaning](images/FASTQC.pdf)) 
+
 
