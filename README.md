@@ -186,6 +186,7 @@ Reads were then cleaned with **BBDuk**, using the SILVA and Rfam databases to re
 - `tpe=t` → trims both reads in a pair equally.  
 - `tbo=t` → trims adapters based on pair overlap.  
 
-([Data cleaning](images/FASTQC.pdf)) 
+![Data cleaning](figs/FASTQC.pdf)
+
 
 
