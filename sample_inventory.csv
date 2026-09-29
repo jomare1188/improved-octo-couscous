@@ -1,0 +1,79 @@
+sample,sheet_sample,sheet_id,experiment,tissue,genotype,phase_or_mother_phase,treatment,drought_cycle,replicate_in_sheet,readme_group,sheet_status,in_RAWDATA,source,lines_R1,reads_R1,size_GB_R1,notes
+F25C1_S6,F25C1_S6_R1_001.fastq.gz,5_C_01,Exp1_mother,Bud,5000,,C,,1,5000_Maturation_W,blue: we have files,YES,RAWDATA (original),61072692,15268173,,
+F25C2_S7,F25C2_S7_R1_001.fastq.gz,5_C_02,Exp1_mother,Bud,5000,,C,,2,5000_Maturation_W,blue: we have files,YES,RAWDATA (original),39676104,9919026,0.521,
+F25C3_S8,F25C3_S8_R1_001.fastq.gz,5_C_03,Exp1_mother,Bud,5000,,C,,3,5000_Maturation_W,blue: we have files,YES,RAWDATA (original),71526276,17881569,0.932,
+FIDH15000_S27,FIDH15000_S27_R1_001.fastq.gz,5_T_D_01,Exp1_mother,Bud,5000,Tillering,D,,1,5000_Tillering_D,blue: we have files,YES,RAWDATA (original),78276652,19569163,1.048,
+FIDH25000_S28,FIDH25000_S28_R1_001.fastq.gz,5_T_D_02,Exp1_mother,Bud,5000,Tillering,D,,2,5000_Tillering_D,blue: we have files,YES,RAWDATA (original),66742276,16685569,0.895,
+FIDH35000_S29,FIDH35000_S29_R1_001.fastq.gz,5_T_D_03,Exp1_mother,Bud,5000,Tillering,D,,3,5000_Tillering_D,blue: we have files,YES,RAWDATA (original),44937548,11234387,0.599,
+21DH5_S21,21DH5_S21_R1_001.fastq.gz,5_M_D_01,Exp1_mother,Bud,5000,Maturation,D,,1,5000_Maturation_D,blue: we have files,YES,RAWDATA (original),88015604,22003901,1.171,
+22DH5_S22,22DH5_S22_R1_001.fastq.gz,5_M_D_02,Exp1_mother,Bud,5000,Maturation,D,,2,5000_Maturation_D,blue: we have files,YES,RAWDATA (original),62204676,15551169,0.835,
+23DH5_S23,23DH5_S23_R1_001.fastq.gz,5_M_D_03,Exp1_mother,Bud,5000,Maturation,D,,3,5000_Maturation_D,blue: we have files,YES,RAWDATA (original),52865284,13216321,0.698,
+F28C1_S9,F28C1_S9_R1_001.fastq.gz,8_C_01,Exp1_mother,Bud,8008,,C,,1,8008_Maturation_W,blue: we have files,YES,RAWDATA (original),82713180,20678295,1.07,
+F28C2_S10,F28C2_S10_R1_001.fastq.gz,8_C_02,Exp1_mother,Bud,8008,,C,,2,8008_Maturation_W,blue: we have files,YES,RAWDATA (original),78238092,19559523,1.008,
+F28C3_S11,F28C3_S11_R1_001.fastq.gz,8_C_03,Exp1_mother,Bud,8008,,C,,3,8008_Maturation_W,blue: we have files,YES,RAWDATA (original),63760192,15940048,0.833,
+FIDH1800_S30,FIDH1800_S30_R1_001.fastq.gz,8_T_D_01,Exp1_mother,Bud,8008,Tillering,D,,1,8008_Tillering_D,blue: we have files,YES,RAWDATA (original),76323796,19080949,1.021,
+FIDH28000_S31,FIDH28000_S31_R1_001.fastq.gz,8_T_D_02,Exp1_mother,Bud,8008,Tillering,D,,2,8008_Tillering_D,blue: we have files,YES,RAWDATA (original),86169052,21542263,1.154,
+FIDH38000_S32,FIDH38000_S32_R1_001.fastq.gz,8_T_D_03,Exp1_mother,Bud,8008,Tillering,D,,3,8008_Tillering_D,blue: we have files,YES,RAWDATA (original),33193984,8298496,0.425,
+21DH8_S24,21DH8_S24_R1_001.fastq.gz,8_M_D_01,Exp1_mother,Bud,8008,Maturation,D,,1,8008_Maturation_D,blue: we have files,YES,RAWDATA (original),43400124,10850031,0.574,
+22DH8_S25,22DH8_S25_R1_001.fastq.gz,8_M_D_02,Exp1_mother,Bud,8008,Maturation,D,,2,8008_Maturation_D,blue: we have files,YES,RAWDATA (original),60210772,15052693,0.802,
+23DH8_S26,23DH8_S26_R1_001.fastq.gz,8_M_D_03,Exp1_mother,Bud,8008,Maturation,D,,3,8008_Maturation_D,blue: we have files,YES,RAWDATA (original),49640032,12410008,0.652,
+Dolores_249_S3,Dolores_249_S3_R1_001.fastq.gz,5_T_C_01,Exp1_mother,Leaf,5000,Tillering,C,,1,5000_Mt_W,blue: we have files,YES,RAWDATA (original),19741560,4935390,0.377,
+250_S2,250_S2_R1_001.fastq.gz,5_T_C_02,Exp1_mother,Leaf,5000,Tillering,C,,2,5000_Mt_W,pink: exists but held by someone else,YES,RAWDATA (original),85833740,21458435,1.211,pink in sheet but files are in RAWDATA
+251_S3,251_S3_R1_001.fastq.gz,5_T_C_03,Exp1_mother,Leaf,5000,Tillering,C,,3,5000_Mt_W,blue: we have files,YES,RAWDATA (original),78497032,19624258,1.094,
+157_S12,157_S12_R1_001.fastq.gz,5_T_D1_02,Exp1_mother,Leaf,5000,Tillering,D,1,2,5000_Mt_D1,blue: we have files,YES,RAWDATA (original),41676240,10419060,0.585,duplicate replicate ID in sheet (one is probably _01)
+D158_S48,D158_S48_R1_001.fastq.gz,5_T_D1_02,Exp1_mother,Leaf,5000,Tillering,D,1,2,5000_Mt_D1,blue: we have files,YES,Google Drive (transcriptome_3) 2026-09-29,37573540,9393385,0.573,duplicate replicate ID in sheet (one is probably _01)
+159_S5,159_S5_R1_001.fastq.gz,5_T_D1_03,Exp1_mother,Leaf,5000,Tillering,D,1,3,5000_Mt_D1,blue: we have files,YES,Google Drive (transcriptome_3) 2026-09-29,55676240,13919060,0.684,R2 has 100000 fewer reads than R1 (55276240 vs 55676240 lines): pair out of sync
+221_S19,221_S19_R1_001.fastq.gz,5_T_D3_02,Exp1_mother,Leaf,5000,Tillering,D,3,2,5000_Mt_D3,pink: exists but held by someone else,YES,RAWDATA (original),26903152,6725788,0.293,duplicate replicate ID in sheet (one is probably _01); pink in sheet but files are in RAWDATA
+222_S6,222_S6_R1_001.fastq.gz,5_T_D3_02,Exp1_mother,Leaf,5000,Tillering,D,3,2,5000_Mt_D3,blue: we have files,YES,Google Drive (transcriptome_3) 2026-09-29,73624708,18406177,0.977,duplicate replicate ID in sheet (one is probably _01)
+223_S42,223_S42_R1_001.fastq.gz,5_T_D3_03,Exp1_mother,Leaf,5000,Tillering,D,3,3,5000_Mt_D3,blue: we have files,YES,RAWDATA (original),49756104,12439026,0.548,
+156_S22,156_S22_R1_001.fastq.gz,5_M_C_R1,Exp1_mother,Leaf,5000,Maturation,C,,1,5000_Mm_W,blue: we have files,YES,RAWDATA (original),37453384,9363346,0.421,
+154_S28,154_S28_R1_001.fastq.gz,5_M_C_R2,Exp1_mother,Leaf,5000,Maturation,C,,2,5000_Mm_W,blue: we have files,YES,RAWDATA (original),17462592,4365648,0.195,
+155_S11,155_S11_R1_001.fastq.gz,5_M_C_R3,Exp1_mother,Leaf,5000,Maturation,C,,3,5000_Mm_W,blue: we have files,YES,RAWDATA (original),46636360,11659090,0.659,
+253_S41,253_S41_R1_001.fastq.gz,5_M_D1_01,Exp1_mother,Leaf,5000,Maturation,D,1,1,5000_Mm_D1,blue: we have files,YES,RAWDATA (original),60120592,15030148,0.782,
+254_S7,254_S7_R1_001.fastq.gz,5_M_D1_02,Exp1_mother,Leaf,5000,Maturation,D,1,2,5000_Mm_D1,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,45852024,11463006,0.617,
+255_S8,255_S8_R1_001.fastq.gz,5_M_D1_03,Exp1_mother,Leaf,5000,Maturation,D,1,3,5000_Mm_D1,blue: we have files,YES,Google Drive (transcriptome_3) 2026-09-29,52876240,13219060,0.651,
+9_S15,9_S15_R1_001.fastq.gz,5_M_D3_01,Exp1_mother,Leaf,5000,Maturation,D,3,1,5000_Mm_D3,blue: we have files,YES,Google Drive (transcriptome_1) 2026-09-29,77229556,19307389,0.952,sheet lists R1 file twice (R2 row mislabeled)
+10_S16,10_S16_R1_001.fastq.gz,5_M_D3_02,Exp1_mother,Leaf,5000,Maturation,D,3,2,5000_Mm_D3,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,59186852,14796713,0.783,
+11_S1,11_S1_R1_001.fastq.gz,5_M_D3_03,Exp1_mother,Leaf,5000,Maturation,D,3,3,5000_Mm_D3,blue: we have files,YES,RAWDATA (original),42029556,10507389,0.578,
+Dolores_257_S5,Dolores_257_S5_R1_001.fastq.gz,8_T_C_01,Exp1_mother,Leaf,8008,Tillering,C,,1,8008_Mt_W,blue: we have files,YES,RAWDATA (original),38007300,9501825,0.699,
+258_S5,258_S5_R1_001.fastq.gz,8_T_C_02,Exp1_mother,Leaf,8008,Tillering,C,,2,8008_Mt_W,blue: we have files,YES,RAWDATA (original),57208988,14302247,0.820,
+Dolores_259_S6,Dolores_259_S6_R1_001.fastq.gz,8_T_C_03,Exp1_mother,Leaf,8008,Tillering,C,,3,8008_Mt_W,pink: exists but held by someone else,YES,RAWDATA (original),128418408,32104602,2369,sheet size 2369 GB is a typo (~2.4 GB); pink in sheet but files are in RAWDATA
+165_a_S40,165_a_S40_R1_001.fastq.gz,8_T_D1_02,Exp1_mother,Leaf,8008,Tillering,D,1,2,8008_Mt_D1,blue: we have files,YES,RAWDATA (original),45158960,11289740,0.586,duplicate replicate ID in sheet (one is probably _01)
+166_S23,166_S23_R1_001.fastq.gz,8_T_D1_02,Exp1_mother,Leaf,8008,Tillering,D,1,2,8008_Mt_D1,blue: we have files,YES,RAWDATA (original),46144808,11536202,0.510,duplicate replicate ID in sheet (one is probably _01)
+168_S25,168_S25_R1_001.fastq.gz,8_T_D1_03,Exp1_mother,Leaf,8008,Tillering,D,1,3,8008_Mt_D1,blue: we have files,YES,RAWDATA (original),30092080,7523020,0.401,
+230_S15,230_S15_R1_001.fastq.gz,8_T_D3_02,Exp1_mother,Leaf,8008,Tillering,D,3,2,8008_Mt_D3,blue: we have files,YES,RAWDATA (original),37901416,9475354,0.421,duplicate replicate ID in sheet (one is probably _01)
+D231_D46,D231_D46_R1_001.fastq.gz,8_T_D3_02,Exp1_mother,Leaf,8008,Tillering,D,3,2,8008_Mt_D3,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,28306340,7076585,0.384,duplicate replicate ID in sheet (one is probably _01)
+232_S8,232_S8_R1_001.fastq.gz,8_T_D3_03,Exp1_mother,Leaf,8008,Tillering,D,3,3,8008_Mt_D3,blue: we have files,YES,RAWDATA (original),30794468,7698617,0.426,
+161_S13,161_S13_R1_001.fastq.gz,8_M_C_R1,Exp1_mother,Leaf,8008,Maturation,C,,1,8008_Mm_W,blue: we have files,YES,RAWDATA (original),43749388,10937347,0.489,
+162_S20,162_S20_R1_001.fastq.gz,8_M_C_R2,Exp1_mother,Leaf,8008,Maturation,C,,2,8008_Mm_W,blue: we have files,YES,RAWDATA (original),39931672,9982918,0.534,
+163_S7,163_S7_R1_001.fastq.gz,8_M_C_R3,Exp1_mother,Leaf,8008,Maturation,C,,3,8008_Mm_W,blue: we have files,YES,RAWDATA (original),34644776,8661194,0.481,
+261_S9,261_S9_R1_001.fastq.gz,8_M_D1_01,Exp1_mother,Leaf,8008,Maturation,D,1,1,8008_Mm_D1,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,57208988,14302.247,0.712,same line count as 258_S5 (57208988) but a different file (different md5 and barcode)
+262_S10,262_S10_R1_001.fastq.gz,8_M_D1_02,Exp1_mother,Leaf,8008,Maturation,D,1,2,8008_Mm_D1,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,31675756,7918939,0.419,
+263_S11,263 S11,8_M_D1_03,Exp1_mother,Leaf,8008,Maturation,D,1,3,8008_Mm_D1,red: not available,NO,,,,,
+13_S17,13_S17_R1_001.fastq.gz,8_M_D3_01,Exp1_mother,Leaf,8008,Maturation,D,3,1,8008_Mm_D3,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,42701416,10675354,0.525,
+14,14,8_M_D3_02,Exp1_mother,Leaf,8008,Maturation,D,3,2,8008_Mm_D3,red: not available,NO,,,,,README calls it X_14
+15_S18,15_S18_R1_001.fastq.gz,8_M_D3_03,Exp1_mother,Leaf,8008,Maturation,D,3,3,8008_Mm_D3,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,58701416,14675354,0.723,
+33_S2,33_S2_R1_001.fastq.gz,5_C/C_01,Exp2_propagule,Leaf,5000,Control,C,,1,5000_Fw_W,pink: exists but held by someone else,YES,RAWDATA (original),20083664,5020916,0.281,pink in sheet but files are in RAWDATA
+34_S19,34 S19,5_C/C_02,Exp2_propagule,Leaf,5000,Control,C,,2,5000_Fw_W,red: not available,NO,,,,,
+35_S9,35_S9_R1_001.fastq.gz,5_C/C_03,Exp2_propagule,Leaf,5000,Control,C,,3,5000_Fw_W,pink: exists but held by someone else,YES,RAWDATA (original),28743336,7185834,0.403,pink in sheet but files are in RAWDATA
+D33_S40,D33_S40_R1_001.fastq.gz,5_C/D_01,Exp2_propagule,Leaf,5000,Control,D,1,1,5000_Fw_D1,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,32565424,8141356,0.402,
+42_S39,42_S39_R1_001.fastq.gz,5_C/D_02,Exp2_propagule,Leaf,5000,Control,D,1,2,5000_Fw_D1,blue: we have files,YES,RAWDATA (original),40169588,10042397,0.438,
+D43_S52,D43 S52,5_C/D_03,Exp2_propagule,Leaf,5000,Control,D,1,3,5000_Fw_D1,red: not available,NO,,,,,
+53_S10,53_S10_R1_001.fastq.gz,5_T/D_01,Exp2_propagule,Leaf,5000,Tillering,D,1,1,5000_Ft_D1,pink: exists but held by someone else,YES,RAWDATA (original),24191528,6047882,0.337,pink in sheet but files are in RAWDATA
+D54_S5,D54_S5_R1_001.fastq.gz,5_T/D_02,Exp2_propagule,Leaf,5000,Tillering,D,1,2,5000_Ft_D1,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,53107428,13276857,0.639,README/only_in_metadata.txt call it D54_S53
+D55_S5,D55 S5,5_T/D_03,Exp2_propagule,Leaf,5000,Tillering,D,1,3,5000_Ft_D1,red: not available,NO,,,,,README calls it X_55
+65_S3,65_S3_R1_001.fastq.gz,5_M/D_01,Exp2_propagule,Leaf,5000,Maturation,D,1,1,5000_Fm_D1,blue: we have files,YES,RAWDATA (original),43504336,10876084,0.602,
+66_S4,66_S4_R1_001.fastq.gz,5_M/D_02,Exp2_propagule,Leaf,5000,Maturation,D,1,2,5000_Fm_D1,blue: we have files,YES,RAWDATA (original),22553260,5638315,0.311,
+67_S5,67_S5_R1_001.fastq.gz,5_M/D_03,Exp2_propagule,Leaf,5000,Maturation,D,1,3,5000_Fm_D1,blue: we have files,YES,RAWDATA (original),28061144,7015286,0.391,
+D69_S47,D69_S47_R1_001.fastq.gz,8_C/C_01,Exp2_propagule,Leaf,8008,Control,C,,1,8008_Fw_W,blue: we have files,YES,Google Drive (transcriptome_2) 2026-09-29,29109420,7277355,0.48,
+70_S34,70_S34_R1_001.fastq.gz,8_C/C_02,Exp2_propagule,Leaf,8008,Control,C,,2,8008_Fw_W,blue: we have files,YES,RAWDATA (original),38121476,9530369,0.385,
+D71_S54,D71 S54,8_C/C_03,Exp2_propagule,Leaf,8008,Control,C,,3,8008_Fw_W,red: not available,NO,,,,,
+77,77,8_C/D_01,Exp2_propagule,Leaf,8008,Control,D,1,1,8008_Fw_D1,red: not available,NO,,,,,README calls it X_77
+79_S2,79_S2_R1_001.fastq.gz,8_C/D_02,Exp2_propagule,Leaf,8008,Control,D,1,2,8008_Fw_D1,blue: we have files,YES,Google Drive (transcriptome_1) 2026-09-29,44589072,11147268,0.565,two different replicates share sample number 79
+79_S6,79_S6_R1_001.fastq.gz,8_C/D_03,Exp2_propagule,Leaf,8008,Control,D,1,3,8008_Fw_D1,blue: we have files,YES,RAWDATA (original),26135388,6533847,0.367,two different replicates share sample number 79
+89_S30,89_S30_R1_001.fastq.gz,8_T/D_01,Exp2_propagule,Leaf,8008,Tillering,D,1,1,8008_Ft_D1,blue: we have files,YES,RAWDATA (original),40845868,10211467,0.522,
+D66_S41,D66 S41,8_T/D_02,Exp2_propagule,Leaf,8008,Tillering,D,1,2,8008_Ft_D1,red: not available,NO,,,,,
+91_S37,91_S37_R1_001.fastq.gz,8_T/D_03,Exp2_propagule,Leaf,8008,Tillering,D,1,3,8008_Ft_D1,blue: we have files,YES,RAWDATA (original),39213324,9803331,0.380,
+101_S20,101_S20_R1_001.fastq.gz,8_M/D_01,Exp2_propagule,Leaf,8008,Maturation,D,1,1,8008_Fm_D1,blue: we have files,YES,Google Drive (transcriptome_1) 2026-09-29,29363268,7340817,0.344,
+102_S3,102_S3_R1_001.fastq.gz,8_M/D_02,Exp2_propagule,Leaf,8008,Maturation,D,1,2,8008_Fm_D1,blue: we have files,YES,Google Drive (transcriptome_1) 2026-09-29,41794164,10448541,0.524,
+103_S4,103 S4,8_M/D_03,Exp2_propagule,Leaf,8008,Maturation,D,1,3,8008_Fm_D1,red: not available,NO,,,,,
