@@ -1,0 +1,16 @@
+level	annotation	n	total	percent
+transcripts	GO (InterProScan)	262386	424890	61.8
+transcripts	GO (eggNOG)	147556	424890	34.7
+transcripts	GO (either)	291183	424890	68.5
+transcripts	InterPro entry	392447	424890	92.4
+transcripts	eggNOG hit	418428	424890	98.5
+transcripts	KEGG KO	171767	424890	40.4
+genes	GO (InterProScan)	246830	397650	62.1
+genes	GO (eggNOG)	137404	397650	34.6
+genes	GO (either)	272954	397650	68.6
+genes	InterPro entry	369349	397650	92.9
+genes	eggNOG hit	392089	397650	98.6
+genes	KEGG KO	160589	397650	40.4
+genes	any annotation	396632	397650	99.7
+genes	gene-GO pairs	8385714		
+genes	distinct GO terms	11676		

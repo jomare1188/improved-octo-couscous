@@ -1,0 +1,3 @@
+694ae12f95fdb9030e48cbd7cca9fe28  POJ2878_v1.proteins.faa
+65577f549e8982090b5ad3463c2ea8f7  POJ2878_v1.proteins.uniq.faa
+3d5ed3a55b529d968f0b13f4ec93106a  uniq_map.tsv
