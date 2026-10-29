@@ -1,5 +1,11 @@
 # RNA-seq inventory (2026-09-29)
 
+> **Update 2026-10-22: the 18 Drive libraries are copies.** Every library downloaded from Dolores's Drive is a copy of one of the 51 original libraries, often relabelled. All 18 were dropped, and **51 libraries are used**.
+> - Evidence and the copy → original table: [`nf-rnaseq/run_POJ2878/integrity_check/FINDINGS.md`](nf-rnaseq/run_POJ2878/integrity_check/FINDINGS.md).
+> - Usable replicates per group: README, section "Usable replicates per group".
+>
+> The counts below (69 samples, at least 2 replicates per group) describe the files, not the usable samples.
+
 Per-sample details: [`sample_inventory.csv`](sample_inventory.csv).
 
 ## What we have: 69 / 78 samples, all in `RAWDATA/`
