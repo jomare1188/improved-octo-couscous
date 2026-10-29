@@ -1,0 +1,79 @@
+=== transcriptome_1 (1ikTM3-lMgVfOTtKEJpG8W644PI7wdc3H)
+2026/09/29 18:56:15 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+DOWNLOAD 101_S20_R1_001.fastq.gz (344278924 bytes) 2026-09-29 18:56:24
+  -> OK
+DOWNLOAD 101_S20_R2_001.fastq.gz (358331979 bytes) 2026-09-29 18:56:55
+  -> OK
+DOWNLOAD 102_S3_R1_001.fastq.gz (523808226 bytes) 2026-09-29 18:58:07
+  -> OK
+DOWNLOAD 102_S3_R2_001.fastq.gz (540918666 bytes) 2026-09-29 19:00:12
+  -> OK
+DOWNLOAD 79_S2_R1_001.fastq.gz (565438030 bytes) 2026-09-29 19:01:40
+  -> OK
+DOWNLOAD 79_S2_R2_001.fastq.gz (584982656 bytes) 2026-09-29 19:03:13
+  -> OK
+DOWNLOAD 9_S15_R1_001.fastq.gz (951502610 bytes) 2026-09-29 19:04:14
+  -> OK
+DOWNLOAD 9_S15_R2_001.fastq.gz (981778977 bytes) 2026-09-29 19:06:55
+  -> OK
+=== transcriptome_2 (12_1GW-8wniw3lmRYo5QrOOPnt-9EkD2Z)
+2026/09/29 19:09:36 NOTICE: transcriptome_2{L0bGe}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+DOWNLOAD 10_S16_R1_001.fastq.gz (782992088 bytes) 2026-09-29 19:09:37
+  -> OK
+DOWNLOAD 10_S16_R2_001.fastq.gz (802173303 bytes) 2026-09-29 19:11:36
+  -> OK
+DOWNLOAD 13_S17_R1_001.fastq.gz (524535326 bytes) 2026-09-29 19:13:36
+  -> OK
+DOWNLOAD 13_S17_R2_001.fastq.gz (539617050 bytes) 2026-09-29 19:14:33
+  -> OK
+DOWNLOAD 15_S18_R1_001.fastq.gz (723388889 bytes) 2026-09-29 19:15:27
+  -> OK
+DOWNLOAD 15_S18_R2_001.fastq.gz (743992349 bytes) 2026-09-29 19:17:09
+  -> OK
+DOWNLOAD 254_S7_R1_001.fastq.gz (617208850 bytes) 2026-09-29 19:20:02
+  -> OK
+DOWNLOAD 254_S7_R2_001.fastq.gz (637848380 bytes) 2026-09-29 19:22:14
+  -> OK
+DOWNLOAD 261_S9_R1_001.fastq.gz (712490454 bytes) 2026-09-29 19:23:47
+  -> OK
+DOWNLOAD 261_S9_R2_001.fastq.gz (722560147 bytes) 2026-09-29 19:26:15
+  -> OK
+DOWNLOAD 262_S10_R1_001.fastq.gz (419454376 bytes) 2026-09-29 19:28:12
+  -> OK
+DOWNLOAD 262_S10_R2_001.fastq.gz (430795015 bytes) 2026-09-29 19:29:06
+  -> OK
+DOWNLOAD D231_D46_R1_001.fastq.gz (384145929 bytes) 2026-09-29 19:30:48
+  -> OK
+DOWNLOAD D231_D46_R2_001.fastq.gz (394739828 bytes) 2026-09-29 19:32:05
+  -> OK
+DOWNLOAD D33_S40_R1_001.fastq.gz (402020264 bytes) 2026-09-29 19:33:17
+  -> OK
+DOWNLOAD D33_S40_R2_001.fastq.gz (415080981 bytes) 2026-09-29 19:34:11
+  -> OK
+DOWNLOAD D54_S5_R1_001.fastq.gz (638796976 bytes) 2026-09-29 19:35:06
+  -> OK
+DOWNLOAD D54_S5_R2_001.fastq.gz (652596798 bytes) 2026-09-29 19:37:15
+  -> OK
+DOWNLOAD D69_S47_R1_001.fastq.gz (480486981 bytes) 2026-09-29 19:39:21
+  -> OK
+DOWNLOAD D69_S47_R2_001.fastq.gz (512844072 bytes) 2026-09-29 19:40:18
+  -> OK
+=== transcriptome_3 (1nrCjvFUpU0yc7PvC0E-65qLpG7m0Rlfo)
+2026/09/29 19:41:21 NOTICE: transcriptome_3{918Iw}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+DOWNLOAD 159_S5_R1_001.fastq.gz (684027679 bytes) 2026-09-29 19:41:30
+  -> OK
+DOWNLOAD 159_S5_R2_001.fastq.gz (709667670 bytes) 2026-09-29 19:43:12
+  -> OK
+DOWNLOAD 222_S6_R1_001.fastq.gz (977330479 bytes) 2026-09-29 19:45:15
+  -> OK
+DOWNLOAD 222_S6_R2_001.fastq.gz (996828514 bytes) 2026-09-29 19:47:52
+  -> OK
+DOWNLOAD 255_S8_R1_001.fastq.gz (651359992 bytes) 2026-09-29 19:49:39
+  -> OK
+DOWNLOAD 255_S8_R2_001.fastq.gz (677264818 bytes) 2026-09-29 19:51:14
+  -> OK
+DOWNLOAD D158_S48_R1_001.fastq.gz (572558145 bytes) 2026-09-29 19:53:09
+  -> OK
+DOWNLOAD D158_S48_R2_001.fastq.gz (601046485 bytes) 2026-09-29 19:54:16
+  -> OK
+=== done: 36 downloaded OK, 0 skipped (already existed), 0 failed

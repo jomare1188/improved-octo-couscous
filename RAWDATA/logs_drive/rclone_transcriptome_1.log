@@ -1,0 +1,72 @@
+2026/09/29 18:56:24 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 18:56:24 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 18:56:24 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 18:56:52 INFO  : 101_S20_R1_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 18:56:52 INFO  : 
+Transferred:   	  328.330 MiB / 328.330 MiB, 100%, 10.922 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:        26.7s
+
+2026/09/29 18:56:55 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 18:56:55 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 18:56:55 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 18:58:03 INFO  : 101_S20_R2_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 18:58:03 INFO  : 
+Transferred:   	  341.732 MiB / 341.732 MiB, 100%, 9.092 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:        30.6s
+
+2026/09/29 18:58:07 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 18:58:07 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 18:58:07 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:00:08 INFO  : 102_S3_R1_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:00:08 INFO  : 
+Transferred:   	  499.542 MiB / 499.542 MiB, 100%, 10.192 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:        36.6s
+
+2026/09/29 19:00:12 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 19:00:12 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 19:00:12 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:01:36 INFO  : 102_S3_R2_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:01:36 INFO  : 
+Transferred:   	  515.860 MiB / 515.860 MiB, 100%, 1.912 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:       1m4.7s
+
+2026/09/29 19:01:40 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 19:01:40 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 19:01:40 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:03:08 INFO  : 79_S2_R1_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:03:08 INFO  : 
+Transferred:   	  539.244 MiB / 539.244 MiB, 100%, 5.707 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:      1m26.1s
+
+2026/09/29 19:03:13 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 19:03:13 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 19:03:13 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:04:08 INFO  : 79_S2_R2_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:04:08 INFO  : 
+Transferred:   	  557.883 MiB / 557.883 MiB, 100%, 7.117 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:        45.4s
+
+2026/09/29 19:04:14 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 19:04:14 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 19:04:14 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:06:46 INFO  : 9_S15_R1_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:06:46 INFO  : 
+Transferred:   	  907.424 MiB / 907.424 MiB, 100%, 1.127 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:      2m14.6s
+
+2026/09/29 19:06:55 INFO  : Starting bandwidth limiter at 20Mi Byte/s
+2026/09/29 19:06:55 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1
+2026/09/29 19:06:55 NOTICE: transcriptome_1{9XFcE}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/29 19:09:21 INFO  : 9_S15_R2_001.fastq.gz: Multi-thread Copied (new)
+2026/09/29 19:09:21 INFO  : 
+Transferred:   	  936.297 MiB / 936.297 MiB, 100%, 2.930 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:      1m51.3s
+
