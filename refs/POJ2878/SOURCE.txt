@@ -1,0 +1,12 @@
+Sh_POJ2878_v1.gff3.gz
+source: https://figshare.com/s/e79249d6ce11539fa105 (file 58587262), from Nature 2026 doi:10.1038/s41586-026-10576-7 data availability
+downloaded: 2026-10-22 00:24:19
+
+GCA_060231685.1_POJ2878_1.0_genomic.fna.gz
+source: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/060/231/685/GCA_060231685.1_POJ2878_1.0/ (md5 checked against NCBI md5checksums.txt)
+downloaded: 2026-10-22
+
+POJ2878_1.0.genome.fa.gz
+NCBI genome with headers renamed from GenBank accession to sequence name (e.g. CM190499.1 -> Chr01g1)
+by rename_headers.sh using GCA_060231685.1_POJ2878_1.0_assembly_report.txt, so it matches Sh_POJ2878_v1.gff3.gz.
+Checked: 5772 sequences, names and lengths identical to the assembly report; all 3132 GFF seqids present; no GFF feature beyond sequence end.
