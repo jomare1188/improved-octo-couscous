@@ -1,0 +1,12 @@
+host=neotera.bioinfo.cluster NSLOTS=1 TMPDIR=/tmp/28234.1.all.q
+/Storage/progs/sge-8.1.9/bin/lx-amd64/qsub
+/Storage/progs/sge-8.1.9/bin/lx-amd64/qstat
+/Storage/progs/sge-8.1.9/bin/lx-amd64/qdel
+/Storage/data1/jorge.munoz/DOLORES/nf-rnaseq/conf_cluster
+shared_fs_ok
+singularity-ce version 4.3.3
+HTTP/1.1 200 OK
+HTTP/2 404 
+/dev/sdb4       860G   46G  815G   6% /
+open files                          (-n) 1024
+max user processes                  (-u) 2058991

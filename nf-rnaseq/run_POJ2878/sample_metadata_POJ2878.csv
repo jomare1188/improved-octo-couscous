@@ -1,0 +1,70 @@
+sample,library,group,genotype,set,tissue,phase_or_mother_phase,treatment,drought_cycle,replicate_in_sheet,notes
+5000_Maturation_W_F25C1_S6,F25C1_S6,5000_Maturation_W,5000,Mother bud,Bud,,C,,1,
+5000_Maturation_W_F25C2_S7,F25C2_S7,5000_Maturation_W,5000,Mother bud,Bud,,C,,2,
+5000_Maturation_W_F25C3_S8,F25C3_S8,5000_Maturation_W,5000,Mother bud,Bud,,C,,3,
+5000_Tillering_D_FIDH15000_S27,FIDH15000_S27,5000_Tillering_D,5000,Mother bud,Bud,Tillering,D,,1,
+5000_Tillering_D_FIDH25000_S28,FIDH25000_S28,5000_Tillering_D,5000,Mother bud,Bud,Tillering,D,,2,
+5000_Tillering_D_FIDH35000_S29,FIDH35000_S29,5000_Tillering_D,5000,Mother bud,Bud,Tillering,D,,3,
+5000_Maturation_D_21DH5_S21,21DH5_S21,5000_Maturation_D,5000,Mother bud,Bud,Maturation,D,,1,
+5000_Maturation_D_22DH5_S22,22DH5_S22,5000_Maturation_D,5000,Mother bud,Bud,Maturation,D,,2,
+5000_Maturation_D_23DH5_S23,23DH5_S23,5000_Maturation_D,5000,Mother bud,Bud,Maturation,D,,3,
+8008_Maturation_W_F28C1_S9,F28C1_S9,8008_Maturation_W,8008,Mother bud,Bud,,C,,1,
+8008_Maturation_W_F28C2_S10,F28C2_S10,8008_Maturation_W,8008,Mother bud,Bud,,C,,2,
+8008_Maturation_W_F28C3_S11,F28C3_S11,8008_Maturation_W,8008,Mother bud,Bud,,C,,3,
+8008_Tillering_D_FIDH1800_S30,FIDH1800_S30,8008_Tillering_D,8008,Mother bud,Bud,Tillering,D,,1,
+8008_Tillering_D_FIDH28000_S31,FIDH28000_S31,8008_Tillering_D,8008,Mother bud,Bud,Tillering,D,,2,
+8008_Tillering_D_FIDH38000_S32,FIDH38000_S32,8008_Tillering_D,8008,Mother bud,Bud,Tillering,D,,3,
+8008_Maturation_D_21DH8_S24,21DH8_S24,8008_Maturation_D,8008,Mother bud,Bud,Maturation,D,,1,
+8008_Maturation_D_22DH8_S25,22DH8_S25,8008_Maturation_D,8008,Mother bud,Bud,Maturation,D,,2,
+8008_Maturation_D_23DH8_S26,23DH8_S26,8008_Maturation_D,8008,Mother bud,Bud,Maturation,D,,3,
+5000_Mt_W_Dolores_249_S3,Dolores_249_S3,5000_Mt_W,5000,Mother leaf,Leaf,Tillering,C,,1,
+5000_Mt_W_250_S2,250_S2,5000_Mt_W,5000,Mother leaf,Leaf,Tillering,C,,2,pink in sheet but files are in RAWDATA
+5000_Mt_W_251_S3,251_S3,5000_Mt_W,5000,Mother leaf,Leaf,Tillering,C,,3,
+5000_Mt_D1_157_S12,157_S12,5000_Mt_D1,5000,Mother leaf,Leaf,Tillering,D,1,2,duplicate replicate ID in sheet (one is probably _01)
+5000_Mt_D1_D158_S48,D158_S48,5000_Mt_D1,5000,Mother leaf,Leaf,Tillering,D,1,2,duplicate replicate ID in sheet (one is probably _01)
+5000_Mt_D1_159_S5,159_S5,5000_Mt_D1,5000,Mother leaf,Leaf,Tillering,D,1,3,R2 has 100000 fewer reads than R1 (55276240 vs 55676240 lines): pair out of sync
+5000_Mt_D3_221_S19,221_S19,5000_Mt_D3,5000,Mother leaf,Leaf,Tillering,D,3,2,duplicate replicate ID in sheet (one is probably _01); pink in sheet but files are in RAWDATA
+5000_Mt_D3_222_S6,222_S6,5000_Mt_D3,5000,Mother leaf,Leaf,Tillering,D,3,2,duplicate replicate ID in sheet (one is probably _01)
+5000_Mt_D3_223_S42,223_S42,5000_Mt_D3,5000,Mother leaf,Leaf,Tillering,D,3,3,
+5000_Mm_W_156_S22,156_S22,5000_Mm_W,5000,Mother leaf,Leaf,Maturation,C,,1,
+5000_Mm_W_154_S28,154_S28,5000_Mm_W,5000,Mother leaf,Leaf,Maturation,C,,2,
+5000_Mm_W_155_S11,155_S11,5000_Mm_W,5000,Mother leaf,Leaf,Maturation,C,,3,
+5000_Mm_D1_253_S41,253_S41,5000_Mm_D1,5000,Mother leaf,Leaf,Maturation,D,1,1,
+5000_Mm_D1_254_S7,254_S7,5000_Mm_D1,5000,Mother leaf,Leaf,Maturation,D,1,2,
+5000_Mm_D1_255_S8,255_S8,5000_Mm_D1,5000,Mother leaf,Leaf,Maturation,D,1,3,
+5000_Mm_D3_9_S15,9_S15,5000_Mm_D3,5000,Mother leaf,Leaf,Maturation,D,3,1,sheet lists R1 file twice (R2 row mislabeled)
+5000_Mm_D3_10_S16,10_S16,5000_Mm_D3,5000,Mother leaf,Leaf,Maturation,D,3,2,
+5000_Mm_D3_11_S1,11_S1,5000_Mm_D3,5000,Mother leaf,Leaf,Maturation,D,3,3,
+8008_Mt_W_Dolores_257_S5,Dolores_257_S5,8008_Mt_W,8008,Mother leaf,Leaf,Tillering,C,,1,
+8008_Mt_W_258_S5,258_S5,8008_Mt_W,8008,Mother leaf,Leaf,Tillering,C,,2,
+8008_Mt_W_Dolores_259_S6,Dolores_259_S6,8008_Mt_W,8008,Mother leaf,Leaf,Tillering,C,,3,sheet size 2369 GB is a typo (~2.4 GB); pink in sheet but files are in RAWDATA
+8008_Mt_D1_165_a_S40,165_a_S40,8008_Mt_D1,8008,Mother leaf,Leaf,Tillering,D,1,2,duplicate replicate ID in sheet (one is probably _01)
+8008_Mt_D1_166_S23,166_S23,8008_Mt_D1,8008,Mother leaf,Leaf,Tillering,D,1,2,duplicate replicate ID in sheet (one is probably _01)
+8008_Mt_D1_168_S25,168_S25,8008_Mt_D1,8008,Mother leaf,Leaf,Tillering,D,1,3,
+8008_Mt_D3_230_S15,230_S15,8008_Mt_D3,8008,Mother leaf,Leaf,Tillering,D,3,2,duplicate replicate ID in sheet (one is probably _01)
+8008_Mt_D3_D231_D46,D231_D46,8008_Mt_D3,8008,Mother leaf,Leaf,Tillering,D,3,2,duplicate replicate ID in sheet (one is probably _01)
+8008_Mt_D3_232_S8,232_S8,8008_Mt_D3,8008,Mother leaf,Leaf,Tillering,D,3,3,
+8008_Mm_W_161_S13,161_S13,8008_Mm_W,8008,Mother leaf,Leaf,Maturation,C,,1,
+8008_Mm_W_162_S20,162_S20,8008_Mm_W,8008,Mother leaf,Leaf,Maturation,C,,2,
+8008_Mm_W_163_S7,163_S7,8008_Mm_W,8008,Mother leaf,Leaf,Maturation,C,,3,
+8008_Mm_D1_261_S9,261_S9,8008_Mm_D1,8008,Mother leaf,Leaf,Maturation,D,1,1,same line count as 258_S5 (57208988) but a different file (different md5 and barcode)
+8008_Mm_D1_262_S10,262_S10,8008_Mm_D1,8008,Mother leaf,Leaf,Maturation,D,1,2,
+8008_Mm_D3_13_S17,13_S17,8008_Mm_D3,8008,Mother leaf,Leaf,Maturation,D,3,1,
+8008_Mm_D3_15_S18,15_S18,8008_Mm_D3,8008,Mother leaf,Leaf,Maturation,D,3,3,
+5000_Fw_W_33_S2,33_S2,5000_Fw_W,5000,Propagule leaf,Leaf,Control,C,,1,pink in sheet but files are in RAWDATA
+5000_Fw_W_35_S9,35_S9,5000_Fw_W,5000,Propagule leaf,Leaf,Control,C,,3,pink in sheet but files are in RAWDATA
+5000_Fw_D1_D33_S40,D33_S40,5000_Fw_D1,5000,Propagule leaf,Leaf,Control,D,1,1,
+5000_Fw_D1_42_S39,42_S39,5000_Fw_D1,5000,Propagule leaf,Leaf,Control,D,1,2,
+5000_Ft_D1_53_S10,53_S10,5000_Ft_D1,5000,Propagule leaf,Leaf,Tillering,D,1,1,pink in sheet but files are in RAWDATA
+5000_Ft_D1_D54_S5,D54_S5,5000_Ft_D1,5000,Propagule leaf,Leaf,Tillering,D,1,2,README/only_in_metadata.txt call it D54_S53
+5000_Fm_D1_65_S3,65_S3,5000_Fm_D1,5000,Propagule leaf,Leaf,Maturation,D,1,1,
+5000_Fm_D1_66_S4,66_S4,5000_Fm_D1,5000,Propagule leaf,Leaf,Maturation,D,1,2,
+5000_Fm_D1_67_S5,67_S5,5000_Fm_D1,5000,Propagule leaf,Leaf,Maturation,D,1,3,
+8008_Fw_W_D69_S47,D69_S47,8008_Fw_W,8008,Propagule leaf,Leaf,Control,C,,1,
+8008_Fw_W_70_S34,70_S34,8008_Fw_W,8008,Propagule leaf,Leaf,Control,C,,2,
+8008_Fw_D1_79_S2,79_S2,8008_Fw_D1,8008,Propagule leaf,Leaf,Control,D,1,2,two different replicates share sample number 79
+8008_Fw_D1_79_S6,79_S6,8008_Fw_D1,8008,Propagule leaf,Leaf,Control,D,1,3,two different replicates share sample number 79
+8008_Ft_D1_89_S30,89_S30,8008_Ft_D1,8008,Propagule leaf,Leaf,Tillering,D,1,1,
+8008_Ft_D1_91_S37,91_S37,8008_Ft_D1,8008,Propagule leaf,Leaf,Tillering,D,1,3,
+8008_Fm_D1_101_S20,101_S20,8008_Fm_D1,8008,Propagule leaf,Leaf,Maturation,D,1,1,
+8008_Fm_D1_102_S3,102_S3,8008_Fm_D1,8008,Propagule leaf,Leaf,Maturation,D,1,2,

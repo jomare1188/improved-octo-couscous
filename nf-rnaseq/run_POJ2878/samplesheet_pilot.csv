@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2,strandedness
+8008_Tillering_D_FIDH38000_S32,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/FIDH38000_S32_R1_001.fastq.gz,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/FIDH38000_S32_R2_001.fastq.gz,auto
+5000_Mt_D1_157_S12,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/157_S12_R1_001.fastq.gz,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/157_S12_R2_001.fastq.gz,auto
+5000_Mm_W_154_S28,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/154_S28_R1_001.fastq.gz,/Storage/data1/jorge.munoz/DOLORES/RAWDATA/154_S28_R2_001.fastq.gz,auto

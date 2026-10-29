@@ -1,0 +1,196 @@
+# =============================================================================
+# nf-core/rnaseq 3.27.0 — Salmon-only run, sugarcane (IACSP95-5000, IACCTC07-8008)
+# Reference: POJ2878 haplotype-resolved genome (GCA_060231685.1) + Sh_POJ2878_v1.gff3
+#
+# Use:  nextflow run nf-core/rnaseq -r 3.27.0 -profile singularity \
+#         -params-file params_POJ2878_salmon.yaml \
+#         -c <cluster config from the other agent> -c process_overrides.config
+#
+# Pipeline version facts (checked in the 3.27.0 source tarball, 2026-10-22):
+#   - 3.27.0 released 2026-09-23 ("Vanadium Vulture"); manifest.nextflowVersion = '!>=25.10.4'.
+#     The old run_nextflow.sh used the conda env "nextflow-25.04.6", which is TOO OLD.
+#   - Ships Salmon 2.7.0 (Rust rewrite; 1.x indexes are NOT readable -> rebuild), TrimGalore 2.3.0
+#     (Rust rewrite), fastp 1.3.6, fq 0.12.0. CHANGELOG 3.27.0 warns that Salmon 2.x shifts
+#     gene-level values versus pre-3.27 runs, so do not mix these quants with the old R570/3.21 runs.
+#   Docs: https://nf-co.re/rnaseq/3.27.0/parameters  https://nf-co.re/rnaseq/3.27.0/docs/usage
+# =============================================================================
+
+# ---------------------------------------------------------------- Input / output
+# Samplesheet: needs only sample,fastq_1,fastq_2,strandedness (optional seq_platform/seq_center;
+# extra columns are allowed). Use strandedness = auto (docs/usage.md "Strandedness Prediction":
+# 1M-read subsample -> Salmon -> forward/reverse/unstranded at 0.8 / 0.1 thresholds).
+# !! 159_S5 must be re-paired first (see note at the bottom), or FQ_LINT stops the whole run.
+input: /Storage/data1/jorge.munoz/DOLORES/nf-rnaseq/run_POJ2878/samplesheet_POJ2878.csv
+outdir: /Storage/data1/jorge.munoz/DOLORES/nf-rnaseq/run_POJ2878/results
+
+# ---------------------------------------------------------------- Reference
+# GFF3 must go through --gff, not --gtf (3.24.0 docs clarification, PR #1751). The pipeline runs
+# `gffread --keep-exon-attrs -F -T` (conf/modules/prepare_genome.config). With this GFF
+# (gene ID=POJ2878043873 -> mRNA ID=POJ2878043873.t1 Parent=gene -> exon/CDS/UTR) gffread gives
+# gene_id "POJ2878043873" and transcript_id "POJ2878043873.t1". I checked the GFF with awk:
+# 397,650 genes; 424,890 mRNAs; 0 duplicate mRNA IDs; 0 multi-parent rows; 0 orphan mRNAs;
+# 0 mRNAs without exons; no spaces/quotes/';' in IDs. The '.' (and 'AGAT' on 13k UTR rows) in the
+# source column is harmless, because gffread -T rebuilds exon/CDS rows. The GFF seqids match the
+# renamed FASTA (refs/POJ2878/SOURCE.txt), so CUSTOM_GTFFILTER will not drop rows.
+fasta: /Storage/data1/jorge.munoz/DOLORES/refs/POJ2878/POJ2878_1.0.genome.fa.gz
+gff: /Storage/data1/jorge.munoz/DOLORES/refs/POJ2878/Sh_POJ2878_v1.gff3.gz
+
+# tx2gene/tximport group transcripts by this attribute (modules/nf-core/custom/tx2gene). Keep gene_id
+# (= allele-level gene POJ...). The GFF has no locus/allele-group attribute, so the pipeline cannot
+# sum alleles. Do that downstream with your own transcript->locus table in tximport (see the notes).
+gtf_group_features: gene_id
+# There is no gene_name in this GFF. tx2gene fills a missing extra attribute with the gene_id
+# value (tx2gene.py: attr_dict.get(field, gene_id)), so the gene_name column = POJ... and nothing
+# breaks. Keep the default. Do NOT set it to 'gene_id': the tx2gene header would then repeat the
+# gene_id column.
+gtf_extra_attributes: gene_name
+
+# Transcript FASTA: the default extracts it with rsem-prepare-reference (MAKE_TRANSCRIPTS_FASTA);
+# exons are present, so RSEM works. gffread -w (--gffread_transcript_fasta, new in 3.23.0) is
+# an alternative if RSEM is slow on the 10.4 Gb genome. Kept at the default (better tested).
+gffread_transcript_fasta: false
+
+# Keep the GTF, transcripts.fa and Salmon index (incl. duplicate_clusters.tsv, which lists the
+# identical-sequence alleles that Salmon collapsed). This lets later runs reuse the index with
+# --salmon_index <outdir>/genome/index/salmon and skip the expensive build.
+# Pilot (2026-10-23) already saved them in run_POJ2878/results_pilot/genome/ (63 GB). The full run
+# reuses the cached index via -resume, so they are not copied again (disk is ~98% full).
+save_reference: false
+
+# ---------------------------------------------------------------- Salmon-only mode
+# Still the 3.27.0 way to run Salmon alone (docs/usage.md "Alignment options"). This skips STAR/HISAT2,
+# so the BAM-based QC never runs: RSeQC, Qualimap, dupRadar, Preseq, MarkDuplicates, featureCounts
+# biotype QC, bigWig, StringTie. DESeq2 QC (PCA/sample distances) still runs on the Salmon counts.
+skip_alignment: true
+pseudo_aligner: salmon
+
+# Decoys: with --fasta and no --salmon_index, SALMON_INDEX is ALWAYS built decoy-aware on the full
+# 10.4 Gb genome (prepare_genome_indices/main.nf step 8; docs/usage.md calls this "as is recommended").
+# There is no param to switch decoys off while --fasta is given.
+# DECISION: KEEP the decoys. Reasons:
+#   - Accuracy: decoys absorb reads from intronic, intergenic, TE and unannotated loci that would
+#     otherwise be forced onto similar annotated alleles. This matters for an AUGUSTUS-only
+#     annotation of a repeat-rich genome (Srivastava et al. 2020 Genome Biol 21:239; Salmon docs
+#     "Preparing transcriptome indices").
+#   - Cost is affordable here: the hosts have ~500 GB RAM (qhost), Salmon 2.x SSHash indexes are
+#     compact (human decoy-aware index quant ~10 GB RSS per the salmon v2.2.1 notes), and the
+#     index is built once and reused via save_reference.
+# PLAN B (no decoys, if the index build exceeds ~120 GB or ~2 days): run with
+#   --transcript_fasta <outdir>/genome/transcripts.fa and NO --fasta. This is allowed with
+#   --skip_alignment, and 3.27.0 fixed auto-strandedness without --fasta (PR #1907).
+#   The index is then ~649 Mb of transcripts only. See process_overrides.config for the estimates.
+# salmon_index: /path/to/saved/index/salmon   # <- set on reruns, after the first build
+
+# Default k=31. Fine for 101 bp reads with a 36 bp length floor.
+pseudo_aligner_kmer_size: 31
+
+# Do not pass --keepDuplicates (index flag exposed in 3.27.0, PR #1923). Identical-sequence allele
+# transcripts cannot be told apart. The collapsed members go to duplicate_clusters.tsv, and summing
+# to locus level is unaffected. Only revisit this for allele-specific work.
+extra_salmon_index_args: null
+
+# Library type: leave null. The pipeline then sets --libType ISF/ISR/IU per sample from the
+# auto-inferred strandedness (conf/modules/quantify_pseudo_alignment.config). That is consistent
+# with the strandedness checks in MultiQC. Setting 'A' would let each sample self-detect, which is
+# also safe but inconsistent with the inferred metadata. Never put -l/--libType in extra args
+# (it would be duplicated).
+salmon_quant_libtype: null
+
+# Salmon quant extras (Salmon 2.x keeps --seqBias/--gcBias/--numBootstraps; see salmon MIGRATION.md
+# "Unchanged"):
+#   --seqBias       : corrects random-hexamer priming bias. This is exactly the 5' per-base
+#                     composition "failure" seen in FastQC.
+#   --gcBias        : fragment GC bias, recommended for paired-end data. Mild extra CPU.
+#   --numBootstraps : 20 inferential replicates, for fishpond/Swish at allele or transcript level and
+#                     for uncertainty when summing near-identical alleles. Costs extra quant time
+#                     and ~50-100 MB per sample. The pipeline's tximport also loads them
+#                     (dropInfReps = FALSE for salmon), so TXIMETA_TXIMPORT gets more memory in
+#                     process_overrides.config. Remove this flag if allele-level/Swish work is not planned.
+# NOT included: --validateMappings (accepted-and-ignored in Salmon 2.x; selective alignment is
+# the only mode). Multimapping across alleles/homeologs is handled by Salmon's EM/VBEM: individual
+# allele estimates will be uncertain, but locus-level sums are robust. That is why DE should be
+# done on locus sums.
+extra_salmon_quant_args: '--seqBias --gcBias --numBootstraps 30'   # 30 bootstraps: user choice, for allele-level analysis (Swish)
+
+# ---------------------------------------------------------------- Linting
+# fq lint (fq 0.12.0) runs on raw reads by default and STOPS the run on error. Keep it on: it is
+# the check that catches 159_S5 ("r2-src unexpectedly ended", fq src/commands/lint.rs).
+# The default disables P001 (read-name pairing check). Kept as default.
+skip_linting: false
+extra_fqlint_args: '--disable-validator P001'
+
+# ---------------------------------------------------------------- Trimming
+# Trim Galore 2.3.0 (pipeline default) over fastp. Reasons:
+#   - It is the default and the best-tested path, with explicit 8 cpu / 4 GB settings in 3.27.0
+#     (PR #1905).
+#   - TG 2.x auto-detects and trims 3' poly-G from 2-colour chemistry (NextSeq 2000 = VH00942)
+#     on R1 and R2 (TrimGalore README v2.3.0).
+#   - Adapters are auto-detected. The reads (101 bp, partly shorter) look adapter-trimmed on the
+#     instrument already, which explains "no adapters found".
+# --2colour 20 : 2-colour-aware quality trimming (G with high Q at the 3' end treated as no
+#                signal). Replaces -q 20; matches the earlier trimq=20.
+# --length 36  : minimum length. Leaves room above Salmon k=31. The earlier minlength=80 would
+#                throw away many good pairs for no quantification gain.
+# Only flags with a value: the pipeline parses this string into a key->value map
+# (conf/modules/trimgalore.config), so value-less flags would be mangled.
+# NO fixed 5' clip. The 11-base 5' bias is the usual random-hexamer priming signature
+# (FastQC per-base content "fail" is expected for RNA-seq), and --seqBias models it.
+# The BBDuk forcetrimleft=11 did not make the module green either (the README says it stayed red).
+# Leaf tissue has very abundant transcripts (rbcS, CAB), which also skews composition.
+# If you still want the clip:  '--2colour 20 --length 36 --clip_R1 11 --clip_R2 11'
+trimmer: trimgalore
+extra_trimgalore_args: '--2colour 20 --length 36'
+# fastp equivalent (if ever preferred):
+# trimmer: fastp
+# extra_fastp_args: '--detect_adapter_for_pe --trim_poly_g --cut_tail --cut_tail_mean_quality 20 --length_required 36'
+min_trimmed_reads: 10000      # default; samples below this after trimming are dropped and reported
+save_trimmed: false
+
+# ---------------------------------------------------------------- rRNA removal
+# OFF. The annotation holds AUGUSTUS gene models with no rRNA genes, so rRNA reads cannot be
+# quantified as genes; with decoys they fall onto the rDNA decoys and are discarded. SortMeRNA
+# (process_high) is among the most expensive steps. If you want a %rRNA metric for QC, the
+# cheapest moderate option is:
+#   remove_ribo_rna: true
+#   ribo_removal_tool: bowtie2     # default DB manifest = smr_v4.3_fast_db (SILVA 138 + Rfam)
+# (sortmerna with the default smr_v4.3_fast_db is the other documented choice; ribodetector needs
+# no DB but is slower on CPU.)
+# User choice 2026-10-22: rRNA metric wanted -> bowtie2 against the default smr_v4.3_fast_db (SILVA+Rfam).
+# rRNA reads are removed before Salmon; the %rRNA per sample is reported in MultiQC.
+remove_ribo_rna: true
+ribo_removal_tool: bowtie2
+save_non_ribo_reads: false
+
+# ---------------------------------------------------------------- QC
+skip_qc: false
+skip_fastqc: false
+skip_deseq2_qc: false        # PCA/sample-distance QC on Salmon counts; useful for spotting outliers
+skip_biotype_qc: true        # no gene_biotype in the GFF, and featureCounts needs BAMs anyway
+                             # (3.27.0 would only warn now: PR #1919)
+featurecounts_group_type: gene_biotype   # irrelevant in pseudo-only mode; left at default
+skip_multiqc: false
+deseq2_vst: true
+skip_quantification_merge: false   # we want the merged matrices + SummarizedExperiment
+
+# ---------------------------------------------------------------- Not used (explicit for clarity)
+skip_bbsplit: true
+with_umi: false
+contaminant_screening: null
+
+# =============================================================================
+# NOTES
+# 1) 159_S5: R2 has 100,000 fewer reads than R1 and the missing reads are in the middle
+#    (INVENTORY.md). FQ_LINT will fail with "r2-src unexpectedly ended", and with
+#    errorStrategy 'finish' the run stops. Do NOT use --skip_linting: TrimGalore/Salmon would then
+#    see mis-paired mates. Instead re-pair outside RAWDATA, e.g.
+#      repair.sh in1=159_S5_R1_001.fastq.gz in2=159_S5_R2_001.fastq.gz \
+#                out1=159_S5_rep_R1.fastq.gz out2=159_S5_rep_R2.fastq.gz outs=159_S5_singletons.fastq.gz
+#    and point the samplesheet row at the repaired files, or get the original from Dolores, or drop
+#    the sample for now.
+# 2) Allele -> locus: the pipeline's salmon.merged.gene_* are at allele-gene level (POJ...).
+#    For DESeq2, import quant.sf with tximport plus a tx2gene of POJ...t1 -> locus/allele-group
+#    (e.g. from the POJ2878 paper's allele table). Alternative: write a derived GFF with a locus_id
+#    attribute and set gtf_group_features: locus_id, and the pipeline outputs locus-level counts.
+# 3) After the first run, check <outdir>/genome/*.gtf for gene_id "POJ..."; transcript_id "POJ....t1",
+#    then <outdir>/salmon/salmon.merged.tx2gene.tsv.
+# =============================================================================
