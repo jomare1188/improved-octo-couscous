@@ -1,6 +1,6 @@
 # DOLORES: drought memory in sugarcane, results report
 
-2026-10-29. Results are at the allele-group level (78,613 groups) unless stated otherwise. 48 libraries are in the models.
+2026-10-29, updated 2026-11-03 with the follow-up analyses (H2 interaction test, bud batch check, rank-based H5 tests, allele-level view, WGCNA). The full narrative is [`report_story.md`](report_story.md). Results are at the allele-group level (78,613 groups) unless stated otherwise. 48 libraries are in the models.
 
 ## In short
 
@@ -11,12 +11,13 @@
 
   The few groups that respond more strongly at D3 are mostly desiccation-protection genes: the RAB18/XERO1 dehydrin ortholog, two LEA proteins, a seed-storage protein and an embryo-specific protein. RAB18 is the classic trainable memory gene in Arabidopsis, and its maize orthologue is a memory gene too.
 - **5000 responds more strongly at D3, but its D1 group is a single plant.** The whole drought response grows, non-memory gene sets included, and translation genes are shut down. It does not look like memory specific to a few genes.
-- **H2, that the tolerant 8008 has more memory, is not supported.**
+- **H2, that the tolerant 8008 has more memory, is not supported.** A joint genotype × cycle model plus downsampling show that 5000's larger D3-vs-D1 change can be produced by its single D1 plant: refitting 8008 with one D1 plant gives up to 1,171 D3-vs-D1 DEGs (5000: 1,229). 8008 responds more strongly at D1.
 - **Buds:**
   - Tillering-stressed and maturation-stressed buds were sequenced on the same run, so T vs M is clean. It shows a timing-of-stress signature led by PAL (phenylpropanoid) genes, which go in opposite directions in the two genotypes.
-  - The watered buds were sequenced on a different run, so stressed vs never-stressed buds cannot be separated from the run effect.
+  - The watered buds were sequenced on a different run and their libraries were prepared differently (fragment length 137 vs 182 bp, adapter 67% vs 23%). Stable genes shift across the run boundary and RUVg's first factor is the treatment itself (r = −0.97), so stressed vs never-stressed buds cannot be rescued.
 - **Propagules (exploratory):** in both genotypes, propagules from stressed mothers repress the genes that drought represses less strongly than propagules from watered mothers do. Photosynthesis genes are the clearest case. This fits the better drought performance in Marcos et al. 2018, but each comparison rests on one reference plant.
-- **H5:** the propagule differences fall on drought-response genes, not on the genes that differ between bud groups.
+- **H5:** no chain. Rank-based tests find a modest mother leaf → bud (T vs M) link in 8008 only, and no bud → propagule link. The propagule differences are a milder drought response, and the Ft_D1 vs Fw_D1 profiles of the two cultivars agree (rho 0.20).
+- **Gene copies and modules:** alleles within a group move together (median I² = 0), and single-copy counts are too uncertain to go further (median InfRV 2.2). No WGCNA leaf module follows repeated drought; one translation/chloroplast module (M07) is less repressed in propagules of stressed mothers.
 - **Next steps, in order:**
   1. Ask Dolores three things: whether the 3 libraries are mislabelled, the time of day each group was sampled, and how stressed each plant was.
   2. Re-sequence a few existing bud and leaf libraries together on one run, to measure the batch effect.
@@ -70,10 +71,10 @@
 | # | Hypothesis | Answer | Strength |
 |---|---|---|---|
 | H1 | Leaves "learn": the 3rd drought response differs from the 1st | **8008: mostly no.** The response repeats; only a few dozen genes respond more strongly, mainly LEA proteins and dehydrins. **5000: the D3 response is larger, but not resolved.** | 8008 conclusive; 5000 exploratory |
-| H2 | 8008 (tolerant) has more memory than 5000 (productive) | **Not supported.** 8008 is the more stable genotype; 5000 changes more between cycles, but rests on one D1 plant. | weak |
-| H3 | Drought leaves a lasting mark in buds | **Partly.** Long-ago and recent stress leave different bud states (T vs M, clean). Stressed vs never-stressed buds cannot be separated from the sequencing run. | T vs M conclusive; T/M vs W confounded |
+| H2 | 8008 (tolerant) has more memory than 5000 (productive) | **Not supported.** 5000's larger change between cycles is within what one D1 plant can produce (downsampling of 8008). 8008 responds more strongly at D1. | joint model + downsampling |
+| H3 | Drought leaves a lasting mark in buds | **Partly.** Long-ago and recent stress leave different bud states (T vs M, clean). Stressed vs never-stressed buds differ in library preparation as well as run, and cannot be rescued. | T vs M conclusive; T/M vs W confounded |
 | H4 | Propagules from stressed mothers respond differently to drought | **Suggestive, the same in both genotypes:** drought-repressed genes, photosynthesis above all, are repressed less. | exploratory |
-| H5 | Memory is the same genes from mother to bud to propagule | **No evidence.** The propagule differences overlap mother-leaf drought genes, not the bud differences. | preliminary |
+| H5 | Memory is the same genes from mother to bud to propagule | **No chain.** Mother leaf → bud link in 8008 only; no bud → propagule link. | rank-based tests |
 | H6 | Known drought-memory genes behave as memory genes in sugarcane | **Partly.** The literature genes are strongly drought-responsive, but as sets they show no memory. A few individual orthologues do, led by the RAB18 dehydrin. | good (set tests) |
 
 ### H1. Do tillering leaves respond differently at the 3rd drought?
@@ -131,7 +132,7 @@ Not supported:
 - **8008 is the stable genotype:** 84 groups change between D3 and D1, and the responses correlate at r = 0.90.
 - **5000 changes more:** 1,229 groups, r = 0.82, but on one D1 plant.
 
-A formal genotype × cycle test was not run, since the genotypes are modelled separately (section 5, analysis item 1).
+Follow-up (`h2_genotype_cycle/`, `code/10_genotype_cycle.R`): in one model of both genotypes, the D3-vs-D1 interaction leans to "5000 stronger" (camera FDR 6e-5), but every test of it uses the one 5000 D1 plant. Refitting 8008 with one D1 and two W plants (9 fits) gives 17–1,171 D3-vs-D1 DEGs depending on the D1 plant; with plant 168_S25 it looks like 5000 (r(D1, D3) 0.81). At D1, 8008 induces drought genes more strongly than 5000 (FDR 1.5e-4).
 
 ### H3. Does drought leave a lasting mark in buds?
 
@@ -197,6 +198,7 @@ This is a preliminary test: overlap of DEG lists (`report_tables/h5_overlaps.tsv
 | Leaf D3 vs D1 ∩ bud T vs M | 4 groups, OR 4.9, FDR 0.02, all same direction | 6 groups, FDR 0.37 |
 
 - **Reading:** the propagule effect sits on genes that respond to drought, and mostly makes that response milder. It does not reuse the genes that separate the clean bud groups.
+- **Rank-based follow-up** (`h5_rank/`, `code/12_h5_rank.R`; camera on the top 300 genes in both directions, plus RRHO): 8008 mother-leaf drought genes and D3 > D1 genes are higher in T than M buds (FDR 0.01 and 0.001); 5000 shows no such link. Bud T vs M does not predict Ft vs Fw_D1 or Ft vs Fm_D1 (FDR ≥ 0.06). Mother drought genes respond more mildly in Ft/Fm than in Fw_D1 (5000 FDR down to 6e-14; 8008 repressed genes FDR 6e-4).
 - **What it can't test:** whether propagules inherit a shifted resting state. That needs watered propagules from stressed mothers (T/W, M/W), which were never sequenced.
 
 ### H6. Do known drought-memory genes behave as memory genes?
@@ -260,7 +262,7 @@ The main uncertainties are about the samples, not the analysis, so the cheapest 
    - the milder propagule repression.
 
    Marcos et al. 2018 may already hold the propagule data.
-4. **Library preparation batches.** Were the watered buds prepared separately from the stressed buds, or only sequenced on a different run? If library prep was shared, the run effect is probably small and T vs W becomes usable with a caveat.
+4. **Library preparation batches.** The data say the watered buds were prepared separately (shorter fragments, more adapter). Confirm from the lab notes, and check whether tissue or RNA is left to re-prepare them.
 5. **Material left over.** Is there RNA or tissue for the groups with one library? The key ones are 5000 Mt_D1, Fw_D1 of both genotypes, 5000 Ft_D1 and 8008 Fw_W. Do the T/W and M/W propagules exist?
 
 ### Wet lab, if there is budget (highest return first)
@@ -279,16 +281,15 @@ The main uncertainties are about the samples, not the analysis, so the cheapest 
    - H3K4me3 ChIP-qPCR at the RAB18 and LEA groups at D1 vs D3; this is the mark behind transcriptional memory in Arabidopsis.
    - DNA methylation in buds, if T vs W survives the batch check, since the demethylation genes point that way.
 
-### Analysis that can be done now, with the current data
+### Analysis with the current data: done
 
-1. **A formal H2 test:** one leaf model with `~genotype + condition + genotype:condition` for the genotype × cycle interaction, flagged where it rests on n = 1.
-2. **A partial check of the bud batch before re-sequencing:**
-   - compare technical metrics between runs 44 and 45 (rRNA, duplication, insert size, 3′ bias, from MultiQC);
-   - look at stably expressed genes;
-   - try RUVg.
-3. **Rank-based H5 tests:** test the bud T vs M signature and the leaf memory genes as gene sets in the propagule contrasts (camera/fry), instead of cut-off overlaps.
-4. **Allele-level view of the candidates** (RAB18, LEA, THI1, PAL): do all alleles of a group move together, or does one allele carry the memory? Use the allele-level counts and the Salmon bootstraps (e.g. fishpond/swish). This is a natural angle for a polyploid.
-5. **Co-expression (WGCNA) across the 48 libraries:** look for modules that follow drought history rather than current drought, then relate them to physiology once it is available.
+All five items are done; details and figures in [`report_story.md`](report_story.md).
+
+1. **H2 interaction test** (`h2_genotype_cycle/`): no evidence that either genotype remembers more.
+2. **Bud batch check** (`bud_batch/`): run 44 vs 45 is a library-prep difference (fragment length, adapter); stable genes shift (16–34% padj < 0.05 vs 0.3–0.4% within run); RUVg's first factor is the treatment (r = −0.97). Not rescuable. Side finding: 8008 contrasts against Mt_W carry a GC trend (run fingerprint).
+3. **Rank-based H5 tests** (`h5_rank/`): see H5 above.
+4. **Allele-level view** (`alleles/`): copies move together (median I² = 0; 4–11% of groups heterogeneous); single-copy InfRV median 2.2 vs 0.23 for groups. THI1 copy Chr02g1 in 8008 is the one possible single-allele case.
+5. **WGCNA** (`wgcna/`): 13 leaf modules; 11 follow current drought, none follows repeated drought; M07 (translation/chloroplast) is less repressed in Ft/Fm (8008 FDR 0.04), on the single Fw_D1 plants.
 
 ### Possible story, as the data stand
 

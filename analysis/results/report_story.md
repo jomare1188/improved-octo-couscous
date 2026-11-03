@@ -1,10 +1,10 @@
 # Does sugarcane remember a drought? The DOLORES RNA-seq results, explained
 
-*November 2026. This is the long, narrative version of [`report.md`](report.md). It tells the analysis as a story: the question, what the data look like, what went wrong on the way, and what the genes say. Boxes marked **Concept** explain the methods when they first come up, and a glossary at the end collects the terms. Every number comes from a file in this folder, and every figure appears where it is discussed.*
+*November 2026. This is the full, narrative report of the DOLORES RNA-seq analysis; [`report.md`](report.md) is a short technical summary. It starts with the hypotheses and a one-line answer to each, then tells the analysis as a story: what the data look like, what went wrong on the way, and what the genes say about each hypothesis. Boxes marked **Concept** explain the methods when they first come up, and a glossary at the end collects the terms. Every number comes from a file in this folder, and every figure appears where it is discussed.*
 
 ---
 
-## 1. The question
+## 1. The question and the hypotheses
 
 A plant that survives a drought is sometimes better prepared for the next one. This is called **drought memory**, or **stress priming**.
 
@@ -26,6 +26,36 @@ There are two cultivars:
 - **IACCTC07-8008** ("8008"): a drought-tolerant one.
 
 We expected them to behave differently, so every analysis treats them separately.
+
+### 1.1 The six hypotheses
+
+| # | Hypothesis | What we would see if it is true | Tested in |
+|---|---|---|---|
+| **H1** | **Leaves learn:** the mother's leaves respond differently to the 3rd drought than to the 1st. | Genes that respond more strongly (or differently) at the 3rd drought than at the 1st. | [section 6](#6-do-leaves-learn-h1) |
+| **H2** | **The tolerant cultivar remembers more:** 8008 has more leaf memory than 5000. | More memory genes in 8008, and a significant cultivar × drought-cycle interaction. | [section 7](#7-does-the-tolerant-cultivar-remember-more-h2) |
+| **H3** | **Buds keep a mark:** drought leaves a lasting change in the mother's buds. | Buds of stressed mothers differ from buds of watered mothers. | [section 9](#9-do-buds-keep-a-mark-h3) |
+| **H4** | **Propagules respond differently:** propagules of stressed mothers respond differently to their own drought. | A different drought response in propagules of stressed vs watered mothers. | [section 10](#10-do-propagules-respond-differently-h4) |
+| **H5** | **The same genes carry the mark** from mother leaf to bud to propagule. | The genes that change at one step also change at the next. | [section 11](#11-is-it-the-same-genes-from-mother-to-bud-to-propagule-h5) |
+| **H6** | **Known memory genes are memory genes here:** the memory genes of *Arabidopsis* and maize behave as memory genes in sugarcane. | Their sugarcane counterparts fall into the memory classes. | [section 8](#8-do-the-textbook-memory-genes-behave-as-memory-genes-here-h6) |
+
+*Table 1. The hypotheses of DOLORES.*
+
+Two more questions came up along the way, without a hypothesis number. Does one copy of a gene carry the memory ([section 12](#12-does-one-copy-of-a-gene-carry-the-memory))? Are there groups of genes that follow drought *history* rather than current drought ([section 13](#13-gene-modules-that-follow-history))?
+
+### 1.2 The answers in brief
+
+| # | Answer | How solid |
+|---|---|---|
+| H1 | **8008: mostly no.** The 3rd drought replays the 1st. A few dozen genes respond more strongly, most of them desiccation-protection genes led by RAB18. **5000: unresolved**, because its 1st-drought group is a single plant. | 8008 solid; 5000 exploratory |
+| H2 | **Not supported.** 5000 seems to change more between cycles, but a single plant can produce that pattern (we reproduced it in 8008). 8008 responds more strongly at the 1st drought. | solid as a "no evidence" |
+| H3 | **Partly.** Stressed vs watered buds cannot be compared: the watered buds' libraries were prepared differently. Buds stressed long ago vs recently differ cleanly, through PAL genes, in opposite directions in the two cultivars. | T vs M solid; vs watered lost |
+| H4 | **Suggestive, the same in both cultivars:** propagules of stressed mothers respond more mildly to drought, sparing photosynthesis and growth genes. | exploratory: one reference plant per cultivar |
+| H5 | **No chain.** A modest mother leaf → bud link in 8008 only; nothing links buds to propagules. | solid as a "no evidence" |
+| H6 | **Partly.** The known genes are drought genes in sugarcane too, but only a few (RAB18, LEA3) keep memory behaviour. | solid |
+| Copies | Gene copies move together; no single copy carries the memory. | solid |
+| Modules | Groups of co-expressed genes follow current drought, not history. | solid |
+
+*Table 2. Short answers. The full verdicts, with what they rest on, are in [section 14](#14-the-story-so-far).*
 
 ---
 
@@ -64,7 +94,7 @@ Three ideas are needed before any result makes sense.
 
 > **Concept: a genome with many copies of each gene.** Sugarcane is a highly polyploid hybrid: most genes exist in about 8–12 copies (alleles), inherited from two ancestral species. The POJ2878 reference genome assembles each copy separately, so its 397,650 "genes" are really alleles. Reads from one gene are split among nearly identical copies, which makes each copy noisy.
 >
-> We therefore grouped the copies. **OrthoFinder** compared the proteins of sugarcane, sorghum, maize, rice and *Arabidopsis* and found **orthologues**: genes in different species that descend from the same ancestral gene. All sugarcane alleles whose orthologue is the same sorghum gene were summed into one **allele group**, giving 78,613 groups. Sorghum is the closest diploid relative, so a group is close to "one gene" in the usual sense.
+> We therefore grouped the copies. **OrthoFinder** compared the proteins of sugarcane, sorghum, maize, rice and *Arabidopsis* and found **orthologues**: genes in different species that descend from the same ancestral gene. All sugarcane alleles whose orthologue is the same sorghum gene were summed into one **allele group**, giving 78,613 groups. Sorghum is the closest diploid relative, so a group is close to "one gene" in the usual sense. [Section 12](#12-does-one-copy-of-a-gene-carry-the-memory) checks that this grouping does not hide memory in a single copy.
 >
 > Bonus: the same orthology links sugarcane groups to genes already studied in *Arabidopsis* and maize (section 8).
 
@@ -111,15 +141,15 @@ The next figure zooms in, one panel per genotype and tissue.
 
 Each panel already hints at part of the story:
 - **8008 mother leaves (bottom middle).** Watered plants sit on the left, drought plants on the right, and the D1 (orange) and D3 (dark red) plants are **mixed together**. If the leaves had "learned", D3 should sit apart from D1. Keep this picture in mind for section 6.
-- **5000 mother leaves (top middle).** The single D1 plant (`157_S12`) sits halfway between watered plants and D3 plants. Either the 1st drought response was weaker, or this one plant was less stressed. With one plant we cannot tell.
-- **Buds (left).** In both genotypes PC1 (~52%) separates watered buds from stressed buds, while T and M buds overlap. This looks like a strong drought mark, but section 5.2 shows why we cannot trust it.
+- **5000 mother leaves (top middle).** The single D1 plant (`157_S12`) sits halfway between watered plants and D3 plants. Either the 1st drought response was weaker, or this one plant was less stressed. With one plant we cannot tell (section 7 comes back to this).
+- **Buds (left).** In both genotypes PC1 (~52%) separates watered buds from stressed buds, while T and M buds overlap. This looks like a strong drought mark, but section 5 shows why we cannot trust it.
 - **Propagules (right).** Watered propagules sit on the left and drought propagules on the right. In 8008 the two Ft plants sit between the watered plant and the Fw_D1 plant. This is a first hint of the propagule story, with a catch explained in section 10.
 
 ---
 
 ## 5. Detective work: problems found before any biology
 
-Before asking biological questions, we checked whether the data can answer them. Four problems turned up.
+Before asking biological questions, we checked whether the data can answer them. Four problems turned up. The second one, a batch effect in the buds, got a full investigation of its own (section 5.3).
 
 ### 5.1 Three tubes belong to the other cultivar
 
@@ -157,15 +187,96 @@ What the figure shows:
 - **Mother leaves.** The watered tillering controls (Mt_W) were sequenced on later runs (61, 63, 73), and every drought leaf on runs 51/52. So D1 vs W and D3 vs W are partly confounded. **D3 vs D1, the actual memory test, is clean.**
 - **Propagules.** All on runs 51/52. Clean.
 
-### 5.3 Groups with a single plant
+### 5.3 How big is the bud run effect, and can it be removed?
+
+The question "do buds of stressed mothers differ from buds of watered mothers?" is the strongest test of H3, so we tried hard to rescue it. We asked three things: how do the two runs differ technically, do genes that should never change look stable, and can a batch-correction method remove the run effect?
+
+**The two runs differ in library preparation.**
+
+![QC metrics per run](bud_batch/qc_metrics.png)
+
+*Figure 7. Technical metrics of the bud libraries, by run. Leaves are shown for reference.*
+
+Most metrics are the same in both runs: read depth, mapping rate, rRNA, duplication, GC content, genes detected. Two are not (Table 3).
+
+| Metric | Run 44 (W buds) | Run 45 (T, M buds) | Leaves | Wilcoxon p |
+|---|---|---|---|---|
+| Adapter content (% of reads) | 66.7 | 22.6 | 20.3 | 0.00025 |
+| Fragment length (Salmon, bp) | 137 | 182 | 130 | 0.00025 |
+| Mapped (%) | 70.6 | 68.5 | 69.3 | 0.04 |
+
+*Table 3. Median per group. Source: `bud_batch/qc_run44_vs_run45.tsv`.*
+
+Short fragments and high adapter content go together: when a fragment is shorter than the read, the sequencer reads into the adapter. So the W buds' libraries were built with shorter fragments. That points to a **library preparation** difference (fragmentation time, size selection, or a different kit lot), not only a different sequencing run.
+
+> **Concept: why fragment length matters.** Fragment length changes which genes are counted efficiently. Short fragments favour short transcripts and are sensitive to GC content in a different way from long fragments. Salmon corrects some of this, but not all. A batch of short-fragment libraries therefore shifts many genes up or down at once, according to their length and GC, without any biology.
+
+**The run leaves a fingerprint by gene length and GC.** If the run difference is technical, the log2 fold changes between runs should follow gene length and GC content. A biological contrast should not (Table 4).
+
+| Contrast | Same run? | rho with GC | rho with length |
+|---|---|---|---|
+| 8008 T_vs_W (bud) | no (45 vs 44) | −0.20 | 0.33 |
+| 8008 M_vs_W (bud) | no | −0.27 | 0.35 |
+| 8008 T_vs_M (bud) | yes (45) | 0.11 | −0.03 |
+| 5000 T_vs_W (bud) | no | −0.31 | 0.39 |
+| 5000 M_vs_W (bud) | no | −0.20 | 0.44 |
+| 5000 T_vs_M (bud) | yes | −0.18 | −0.09 |
+| 8008 Mt_D1_vs_Mt_W (leaf) | no (51/52 vs 61/63/73) | 0.21 | −0.17 |
+| 8008 Mm_W_vs_Mt_W (leaf) | no | 0.32 | −0.28 |
+| 8008 Mt_D3_vs_Mt_D1 (leaf) | yes | 0.17 | −0.10 |
+| 5000 Mt_D1_vs_Mt_W (leaf) | no | 0.11 | −0.08 |
+
+*Table 4. Spearman correlation between each contrast's log2 fold change and the gene group's GC content or length. Source: `bud_batch/gc_length_bias.tsv`.*
+
+![GC and length bias](bud_batch/gc_bias.png)
+
+*Figure 8. Log2 fold change against gene GC content and length, for contrasts within one run and across runs.*
+
+Every bud contrast against W carries a clear length trend (rho 0.33 to 0.44). T vs M, within one run, does not. There is a side finding for the leaves: 8008 contrasts against the watered tillering leaves (Mt_W, sequenced on later runs) carry a GC trend too, and Mm_W vs Mt_W, which should be a mild age effect, shows the strongest one. So the Mt_W leaves also carry a run fingerprint. It is weaker than in buds and the D1/D3 responses are large, so the leaf conclusions stand, but small leaf differences against Mt_W should be read with care.
+
+**Genes that should not change, change.**
+
+> **Concept: negative-control genes.** Some genes are expected to stay constant: "housekeeping" genes such as actin or GAPDH, or genes that barely vary among all our leaf samples. If many of them come out as differentially expressed, the contrast is driven by something other than biology.
+
+We used two sets: 1,000 groups that were the least variable across all leaf libraries, and 28 reference genes from the sugarcane qPCR literature (Figure 9).
+
+![Control genes](bud_batch/control_genes_lfc.png)
+
+*Figure 9. Log2 fold change of control genes in each contrast. Source: `bud_batch/control_genes_lfc_summary.tsv`.*
+
+- In buds, W vs T or M: 16–34% of the stable genes come out with padj < 0.05.
+- In buds, T vs M (same run): 0.3–0.4%.
+- In leaves, Mt_D3 vs Mt_D1 (same run): 0%.
+
+The stable genes are only "stable" when no run boundary is crossed.
+
+**A batch correction cannot separate run from treatment.**
+
+> **Concept: RUVg.** "Remove Unwanted Variation" estimates hidden technical factors from control genes, genes assumed not to be affected by the biology. The factors are then added to the model as covariates, like a batch label. It only works if the unwanted factor is not the same thing as the biological groups. If every W bud is on one run and every stressed bud on the other, the factor and the treatment are identical, and removing the factor removes the treatment too.
+
+We estimated one or two factors (k = 1, 2) from the 1,000 stable genes (Figure 10).
+
+![RUVg DEG counts](bud_batch/ruvg_degs.png)
+
+*Figure 10. Bud DEGs before (k = 0) and after removing one or two RUVg factors. Source: `bud_batch/ruvg_deg_summary.tsv`.*
+
+- The first factor correlates −0.97 (8008) and −0.98 (5000) with "watered or not". It *is* the run.
+- Removing it drops the W-vs-stressed DEGs from about 4,000–5,700 to about 60–200.
+- T vs M, within one run, keeps a similar number of DEGs (8008: 404 before, 581 after; 5000: 143 before, 172 after).
+
+One detail is worth mentioning. After removing the factor, the genes that leaves switch on under drought come out *higher* in 8008 stressed buds than in W buds (camera FDR 7 × 10⁻¹⁴ for T vs W; `bud_batch/leaf_drought_programme_in_buds.tsv`). Before correction there was no such signal. This is what we would expect if the buds of stressed mothers kept part of the drought programme. But it is what is left after removing a factor that is 97% the same as the treatment, so it can also be an artefact of the correction. 5000 shows nothing of the kind. We note it as a hint, not a result.
+
+**Verdict on the bud batch:** the W-vs-stressed bud comparison cannot be rescued with these data. The difference between the runs is a library preparation difference, it is as large as the biology, and it is perfectly confounded with the treatment. Only re-preparing and re-sequencing some libraries together can fix it (section 15). The T vs M bud comparison is clean and remains the one usable bud test.
+
+### 5.4 Groups with a single plant
 
 The groups with a single library are:
 - **5000:** Mt_D1, Mm_D1, Mm_D3, Fw_D1 and Ft_D1;
 - **8008:** Fw_W and Fw_D1.
 
-Every propagule comparison against Fw_D1 therefore rests on one plant in each genotype.
+Every propagule comparison against Fw_D1 therefore rests on one plant in each genotype, and every 5000 comparison with its 1st drought rests on one plant too. Section 7 shows how much a single plant can change a result.
 
-### 5.4 Age and time of day
+### 5.5 Age and time of day
 
 - **Age.** D1 leaves are 30 days younger than the watered controls (Figure 1).
 - **Time of day.** In 8008, D1 leaves differ from watered leaves in **clock genes**:
@@ -176,13 +287,13 @@ Every propagule comparison against Fw_D1 therefore rests on one plant in each ge
 
 ---
 
-## 6. Do leaves "learn"? (hypothesis H1)
+## 6. Do leaves "learn"? (H1)
 
 > **Concept: memory classes.** Following Ding et al., every gene gets two signs: how it changed at the 1st drought (D1 vs watered), then how it changed at the 3rd drought compared with the 1st (D3 vs D1).
 
 ![Memory classes](plots/story/memory_classes.png)
 
-*Figure 7. The memory classes, drawn as idealised genes. Top row: genes switched on by drought. Bottom row: genes switched off.*
+*Figure 11. The memory classes, drawn as idealised genes. Top row: genes switched on by drought. Bottom row: genes switched off.*
 
 The names to remember:
 - **`++` and `--`** are **memory genes**: the 3rd response is stronger than the 1st.
@@ -197,13 +308,13 @@ The names to remember:
 | 8008 | 3,905 / 4,196 | 3,585 / 3,978 | **35 / 49** | conclusive |
 | 5000 | 2,091 / 1,750 | 4,646 / 4,657 | 500 / 729 | exploratory (one D1 plant) |
 
-*Table 1. DEG counts in tillering mother leaves (`de/group/deg_summary.tsv`).*
+*Table 5. DEG counts in tillering mother leaves (`de/group/deg_summary.tsv`).*
 
-In 8008, about 8,000 groups respond to the 1st drought and about 7,500 to the 3rd, yet only **84** differ between the two. Figure 8 shows why.
+In 8008, about 8,000 groups respond to the 1st drought and about 7,500 to the 3rd, yet only **84** differ between the two. Figure 12 shows why.
 
 ![D1 vs D3 response](plots/story/d1_vs_d3.png)
 
-*Figure 8. Each dot is a group that responds to drought at D1 or at D3. x = response at the 1st drought, y = response at the 3rd. On the dashed diagonal the two are equal. Coloured dots are the memory classes.*
+*Figure 12. Each dot is a group that responds to drought at D1 or at D3. x = response at the 1st drought, y = response at the 3rd. On the dashed diagonal the two are equal. Coloured dots are the memory classes.*
 
 How to read it:
 - **On the diagonal:** the gene did the same thing both times.
@@ -221,11 +332,11 @@ The UpSet plot shows the same thing from another angle.
 
 ![UpSet 8008](plots/upset_degs_8008.png)
 
-*Figure 9. Shared DEGs across all contrasts in 8008. Red = up, blue = down, grey = intersections that mix up and down.*
+*Figure 13. Shared DEGs across all contrasts in 8008. Red = up, blue = down, grey = intersections that mix up and down.*
 
 What stands out in 8008:
 - **The leaf columns.** Two of the three largest columns are leaf groups: 1,383 groups go **down at both D1 and D3**, and 1,152 go **up at both**. The rows `Mt_D3 vs Mt_D1` are almost empty.
-- **The largest column overall (1,463).** These are buds, up in both T vs W and M vs W: the "stressed vs watered bud" signal, which is the batch-confounded one from Figure 6.
+- **The largest column overall (1,463).** These are buds, up in both T vs W and M vs W: the "stressed vs watered bud" signal, which is the batch-confounded one of section 5.3.
 
 ### 6.2 The few genes that do remember (8008)
 
@@ -240,7 +351,7 @@ A small set behaves like memory genes in 8008: 22 groups are `++` and 10 are `--
 | embryo-specific protein 3 | +9.3 | +1.8 |
 | sugar transporter | +9.0 | +2.3 |
 
-*Table 2. Some 8008 `++` groups (log2FC, `de/group/memory_classes_8008_tillering.tsv.gz`).*
+*Table 6. Some 8008 `++` groups (log2FC, `de/group/memory_classes_8008_tillering.tsv.gz`).*
 
 > **Concept: LEA proteins and dehydrins.** "Late embryogenesis abundant" proteins pile up in seeds as they dry out at the end of maturation. They protect membranes and other proteins when water is lost. Dehydrins such as RAB18 are one family of LEA proteins. Plants switch the same genes on in leaves under drought.
 
@@ -248,15 +359,15 @@ So the genes that 8008 leaves induce more strongly at the 3rd drought are **seed
 
 ![Example genes](plots/story/example_genes.png)
 
-*Figure 10. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left column 8008, right column 5000.*
+*Figure 14. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left column 8008, right column 5000.*
 
-Figure 10 makes the classes concrete:
+Figure 14 makes the classes concrete:
 - **RAB18 and LEA3 (8008):** they jump at D1 and **keep rising** at D3 (`++`).
 - **HAI1 (8008):** a PP2C phosphatase of the ABA pathway. It jumps at D1 and **stays** (`+=`): a strong drought gene without memory.
 - **THI1 (8008):** a thiamine (vitamin B1) biosynthesis gene. It drops at D1 and **drops further** at D3 (`--`).
 - **5000 (right column):** the same genes fall in other classes. RAB18 is `+=`, LEA3 even goes down, and HAI1 is `++`. Remember that the 5000 D1 group is one plant.
 
-One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadian clock, are among the memory genes. If D1 and D3 leaves were sampled at different hours, part of this "memory" could be time of day (section 5.4).
+One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadian clock, are among the memory genes. If D1 and D3 leaves were sampled at different hours, part of this "memory" could be time of day (section 5.5).
 
 ### 6.3 5000: a bigger response at D3, but on one plant
 
@@ -271,14 +382,16 @@ One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadi
 
 ![GO 5000 D3 vs D1 down](plots/go/go_bp_5000_Mt_D3_vs_Mt_D1_down.png)
 
-*Figure 11. GO processes among the genes lower at D3 than at D1 in 5000.*
+*Figure 15. GO processes among the genes lower at D3 than at D1 in 5000.*
 
 - **What goes down.** The list is dominated by **translation** and **ribosome** genes (translation p = 4e-29; the KEGG "Ribosome" pathway holds 102 groups). Under severe stress, plants stop building ribosomes and making proteins to save energy.
 - **Not memory-specific.** In 5000, genes the literature calls *non-memory* also respond more strongly at D3. Two explanations remain:
   - the 3rd drought was harsher;
   - the single D1 plant was mildly stressed.
 
-  Only measurements of how stressed each plant was can separate them.
+  Section 7 shows that the second explanation is enough.
+
+Two later sections back up the H1 answer from other angles. Gene copies within a group move together, so no single allele hides a memory the group sum misses (section 12). And no group of co-expressed genes changes at the 3rd drought beyond its change at the 1st (section 13).
 
 **H1 verdict.**
 - **8008:** mostly no. The 3rd drought replays the 1st, except for a few dozen genes, most of them desiccation-protection genes led by RAB18.
@@ -288,11 +401,60 @@ One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadi
 
 ## 7. Does the tolerant cultivar remember more? (H2)
 
-We expected 8008, the drought-tolerant cultivar, to show more memory. It shows less:
-- **8008:** 84 groups change between D3 and D1, with r = 0.90.
-- **5000:** 1,229 groups change, with r = 0.82, but on one D1 plant.
+We expected 8008, the drought-tolerant cultivar, to show more memory. Counting genes says the opposite: 84 groups change between D3 and D1 in 8008, against 1,229 in 5000 (Table 5). But 5000's D1 group has **one plant**, so the difference cannot be taken at face value. We tested it properly in two ways.
 
-A formal test of "genotype × cycle" was not run, because the genotypes were modelled separately. **H2 is not supported.**
+> **Concept: an interaction test.** "Does 8008 respond differently from 5000?" is not answered by counting DEGs in each cultivar separately. One cultivar can pass a cut-off and the other just miss it, with almost the same change. The proper test fits both cultivars in one model and asks whether the *difference* between D3 and D1 is itself different between cultivars: (D3 − D1 in 8008) − (D3 − D1 in 5000). That is the **genotype × cycle interaction**. A gene with a significant interaction "remembers" differently in the two cultivars.
+
+### 7.1 Both cultivars in one model
+
+All tillering leaves of both cultivars went into one DESeq2 model, with one group per cultivar and condition. The cultivar-specific contrasts barely change from the separate models (Table 7).
+
+| Contrast | Status | Up | Down |
+|---|---|---|---|
+| 8008 Mt_D3_vs_Mt_D1 | conclusive | 48 | 49 |
+| 5000 Mt_D3_vs_Mt_D1 | exploratory (5000 Mt_D1 has 1 plant) | 156 | 428 |
+| interaction, D1 vs W | exploratory | 614 | 290 |
+| interaction, D3 vs W | conclusive | 1,896 | 1,534 |
+| interaction, D3 vs D1 | exploratory | 175 | 77 |
+
+*Table 7. DEGs in the joint model (padj < 0.05, at least two-fold). Source: `h2_genotype_cycle/joint_deg_summary.tsv`. "Exploratory" marks every contrast that uses 5000's single D1 plant.*
+
+Gene by gene, the D3-vs-D1 interaction gives 252 genes, all resting on that one plant. A set-level view is more robust. We took the drought-responsive genes (the average D1 and D3 response of both cultivars, 4,842 induced and 5,995 repressed) and asked how much stronger they are at D3 than at D1 in each cultivar. We call this **amplification**.
+
+![Amplification by genotype](h2_genotype_cycle/amplification.png)
+
+*Figure 16. How much stronger the drought response is at D3 than at D1, for drought-induced and drought-repressed genes. Positive values mean a stronger response at the 3rd drought.*
+
+- In 8008 the 3rd drought looks like the 1st: median amplification 0.01 (induced) and 0.07 (repressed), on a log2 scale.
+- In 5000 the 3rd drought looks stronger: 0.54 and 0.38.
+- The interaction test on these sets agrees: the D3-vs-D1 interaction leans toward "5000 stronger" (camera FDR 6 × 10⁻⁵ for induced genes, 7 × 10⁻⁴ for repressed genes; `h2_genotype_cycle/interaction_camera.tsv`).
+- At D1 the reverse is true: 8008 induces the drought genes more strongly than 5000 (FDR 1.5 × 10⁻⁴).
+
+Read literally, that would say 5000 amplifies its response and 8008 does not. But every one of these tests compares against 5000's single D1 plant. If that plant was simply less stressed than average, D1 looks weak and D3 looks "amplified".
+
+### 7.2 Cutting 8008 down to 5000's design
+
+> **Concept: downsampling as a check.** If a result could come from having only one plant, build the same weak design in a group where we have more plants, and see whether the "result" appears there too. Here: refit 8008 with one D1 plant and two watered plants, exactly like 5000, and repeat for every possible choice of plants.
+
+8008 has three D1 plants and three watered plants. We refitted it nine times, each time with one D1 plant and two watered plants (Figure 17, Table 8).
+
+![8008 refitted with 5000's design](h2_genotype_cycle/design_check.png)
+
+*Figure 17. 8008 refitted with one D1 plant and two watered plants, as in 5000. Each point is one choice of plants. The 5000 result is shown for comparison.*
+
+| Design | D3 vs D1 DEGs | `++` memory genes | r(D1, D3) |
+|---|---|---|---|
+| 8008, all plants | 84 | 22 | 0.90 |
+| 8008, D1 = plant 165_a_S40 (3 fits) | 17–65 | 4–13 | 0.87–0.90 |
+| 8008, D1 = plant 166_S23 (3 fits) | 19–50 | 1–6 | 0.87–0.89 |
+| 8008, D1 = plant 168_S25 (3 fits) | 436–1,171 | 21–51 | 0.81–0.84 |
+| 5000, actual | 1,229 | 117 | 0.82 |
+
+*Table 8. Range over the three choices of watered plants for each D1 plant. r(D1, D3) is the correlation between the D1 and D3 responses; lower means the two droughts look less alike. Source: `h2_genotype_cycle/design_check_8008_as_5000.tsv`.*
+
+With plant 168_S25 as the only D1 plant, 8008 looks very much like 5000: up to 1,171 D3-vs-D1 genes, and a D1–D3 correlation of 0.81. With either of the other two plants, the "memory" almost disappears. So one plant is enough to produce 5000's result.
+
+**H2 verdict:** not supported. There is no evidence that either cultivar remembers more: 5000's larger response at D3 is within the range that a single D1 plant can produce. The one difference that does not depend on that plant is at the 1st drought: 8008 responds more strongly than 5000 (the D3 vs W interaction is conclusive, and D1 vs W points the same way). A real test of H2 needs more 5000 D1 plants.
 
 ---
 
@@ -302,22 +464,24 @@ We collected the memory genes published for *Arabidopsis* (Ding 2013) and maize 
 
 > **Concept: gene-set test (camera).** Instead of asking gene by gene, a set test asks whether a whole list of genes tends to move up or down in a contrast. It detects many small coordinated shifts that no single gene would show, and it accounts for genes in a list being correlated with each other.
 
+> **Concept: odds ratio (OR).** An OR of 2.8 means that a gene in list A is 2.8 times more likely (in odds) to also be in list B than a gene outside list A. OR = 1 means no link. The FDR says whether the overlap could be chance.
+
 The results (`memory_genes/camera_literature_sets.tsv`):
 - **As drought genes: yes, strongly.** In 8008, the maize `++` set goes up at D1 (FDR 5e-43), and so does the *Arabidopsis* `++` set (FDR 7e-17). The orthologues of known drought genes respond in sugarcane too.
 - **As memory genes: mostly no.**
   - In 8008 none of the `++` sets is induced further at D3.
   - The *Arabidopsis* `--` set even goes the other way: less repressed at D3 (FDR 0.005).
-- **Single genes that do match.** Our 8008 `++` class overlaps the *Arabidopsis* `++` class through 3 genes: RAB18, LEA3/SAG21 and PIT1. That is far more than chance (odds ratio 25, FDR 0.003; section 11 explains odds ratios).
+- **Single genes that do match.** Our 8008 `++` class overlaps the *Arabidopsis* `++` class through 3 genes: RAB18, LEA3/SAG21 and PIT1. That is far more than chance (odds ratio 25, FDR 0.003).
 - **Genes we cannot test.** RD29A and RD29B, the other *Arabidopsis* classics, have no orthologue in grasses.
 
 ![Curated candidates 8008](memory_genes/curated_heatmap_8008.png)
 
-*Figure 12. Hand-picked candidates in 8008 (rows) across all contrasts (columns). Red = higher, blue = lower (shrunk log2FC). The coloured strip on the left gives each gene's category.*
+*Figure 18. Hand-picked candidates in 8008 (rows) across all contrasts (columns). Red = higher, blue = lower (shrunk log2FC). The coloured strip on the left gives each gene's category.*
 
-How to read Figure 12: look down one column to see a whole contrast, or along one row to follow one gene.
+How to read Figure 18: look down one column to see a whole contrast, or along one row to follow one gene.
 - **The leaf drought columns** (`Mt_D1_vs_Mt_W`, `Mt_D3_vs_Mt_W`): the top rows (RAB18, ABF2, HAI1) are deep red in both, and TPS1 is deep blue.
 - **The `Mt_D3_vs_Mt_D1` column:** pale. Even the classic drought genes barely change between the 1st and 3rd drought; RAB18 is the only one that rises significantly.
-- **The bud columns** (`T_vs_W`, `M_vs_W`): ATX1 and ROS1, chromatin and DNA-demethylation enzymes, are red. That would be exciting for inheritance, but these are the batch-confounded columns.
+- **The bud columns** (`T_vs_W`, `M_vs_W`): ATX1 and ROS1, chromatin and DNA-demethylation enzymes, are red. That would be exciting for inheritance, but these are the batch-confounded columns (section 5.3).
 
 **H6 verdict:** partly. The drought genes are conserved, but memory behaviour is limited to a few genes, led by RAB18.
 
@@ -332,9 +496,9 @@ Buds matter most for sugarcane, because they become the next plants.
 | 8008 | 3,748 / 2,014 | 2,773 / 1,873 | **261 / 146** |
 | 5000 | 2,576 / 1,377 | 3,164 / 1,278 | **34 / 113** |
 
-*Table 3. Bud DEGs (up / down).*
+*Table 9. Bud DEGs (up / down).*
 
-- **Stressed vs watered buds.** Thousands of DEGs, but this comparison is the run-44-vs-run-45 problem of Figure 6. We cannot say how much of it is drought.
+- **Stressed vs watered buds.** Thousands of DEGs, but section 5.3 showed that this comparison is dominated by a library preparation difference that no correction can remove. We cannot say how much of it is drought.
 - **T vs M.** Same run, three plants each (two where one was excluded), so this comparison is trustworthy. It asks something narrower: do buds stressed long ago (T, 135 days) differ from buds stressed recently (M, 6 days)? They do: 407 groups in 8008 and 147 in 5000.
 
 What are they? In both genotypes, the top of the list is the **PAL** family.
@@ -343,7 +507,7 @@ What are they? In both genotypes, the top of the list is the **PAL** family.
 
 ![PAL in buds](plots/story/bud_pal.png)
 
-*Figure 13. Total expression of the 56 PAL allele groups in buds. The grey band marks the watered buds, sequenced on another run.*
+*Figure 19. Total expression of the 56 PAL allele groups in buds. The grey band marks the watered buds, sequenced on another run.*
 
 PAL moves in **opposite directions** in the two genotypes:
 - **8008:** T buds are higher than M buds.
@@ -353,15 +517,15 @@ So how long ago the stress happened changes the phenylpropanoid state of the bud
 
 ![GO 8008 T vs M up](plots/go/go_bp_8008_T_vs_M_up.png)
 
-*Figure 14. GO processes among the genes higher in T than in M buds, 8008.*
+*Figure 20. GO processes among the genes higher in T than in M buds, 8008.*
 
 A lesson about GO labels. The top terms here are "salicylic acid catabolic process", "drought recovery", "lignin catabolic process" and "L-phenylalanine catabolic process". They sound like four different biological stories. In fact they are mostly the **same PAL genes**, which carry all these labels in the annotation we transferred from other species. Always check which genes are behind a term before telling a story about it.
 
 Two other 8008 bud results:
 - **Thiamine (THI1) is lower in T buds,** the same gene that was a `--` memory gene in 8008 leaves.
-- **T vs M genes are enriched for mother-leaf drought genes:** 140 groups, odds ratio 2.4 (section 11 explains odds ratios).
+- **T buds carry a little of the mother's leaf drought programme.** Genes that 8008 mother leaves switch on under drought are slightly higher in T than in M buds (section 11).
 
-**H3 verdict:** partly. The timing of the stress leaves a clean, genotype-specific mark (PAL). Whether stressed buds differ from never-stressed buds is hidden behind the run effect.
+**H3 verdict:** partly. The timing of the stress leaves a clean, genotype-specific mark (PAL). Whether stressed buds differ from never-stressed buds is hidden behind a library preparation batch.
 
 ---
 
@@ -377,7 +541,7 @@ So instead of counting DEGs, we asked a simpler question: **how strongly does ea
 
 ![Propagule response](plots/story/propagule_response.png)
 
-*Figure 15. Drought response of propagules on mother-leaf drought genes. Box = middle half of the genes, label = median log2FC. Left: genes drought induces; right: genes drought represses.*
+*Figure 21. Drought response of propagules on mother-leaf drought genes. Box = middle half of the genes, label = median log2FC. Left: genes drought induces; right: genes drought represses.*
 
 - **Induced genes (left):** about the same in every group.
 - **Repressed genes (right):** clearly weaker repression in propagules from stressed mothers.
@@ -389,15 +553,20 @@ So instead of counting DEGs, we asked a simpler question: **how strongly does ea
 
   *Median log2FC on the mother-repressed genes.*
 
-The set test agrees in both genotypes: the *Arabidopsis* `--` set (genes drought represses) is higher in Ft than in Fw_D1 (FDR 1e-6 in 8008, 7e-9 in 5000, and 1e-5 for 5000 Fm).
+The set tests agree in both genotypes:
+- The *Arabidopsis* `--` set (genes drought represses) is higher in Ft than in Fw_D1 (FDR 1e-6 in 8008, 7e-9 in 5000, and 1e-5 for 5000 Fm).
+- Rank-based tests on the mother's own drought genes (section 11) give the same picture. In 5000, genes drought switches on are lower in Ft_D1 than in Fw_D1, and genes it switches off are less switched off; Fm_D1 shows the same (FDR 10⁻⁷ to 10⁻²⁰). In 8008 only the repressed genes differ (FDR 6 × 10⁻⁴).
+- **The two cultivars agree.** The Ft_D1 vs Fw_D1 profile of 8008 correlates with that of 5000 (rho 0.20; camera FDR 10⁻¹¹ to 10⁻²⁵). Two cultivars, each against its own reference plant, giving the same answer is the strongest evidence for this result.
 
-Which repressed genes are spared? Photosynthesis, above all.
+Which repressed genes are spared? Photosynthesis and growth, above all.
 
 ![GO 8008 Ft vs Fw_D1 up](plots/go/go_bp_8008_Ft_D1_vs_Fw_D1_up.png)
 
-*Figure 16. GO processes higher in Ft than in Fw_D1 propagules under drought, 8008.*
+*Figure 22. GO processes higher in Ft than in Fw_D1 propagules under drought, 8008.*
 
-In 8008 the top terms are photosystem I assembly, photosynthetic electron transport and photosynthetic acclimation. In 5000, KEGG "Photosynthesis" comes out (padj 0.003). Drought normally shuts photosynthesis genes down. Propagules from stressed mothers shut them down less. That fits the better drought performance Marcos et al. 2018 saw in such propagules.
+In 8008 the top terms are photosystem I assembly, photosynthetic electron transport and photosynthetic acclimation. In 5000, KEGG "Photosynthesis" comes out (padj 0.003). The co-expression analysis finds the same thing on its own: the only module that follows the mother's history is a translation and chloroplast module, less repressed in propagules of stressed mothers (section 13). Drought normally shuts these genes down. Propagules from stressed mothers shut them down less. That fits the better drought performance Marcos et al. 2018 saw in such propagules.
+
+> **Concept: milder response, two readings.** A propagule that "responds less" to drought may be **better prepared** (it needs less emergency response, as Marcos et al. 2018 suggested from physiology), or it may simply have been **less stressed** (bigger, with more water reserve in the stalk piece, or in drier soil at a different time). Gene expression alone cannot tell the two apart. A measure of plant water status at sampling can.
 
 **Why this is still exploratory:**
 - **One reference plant per genotype.** If that Fw_D1 plant was simply drier than the others, we would see exactly this pattern.
@@ -410,94 +579,230 @@ In 8008 the top terms are photosystem I assembly, photosynthetic electron transp
 
 ## 11. Is it the same genes from mother to bud to propagule? (H5)
 
-If memory travelled from mother to bud to propagule, the same genes should turn up at each step. We tested overlaps between DEG lists (`report_tables/h5_overlaps.tsv`).
+If memory travelled from mother to bud to propagule, the same genes should change at each step. A first pass with overlaps of DEG lists found no shared genes between buds and propagules (`report_tables/h5_overlaps.tsv`). But cut-offs throw away most of the information, and with few plants many true changes miss them. So we compared whole gene rankings instead.
 
-> **Concept: odds ratio (OR).** An OR of 2.8 means that a gene in list A is 2.8 times more likely (in odds) to also be in list B than a gene outside list A. OR = 1 means no link. The FDR says whether the overlap could be chance.
+> **Concept: rank-based tests.** Instead of "which genes pass padj < 0.05 in both?", ask "do the genes that rank highest in contrast A also tend to rank high in contrast B?". Two tools:
+> - **camera (pre-ranked)**: take the top 300 up and top 300 down genes from A and test whether they move as a set in B. This is tested in both directions, A → B and B → A.
+> - **RRHO** (rank-rank hypergeometric overlap): rank all genes in A and in B, and for every pair of cut points count how many genes are in both tops. The result is a map. A hot spot in the up-up or down-down corner means the two contrasts agree; hot spots in the off-diagonal corners mean they go in opposite directions.
 
-| Overlap | 8008 | 5000 |
-|---|---|---|
-| Mother-leaf drought genes ∩ Ft vs Fw_D1 | 88 groups, OR 1.4 | **152 groups, OR 2.8, FDR 2e-19; 118 of 152 respond less in Ft** |
-| Mother-leaf drought genes ∩ Fm vs Fw_D1 | — | 30 groups, OR 3.0; 22 of 30 respond less in Fm |
-| Bud T vs M ∩ Ft vs Fw_D1 | 5 groups, not significant | 2 groups, not significant |
-| Leaf D3 vs D1 ∩ bud T vs M | 4 groups, OR 4.9 | 6 groups, not significant |
+![Correlation between contrasts](h5_rank/contrast_correlations.png)
 
-*Table 4. Overlaps between tissues.*
+*Figure 23. Spearman correlation between the log2 fold changes of every pair of contrasts, per cultivar. Source: `h5_rank/contrast_correlations.tsv`.*
 
-- **What the propagules share:** their differences fall on **drought-response genes**, and mostly make that response milder.
-- **What they don't share:** the genes that separate the bud groups.
+![RRHO maps](h5_rank/rrho_maps.png)
 
-So what passes to the propagule looks like a changed drought **response**, not a carried-over bud **state**. One thing cannot be tested: whether watered propagules from stressed mothers (T/W) start from a different resting state, because they were never sequenced.
+*Figure 24. RRHO maps for the steps of H5. Colour is −log10 p of the overlap. Bottom-left = both up; top-right = both down.*
 
-**H5 verdict:** no evidence that the same genes carry the memory through.
+We tested each step of the chain (Table 10).
+
+| Step | Contrasts | 8008 | 5000 |
+|---|---|---|---|
+| Mother leaf → bud | Mt_D1_vs_Mt_W (leaf) vs T_vs_M (bud) | **agree**: leaf drought genes are higher in T buds (camera FDR 0.01; RRHO up-up peak 73) | no link, weakly opposite |
+| Mother memory → bud | Mt_D3_vs_Mt_D1 vs T_vs_M | **agree**: D3 > D1 genes higher in T buds (FDR 0.001) | partial: D3 < D1 genes lower in T buds (FDR 0.001) |
+| Bud → propagule | T_vs_M (bud) vs Ft_D1_vs_Fw_D1 | no link (FDR ≥ 0.1) | weak (FDR 0.07) |
+| Bud → propagule, matched | T_vs_M vs Ft_D1_vs_Fm_D1 | (no Fm in 8008) | weak (FDR 0.06) |
+| Mother drought → propagule | Mt_D1_vs_Mt_W vs Ft_D1_vs_Fw_D1 | **opposite** for repressed genes (FDR 6 × 10⁻⁴) | **opposite** for both sets (FDR down to 6 × 10⁻¹⁴; RRHO off-diagonal peaks 151 and 244) |
+
+*Table 10. Rank-based tests of H5. Source: `h5_rank/h5_rank_tests.tsv`, `h5_rank/rrho_maxima.tsv`.*
+
+Three things stand out.
+
+**1. A modest mother → bud link in 8008.** In 8008, genes that the mother's leaves switch on under drought, and genes that rise more at the 3rd drought than at the 1st, are slightly higher in buds of tillering-stressed (T) mothers than in buds of maturation-stressed (M) mothers. T buds were collected 135 days after the last drought, M buds 6 days after. So T buds carry more of the leaf drought programme despite the longer gap, which is what long-term memory would look like. The correlation over all genes is small (rho 0.10), so this is a shift in a subset of genes, not a general state. 5000 does not show it.
+
+**2. No link from buds to propagules.** Whatever separates T from M buds does not reappear in the propagules grown from them (Ft vs Fw, or Ft vs Fm in 5000). The mark in the bud, if there is one, is not what the propagule shows.
+
+**3. The propagules show a milder drought response,** the H4 result (section 10). It concerns how the propagule responds, not a state carried over from the bud.
+
+One thing cannot be tested: whether watered propagules from stressed mothers (T/W) start from a different resting state, because they were never sequenced.
+
+**H5 verdict:** no chain from mother to bud to propagule. The two links that do appear, mother → bud in 8008 and the milder propagule response, are separate observations.
 
 ---
 
-## 12. The story so far
+## 12. Does one copy of a gene carry the memory?
 
-| # | Hypothesis | Answer |
-|---|---|---|
-| H1 | Leaves learn | 8008: mostly no; a small memory module of desiccation-protection genes (RAB18, LEA). 5000: unresolved (one D1 plant). |
-| H2 | 8008 remembers more than 5000 | Not supported. |
-| H3 | Buds keep a mark | Partly: long-ago vs recent stress differ (PAL, opposite between genotypes). Stressed vs watered is hidden by the run effect. |
-| H4 | Propagules respond differently | Suggestive: milder repression, especially of photosynthesis, in both genotypes; best supported in 5000. |
-| H5 | Same genes throughout | No evidence. |
-| H6 | Textbook memory genes are memory genes here | Partly: they are drought genes; only a few (RAB18) keep memory behaviour. |
+Sugarcane has about 8–12 copies of most genes, and every analysis so far summed the copies into **allele groups** (section 3). Memory could still sit in a single copy, for example the one copy that keeps a chromatin mark, and be diluted in the sum.
+
+> **Concept: heterogeneity between alleles (I²).** For each allele group, take the log2 fold change of each copy and ask whether they agree. Cochran's Q tests whether the copies differ more than their uncertainty allows. I² is the share of the variation between copies that is real rather than noise: 0% means all copies agree, 75% means they disagree strongly. This comes from meta-analysis, where it measures whether several studies agree.
+
+### 12.1 The copies move together
+
+| Cultivar | Groups | Median I² | Heterogeneous (FDR < 0.05) | Copies going opposite ways |
+|---|---|---|---|---|
+| 5000, all drought-responsive | 2,136 | 0 | 6.3% | 1.6% |
+| 8008, all drought-responsive | 3,511 | 0 | 11.3% | 1.4% |
+| 5000, memory groups | 209 | 0 | 4.8% | 2.4% |
+| 8008, memory groups | 20 | 0 | 10% | 0% |
+| 5000, non-memory groups | 1,927 | 0 | 3.6% | 0.7% |
+| 8008, non-memory groups | 3,491 | 0 | 3.9% | 0.1% |
+
+*Table 11. Agreement between copies within each allele group. Source: `alleles/heterogeneity_summary.tsv`.*
+
+![Allele heterogeneity](alleles/allele_heterogeneity.png)
+
+*Figure 25. I² for drought-responsive groups, memory groups and non-memory groups.*
+
+In most groups the copies agree completely (median I² = 0). Memory groups are not more heterogeneous than other responsive groups: 8008's 10% is 2 groups out of 20. And when one copy does most of the change, it is usually the copy that is most expressed: the share of the change carried by a copy tracks its share of the expression (r = 0.97 in 8008; `alleles/memory_change_carriers.tsv`). So the change is spread across copies in proportion to how much each is used.
+
+### 12.2 The named candidates
+
+![Named candidates, allele by allele](alleles/named_alleles.png)
+
+*Figure 26. Expression of each copy of the named candidate genes, per group. Each line is one copy (POJ2878 gene ID and chromosome copy).*
+
+- **RAB18:** all copies rise together under drought in 8008. 5000 expresses only 3 of the 5 copies seen in 8008 (`alleles/named_allele_presence.tsv`).
+- **LEA3, seed-storage protein, embryo-specific protein:** copies move together. The seed-storage protein copies are expressed only in 8008.
+- **THI1:** one copy (chromosome 2, copy 1) drops sharply in 8008 at D3 (about −8 on the log2 scale), more than the other two copies. This is the one candidate where a single allele may behave differently. It is worth checking by qPCR with copy-specific primers.
+- **PAL (bud signature):** see Figure 27.
+
+![PAL copies in buds](alleles/pal_alleles.png)
+
+*Figure 27. Copies of the PAL group that best separates T from M buds in 5000.*
+
+The two cultivars do not even share all copies. Among the copies of the named genes, 25 are expressed in both cultivars, 9 only in 8008 and 4 only in 5000. So "the same gene" is partly a different set of alleles in each cultivar, one more reason to analyse them separately.
+
+### 12.3 How sure can we be about a single copy?
+
+> **Concept: inferential variance (InfRV).** Salmon has to decide which copy each read came from. When copies are almost identical, it cannot be sure. Rerunning the assignment many times on resampled reads (bootstraps; we ran 30 per library) shows how much a copy's count changes just from that uncertainty. InfRV is that variance relative to the mean: near 0 means the count is solid, above 1 means the uncertainty is larger than the count itself.
+
+![Bootstrap uncertainty](alleles/bootstrap_uncertainty.png)
+
+*Figure 28. Inferential uncertainty of single copies and of allele groups, for the candidate genes. Source: `alleles/bootstrap_infrv.tsv`.*
+
+| Level | Features | Median InfRV | InfRV > 0.5 |
+|---|---|---|---|
+| Single copy | 1,882 | 2.2 | 86% |
+| Allele group | 352 | 0.23 | 37% |
+
+*Table 12. Uncertainty from read assignment, for copies of the candidate groups.*
+
+For single copies, the uncertainty is usually larger than the signal. Within a group, the bootstrap counts of the copies are strongly anti-correlated (median of the lowest pair −0.89; `alleles/bootstrap_allele_correlation.tsv`): reads move from one copy to another between bootstraps, and the group total stays the same.
+
+**Verdict:** in these data the copies of a gene move together, and the memory candidates are no exception. Short-read RNA-seq cannot say much more at the single-copy level, because reads cannot be assigned reliably among nearly identical copies. This also confirms that allele groups are the right unit. A real allele-level test needs long reads or copy-specific qPCR; THI1 is the best candidate for it.
+
+---
+
+## 13. Gene modules that follow history
+
+The other analyses test genes one by one or in lists we chose. A co-expression network lets the data group genes on their own. If drought memory is a coordinated programme, some group of genes should follow the plant's **history** (a previous drought, or a stressed mother) and not only whether it is dry right now.
+
+> **Concept: WGCNA and module eigengenes.** Weighted gene co-expression network analysis connects every pair of genes by how similarly they rise and fall across samples. Genes that move together form a **module** (we name them M01, M02… by size; M00 holds genes that fit nowhere). Each module is summarised by its **eigengene**, one number per library: the main shared pattern of the module, like a module-wide expression level. We can then test the eigengene against the design, the same way we test a single gene.
+
+**What went in.** All 32 leaf libraries of both cultivars, and the 8,000 most variable allele groups. The cultivar difference was removed first, so the modules describe responses rather than "8008 genes" and "5000 genes". The network is signed (genes that go in opposite directions are not linked) and robust to outlier samples (biweight midcorrelation). No soft-threshold power reached the usual scale-free fit of 0.8 (the best was 0.76), which is common with strong treatment effects; we used 14, the value the WGCNA authors recommend for signed networks with 30–40 samples. The result: 13 modules of 44 to 1,945 groups, with 698 groups unassigned (`wgcna/modules.tsv`).
+
+**The test.** Each eigengene was modelled with every factor of the design at once, so each factor is measured on top of the others:
+- **current drought**: the leaf is under drought when sampled (D1, D3, propagule D1);
+- **repeated (D3)**: the 3rd drought, on top of current drought. This is the plant's own history (H1);
+- **maternal stress**: a propagule of a stressed mother (Ft, Fm), on top of its own drought. This is the mother's history (H4);
+- **late run (Mt_W)**, **propagule** and **maturation**: the run, tissue and age differences, so they do not leak into the others.
+
+![Module-trait map](wgcna/module_trait.png)
+
+*Figure 29. What each module follows. Colour is the t-statistic of each factor for each module's eigengene; stars mark FDR < 0.05 and < 0.01. Left: both cultivars together; middle and right: each cultivar alone. Source: `wgcna/module_trait_tests.tsv`.*
+
+### 13.1 The modules follow current drought, not history
+
+Figure 29 is dominated by its first column. Eleven of the 13 modules change with current drought (FDR < 0.05), most of them strongly:
+- **M03** (1,378 groups) rises under drought. Its hubs include the dehydrin DHN1 and ferritin; it holds 44% of 8008's D1-induced genes (`wgcna/module_list_overlaps.tsv`).
+- **M02** (1,462 groups) falls under drought: cell-wall receptor kinases, callose synthase, translation-related GO terms.
+- **M01** (1,945) rises under drought and is rich in phenylpropanoid genes (phenylalanine breakdown, the PAL step; hubs include chalcone synthase CHS1 and MYB12). It also holds most of 5000's D3-higher genes, but its eigengene does not move with the repeated term.
+- **M05** (photosynthesis), **M07** (translation and chloroplast), **M10** (water and ion transport) and **M11/M12** (heat-shock proteins) complete the picture: drought switches photosynthesis and growth down and protection up, as expected.
+
+The other big signal is the propagule vs mother difference (younger plants of a different age and season), which drives M04, M09 and M10.
+
+The **repeated (D3)** column is empty: no module changes at the 3rd drought beyond the change it already shows at the 1st, in either cultivar or both together. This agrees with section 6: the 3rd drought looks like the 1st.
+
+The **maternal stress** column is almost empty too. In the pooled model nothing passes FDR 0.05. One module does in one cultivar (Figure 30).
+
+### 13.2 One module, M07, in propagules of stressed mothers
+
+![M07 eigengene](wgcna/history_modules.png)
+
+*Figure 30. The M07 eigengene in every leaf library. M07 falls under drought in mothers and propagules alike.*
+
+**M07** (258 groups) is enriched for translation, ribosome and chloroplast organisation genes, and drought switches it off. In propagules of stressed mothers it is switched off **less** than in propagules of watered mothers:
+- 8008: t = 3.3, FDR 0.04;
+- 5000: same direction, t = 1.3, not significant; both together t = 2.7, FDR 0.16;
+- in both cultivars, M07 is enriched for genes that are higher in Ft_D1 than in Fw_D1 (odds ratio 5.1 in 8008, 7.1 in 5000; `wgcna/module_list_overlaps.tsv`).
+
+This is the module form of the H4 result (section 10): propagules of stressed mothers respond more mildly to drought, here in growth and chloroplast genes. But Figure 30 also shows its weakness: Fw_D1 is **one plant per cultivar**, and in both cultivars that plant is among the lowest points. Ft_D1 and Fm_D1 sit between watered and drought-stressed propagules. One unusually stressed Fw_D1 plant would produce the same picture.
+
+### 13.3 Buds
+
+We also scored every module in the buds (the mean of its genes, `wgcna/bud_module_T_vs_M.tsv`). No leaf module separates T from M buds (all p ≥ 0.05). The bud signal of sections 9 and 11 lives in a subset of genes and does not form a leaf-defined module.
+
+**Verdict:** in these leaves, co-expression follows current drought and plant type, not drought history. The only history-related module, M07, repeats the milder propagule response and rests on the same single Fw_D1 plants.
+
+---
+
+## 14. The story so far
+
+| # | Hypothesis | Answer | Rests on |
+|---|---|---|---|
+| H1 | Leaves learn | **8008: mostly no.** The 3rd drought replays the 1st (r = 0.90); a small memory module of desiccation-protection genes (RAB18, LEA). No co-expression module follows repeated drought. **5000: unresolved.** | 8008: 2–3 plants per group, clean run. 5000: one D1 plant. |
+| H2 | 8008 remembers more than 5000 | **Not supported.** 5000's larger D3 response can be produced by a single D1 plant, as downsampling 8008 shows. 8008 responds more strongly at the 1st drought. | joint model + downsampling |
+| H3 | Buds keep a mark | **Partly.** Long-ago vs recent stress differ (PAL, opposite between genotypes). Stressed vs watered is lost to a library preparation batch that RUVg cannot remove. | T vs M: same run, 2–3 plants. |
+| H4 | Propagules respond differently | **Suggestive:** milder drought response, sparing photosynthesis and growth genes, in both cultivars, which agree with each other. | one Fw_D1 plant per cultivar (a weak library in 8008) |
+| H5 | Same genes throughout | **No chain.** Mother leaf → bud link in 8008 only; no bud → propagule link. | rank-based tests |
+| H6 | Textbook memory genes are memory genes here | **Partly:** they are drought genes; only a few (RAB18, LEA3) keep memory behaviour. | set tests |
+| — | One copy carries the memory | **No:** copies move together; single-copy counts are too uncertain to go further. | allele-level tests, bootstraps |
+| — | Gene modules follow history | **No:** modules follow current drought and plant type; one module repeats the H4 result. | WGCNA |
+
+*Table 13. All verdicts.*
 
 In one paragraph:
-- **Leaves:** sugarcane leaves mostly reset their drought response between cycles. The tolerant cultivar keeps a small, *Arabidopsis*-like memory module of drying-protection genes.
-- **Buds:** they carry a stress-timing signature built on phenylpropanoid genes, which differs between the cultivars.
-- **Propagules:** propagules of stressed mothers seem to repress photosynthesis less under drought.
+- **Leaves:** sugarcane leaves mostly reset their drought response between cycles. The tolerant cultivar keeps a small, *Arabidopsis*-like memory module of drying-protection genes. The apparent extra memory of 5000 is what one D1 plant can produce.
+- **Buds:** they carry a stress-timing signature built on phenylpropanoid genes, which differs between the cultivars. In 8008, buds stressed long ago keep a little of the mother's leaf drought programme.
+- **Propagules:** propagules of stressed mothers respond more mildly to drought, sparing photosynthesis and growth genes, in both cultivars.
+- **Caveat across the leaves:** the watered tillering leaves (Mt_W) carry a run fingerprint, mostly in 8008. Large leaf responses are unaffected, but small differences against Mt_W need care.
 
 The leaf result is the most solid. The bud and propagule results need the checks below before they can be claimed.
 
 ---
 
-## 13. Where to go next, and why
+## 15. Where to go next, and why
 
-The biggest uncertainties are about the samples, not the statistics, so the cheapest steps come first.
+The biggest uncertainties are about the samples, not the statistics, so the cheapest steps come first. Everything that could be done with the existing data has been done (sections 5.3, 7, 11, 12 and 13).
 
 **Ask Dolores and the lab (free):**
 1. **The three mislabelled libraries.** Tube and plate records would let us relabel them instead of losing them (section 5.1).
-2. **Sampling time of day for every group.** This decides whether the clock and THI1 genes among the "memory" genes are biology or the hour of sampling (sections 5.4 and 6.2).
-3. **How stressed each sampled plant was:** leaf water potential or relative water content, soil moisture, gas exchange. This is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 6.3) and the propagule result (section 10). Marcos et al. 2018 may already have the propagule data.
-4. **Library preparation batches.** Were watered buds also *prepared* separately, or only *sequenced* separately? If library prep was shared, the run effect is probably small and the bud comparison with watered buds becomes usable with a caveat (section 5.2).
+2. **Library preparation of the buds.** The data say the watered buds' libraries were prepared differently from the T and M buds' libraries (shorter fragments, more adapter; section 5.3). The lab notes can confirm it, and say whether tissue or RNA is left to re-prepare them.
+3. **Sampling time of day for every group.** This decides whether the clock and THI1 genes among the "memory" genes are biology or the hour of sampling (sections 5.5 and 6.2).
+4. **How stressed each sampled plant was:** leaf water potential or relative water content, soil moisture, gas exchange. This is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 may already have the propagule data.
 5. **Leftover RNA or tissue,** for the groups with one plant and for the never-sequenced T/W and M/W propagules.
 
 **In the lab, if there is budget:**
-1. **Re-sequence a few existing libraries together on one run:** two W, two T and two M buds per genotype, plus a few watered and drought leaves. Shallow sequencing is enough. This measures the run effect directly and could rescue the strongest bud test.
+1. **Re-prepare and re-sequence a few existing libraries together:** two W, two T and two M buds per genotype, plus a few watered and drought leaves. Shallow sequencing is enough. This is the only way to rescue the strongest bud test.
 2. **Add plants where everything rests on one:**
    - 5000 Mt_D1 (H1, H2);
    - Fw_D1 in both genotypes, and a better 8008 Fw_D1 than `79_S6` (H4);
    - if possible, T/W propagules (H5).
 3. **RT-qPCR on a short list, in every available plant:**
    - RAB18, LEA3 and the seed-storage protein (memory candidates);
-   - THI1 and CCA1/LHY (memory or clock?);
+   - THI1 and CCA1/LHY (memory or clock?), with copy-specific primers for THI1 (section 12);
    - PAL (the bud signature);
    - a few photosynthesis genes (the propagule signature).
 4. **Only after the qPCR holds, the mechanism.** In *Arabidopsis*, trained genes keep a chromatin mark (H3K4me3) between droughts. ChIP-qPCR for that mark at RAB18 and LEA3, at D1 vs D3, would test whether sugarcane uses the same mechanism.
-
-**With the data we already have** (done since; see [`report_followup.md`](report_followup.md)):
-1. **A formal genotype × cycle test** for H2.
-2. **A partial bud batch check:** compare technical quality metrics of runs 44 and 45, look at genes that should be stable, and try a batch-correction method (RUVg).
-3. **Rank-based H5 tests** instead of cut-off overlaps.
-4. **An allele-level look at the candidates:** in a polyploid, does one allele carry the memory, or do all copies move together?
-5. **Co-expression modules (WGCNA)** that follow drought *history* rather than current drought.
 
 ---
 
 ## Where everything is
 
-| What | File |
-|---|---|
-| Short technical summary | [`report.md`](report.md) |
-| Follow-up analyses (H2, bud batch, H5, alleles, WGCNA) | [`report_followup.md`](report_followup.md) |
-| Figures made for this post | `plots/story/` (code: `../code/08_story_figures.R`) |
-| PCA, UpSet and GO plots | `plots/`, `plots/go/` |
-| DE tables, DEG counts, memory classes | `de/group/` (allele level: `de/gene/`) |
-| Literature and candidate gene tests | `memory_genes/` |
-| GO and KEGG tables | `enrichment/` |
-| Numbers computed for the reports | `report_tables/` (code: `../code/07_report_stats.R`) |
-| Libraries per sequencing run | `qc/sequencing_runs.tsv` |
+| What | Results | Code |
+|---|---|---|
+| Short technical summary | [`report.md`](report.md) | |
+| Figures made for this report | `plots/story/` | `../code/08_story_figures.R` |
+| PCA, UpSet and GO plots | `plots/`, `plots/go/` | `../code/06_plots.R` |
+| DE tables, DEG counts, memory classes | `de/group/` (allele level: `de/gene/`) | `../code/03_de.R` |
+| Literature and candidate gene tests (H6) | `memory_genes/` | `../code/04_memory_genes.R` |
+| GO and KEGG tables | `enrichment/` | `../code/05_enrichment.R` |
+| Numbers computed for the reports | `report_tables/` | `../code/07_report_stats.R` |
+| Libraries per sequencing run | `qc/sequencing_runs.tsv` | `../code/08_story_figures.R` |
+| Bud batch check (section 5.3) | `bud_batch/` | `../code/11_bud_batch.R` |
+| H2, genotype × cycle (section 7) | `h2_genotype_cycle/` | `../code/10_genotype_cycle.R` |
+| H5, rank-based tests (section 11) | `h5_rank/` | `../code/12_h5_rank.R` |
+| Gene copies (section 12) | `alleles/` | `../code/13_alleles.R` |
+| Gene modules (section 13) | `wgcna/` | `../code/14_wgcna_prep.R`, `../code/15_wgcna.R`, `../code/16_wgcna_traits.R` |
 
 ---
 
@@ -506,26 +811,36 @@ The biggest uncertainties are about the samples, not the statistics, so the chea
 | Term | Meaning |
 |---|---|
 | Allele group | All sugarcane gene copies (alleles) that share the same sorghum orthologue, summed together; our unit of analysis. |
-| Batch effect | A technical difference between groups of samples processed separately (here, sequencing runs). |
+| Batch effect | A technical difference between groups of samples processed separately (here, sequencing runs and library preparation). |
 | camera | A gene-set test from the limma package (section 8). |
 | Confounding | Two effects that change together, so they cannot be separated (section 5.2). |
 | Contrast | A comparison between two groups, written `A_vs_B`. |
 | DEG | Differentially expressed gene (group): padj < 0.05 and at least a two-fold change. |
 | DESeq2 | The statistical method used to test differential expression. |
 | Dispersion | How much a gene varies between plants of the same group; must be estimated to test differences. |
+| Downsampling | Refitting a well-replicated group with fewer plants, to see what a weak design can produce (section 7.2). |
+| Eigengene | One number per library that summarises a co-expression module (section 13). |
 | FDR | False discovery rate: the expected share of false hits among the hits. |
+| Fragment length | The length of the RNA pieces in a library; set during library preparation (section 5.3). |
 | GO | Gene Ontology: a shared vocabulary of biological processes and functions. |
+| I² | The share of the variation between gene copies that is real rather than noise (section 12). |
+| InfRV | Uncertainty in a count caused by not knowing which copy a read came from (section 12.3). |
+| Interaction | Whether an effect differs between cultivars, e.g. D3 − D1 in 8008 vs D3 − D1 in 5000 (section 7). |
 | KEGG | A database of metabolic and signalling pathways. |
 | LEA / dehydrin | Proteins that protect cells during drying; abundant in maturing seeds (section 6.2). |
 | log2FC | Log2 fold change: +1 = double, −1 = half (section 3). |
-| Memory class | `++`, `--`, `+-`, `-+`, `+=`, `-=`, `0+`, `0-` (Figure 7). |
-| Odds ratio | How much more likely an overlap is than chance; 1 = no link (section 11). |
+| Memory class | `++`, `--`, `+-`, `-+`, `+=`, `-=`, `0+`, `0-` (Figure 11). |
+| Module | A group of genes that rise and fall together across samples (section 13). |
+| Odds ratio | How much more likely an overlap is than chance; 1 = no link (section 8). |
 | Orthologue | Genes in different species that descend from one ancestral gene. |
 | padj | p-value adjusted for testing many genes. |
 | PAL | Phenylalanine ammonia-lyase, entry enzyme of the phenylpropanoid pathway (section 9). |
 | PCA | Principal component analysis: draws each sample as a point so similar samples sit close (section 4). |
 | Propagule | A new plant grown from a bud on a cut stalk. |
+| RRHO | Rank-rank hypergeometric overlap: a map of where two gene rankings agree (section 11). |
 | rRNA | Ribosomal RNA. Normally removed before sequencing; a library full of it has few reads on genes. |
+| RUVg | A batch-correction method that estimates technical factors from control genes (section 5.3). |
 | Shrunk log2FC | A log2FC pulled toward 0 when the evidence is weak, which makes noisy genes look less extreme. |
 | UpSet plot | A Venn diagram for many sets (section 6.1). |
 | VST | Variance-stabilising transformation of counts, used for PCA. |
+| WGCNA | Weighted gene co-expression network analysis (section 13). |

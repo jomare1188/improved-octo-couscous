@@ -23,7 +23,7 @@ on them. Maturation mother leaves are descriptive only. Alleles are grouped thro
 
 A DEG is padj < 0.05 and |log2FC| ≥ 1.
 
-**Results summary and next steps: [`results/report.md`](results/report.md) (short) and [`results/report_story.md`](results/report_story.md) (narrative, with concepts explained); follow-up analyses in [`results/report_followup.md`](results/report_followup.md). To read them on a laptop: `results/DOLORES_report.zip` (all as HTML, plus every file they reference; rebuild with `code/09_report_package.py`).**
+**Results summary and next steps: [`results/report.md`](results/report.md) (short) and [`results/report_story.md`](results/report_story.md) (narrative, with concepts explained). To read them on a laptop: `results/DOLORES_report.zip` (all as HTML, plus every file they reference; rebuild with `code/09_report_package.py`).**
 
 ## Steps and scripts (`code/`)
 
