@@ -1,0 +1,12 @@
+metric	median_run44_W	median_run45_TM	leaf_median	wilcox_p
+rRNA_pct	11.6	6.5	17.22	0.43
+mapped_pct	70.63	68.46	69.33	0.042
+duplication_pct	53.88	51.03	58.34	0.22
+GC_pct	49.5	49.5	49.5	0.48
+adapter_pct	66.67	22.58	20.31	0.00025
+quality_trimmed_pct	0.8	1.07	1.24	0.073
+raw_reads_M	22.55	21.49	12.89	0.96
+compatible_fragment_ratio	98.73	98.59	98.55	0.37
+fragment_length	137.29	181.71	129.82	0.00025
+reads_on_genes_M	9.33	9.4	5.01	0.87
+groups_detected	34334	35273	26898	0.15

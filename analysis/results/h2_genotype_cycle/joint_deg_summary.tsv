@@ -1,0 +1,11 @@
+contrast	status	tested	up	down	padj05_any_lfc
+8008_Mt_D1_vs_Mt_W	conclusive	37516	4337	4801	10752
+8008_Mt_D3_vs_Mt_W	conclusive	36693	4001	4697	9654
+8008_Mt_D3_vs_Mt_D1	conclusive	26815	48	49	109
+5000_Mt_D1_vs_Mt_W	exploratory (5000 Mt_D1 n=1)	30107	1617	1292	2994
+5000_Mt_D3_vs_Mt_W	conclusive	35870	4306	4547	9525
+5000_Mt_D3_vs_Mt_D1	exploratory (5000 Mt_D1 n=1)	25169	156	428	608
+int_Mt_D1_vs_Mt_W	exploratory (5000 Mt_D1 n=1)	25169	614	290	912
+int_Mt_D3_vs_Mt_W	conclusive	28461	1896	1534	3499
+int_Mt_D3_vs_Mt_D1	exploratory (5000 Mt_D1 n=1)	25992	175	77	252
+avg_drought	conclusive	39986	4842	5995	14420

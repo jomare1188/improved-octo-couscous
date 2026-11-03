@@ -1,0 +1,109 @@
+step	from	to	n_common	rho	set	NGenes	Direction	PValue	FDR	median_stat_in_B
+mother leaf -> bud	8008 Mt_D1_vs_Mt_W	8008 T_vs_M	33528	0.1	top_repressed	300	Down	0.000354219026323204	0.000831644670497957	-0.28
+mother leaf -> bud	8008 Mt_D1_vs_Mt_W	8008 T_vs_M	33528	0.1	top_induced	300	Up	0.00721251711541296	0.0132025737027898	0.56
+mother leaf -> bud	8008 T_vs_M	8008 Mt_D1_vs_Mt_W	33528	0.1	top_induced	300	Up	0.00291018984938818	0.00561009919249362	0.21
+mother leaf -> bud	8008 T_vs_M	8008 Mt_D1_vs_Mt_W	33528	0.1	top_repressed	300	Down	0.106125876768125	0.152821262546099	-0.7
+mother leaf -> bud	5000 Mt_D1_vs_Mt_W	5000 T_vs_M	32777	-0.011	top_repressed	300	Up	0.142638136359635	0.19499897122583	0.14
+mother leaf -> bud	5000 Mt_D1_vs_Mt_W	5000 T_vs_M	32777	-0.011	top_induced	300	Down	0.46454761431775	0.528117287855968	-0.13
+mother leaf -> bud	5000 T_vs_M	5000 Mt_D1_vs_Mt_W	32777	-0.011	top_repressed	300	Up	0.210490878613883	0.273891745666258	0.16
+mother leaf -> bud	5000 T_vs_M	5000 Mt_D1_vs_Mt_W	32777	-0.011	top_induced	300	Down	0.216611076276783	0.278499955213006	-0.16
+mother leaf -> bud	8008 Mt_D3_vs_Mt_D1	8008 T_vs_M	33528	0.088	top_induced	300	Up	0.000479230554537249	0.00103513799780046	0.57
+mother leaf -> bud	8008 Mt_D3_vs_Mt_D1	8008 T_vs_M	33528	0.088	top_repressed	300	Down	0.0589649045722248	0.0909744241971468	-0.21
+mother leaf -> bud	8008 T_vs_M	8008 Mt_D3_vs_Mt_D1	33528	0.088	top_repressed	300	Down	0.000375987757277155	0.000863971867785802	-0.38
+mother leaf -> bud	8008 T_vs_M	8008 Mt_D3_vs_Mt_D1	33528	0.088	top_induced	300	Up	0.00102831050060563	0.00209542517104543	0.29
+mother leaf -> bud	5000 Mt_D3_vs_Mt_D1	5000 T_vs_M	32777	0.083	top_repressed	300	Down	0.000659863541548816	0.00139735808798573	-0.33
+mother leaf -> bud	5000 Mt_D3_vs_Mt_D1	5000 T_vs_M	32777	0.083	top_induced	300	Up	0.416715316918589	0.483927464808684	0.08
+mother leaf -> bud	5000 T_vs_M	5000 Mt_D3_vs_Mt_D1	32777	0.083	top_induced	300	Up	0.0285511474862432	0.0481800613830355	0.19
+mother leaf -> bud	5000 T_vs_M	5000 Mt_D3_vs_Mt_D1	32777	0.083	top_repressed	300	Down	0.0462437960063487	0.0734460289512597	-0.07
+mother leaf -> bud (run-confounded)	8008 Mt_D1_vs_Mt_W	8008 T_vs_W	33528	-0.03	top_induced	300	Up	5.46747597274434e-08	1.84527314080121e-07	1.21
+mother leaf -> bud (run-confounded)	8008 Mt_D1_vs_Mt_W	8008 T_vs_W	33528	-0.03	top_repressed	300	Down	3.05478263072254e-06	9.42618640337239e-06	-1.08
+mother leaf -> bud (run-confounded)	8008 T_vs_W	8008 Mt_D1_vs_Mt_W	33528	-0.03	top_repressed	300	Down	0.261982891380838	0.329001770571285	-0.15
+mother leaf -> bud (run-confounded)	8008 T_vs_W	8008 Mt_D1_vs_Mt_W	33528	-0.03	top_induced	300	Up	0.937407269690623	0.964190334538927	-1.11
+mother leaf -> bud (run-confounded)	5000 Mt_D1_vs_Mt_W	5000 T_vs_W	32777	-0.082	top_repressed	300	Down	0.00184948145130637	0.00369896290261273	-0.39
+mother leaf -> bud (run-confounded)	5000 Mt_D1_vs_Mt_W	5000 T_vs_W	32777	-0.082	top_induced	300	Up	0.271051690003569	0.336477960004431	0.23
+mother leaf -> bud (run-confounded)	5000 T_vs_W	5000 Mt_D1_vs_Mt_W	32777	-0.082	top_induced	300	Down	8.62928798032003e-05	0.000227308073627942	-0.91
+mother leaf -> bud (run-confounded)	5000 T_vs_W	5000 Mt_D1_vs_Mt_W	32777	-0.082	top_repressed	300	Down	0.282051537313427	0.346154159430115	0.01
+mother leaf -> bud (run-confounded)	8008 Mt_D1_vs_Mt_W	8008 M_vs_W	33528	-0.097	top_induced	300	Up	0.000321588721169376	0.000771812930806502	0.8
+mother leaf -> bud (run-confounded)	8008 Mt_D1_vs_Mt_W	8008 M_vs_W	33528	-0.097	top_repressed	300	Down	0.0232932917160516	0.0399313572275171	-0.47
+mother leaf -> bud (run-confounded)	8008 M_vs_W	8008 Mt_D1_vs_Mt_W	33528	-0.097	top_induced	300	Down	0.176582624720498	0.232572237436754	-1.49
+mother leaf -> bud (run-confounded)	8008 M_vs_W	8008 Mt_D1_vs_Mt_W	33528	-0.097	top_repressed	300	Down	0.340080761656625	0.40809691398795	-0.32
+mother leaf -> bud (run-confounded)	5000 Mt_D1_vs_Mt_W	5000 M_vs_W	32777	-0.069	top_repressed	300	Down	5.41753592846682e-05	0.000150024071865235	-0.73
+mother leaf -> bud (run-confounded)	5000 Mt_D1_vs_Mt_W	5000 M_vs_W	32777	-0.069	top_induced	300	Up	0.114567354463433	0.162806240553299	0.48
+mother leaf -> bud (run-confounded)	5000 M_vs_W	5000 Mt_D1_vs_Mt_W	32777	-0.069	top_induced	300	Down	1.40934483227593e-05	4.22803449682779e-05	-0.96
+mother leaf -> bud (run-confounded)	5000 M_vs_W	5000 Mt_D1_vs_Mt_W	32777	-0.069	top_repressed	300	Down	0.0683680199336754	0.101147207573109	0.08
+bud -> propagule	8008 T_vs_M	8008 Ft_D1_vs_Fw_D1	33528	0.019	top_induced	300	Up	0.338189119074817	0.40809691398795	0.19
+bud -> propagule	8008 T_vs_M	8008 Ft_D1_vs_Fw_D1	33528	0.019	top_repressed	300	Down	0.400423499785754	0.470062369313711	0
+bud -> propagule	8008 Ft_D1_vs_Fw_D1	8008 T_vs_M	33528	0.019	top_repressed	300	Down	0.0683054956133421	0.101147207573109	-0.19
+bud -> propagule	8008 Ft_D1_vs_Fw_D1	8008 T_vs_M	33528	0.019	top_induced	300	Down	0.947765990830134	0.965648368015609	0.04
+bud -> propagule	5000 T_vs_M	5000 Ft_D1_vs_Fw_D1	32777	0.047	top_induced	300	Up	0.0458943580793776	0.0734460289512597	0.15
+bud -> propagule	5000 T_vs_M	5000 Ft_D1_vs_Fw_D1	32777	0.047	top_repressed	300	Down	0.688855695206973	0.751478940225789	-0.05
+bud -> propagule	5000 Ft_D1_vs_Fw_D1	5000 T_vs_M	32777	0.047	top_induced	300	Up	0.0418725738128414	0.0695728918736441	0.29
+bud -> propagule	5000 Ft_D1_vs_Fw_D1	5000 T_vs_M	32777	0.047	top_repressed	300	Down	0.554548538813364	0.611135124406564	-0.04
+bud -> propagule (run-confounded)	8008 T_vs_W	8008 Ft_D1_vs_Fw_D1	33528	-0.098	top_induced	300	Down	0.00252064979013925	0.0049496395879098	-0.32
+bud -> propagule (run-confounded)	8008 T_vs_W	8008 Ft_D1_vs_Fw_D1	33528	-0.098	top_repressed	300	Up	0.044289091326031	0.0724730585335053	0.4
+bud -> propagule (run-confounded)	8008 Ft_D1_vs_Fw_D1	8008 T_vs_W	33528	-0.098	top_induced	300	Down	1.88150065016276e-07	6.15763849144176e-07	-1.08
+bud -> propagule (run-confounded)	8008 Ft_D1_vs_Fw_D1	8008 T_vs_W	33528	-0.098	top_repressed	300	Up	0.976997491846084	0.986128309526889	-0.09
+bud -> propagule (run-confounded)	5000 T_vs_W	5000 Ft_D1_vs_Fw_D1	32777	0.002	top_repressed	300	Up	0.84024161057339	0.896544707401869	0
+bud -> propagule (run-confounded)	5000 T_vs_W	5000 Ft_D1_vs_Fw_D1	32777	0.002	top_induced	300	Up	0.871873026004587	0.91419695930578	0
+bud -> propagule (run-confounded)	5000 Ft_D1_vs_Fw_D1	5000 T_vs_W	32777	0.002	top_induced	300	Down	0.0119019937932619	0.020732505317295	-0.7
+bud -> propagule (run-confounded)	5000 Ft_D1_vs_Fw_D1	5000 T_vs_W	32777	0.002	top_repressed	300	Down	0.128717302814374	0.180538554596784	-0.34
+bud -> propagule (run-confounded)	5000 M_vs_W	5000 Fm_D1_vs_Fw_D1	32777	-0.072	top_repressed	300	Up	0.00296088568492719	0.00561009919249362	0.3
+bud -> propagule (run-confounded)	5000 M_vs_W	5000 Fm_D1_vs_Fw_D1	32777	-0.072	top_induced	300	Down	0.492828736731038	0.554432328822417	-0.03
+bud -> propagule (run-confounded)	5000 Fm_D1_vs_Fw_D1	5000 M_vs_W	32777	-0.072	top_induced	300	Down	0.000808741258334887	0.00167969338269553	-0.78
+bud -> propagule (run-confounded)	5000 Fm_D1_vs_Fw_D1	5000 M_vs_W	32777	-0.072	top_repressed	300	Down	0.430797503067679	0.494958833311801	-0.09
+bud -> propagule (matched)	5000 T_vs_M	5000 Ft_D1_vs_Fm_D1	32777	0.053	top_induced	300	Up	0.0610808873720251	0.0929117723405452	0.18
+bud -> propagule (matched)	5000 T_vs_M	5000 Ft_D1_vs_Fm_D1	32777	0.053	top_repressed	300	Down	0.131568022296449	0.182171107795083	-0.26
+bud -> propagule (matched)	5000 Ft_D1_vs_Fm_D1	5000 T_vs_M	32777	0.053	top_induced	300	Up	0.0572174083758345	0.0895576826752193	0.19
+bud -> propagule (matched)	5000 Ft_D1_vs_Fm_D1	5000 T_vs_M	32777	0.053	top_repressed	300	Down	0.846736668101765	0.896544707401869	0.11
+mother leaf -> propagule	8008 Mt_D1_vs_Mt_W	8008 Ft_D1_vs_Fw_D1	37767	-0.033	top_repressed	300	Up	0.000257470753310124	0.00063197366721576	0.62
+mother leaf -> propagule	8008 Mt_D1_vs_Mt_W	8008 Ft_D1_vs_Fw_D1	37767	-0.033	top_induced	300	Up	0.394286833218168	0.467944813050134	0.31
+mother leaf -> propagule	8008 Ft_D1_vs_Fw_D1	8008 Mt_D1_vs_Mt_W	37767	-0.033	top_induced	300	Down	0.153875193953103	0.20670125428036	-0.48
+mother leaf -> propagule	8008 Ft_D1_vs_Fw_D1	8008 Mt_D1_vs_Mt_W	37767	-0.033	top_repressed	300	Down	0.809214755775704	0.87395193623776	-0.21
+mother leaf -> propagule	5000 Mt_D1_vs_Mt_W	5000 Ft_D1_vs_Fw_D1	37005	-0.175	top_repressed	300	Up	0.000243801634705384	0.000612338989492593	0.54
+mother leaf -> propagule	5000 Mt_D1_vs_Mt_W	5000 Ft_D1_vs_Fw_D1	37005	-0.175	top_induced	300	Down	0.000418094484891811	0.000940712591006575	-0.54
+mother leaf -> propagule	5000 Ft_D1_vs_Fw_D1	5000 Mt_D1_vs_Mt_W	37005	-0.175	top_induced	300	Down	1.30394671496649e-14	6.12288022679919e-14	-2.04
+mother leaf -> propagule	5000 Ft_D1_vs_Fw_D1	5000 Mt_D1_vs_Mt_W	37005	-0.175	top_repressed	300	Up	0.000138677246905871	0.000356598634900811	0.59
+mother leaf -> propagule	8008 Mt_D3_vs_Mt_D1	8008 Ft_D1_vs_Fw_D1	37767	0.041	top_induced	300	Up	0.541180884537168	0.602551912680558	0.15
+mother leaf -> propagule	8008 Mt_D3_vs_Mt_D1	8008 Ft_D1_vs_Fw_D1	37767	0.041	top_repressed	300	Up	0.891252202583769	0.925531133452375	0.09
+mother leaf -> propagule	8008 Ft_D1_vs_Fw_D1	8008 Mt_D3_vs_Mt_D1	37767	0.041	top_induced	300	Up	0.00429888281317515	0.00800481627280889	0.23
+mother leaf -> propagule	8008 Ft_D1_vs_Fw_D1	8008 Mt_D3_vs_Mt_D1	37767	0.041	top_repressed	300	Down	0.250758345295912	0.318610603434806	-0.1
+mother leaf -> propagule	5000 Mt_D3_vs_Mt_D1	5000 Ft_D1_vs_Fw_D1	37005	-0.159	top_repressed	300	Up	3.62218306848785e-10	1.30398590465563e-09	0.79
+mother leaf -> propagule	5000 Mt_D3_vs_Mt_D1	5000 Ft_D1_vs_Fw_D1	37005	-0.159	top_induced	300	Down	0.0748618165573676	0.109257786326969	-0.17
+mother leaf -> propagule	5000 Ft_D1_vs_Fw_D1	5000 Mt_D3_vs_Mt_D1	37005	-0.159	top_induced	300	Down	2.45244926336051e-11	9.13325932561844e-11	-0.96
+mother leaf -> propagule	5000 Ft_D1_vs_Fw_D1	5000 Mt_D3_vs_Mt_D1	37005	-0.159	top_repressed	300	Up	0.00792889140759792	0.0142720045336763	0.44
+mother leaf -> propagule	5000 Mt_D1_vs_Mt_W	5000 Fm_D1_vs_Fw_D1	37005	-0.215	top_induced	300	Down	3.14517988867696e-13	1.30645933837351e-12	-0.81
+mother leaf -> propagule	5000 Mt_D1_vs_Mt_W	5000 Fm_D1_vs_Fw_D1	37005	-0.215	top_repressed	300	Up	3.64434934641829e-08	1.2696442884296e-07	0.79
+mother leaf -> propagule	5000 Fm_D1_vs_Fw_D1	5000 Mt_D1_vs_Mt_W	37005	-0.215	top_induced	300	Down	3.13788203487935e-14	1.41204691569571e-13	-1.46
+mother leaf -> propagule	5000 Fm_D1_vs_Fw_D1	5000 Mt_D1_vs_Mt_W	37005	-0.215	top_repressed	300	Up	1.63780593332999e-05	4.78062272431455e-05	0.36
+mother leaf -> propagule	5000 Mm_D1_vs_Mm_W	5000 Fm_D1_vs_Fw_D1	37005	-0.229	top_repressed	300	Up	4.44040510625135e-18	2.28363691178641e-17	1.25
+mother leaf -> propagule	5000 Mm_D1_vs_Mm_W	5000 Fm_D1_vs_Fw_D1	37005	-0.229	top_induced	300	Down	1.74837964697889e-11	6.74375006691857e-11	-0.76
+mother leaf -> propagule	5000 Fm_D1_vs_Fw_D1	5000 Mm_D1_vs_Mm_W	37005	-0.229	top_induced	300	Down	1.71646168186636e-20	9.75672956008245e-20	-2.07
+mother leaf -> propagule	5000 Fm_D1_vs_Fw_D1	5000 Mm_D1_vs_Mm_W	37005	-0.229	top_repressed	300	Up	7.37531416635745e-05	0.000199133482491651	0.44
+same contrast, 8008 vs 5000	8008 Mt_D1_vs_Mt_W	5000 Mt_D1_vs_Mt_W	33106	0.59	top_induced	300	Up	1.47541638301018e-114	7.96724846825495e-113	4.76
+same contrast, 8008 vs 5000	8008 Mt_D1_vs_Mt_W	5000 Mt_D1_vs_Mt_W	33106	0.59	top_repressed	300	Down	5.92911786477937e-41	5.33620607830144e-40	-2.67
+same contrast, 8008 vs 5000	5000 Mt_D1_vs_Mt_W	8008 Mt_D1_vs_Mt_W	33106	0.59	top_induced	300	Up	5.02297141434431e-129	5.42480912749185e-127	6.38
+same contrast, 8008 vs 5000	5000 Mt_D1_vs_Mt_W	8008 Mt_D1_vs_Mt_W	33106	0.59	top_repressed	300	Down	1.98664653143061e-26	1.34098640871566e-25	-3.05
+same contrast, 8008 vs 5000	8008 Mt_D3_vs_Mt_W	5000 Mt_D3_vs_Mt_W	33106	0.511	top_induced	300	Up	8.93353453691493e-73	1.20602716248351e-71	5.68
+same contrast, 8008 vs 5000	8008 Mt_D3_vs_Mt_W	5000 Mt_D3_vs_Mt_W	33106	0.511	top_repressed	300	Down	6.67898490762084e-22	4.0073909445725e-21	-3.02
+same contrast, 8008 vs 5000	5000 Mt_D3_vs_Mt_W	8008 Mt_D3_vs_Mt_W	33106	0.511	top_induced	300	Up	1.9363440843701e-92	4.18250322223941e-91	4.91
+same contrast, 8008 vs 5000	5000 Mt_D3_vs_Mt_W	8008 Mt_D3_vs_Mt_W	33106	0.511	top_repressed	300	Down	4.1094559231635e-14	1.77528495880663e-13	-2.18
+same contrast, 8008 vs 5000	8008 Mt_D3_vs_Mt_D1	5000 Mt_D3_vs_Mt_D1	33106	-0.078	top_induced	300	Up	2.09527369276042e-05	5.95498838995066e-05	0.66
+same contrast, 8008 vs 5000	8008 Mt_D3_vs_Mt_D1	5000 Mt_D3_vs_Mt_D1	33106	-0.078	top_repressed	300	Down	0.15502594071027	0.20670125428036	0
+same contrast, 8008 vs 5000	5000 Mt_D3_vs_Mt_D1	8008 Mt_D3_vs_Mt_D1	33106	-0.078	top_induced	300	Up	0.00889869390175196	0.0157550646129379	0.27
+same contrast, 8008 vs 5000	5000 Mt_D3_vs_Mt_D1	8008 Mt_D3_vs_Mt_D1	33106	-0.078	top_repressed	300	Up	0.988156990872038	0.988156990872038	0.05
+same contrast, 8008 vs 5000	8008 T_vs_M	5000 T_vs_M	36266	0.276	top_repressed	300	Down	5.55955618118781e-27	4.00288045045523e-26	-1.25
+same contrast, 8008 vs 5000	8008 T_vs_M	5000 T_vs_M	36266	0.276	top_induced	300	Up	6.7962697516093e-20	3.66998566586902e-19	0.86
+same contrast, 8008 vs 5000	5000 T_vs_M	8008 T_vs_M	36266	0.276	top_induced	300	Up	5.13078242105783e-29	3.95803215338747e-28	1.57
+same contrast, 8008 vs 5000	5000 T_vs_M	8008 T_vs_M	36266	0.276	top_repressed	300	Down	2.61297942188907e-16	1.28273535256372e-15	-0.9
+same contrast, 8008 vs 5000	8008 T_vs_W	5000 T_vs_W	36266	0.635	top_induced	300	Up	7.20550968256475e-82	1.29699174286165e-80	4.3
+same contrast, 8008 vs 5000	8008 T_vs_W	5000 T_vs_W	36266	0.635	top_repressed	300	Down	8.83750328224639e-43	8.67682140438737e-42	-2.83
+same contrast, 8008 vs 5000	5000 T_vs_W	8008 T_vs_W	36266	0.635	top_induced	300	Up	2.36101009783725e-81	3.64270129380605e-80	4.5
+same contrast, 8008 vs 5000	5000 T_vs_W	8008 T_vs_W	36266	0.635	top_repressed	300	Down	1.18003384532687e-39	9.80335809963864e-39	-2.8
+same contrast, 8008 vs 5000	8008 Ft_D1_vs_Fw_D1	5000 Ft_D1_vs_Fw_D1	33106	0.202	top_induced	300	Up	1.56616793657935e-11	6.2646717463174e-11	0.82
+same contrast, 8008 vs 5000	8008 Ft_D1_vs_Fw_D1	5000 Ft_D1_vs_Fw_D1	33106	0.202	top_repressed	300	Down	3.02304973702305e-06	9.42618640337239e-06	-0.59
+same contrast, 8008 vs 5000	5000 Ft_D1_vs_Fw_D1	8008 Ft_D1_vs_Fw_D1	33106	0.202	top_induced	300	Up	3.66807871257844e-25	2.33030882916748e-24	1.64
+same contrast, 8008 vs 5000	5000 Ft_D1_vs_Fw_D1	8008 Ft_D1_vs_Fw_D1	33106	0.202	top_repressed	300	Down	0.000453605956026238	0.000999784556139463	-0.33
+same contrast, 8008 vs 5000	8008 Fw_D1_vs_Fw_W	5000 Fw_D1_vs_Fw_W	33106	0.551	top_induced	300	Up	2.87621632013912e-103	7.76578406437563e-102	4.71
+same contrast, 8008 vs 5000	8008 Fw_D1_vs_Fw_W	5000 Fw_D1_vs_Fw_W	33106	0.551	top_repressed	300	Down	1.61544111035734e-70	1.93852933242881e-69	-4.47
+same contrast, 8008 vs 5000	5000 Fw_D1_vs_Fw_W	8008 Fw_D1_vs_Fw_W	33106	0.551	top_induced	300	Up	3.80987185593005e-105	1.37155386813482e-103	3.77
+same contrast, 8008 vs 5000	5000 Fw_D1_vs_Fw_W	8008 Fw_D1_vs_Fw_W	33106	0.551	top_repressed	300	Down	3.81544271639463e-51	4.12067813370621e-50	-2.77

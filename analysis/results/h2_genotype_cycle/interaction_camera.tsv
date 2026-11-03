@@ -1,0 +1,7 @@
+contrast	set	NGenes	Direction	PValue	FDR	reading
+int_Mt_D3_vs_Mt_D1	induced	4842	Down	3.03162190131182e-05	6.06324380262364e-05	5000 stronger
+int_Mt_D3_vs_Mt_D1	repressed	5995	Up	0.000697825376897883	0.000697825376897883	5000 stronger
+int_Mt_D1_vs_Mt_W	induced	4842	Up	7.65065353470122e-05	0.000153013070694024	8008 stronger
+int_Mt_D1_vs_Mt_W	repressed	5995	Down	0.108525488552971	0.108525488552971	8008 stronger
+int_Mt_D3_vs_Mt_W	repressed	5995	Up	0.141365150736608	0.282730301473217	5000 stronger
+int_Mt_D3_vs_Mt_W	induced	4842	Up	0.947882410500122	0.947882410500122	8008 stronger

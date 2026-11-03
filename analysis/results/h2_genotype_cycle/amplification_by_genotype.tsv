@@ -1,0 +1,7 @@
+set	genotype	n	median_amplification	share_stronger_at_D3	sig_stronger	sig_weaker
+induced	8008	4842	0.014	0.508	28	6
+induced	5000	4842	0.541	0.742	66	15
+repressed	8008	5995	0.071	0.537	27	6
+repressed	5000	5995	0.379	0.618	169	21
+induced	interaction (8008 - 5000)	4006	-0.534	0.312	9	15
+repressed	interaction (8008 - 5000)	4458	-0.435	0.385	35	67

@@ -1,0 +1,6 @@
+genotype	contrast	n_mother_up	median_lfc_on_mother_up	n_mother_down	median_lfc_on_mother_down	slope_vs_mother
+8008	Fw_D1_vs_Fw_W	3905	1.06	4196	-1.07	0.37
+8008	Ft_D1_vs_Fw_W	3905	1.27	4196	-0.55	0.38
+5000	Fw_D1_vs_Fw_W	2091	1.73	1750	-1.71	0.55
+5000	Ft_D1_vs_Fw_W	2091	1.39	1750	-1.21	0.48
+5000	Fm_D1_vs_Fw_W	2091	1.46	1750	-1.26	0.45

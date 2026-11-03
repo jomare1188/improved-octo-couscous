@@ -1,0 +1,2 @@
+power 14
+rule no power reached R2 0.80; FAQ value for signed networks, 30-40 samples

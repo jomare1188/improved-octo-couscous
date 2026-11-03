@@ -1,0 +1,196 @@
+group_id	module	kME_own	name	description	rank
+OG:OG0000109	M03		""	disease resistance protein	1
+OG:OG0000871	M03		""	bHLH-MYC and R2R3-MYB transcription factors N-terminal	2
+OG:OG0001318	M03		""	GDP-mannose 4,6 dehydratase	3
+OG:OG0001393	M03		""	Belongs to the cytochrome P450 family	4
+OG:OG0001395	M03		LAX1	Putative gypsy type transposon	5
+OG:OG0001638	M03		FER1	Stores iron in a soluble, non-toxic, readily available form. Important for iron homeostasis. Iron is taken up in the ferrous form and deposited as ferric hydroxides after oxidation	6
+OG:OG0001954	M03		""	Proton-conducting pore forming subunit of the membrane integral V0 complex of vacuolar ATPase. V-ATPase is responsible for acidifying a variety of intracellular compartments in eukaryotic cells	7
+OG:OG0002795	M03		DHN1	Belongs to the plant dehydrin family	8
+OG:OG0002928	M03		""	Belongs to the GST superfamily	9
+OG:OG0003179	M03		""	Belongs to the sterol desaturase family	10
+OG:OG0003297	M03		""	""	11
+OG:OG0003311	M03		""	Ribonuclease H protein	12
+OG:OG0003407	M03		""	Senescence regulator	13
+OG:OG0003565	M03		""	Belongs to the class-III pyridoxal-phosphate-dependent aminotransferase family	14
+OG:OG0004026	M03		""	Belongs to the D-isomer specific 2-hydroxyacid dehydrogenase family	15
+OG:OG0000031	M02		""	Reverse transcriptase (RNA-dependent DNA polymerase)	1
+OG:OG0000208	M02		""	callose synthase	2
+OG:OG0000276	M02		""	flavin-containing monooxygenase	3
+OG:OG0000305	M02		""	Leucine-rich repeats, outliers	4
+OG:OG0001216	M02		""	Wall-associated receptor kinase	5
+OG:OG0001535	M02		""	Lectin-domain containing receptor kinase	6
+OG:OG0001548	M02		""	Belongs to the sulfotransferase 1 family	7
+OG:OG0002112	M02		KAPP	Carbohydrate-binding protein of the ER	8
+OG:OG0002139	M02		""	Cysteine-rich receptor-like protein kinase	9
+OG:OG0002351	M02		""	Wall-associated receptor kinase	10
+OG:OG0003119	M02		""	KH-domain-like of EngA bacterial GTPase enzymes, C-terminal	11
+OG:OG0003248	M02		""	Leucine-rich repeats, outliers	12
+OG:OG0003288	M02		""	""	13
+OG:OG0003296	M02		""	Belongs to the class I-like SAM-binding methyltransferase superfamily. Cation-independent O- methyltransferase family	14
+OG:OG0003339	M02		""	NB-ARC domain	15
+OG:OG0000081	M01		""	Belongs to the class I-like SAM-binding methyltransferase superfamily. Cation-independent O- methyltransferase family	1
+OG:OG0000180	M01		""	Domain of unknown function (DUF4283)	2
+OG:OG0000328	M01		""	DDE superfamily endonuclease	3
+OG:OG0000365	M01		""	Belongs to the cytochrome P450 family	4
+OG:OG0000449	M01		CHS1	Belongs to the chalcone stilbene synthases family	5
+OG:OG0000510	M01		MYB12	Myb-related protein P	6
+OG:OG0000550	M01		""	Ras family	7
+OG:OG0000714	M01		""	Belongs to the GRAS family	8
+OG:OG0000896	M01		""	Jacalin-like lectin domain	9
+OG:OG0001182	M01		MT4	Metallothionein	10
+OG:OG0001299	M01		""	Peptidase of plants and bacteria	11
+OG:OG0001508	M01		""	Wax ester synthase-like Acyl-CoA acyltransferase domain	12
+OG:OG0002058	M01		psbA	Photosystem II (PSII) is a light-driven water plastoquinone oxidoreductase that uses light energy to abstract electrons from H(2)O, generating O(2) and a proton gradient subsequently used for ATP formation. It consists of a core antenna complex that captures photons, and an electron transfer chain that converts photonic excitation into a charge separation. The D1 D2 (PsbA PsbA) reaction center heterodimer binds P680, the primary electron donor of PSII as well as several subsequent electron acceptors	13
+OG:OG0002113	M01		""	Ribonuclease H protein	14
+OG:OG0002232	M01		""	DnaJ C terminal domain	15
+OG:OG0000249	M05		""	transposition, RNA-mediated	1
+OG:OG0000803	M05		""	Ammonium Transporter Family	2
+OG:OG0001374	M05		""	Belongs to the UDP-glycosyltransferase family	3
+OG:OG0001505	M05		HSP81-3	Heat shock protein	4
+OG:OG0003159	M05		""	CAAD domains of cyanobacterial aminoacyl-tRNA synthetase	5
+OG:OG0003798	M05		""	DUF1719	6
+OG:OG0004565	M05		""	""	7
+OG:OG0006388	M05		CCD4a	carotenoid dioxygenase activity	8
+OG:OG0007446	M05		""	Chloroplast-localized elongation factor EF-G involved in protein synthesis in plastids. Catalyzes the GTP-dependent ribosomal translocation step during translation elongation. During this step, the ribosome changes from the pre-translocational (PRE) to the post-translocational (POST) state as the newly formed A- site-bound peptidyl-tRNA and P-site-bound deacylated tRNA move to the P and E sites, respectively. Catalyzes the coordinated movement of the two tRNA molecules, the mRNA and conformational changes in the ribosome	9
+OG:OG0008610	M05		""	Legume lectin domain	10
+OG:OG0011050	M05		""	Acetyltransferase (GNAT) domain	11
+OG:OG0012920	M05		""	Photosystem II Pbs27	12
+OG:OG0013007	M05		PETE	Participates in electron transfer between P700 and the cytochrome b6-f complex in photosystem I	13
+OG:OG0016075	M05		P5CS	P5CS plays a key role in proline biosynthesis, leading to osmoregulation in plants	14
+OG:OG0017080	M05		""	Belongs to the ATPase B chain family	15
+OG:OG0000316	M06		""	Belongs to the CRISP family	1
+OG:OG0007154	M06		""	Belongs to the cytochrome P450 family	2
+OG:OG0009429	M06		""	Belongs to the RNase T2 family	3
+OG:OG0012791	M06		TMT2	Belongs to the major facilitator superfamily. Sugar transporter (TC 2.A.1.1) family	4
+OG:OG0014523	M06		""	Protein of unknown function (DUF563)	5
+OG:OG0021029	M06		""	haloacid dehalogenase-like hydrolase	6
+OG:OG0021144	M06		""	transposition, RNA-mediated	7
+OG:OG0021451	M06		""	Saccharopine dehydrogenase C-terminal domain	8
+OG:OG0021482	M06		SOS1	Sodium hydrogen exchanger 7	9
+OG:OG0022857	M06		""	Cytochrome P450	10
+OG:OG0025373	M06		""	POT family	11
+OG:OG0026086	M06		""	KR domain	12
+OG:OG0026756	M06		SOS1	Sodium hydrogen exchanger 7	13
+OG:OG0027900	M06		""	""	14
+OG:OG0029621	M06		""	POT family	15
+OG:OG0000575	M12		""	protein desumoylation	1
+OG:OG0003349	M12		OZS	Protein of unknown function (DUF1138)	2
+OG:OG0016470	M12		""	DUF1719	3
+OG:OG0018134	M12		""	Protein phosphatase 2C	4
+OG:OG0020579	M12		""	ATP-dependent Clp protease adaptor protein ClpS	5
+OG:OG0023509	M12		""	Belongs to the enoyl-CoA hydratase isomerase family	6
+OG:OG0023535	M12		""	RNA recognition motif. (a.k.a. RRM, RBD, or RNP domain)	7
+OG:OG0025420	M12		""	Glucose / Sorbosone dehydrogenase	8
+OG:OG0027506	M12		FTSH6	Belongs to the AAA ATPase family	9
+OG:OG0036294	M12		HGO	homogentisate 1,2-dioxygenase	10
+SB:SORBI_3001G057600	M12		""	DUF3700	11
+SB:SORBI_3001G104900	M12		EGY3	zinc metallopeptidase EGY3, chloroplastic	12
+SB:SORBI_3001G355000	M12		""	CS domain	13
+SB:SORBI_3001G425600	M12		""	Belongs to the small heat shock protein (HSP20) family	14
+SB:SORBI_3001G426000	M12		""	Belongs to the small heat shock protein (HSP20) family	15
+OG:OG0013036	M11		""	Siah interacting protein, N terminal	1
+OG:OG0017268	M11		""	DYW family of nucleic acid deaminases	2
+OG:OG0028721	M11		""	Vacuolar protein sorting-associated protein 62	3
+SB:SORBI_3001G033100	M11		""	NAD(P)H-binding	4
+SB:SORBI_3001G036400|SORBI_3010G185800	M11		""	""	5
+SB:SORBI_3001G081700	M11		""	SWI complex, BAF60b domains	6
+SB:SORBI_3001G125100	M11		""	Prp18 domain	7
+SB:SORBI_3001G339801	M11		""	EF-hand domain pair	8
+SB:SORBI_3001G438700	M11		""	DnaJ molecular chaperone homology domain	9
+SB:SORBI_3002G249500	M11		""	Zinc finger C-x8-C-x5-C-x3-H type (and similar)	10
+SB:SORBI_3002G271100	M11		""	heat shock factor	11
+SB:SORBI_3002G327700	M11		""	Salt stress response/antifungal	12
+SB:SORBI_3002G330500	M11		""	NUDIX domain	13
+SB:SORBI_3002G393400	M11		""	Belongs to the GroES chaperonin family	14
+SB:SORBI_3003G106500	M11		""	""	15
+OG:OG0018150	M13		""	""	1
+OG:OG0021310	M13		""	Glycerophosphoryl diester phosphodiesterase family	2
+OG:OG0025097	M13		""	Inositol hexakisphosphate	3
+SB:SORBI_3001G259100	M13		""	SPX domain	4
+SB:SORBI_3001G342400	M13		""	SPX domain	5
+SB:SORBI_3001G420100	M13		""	Belongs to the heat shock protein 70 family	6
+SB:SORBI_3001G442300	M13		""	Purple acid phosphatase	7
+SB:SORBI_3002G351300	M13		""	Vacuolar protein sorting-associated protein 62	8
+SB:SORBI_3003G076900	M13		""	Glycosyl transferases group 1	9
+SB:SORBI_3003G301500	M13		""	Haloacid dehalogenase-like hydrolase	10
+SB:SORBI_3003G428100	M13		""	Unstructured region between BRX_N and BRX domain	11
+SB:SORBI_3004G157300	M13		""	Glycerophosphoryl diester phosphodiesterase family	12
+SB:SORBI_3004G282900	M13		""	SPX domain	13
+SB:SORBI_3004G315100	M13		""	Thioredoxin	14
+SB:SORBI_3004G350900	M13		""	U-box domain-containing protein	15
+OG:OG0000072	M04		""	Domain of unknown function (DUF4218)	1
+OG:OG0000075	M04		""	protein desumoylation	2
+OG:OG0000117	M04		""	Auxin responsive protein	3
+OG:OG0000211	M04		""	Belongs to the protein kinase superfamily	4
+OG:OG0000269	M04		""	gag-polypeptide of LTR copia-type	5
+OG:OG0000531	M04		""	Telomeric single stranded DNA binding POT1/CDC13	6
+OG:OG0000583	M04		""	Domain of unknown function (DUF4704)	7
+OG:OG0000853	M04		RBOHB	respiratory burst oxidase homolog protein	8
+OG:OG0001902	M04		""	N-terminal domain of oxidoreductase	9
+OG:OG0002270	M04		""	Vacuolar protein sorting-associated protein	10
+OG:OG0002342	M04		""	""	11
+OG:OG0002422	M04		hir1	SPFH domain / Band 7 family	12
+OG:OG0002497	M04		""	F-box protein	13
+OG:OG0002949	M04		""	PF16858	14
+OG:OG0003220	M04		""	""	15
+OG:OG0000214	M07		""	Protein kinase domain	1
+OG:OG0001057	M07		""	Glutaredoxin	2
+OG:OG0001754	M07		""	ABC transporter C family member 9	3
+OG:OG0002219	M07		""	Purple acid phosphatase	4
+OG:OG0002652	M07		""	Domain of unknown function (DUF4220)	5
+OG:OG0007492	M07		""	""	6
+OG:OG0012699	M07		""	WASH complex subunit 7	7
+OG:OG0014614	M07		""	Belongs to the GDA1 CD39 NTPase family	8
+OG:OG0014647	M07		""	Protein of unknown function (DUF674)	9
+OG:OG0019707	M07		""	Belongs to the peptidase S10 family	10
+OG:OG0021586	M07		""	POT family	11
+OG:OG0022871	M07		RPL9	50S ribosomal protein L9	12
+OG:OG0022999	M07		""	Bifunctional serine threonine kinase and phosphorylase involved in the dark light-mediated regulation of PPDK by catalyzing its phosphorylation dephosphorylation. Dark light- induced changes in stromal concentrations of the competing ADP and Pi substrates govern the direction of the reaction. In the dark, phosphorylates the catalytic intermediate of PPDK (PPDK-HisP), inactivating it. Light exposure induces the phosphorolysis reaction that reactivates PPDK	13
+OG:OG0027753	M07		""	Belongs to the FPP GGPP synthase family	14
+OG:OG0029368	M07		""	NAD binding domain of 6-phosphogluconate dehydrogenase	15
+OG:OG0004705	M08		""	Serine aminopeptidase, S33	1
+OG:OG0012851	M08		""	Ubiquitin-binding WIYLD domain	2
+OG:OG0013050	M08		""	One-helix protein	3
+OG:OG0017290	M08		""	OTU-like cysteine protease	4
+OG:OG0017402	M08		""	Thiopurine S-methyltransferase (TPMT)	5
+OG:OG0017863	M08		""	""	6
+OG:OG0026324	M08		""	Caleosin related protein	7
+OG:OG0027978	M08		""	Serine hydrolase	8
+OG:OG0029175	M08		""	Homoserine O-succinyltransferase	9
+OG:OG0032231	M08		""	Belongs to the UDP-glycosyltransferase family	10
+OG:OG0033583	M08		""	AAA domain	11
+OG:OG0035484	M08		""	Soluble inorganic pyrophosphatase	12
+SB:SORBI_3001G017000	M08		""	Ribosomal protein S6	13
+SB:SORBI_3001G073300	M08		""	Leucine carboxyl methyltransferase	14
+SB:SORBI_3001G103800	M08		""	Lecithin:cholesterol acyltransferase	15
+OG:OG0000464	M09		""	Allinase	1
+OG:OG0008897	M09		""	BTB/POZ domain	2
+OG:OG0014357	M09		WRKY30	DNA binding domain	3
+OG:OG0022077	M09		NTMC2T1.1	Synaptotagmin-like mitochondrial-lipid-binding domain	4
+OG:OG0022534	M09		""	ATP-dependent RNA helicase	5
+OG:OG0022671	M09		""	Belongs to the cytochrome P450 family	6
+OG:OG0023775	M09		""	Histone acetylation protein	7
+OG:OG0025505	M09		MCM5	Belongs to the 14-3-3 family	8
+OG:OG0026408	M09		""	This magnesium-dependent enzyme catalyzes the hydrolysis of ATP coupled with the transport of calcium	9
+OG:OG0028129	M09		ABA3	Sulfurates the molybdenum cofactor. Sulfation of molybdenum is essential for xanthine dehydrogenase (XDH) and aldehyde oxidase (ADO) enzymes in which molybdenum cofactor is liganded by 1 oxygen and 1 sulfur atom in active form	10
+OG:OG0029276	M09		""	mediator of RNA polymerase II transcription subunit	11
+OG:OG0029942	M09		""	RRM in Demeter	12
+OG:OG0030135	M09		""	UAA transporter family	13
+OG:OG0032976	M09		""	Belongs to the short-chain dehydrogenases reductases (SDR) family	14
+OG:OG0033166	M09		""	assists the folding of proteins upon ATP hydrolysis	15
+OG:OG0000341	M10		NAS3	nicotianamine metabolic process	1
+OG:OG0000482	M10		""	IBR domain, a half RING-finger domain	2
+OG:OG0007774	M10		GYRA	DNA gyrase/topoisomerase IV, subunit A	3
+OG:OG0008803	M10		""	Plant protein of unknown function	4
+OG:OG0012704	M10		""	Leucine Rich Repeat	5
+OG:OG0016140	M10		""	""	6
+OG:OG0017613	M10		""	Nuclear chaperone required for maturation and nuclear export of pre-60S ribosome subunits	7
+OG:OG0018011	M10		""	""	8
+OG:OG0018365	M10		""	Pyruvate phosphate dikinase, PEP/pyruvate binding domain	9
+OG:OG0019397	M10		""	FATC	10
+OG:OG0019481	M10		""	beta-N-acetylhexosaminidase activity	11
+OG:OG0021610	M10		""	Leucine Rich Repeat	12
+OG:OG0023200	M10		""	Dirigent proteins impart stereoselectivity on the phenoxy radical-coupling reaction, yielding optically active lignans from two molecules of coniferyl alcohol in the biosynthesis of lignans, flavonolignans, and alkaloids and thus plays a central role in plant secondary metabolism	13
+OG:OG0023262	M10		""	Plant lipoxygenase may be involved in a number of diverse aspects of plant physiology including growth and development, pest resistance, and senescence or responses to wounding	14
+OG:OG0024842	M10		""	cell redox homeostasis	15

@@ -1,0 +1,7 @@
+genotype	set	groups	median_I2	pct_heterogeneous_fdr05	pct_alleles_both_directions
+5000	D1 response, all responsive groups	2136	0	6.3	1.6
+8008	D1 response, all responsive groups	3511	0	11.3	1.4
+5000	D3 vs D1, memory groups (++ -- +- -+)	209	0	4.8	2.4
+8008	D3 vs D1, memory groups (++ -- +- -+)	20	0	10	0
+5000	D3 vs D1, non-memory groups (+= -=)	1927	0	3.6	0.7
+8008	D3 vs D1, non-memory groups (+= -=)	3491	0	3.9	0.1

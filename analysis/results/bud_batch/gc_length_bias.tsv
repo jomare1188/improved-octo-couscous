@@ -1,0 +1,17 @@
+genotype	contrast	runs	tissue	crosses	n	rho_gc	rho_length	sd_lfc
+8008	T_vs_W	crosses runs (45 vs 44)	bud	TRUE	30177	-0.199	0.334	0.976
+8008	M_vs_W	crosses runs (45 vs 44)	bud	TRUE	30177	-0.271	0.354	0.949
+8008	T_vs_M	one run (45)	bud	FALSE	30177	0.109	-0.025	0.574
+8008	Mt_D1_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	23079	0.211	-0.173	1.553
+8008	Mt_D3_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	23079	0.259	-0.2	1.653
+8008	Mm_W_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	23079	0.323	-0.277	0.958
+8008	Mt_D3_vs_Mt_D1	one run set (51/52)	leaf	FALSE	23079	0.167	-0.095	0.595
+8008	Fw_D1_vs_Fw_W	one run set (51/52)	leaf	FALSE	23079	0.02	0.083	1.664
+5000	T_vs_W	crosses runs (45 vs 44)	bud	TRUE	30704	-0.307	0.393	0.748
+5000	M_vs_W	crosses runs (45 vs 44)	bud	TRUE	30704	-0.203	0.442	0.766
+5000	T_vs_M	one run (45)	bud	FALSE	30704	-0.178	-0.094	0.381
+5000	Mt_D1_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	21496	0.108	-0.077	1.291
+5000	Mt_D3_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	21496	0.071	-0.029	1.651
+5000	Mm_W_vs_Mt_W	crosses runs (51/52 vs 61/63/73)	leaf	TRUE	21496	0.03	-0.086	0.693
+5000	Mt_D3_vs_Mt_D1	one run set (51/52)	leaf	FALSE	21496	0.001	0.037	0.867
+5000	Fw_D1_vs_Fw_W	one run set (51/52)	leaf	FALSE	21496	0.091	0.006	1.454

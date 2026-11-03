@@ -1,0 +1,25 @@
+panel	A	B	max_nlp	top_i	top_j	overlap
+8008: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	up	up	73.4	8600	9200	3019
+8008: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	down	down	34.6	16600	15800	8387
+8008: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	up	down	4.5	200	200	8
+8008: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	down	up	2	2000	2400	170
+5000: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	up	up	5	6200	5600	1175
+5000: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	down	down	5.6	1000	2800	128
+5000: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	up	down	15.9	3800	3400	546
+5000: Mt_D1_vs_Mt_W (x) vs T_vs_M (y)	down	up	23.4	1400	5000	356
+8008: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	up	up	10.4	3000	2400	279
+8008: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	down	down	26.8	18800	17000	8985
+8008: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	up	down	22.1	18800	17000	8935
+8008: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	down	up	79.1	3200	5600	868
+5000: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	up	up	2.2	1600	200	17
+5000: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	down	down	5.6	1400	1000	68
+5000: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	up	down	151.1	13000	18400	7666
+5000: Mt_D1_vs_Mt_W (x) vs Ft_D1_vs_Fw_D1 (y)	down	up	244.1	18400	17600	10352
+8008: T_vs_M (x) vs Ft_D1_vs_Fw_D1 (y)	up	up	5.5	2000	7200	512
+8008: T_vs_M (x) vs Ft_D1_vs_Fw_D1 (y)	down	down	21	16000	15200	7687
+8008: T_vs_M (x) vs Ft_D1_vs_Fw_D1 (y)	up	down	8.8	16000	15200	7524
+8008: T_vs_M (x) vs Ft_D1_vs_Fw_D1 (y)	down	up	2.9	1600	600	46
+5000: T_vs_M (x) vs Ft_D1_vs_Fm_D1 (y)	up	up	17.3	6600	12600	2842
+5000: T_vs_M (x) vs Ft_D1_vs_Fm_D1 (y)	down	down	9.8	12400	14600	5799
+5000: T_vs_M (x) vs Ft_D1_vs_Fm_D1 (y)	up	down	2.5	400	600	16
+5000: T_vs_M (x) vs Ft_D1_vs_Fm_D1 (y)	down	up	0.5	200	200	2

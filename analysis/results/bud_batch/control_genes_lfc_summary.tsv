@@ -1,0 +1,31 @@
+genotype	contrast	genes	n	median_lfc	sd_lfc	pct_abs_lfc_gt_0.5	pct_padj_lt_0.05
+8008	T_vs_W	empirical (least variable in leaves)	1000	-0.135	0.492	31.3	20.7
+8008	T_vs_W	reference genes (literature)	28	-0.051	0.749	57.1	28.6
+8008	T_vs_W	all tested groups	38966	0.012	1.627	59.6	18.7
+8008	M_vs_W	empirical (least variable in leaves)	1000	-0.161	0.502	33.4	15.8
+8008	M_vs_W	reference genes (literature)	28	-0.104	0.702	46.4	21.4
+8008	M_vs_W	all tested groups	39754	-0.017	1.755	60.5	13.8
+8008	T_vs_M	empirical (least variable in leaves)	1000	0.017	0.323	11.3	0.4
+8008	T_vs_M	reference genes (literature)	27	0.076	0.475	25.9	0
+8008	T_vs_M	all tested groups	30313	0.033	0.946	38.3	1.5
+8008	Mt_D3_vs_Mt_D1	empirical (least variable in leaves)	1000	-0.002	0.198	1.2	0
+8008	Mt_D3_vs_Mt_D1	reference genes (literature)	28	-0.054	0.344	14.3	0
+8008	Mt_D3_vs_Mt_D1	all tested groups	29668	-0.026	1.1	37.2	0.3
+8008	Fw_D1_vs_Fw_W	empirical (least variable in leaves)	1000	-0.047	0.5	32.4	1
+8008	Fw_D1_vs_Fw_W	reference genes (literature)	27	0.029	1.216	44.4	11.1
+8008	Fw_D1_vs_Fw_W	all tested groups	23824	-0.109	2.636	73.7	11.3
+5000	T_vs_W	empirical (least variable in leaves)	1000	-0.017	0.524	34.3	28.1
+5000	T_vs_W	reference genes (literature)	28	-0.299	0.532	46.4	35.7
+5000	T_vs_W	all tested groups	40604	0.015	1.585	53.9	14.6
+5000	M_vs_W	empirical (least variable in leaves)	1000	-0.081	0.513	33.6	33.8
+5000	M_vs_W	reference genes (literature)	28	-0.135	0.423	21.4	32.1
+5000	M_vs_W	all tested groups	40604	0.023	1.515	52.7	17.6
+5000	T_vs_M	empirical (least variable in leaves)	1000	0.039	0.222	3.1	0.3
+5000	T_vs_M	reference genes (literature)	28	-0.083	0.313	10.7	0
+5000	T_vs_M	all tested groups	37443	-0.015	0.862	29.6	0.5
+5000	Mt_D3_vs_Mt_D1	empirical (least variable in leaves)	1000	0.078	0.296	9.2	0.9
+5000	Mt_D3_vs_Mt_D1	reference genes (literature)	25	-0.177	0.723	40	12
+5000	Mt_D3_vs_Mt_D1	all tested groups	21939	0.067	1.343	53.3	6.3
+5000	Fw_D1_vs_Fw_W	empirical (least variable in leaves)	1000	0.083	0.342	16.4	3.4
+5000	Fw_D1_vs_Fw_W	reference genes (literature)	28	0.01	1.836	46.4	17.9
+5000	Fw_D1_vs_Fw_W	all tested groups	30548	-0.008	2.333	69.3	19.5

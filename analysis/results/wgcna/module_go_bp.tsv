@@ -1,0 +1,179 @@
+GO.ID	Term	Annotated	Significant	Expected	p	module
+GO:0009080	pyruvate family amino acid catabolic process	14	13	2.27	6e-10	M03
+GO:0009908	flower development	116	27	18.84	1.5e-08	M03
+GO:0009083	branched-chain amino acid catabolic process	12	11	1.95	2e-08	M03
+GO:0016126	sterol biosynthetic process	17	12	2.76	8.8e-07	M03
+GO:0019499	cyanide metabolic process	14	10	2.27	6.5e-06	M03
+GO:0051410	detoxification of nitrogen compound	14	10	2.27	6.5e-06	M03
+GO:0010039	response to iron ion	14	10	2.27	6.5e-06	M03
+GO:0072521	purine-containing compound metabolic process	186	34	30.21	1.8e-05	M03
+GO:0006753	nucleoside phosphate metabolic process	238	35	38.65	1.9e-05	M03
+GO:0045597	positive regulation of cell differentiation	20	10	3.25	2e-05	M03
+GO:0009684	indoleacetic acid biosynthetic process	16	10	2.6	3.8e-05	M03
+GO:0010014	meristem initiation	11	8	1.79	4.9e-05	M03
+GO:0009744	response to sucrose	40	17	6.5	7e-05	M03
+GO:0009414	response to water deprivation	218	65	35.4	8.1e-05	M03
+GO:0097054	L-glutamate biosynthetic process	12	8	1.95	0.00013	M03
+GO:0006418	tRNA aminoacylation for protein translation	40	27	7.61	2.5e-11	M02
+GO:0052837	thiazole biosynthetic process	13	13	2.47	4.1e-10	M02
+GO:0015995	chlorophyll biosynthetic process	44	23	8.38	4.5e-08	M02
+GO:0009228	thiamine biosynthetic process	22	15	4.19	6.3e-07	M02
+GO:0009451	RNA modification	62	30	11.8	4.6e-06	M02
+GO:0019288	isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway	13	10	2.47	9.8e-06	M02
+GO:0015713	phosphoglycerate transmembrane transport	11	9	2.09	1.2e-05	M02
+GO:0043043	peptide biosynthetic process	99	36	18.85	3.4e-05	M02
+GO:0035436	triose phosphate transmembrane transport	12	9	2.28	4e-05	M02
+GO:0031328	positive regulation of cellular biosynthetic process	138	33	26.27	4.6e-05	M02
+GO:0010109	regulation of photosynthesis	42	13	7.99	4.6e-05	M02
+GO:0000160	phosphorelay signal transduction system	41	11	7.8	0.00011	M02
+GO:0009643	photosynthetic acclimation	19	11	3.62	0.00019	M02
+GO:0046351	disaccharide biosynthetic process	41	9	7.8	0.00023	M02
+GO:0006002	fructose 6-phosphate metabolic process	14	9	2.66	0.00025	M02
+GO:0006559	L-phenylalanine catabolic process	31	24	7.24	2.7e-10	M01
+GO:0009699	phenylpropanoid biosynthetic process	69	41	16.12	3.3e-08	M01
+GO:0009651	response to salt stress	260	100	60.75	9.5e-08	M01
+GO:0046274	lignin catabolic process	18	15	4.21	1.2e-07	M01
+GO:0005975	carbohydrate metabolic process	601	169	140.42	3.6e-06	M01
+GO:0007584	response to nutrient	24	12	5.61	5.4e-06	M01
+GO:0042447	hormone catabolic process	20	14	4.67	1.2e-05	M01
+GO:0016598	protein arginylation	10	9	2.34	1.6e-05	M01
+GO:0009819	drought recovery	16	12	3.74	1.8e-05	M01
+GO:0046244	salicylic acid catabolic process	12	10	2.8	1.9e-05	M01
+GO:0010224	response to UV-B	28	17	6.54	2.5e-05	M01
+GO:0009167	purine ribonucleoside monophosphate metabolic process	55	16	12.85	3.8e-05	M01
+GO:0009809	lignin biosynthetic process	46	23	10.75	4.1e-05	M01
+GO:0009739	response to gibberellin	40	19	9.35	9e-05	M01
+GO:1990961	xenobiotic detoxification by transmembrane export across the plasma membrane	28	16	6.54	0.00012	M01
+GO:0009768	photosynthesis, light harvesting in photosystem I	24	20	1.51	4.9e-21	M05
+GO:0015979	photosynthesis	180	75	11.34	2.4e-14	M05
+GO:0009765	photosynthesis, light harvesting	55	36	3.47	1.2e-13	M05
+GO:0010207	photosystem II assembly	20	12	1.26	2.6e-10	M05
+GO:0015986	proton motive force-driven ATP synthesis	13	9	0.82	8.1e-09	M05
+GO:0015995	chlorophyll biosynthetic process	44	14	2.77	3.8e-06	M05
+GO:0006006	glucose metabolic process	60	17	3.78	4.3e-06	M05
+GO:0019682	glyceraldehyde-3-phosphate metabolic process	36	10	2.27	5.2e-06	M05
+GO:0009658	chloroplast organization	99	19	6.24	9.7e-06	M05
+GO:0006414	translational elongation	15	7	0.95	1.5e-05	M05
+GO:0009637	response to blue light	63	12	3.97	2.9e-05	M05
+GO:0010114	response to red light	28	9	1.76	3.3e-05	M05
+GO:0006641	triglyceride metabolic process	18	5	1.13	7.4e-05	M05
+GO:0042548	regulation of photosynthesis, light reaction	25	8	1.58	9.6e-05	M05
+GO:0010167	response to nitrate	26	8	1.64	0.00013	M05
+GO:0006097	glyoxylate cycle	22	11	0.8	5.2e-11	M06
+GO:0043562	cellular response to nitrogen levels	29	10	1.05	5.8e-09	M06
+GO:0006212	uracil catabolic process	16	8	0.58	2.6e-08	M06
+GO:0006635	fatty acid beta-oxidation	29	9	1.05	4.7e-07	M06
+GO:0031398	positive regulation of protein ubiquitination	12	5	0.43	3.8e-05	M06
+GO:0009085	lysine biosynthetic process	13	5	0.47	6e-05	M06
+GO:1990542	mitochondrial transmembrane transport	25	6	0.9	0.00021	M06
+GO:0006629	lipid metabolic process	523	28	18.92	0.00021	M06
+GO:0051865	protein autoubiquitination	10	4	0.36	0.00029	M06
+GO:0032436	positive regulation of proteasomal ubiquitin-dependent protein catabolic process	10	4	0.36	0.00029	M06
+GO:1902475	L-alpha-amino acid transmembrane transport	18	5	0.65	0.00034	M06
+GO:0015697	quaternary ammonium group transport	11	4	0.4	0.00045	M06
+GO:0006972	hyperosmotic response	39	5	1.41	0.00065	M06
+GO:0006561	proline biosynthetic process	15	4	0.54	0.00166	M06
+GO:0071496	cellular response to external stimulus	130	12	4.7	0.00244	M06
+GO:0009408	response to heat	181	27	1.52	2.8e-25	M12
+GO:0042542	response to hydrogen peroxide	87	15	0.73	1e-16	M12
+GO:0009644	response to high light intensity	78	14	0.66	5.3e-14	M12
+GO:0046677	response to antibiotic	159	15	1.34	1.1e-12	M12
+GO:0009636	response to toxic substance	223	15	1.87	1.5e-10	M12
+GO:0051259	protein complex oligomerization	50	6	0.42	2.6e-06	M12
+GO:0009615	response to virus	31	5	0.26	4.8e-06	M12
+GO:0061077	chaperone-mediated protein folding	48	5	0.4	4.4e-05	M12
+GO:0009617	response to bacterium	223	10	1.87	7.2e-05	M12
+GO:0034605	cellular response to heat	33	4	0.28	0.00015	M12
+GO:0046688	response to copper ion	14	3	0.12	0.00019	M12
+GO:0016567	protein ubiquitination	104	6	0.87	0.00021	M12
+GO:0046686	response to cadmium ion	212	8	1.78	0.00032	M12
+GO:0051131	chaperone-mediated protein complex assembly	17	3	0.14	0.00035	M12
+GO:0045087	innate immune response	118	6	0.99	0.00041	M12
+GO:0009408	response to heat	181	11	1.26	3e-08	M11
+GO:0006457	protein folding	117	12	0.81	1.3e-06	M11
+GO:0006986	response to unfolded protein	19	4	0.13	7.1e-06	M11
+GO:0000398	mRNA splicing, via spliceosome	41	5	0.28	7.7e-06	M11
+GO:0061077	chaperone-mediated protein folding	48	5	0.33	1.7e-05	M11
+GO:0006458	'de novo' protein folding	22	3	0.15	0.00043	M11
+GO:0042221	response to chemical	1262	16	8.76	0.00316	M11
+GO:0051131	chaperone-mediated protein complex assembly	17	2	0.12	0.00598	M11
+GO:0055062	phosphate ion homeostasis	17	6	0.1	3.5e-10	M13
+GO:0006817	phosphate ion transport	37	7	0.22	1.3e-09	M13
+GO:0055081	monoatomic anion homeostasis	31	6	0.19	2e-08	M13
+GO:0044242	cellular lipid catabolic process	61	5	0.37	2.7e-05	M13
+GO:0006650	glycerophospholipid metabolic process	64	5	0.39	3.4e-05	M13
+GO:0006873	intracellular monoatomic ion homeostasis	64	5	0.39	3.4e-05	M13
+GO:0046434	organophosphate catabolic process	69	5	0.42	5e-05	M13
+GO:0016036	cellular response to phosphate starvation	40	4	0.24	8.6e-05	M13
+GO:0006820	monoatomic anion transport	188	7	1.13	1e-04	M13
+GO:0016567	protein ubiquitination	104	5	0.63	0.00035	M13
+GO:0032107	regulation of response to nutrient levels	13	2	0.08	0.00264	M13
+GO:0070417	cellular response to cold	18	2	0.11	0.00508	M13
+GO:0009247	glycolipid biosynthetic process	20	2	0.12	0.00626	M13
+GO:0009785	blue light signaling pathway	26	15	2.82	6.9e-09	M04
+GO:0006397	mRNA processing	59	16	6.39	3.4e-07	M04
+GO:0006468	protein phosphorylation	449	77	48.64	1.4e-05	M04
+GO:0043414	macromolecule methylation	15	8	1.62	5.8e-05	M04
+GO:0008033	tRNA processing	20	8	2.17	7.9e-05	M04
+GO:2001252	positive regulation of chromosome organization	12	7	1.3	8.2e-05	M04
+GO:0044237	cellular metabolic process	3475	414	376.45	1e-04	M04
+GO:0010501	RNA secondary structure unwinding	43	14	4.66	1e-04	M04
+GO:0065002	intracellular protein transmembrane transport	13	7	1.41	0.00016	M04
+GO:0031401	positive regulation of protein modification process	29	9	3.14	0.00025	M04
+GO:1902275	regulation of chromatin organization	11	6	1.19	0.00045	M04
+GO:0048871	multicellular organismal-level homeostasis	15	7	1.62	5e-04	M04
+GO:0060627	regulation of vesicle-mediated transport	23	10	2.49	8e-04	M04
+GO:0017038	protein import	26	9	2.82	0.00111	M04
+GO:0019318	hexose metabolic process	85	15	9.21	0.00126	M04
+GO:0006412	translation	159	29	5.29	2.2e-10	M07
+GO:0043043	peptide biosynthetic process	99	14	3.29	3.9e-06	M07
+GO:0009658	chloroplast organization	99	14	3.29	3.9e-06	M07
+GO:1901663	quinone biosynthetic process	16	6	0.53	7.5e-06	M07
+GO:0032544	plastid translation	11	5	0.37	1.5e-05	M07
+GO:0043604	amide biosynthetic process	130	14	4.32	9.1e-05	M07
+GO:0061077	chaperone-mediated protein folding	48	8	1.6	0.00015	M07
+GO:0042026	protein refolding	19	5	0.63	0.00031	M07
+GO:0042254	ribosome biogenesis	65	11	2.16	6e-04	M07
+GO:0006458	'de novo' protein folding	22	5	0.73	0.00064	M07
+GO:0000373	Group II intron splicing	13	4	0.43	0.00067	M07
+GO:0043489	RNA stabilization	17	4	0.57	0.002	M07
+GO:0008299	isoprenoid biosynthetic process	101	5	3.36	0.0026	M07
+GO:0010501	RNA secondary structure unwinding	43	6	1.43	0.00272	M07
+GO:0033014	tetrapyrrole biosynthetic process	77	3	2.56	0.00328	M07
+GO:0015750	pentose transmembrane transport	13	5	0.24	2e-06	M08
+GO:0009298	GDP-mannose biosynthetic process	11	4	0.2	3e-05	M08
+GO:0006096	glycolytic process	56	7	1.01	5.7e-05	M08
+GO:0019853	L-ascorbic acid biosynthetic process	14	4	0.25	8.8e-05	M08
+GO:0019344	cysteine biosynthetic process	18	4	0.33	0.00025	M08
+GO:0006820	monoatomic anion transport	188	9	3.4	0.00051	M08
+GO:0010193	response to ozone	23	4	0.42	0.00068	M08
+GO:0060359	response to ammonium ion	23	4	0.42	0.00068	M08
+GO:0015749	monosaccharide transmembrane transport	52	7	0.94	0.00088	M08
+GO:0009642	response to light intensity	131	5	2.37	0.00095	M08
+GO:0005985	sucrose metabolic process	43	5	0.78	0.00098	M08
+GO:0030244	cellulose biosynthetic process	29	4	0.52	0.00169	M08
+GO:0046323	D-glucose import	49	5	0.89	0.00178	M08
+GO:0009658	chloroplast organization	99	7	1.79	0.00196	M08
+GO:0030163	protein catabolic process	190	10	3.09	0.00071	M09
+GO:0098660	inorganic ion transmembrane transport	267	9	4.34	0.00072	M09
+GO:0010119	regulation of stomatal movement	40	4	0.65	0.00382	M09
+GO:1901700	response to oxygen-containing compound	750	16	12.19	0.00427	M09
+GO:0010182	sugar mediated signaling pathway	22	3	0.36	0.00512	M09
+GO:0043161	proteasome-mediated ubiquitin-dependent protein catabolic process	70	5	1.14	0.00535	M09
+GO:0046113	nucleobase catabolic process	25	3	0.41	0.0086	M09
+GO:0098655	monoatomic cation transmembrane transport	241	9	3.92	0.0092	M09
+GO:0006833	water transport	37	11	0.71	4.3e-11	M10
+GO:0015840	urea transport	11	6	0.21	1.8e-08	M10
+GO:0099587	inorganic ion import across plasma membrane	12	6	0.23	3.6e-08	M10
+GO:0098661	inorganic anion transmembrane transport	46	9	0.88	4.5e-08	M10
+GO:0098656	monoatomic anion transmembrane transport	150	13	2.88	4.6e-06	M10
+GO:0033273	response to vitamin	11	4	0.21	3.8e-05	M10
+GO:0009901	anther dehiscence	12	4	0.23	5.6e-05	M10
+GO:0034220	monoatomic ion transmembrane transport	387	23	7.42	7.6e-05	M10
+GO:0009228	thiamine biosynthetic process	22	4	0.42	0.00072	M10
+GO:0010193	response to ozone	23	4	0.44	0.00085	M10
+GO:0010233	phloem transport	11	3	0.21	0.00101	M10
+GO:0006855	xenobiotic transmembrane transport	61	6	1.17	0.00102	M10
+GO:0097305	response to alcohol	283	6	5.43	0.00153	M10
+GO:0042273	ribosomal large subunit biogenesis	13	3	0.25	0.00171	M10
+GO:0042255	ribosome assembly	14	3	0.27	0.00214	M10
