@@ -119,7 +119,7 @@ Three ideas are needed before any result makes sense.
 
 ## 4. First look at all the data
 
-> **Concept: PCA.** Each library is a list of ~30,000 numbers, impossible to look at directly. Principal component analysis (PCA) finds the directions along which libraries differ most and draws each library as one point.
+> **Concept: PCA.** Each library is an expression profile: one value per allele group (its count after a variance-stabilising transformation, VST), tens of thousands of values per library, impossible to look at directly. Principal component analysis (PCA) finds the directions along which libraries differ most and draws each library as one point. We used the 2,000 groups that vary most between libraries, because groups that barely change add noise but no structure.
 > - **PC1** is the strongest axis of difference, **PC2** the second strongest.
 > - The percentage on each axis says how much of the total variation it captures.
 > - Libraries that are close together have similar transcriptomes.
