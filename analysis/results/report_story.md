@@ -167,7 +167,7 @@ Two large blocks appear, one per genotype. Three libraries sit in the wrong bloc
 | `21DH8_S24` | 8008 maturation-stressed bud | 5000 buds |
 | `251_S3` | 5000 watered tillering leaf | 8008 watered leaves |
 
-The first two look like a swap of two tubes. None of the three is a copy of another library: each looks like a real sample of the other cultivar. We excluded all three until Dolores can check the lab records. This leaves **48 libraries** in the analysis (marked × in Figure 3).
+The first two look like a swap of two tubes. None of the three is a copy of another library: each looks like a real sample of the other cultivar. We excluded all three. Dolores's sample table is correct, so the error happened during sampling. An expression check (`qc/relabel_check/`) suggests each library matches the treatment on its label, only in the other cultivar (`FIDH35000_S29` as an 8008 T bud, `21DH8_S24` as a 5000 M bud, `251_S3` as an 8008 watered mother leaf). But every group was designed with 3 plants, and reassigning would give 4, so the libraries stay out. This leaves **48 libraries** in the analysis (marked × in Figure 3).
 
 Figure 5 holds one more warning. The row `8008_Fw_D1_79_S6` is pale against everything. This library is about 76% ribosomal RNA (the median library is 25%), so only 1.05 million reads count genes (the median is 6.2 million) and only ~15,000 groups are detected (the median is ~29,000). It is the **only** 8008 propagule of a watered mother under drought, the reference for the 8008 propagule comparisons. We come back to it in section 10.
 
@@ -765,11 +765,10 @@ The leaf result is the most solid. The bud and propagule results need the checks
 The biggest uncertainties are about the samples, not the statistics, so the cheapest steps come first. Everything that could be done with the existing data has been done (sections 5.3, 7, 11, 12 and 13).
 
 **Ask Dolores and the lab (free):**
-1. **The three mislabelled libraries.** Tube and plate records would let us relabel them instead of losing them (section 5.1).
-2. **Library preparation of the buds.** The data say the watered buds' libraries were prepared differently from the T and M buds' libraries (shorter fragments, more adapter; section 5.3). The lab notes can confirm it, and say whether tissue or RNA is left to re-prepare them.
-3. **Sampling time of day for every group.** This decides whether the clock and THI1 genes among the "memory" genes are biology or the hour of sampling (sections 5.5 and 6.2).
-4. **How stressed each sampled plant was:** leaf water potential or relative water content, soil moisture, gas exchange. This is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 may already have the propagule data.
-5. **Leftover RNA or tissue,** for the groups with one plant and for the never-sequenced T/W and M/W propagules.
+1. **Library preparation of the buds.** The data say the watered buds' libraries were prepared differently from the T and M buds' libraries (shorter fragments, more adapter; section 5.3). The lab notes can confirm it, and say whether tissue or RNA is left to re-prepare them.
+2. **Sampling time of day for every group.** This decides whether the clock and THI1 genes among the "memory" genes are biology or the hour of sampling (sections 5.5 and 6.2).
+3. **How stressed each sampled plant was:** leaf water potential or relative water content, soil moisture, gas exchange. This is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 may already have the propagule data.
+4. **Leftover RNA or tissue,** for the groups with one plant and for the never-sequenced T/W and M/W propagules.
 
 **In the lab, if there is budget:**
 1. **Re-prepare and re-sequence a few existing libraries together:** two W, two T and two M buds per genotype, plus a few watered and drought leaves. Shallow sequencing is enough. This is the only way to rescue the strongest bud test.

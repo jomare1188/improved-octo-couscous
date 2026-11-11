@@ -47,6 +47,8 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
 | WGCNA input (leaf VST, genotype removed; traits) | `14_wgcna_prep.R` | `run_r.sh` | `results/wgcna/input_*` |
 | WGCNA network and modules | `15_wgcna.R` | `run_r.sh` with `RENV=/Storage/data2/jorge.munoz/conda_envs/r_wgcna` | `results/wgcna/modules.tsv`, `eigengenes.tsv` |
 | Module–trait tests, GO, overlaps, buds | `16_wgcna_traits.R` | `run_r.sh` | `results/wgcna/` |
+| Library type: poly-A vs total RNA (intron reads, HISAT2 on 2 chromosomes) | `17_library_type.sh` | itself (`qsub -N libtype code/17_library_type.sh`) | `results/qc/library_type/` |
+| lncRNA pilot on chromosome 1 (HISAT2, StringTie, CPC2, DIAMOND) | `18_lnc_pilot.sh` | itself (`qsub -N lncpilot code/18_lnc_pilot.sh`; env `/Storage/data2/jorge.munoz/conda_envs/lnc`) | `results/lncrna_pilot/` |
 
 - **`run_downstream.sh`** runs everything after OrthoFinder: allele groups → import → QC → DE → memory genes → enrichment.
 - **DESeq2 runs serially:** with forked BiocParallel workers the group-level run hung.
