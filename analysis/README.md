@@ -54,6 +54,7 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
 | Clock genes: internal time of each library, and THI1 (sampling hour) | `23_clock_check.R` | runs in 2 minutes, no job needed | `results/clock/` |
 | Library type: poly-A vs total RNA (intron reads, HISAT2 on 2 chromosomes) | `17_library_type.sh` | itself (`qsub -N libtype code/17_library_type.sh`) | `results/qc/library_type/` |
 | lncRNA pilot on chromosome 1 (HISAT2, StringTie, CPC2, DIAMOND) | `18_lnc_pilot.sh` | itself (`qsub -N lncpilot code/18_lnc_pilot.sh`; env `/Storage/data2/jorge.munoz/conda_envs/lnc`) | `results/lncrna_pilot/` |
+| lncRNA search on the whole genome, 48 libraries (side analysis, not in the reports): index, align and assemble, candidates, Salmon, drought test | `21_lnc_index.sh`, `22_lnc_align.sh`, `24_lnc_candidates.sh`, `25_lnc_quant.sh`, `26_lnc_de.R` | chain of jobs, see the header of each script (work files in `/Storage/data2/jorge.munoz/lnc_genome`) | `results/lncrna_genome/` |
 
 - **`run_downstream.sh`** runs everything after OrthoFinder: allele groups → import → QC → DE → memory genes → enrichment.
 - **DESeq2 runs serially:** with forked BiocParallel workers the group-level run hung.
