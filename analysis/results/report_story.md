@@ -57,10 +57,14 @@ The libraries were sequenced on several runs, and leaves of different ages were 
 | Maturation leaves | runs 51/52 | D1 day 144, D3 and watered day 174 | Descriptive only: one plant per drought group, 5000 only. |
 
 **The hour of sampling is very important, and every contrast is confounded with it.** The lab confirmed that each sampling started early in the morning and in some cases lasted until past midday, and the hour of each plant was not recorded. Two groups in one contrast can therefore differ by several hours of the day, and this cannot be corrected. What it touches:
-- **Genes that follow the daily clock.** In 8008, clock genes (CCA1/LHY, PRR7, TOC1, GI) and the clock-controlled THI1 differ between D1 and watered leaves, and THI1 and CCA1/LHY are among the memory genes. Drought can shift the clock, but so can sampling at another hour. These genes are reported, and not counted as evidence of memory.
+- **What the clock genes say.** We read the internal time of each library from six clock genes: the morning gene CCA1/LHY, which falls after dawn, and five day and evening genes (PRR73, PRR37, PRR59/95, GI, TOC1), which rise towards midday. A later hour lowers the first and raises the others.
+  - Plants of one group share their internal time (99% of the variation is between groups), so the groups were sampled one after another. Hour is therefore tied to the group, and no model can remove it.
+  - **1st and 3rd drought leaves** have the same level of the five day and evening genes, in both cultivars. A difference of several hours between them is unlikely. Only CCA1/LHY is higher at the 3rd drought (3 times in 8008, 2 times in 5000).
+  - **T and M buds** and the **propagule groups** differ little in these genes.
+  - **Drought against watered leaves** is where the clock genes differ most (in 8008 the watered leaves look later in the day), so genes of the daily clock are not interpreted in those contrasts.
 - **The main results, less so.** The H1 memory genes are drying-protection genes, not clock genes, and an hour effect would not pick protection genes out of 8,000. T and M buds (H3) were collected on the same day, in an order we do not know. The propagule result (H4) is a shift of thousands of genes in the same direction in two cultivars. An hour effect on a single gene can never be excluded.
 
-**Where:** runs per library `qc/sequencing_runs.tsv` and `plots/story/design_runs.png`; distance between libraries within and across runs `qc/run_pair_distances.tsv`; bud run effect `bud_batch/`. README sections 5.2, 5.3 and 5.5.
+**Where:** runs per library `qc/sequencing_runs.tsv` and `plots/story/design_runs.png`; distance between libraries within and across runs `qc/run_pair_distances.tsv`; bud run effect `bud_batch/`; clock genes `clock/clock_by_contrast.tsv`, `clock/clock_scores.png`, made by `../code/23_clock_check.R`. README sections 5.2, 5.3 and 5.5.
 
 ---
 
@@ -136,7 +140,9 @@ RAB18 is a known *Arabidopsis* gene that remembers drought, and its maize orthol
 
 *Figure 3. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left 8008, right 5000. RAB18 and LEA3 keep rising at D3 in 8008; HAI1 rises and stays; THI1 drops and drops further.*
 
-On the repressed side, thiamine synthesis (THI1) is shut down further at the 3rd drought. THI1 follows the daily clock and the hour of sampling differs between groups (section 3), so THI1 is reported here and not counted as memory.
+On the repressed side, thiamine synthesis (THI1) is shut down by drought and shut down further at the 3rd drought. THI1 follows the daily clock, so we checked it against the clock genes (section 3):
+- **THI1 is a drought-repressed gene, whatever the hour.** In 8008, 11 of the 13 THI1 groups fall 17 to 170 times at the 1st drought (the other two are barely expressed), and 5000 represses them too, although the clock genes of the two cultivars move in opposite directions in that contrast.
+- **Its further fall at the 3rd drought goes together with the rise of CCA1/LHY,** in both cultivars, while the five day and evening clock genes do not move. Either the 3rd-drought leaves were sampled a little earlier in the morning, or the 3rd drought raises CCA1/LHY. The data cannot tell which. So THI1 and CCA1/LHY count as one open signal, and not as two memory genes.
 
 **5000** changes more between the droughts: 1,229 groups, 162 of them in the memory classes, with a broad further shutdown of translation and stronger ABA signalling. This is a real difference in the data, but its 1st-drought group is one plant, and refitting 8008 with a single D1 plant can produce a similar picture. With one D1 plant it stays exploratory.
 
@@ -240,17 +246,14 @@ There is no budget for new sequencing or new experiments, and the lab has alread
 
 | Result | Confidence | What limits it, and cannot be changed |
 |---|---|---|
-| H1 in 8008: drying-protection genes rise more at the 3rd drought | The firmest result: 3 plants per group, one run | 30 days of age between D1 and D3; hour of sampling |
+| H1 in 8008: drying-protection genes rise more at the 3rd drought | The firmest result: 2–3 plants per group, on runs 51/52 that behave as one batch | 30 days of age between D1 and D3; hour of sampling |
 | H3: T and M buds differ, led by PAL | Firm: same run, same sampling day | 2–3 plants per group; hour of sampling; says nothing about stressed vs never-stressed buds |
 | H4: milder response in propagules of stressed mothers | Exploratory, and seen in both cultivars | One Fw_D1 plant per cultivar; no measure of how dry each plant was |
 | H1 in 5000, H2 | Exploratory | One D1 plant |
 | Stressed vs watered buds | Not answerable | Run and library preparation are the same thing as treatment |
-| THI1 and clock genes as memory | Not answerable | Hour of sampling differs between groups and was not recorded |
+| THI1 and CCA1/LHY as memory | Open, and narrowed: THI1 is repressed by drought for certain; its further fall at the 3rd drought follows CCA1/LHY | A small difference in sampling hour and a real rise of CCA1/LHY look the same |
 
-**What can still be done with the data in hand:**
-1. **Estimate the internal time of each library from its clock genes** (CCA1/LHY against TOC1, GI, PRR7, ELF3) and repeat the D3 vs D1 test with that estimate in the model. Memory genes that stay are independent of the hour. This is the one way left to address the sampling hour.
-2. **Use the physiology that already exists.** Marcos et al. 2018 describe the physiology of such propagules; if the lab kept water status or gas exchange per plant, it would say whether the Fw_D1 reference plants were simply drier.
-3. **Extend the lncRNA pilot to the whole genome** (README section 13.4): about 10,000 candidates, never tested for drought.
+**What can still be done with the data in hand:** use the physiology that already exists. Marcos et al. 2018 describe the physiology of such propagules; if the lab kept water status or gas exchange per plant, it would say whether the Fw_D1 reference plants were simply drier.
 
 ---
 

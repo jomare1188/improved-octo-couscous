@@ -1,0 +1,18 @@
+genotype	contrast	n1	n2	d_morning	d_day_evening	d_clock_index	pattern
+8008	Mt_D1_vs_Mt_W	3	3	1.23	-1.52	-2.75	first group earlier (both scores)
+8008	Mt_D3_vs_Mt_W	2	3	2.84	-1.62	-4.46	first group earlier (both scores)
+8008	Mt_D3_vs_Mt_D1	2	3	1.61	-0.1	-1.71	CCA1/LHY alone differs
+8008	Fw_D1_vs_Fw_W	1	1	-0.54	-0.34	0.2	CCA1/LHY alone differs
+8008	Ft_D1_vs_Fw_D1	2	1	0.57	0.3	-0.27	CCA1/LHY alone differs
+8008	T_vs_M	3	2	0.68	-0.28	-0.95	CCA1/LHY alone differs
+8008	T_vs_W	3	3	1.27	0.19	-1.08	CCA1/LHY alone differs
+8008	M_vs_W	2	3	0.6	0.47	-0.13	CCA1/LHY alone differs
+5000	Mt_D1_vs_Mt_W	1	2	-1.73	-1.15	0.58	both scores move the same way (not a time shift)
+5000	Mt_D3_vs_Mt_W	2	2	-0.65	-0.86	-0.21	both scores move the same way (not a time shift)
+5000	Mt_D3_vs_Mt_D1	2	1	1.07	0.29	-0.78	CCA1/LHY alone differs
+5000	Fw_D1_vs_Fw_W	1	2	-0.8	-0.73	0.08	both scores move the same way (not a time shift)
+5000	Ft_D1_vs_Fw_D1	1	1	-0.13	0.71	0.84	day/evening genes alone differ
+5000	Fm_D1_vs_Fw_D1	3	1	-0.04	0.4	0.44	same internal time
+5000	T_vs_M	2	3	0.38	-0.06	-0.45	same internal time
+5000	T_vs_W	2	3	0.56	0.52	-0.03	both scores move the same way (not a time shift)
+5000	M_vs_W	3	3	0.17	0.59	0.42	day/evening genes alone differ

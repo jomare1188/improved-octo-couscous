@@ -51,6 +51,7 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
 | Module–trait tests, GO, overlaps, buds | `16_wgcna_traits.R` | `run_r.sh` | `results/wgcna/` |
 | Which group the three excluded libraries resemble (nearest centroid, leave-one-out calibration) | `19_relabel_check.R` | `run_r.sh` | `results/qc/relabel_check/` |
 | Distance between libraries of a group, within and across sequencing runs | `20_run_check.R` | runs in seconds, no job needed | `results/qc/run_pair_distances*.tsv` |
+| Clock genes: internal time of each library, and THI1 (sampling hour) | `23_clock_check.R` | runs in 2 minutes, no job needed | `results/clock/` |
 | Library type: poly-A vs total RNA (intron reads, HISAT2 on 2 chromosomes) | `17_library_type.sh` | itself (`qsub -N libtype code/17_library_type.sh`) | `results/qc/library_type/` |
 | lncRNA pilot on chromosome 1 (HISAT2, StringTie, CPC2, DIAMOND) | `18_lnc_pilot.sh` | itself (`qsub -N lncpilot code/18_lnc_pilot.sh`; env `/Storage/data2/jorge.munoz/conda_envs/lnc`) | `results/lncrna_pilot/` |
 

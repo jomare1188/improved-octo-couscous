@@ -46,6 +46,7 @@ DIRS = {
     "h5_rank": RES / "h5_rank",
     "alleles": RES / "alleles",
     "wgcna": RES / "wgcna",
+    "clock": RES / "clock",
     "lncrna_pilot": RES / "lncrna_pilot",
 }
 SKIP = re.compile(r"\.rds$")          # R objects, 230 MB in de/group alone

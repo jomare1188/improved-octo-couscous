@@ -1,0 +1,38 @@
+genotype	id	gene	part	baseMean	log2FC_Mt_D1_vs_Mt_W	log2FC_Mt_D3_vs_Mt_D1	log2FC_Mt_D3_vs_Mt_W	padj_Mt_D1_vs_Mt_W	padj_Mt_D3_vs_Mt_D1	padj_Mt_D3_vs_Mt_W	class
+8008	SB:SORBI_3002G384400	THI1	clock-controlled output	2260	-5.2	-2.61	-7.81	5.6e-27	0.0017	1.1e-44	--
+8008	U:POJ2878081746	THI1	clock-controlled output	1880	-4.47	-1.56	-6.03	1.9e-13	0.6	4.5e-19	-=
+8008	U:POJ2878087986	THI1	clock-controlled output	1494	-4.11	-1.77	-5.88	2.3e-11	0.41	6.8e-18	-=
+8008	SB:SORBI_3003G191000	THI1	clock-controlled output	1016	-5.26	-1.86	-7.12	3.8e-20	0.29	1.9e-27	-=
+8008	U:POJ2878276104	THI1	clock-controlled output	999	-6.83	-2.43	-9.26	3.9e-07	1	1.2e-09	-=
+8008	U:POJ2878170178	THI1	clock-controlled output	806	-7.4	-2.18	-9.58	6.6e-29	0.51	1.7e-28	-=
+8008	U:POJ2878319406	THI1	clock-controlled output	685	-6.7	-1.82	-8.52	5.8e-16	0.93	3.2e-18	-=
+8008	U:POJ2878011055	THI1	clock-controlled output	627	-6.23	-7.8	-14.04	1.8e-30	0.00084	2e-17	--
+8008	U:POJ2878241824	THI1	clock-controlled output	534	-5.6	-1.82	-7.42	1.2e-15	0.71	2.3e-19	-=
+8008	U:POJ2878281656	THI1	clock-controlled output	404	-4.16	-1.32	-5.48	5.2e-16	0.71	2.5e-20	-=
+8008	U:POJ2878302621	THI1	clock-controlled output	79	-5.87	-1.58	-7.45	1e-10	1	2e-09	-=
+8008	U:POJ2878015893	THI1	clock-controlled output	13	-8.76	0	-8.49	0.16	1	0.25	none
+8008	U:POJ2878150275	THI1	clock-controlled output	12	-2.61	-4.4	-7.01	0.22	0.94	0.011	0-
+8008	SB:SORBI_3003G040900	GI	day/evening	1092	-2.94	-0.7	-3.64	2.1e-06	1	1.2e-07	-=
+8008	SB:SORBI_3006G057866	PRR37	day/evening	233	-3.49	0.74	-2.74	3.3e-06	1	0.0021	-=
+8008	SB:SORBI_3002G275100	PRR59/95	day/evening	3161	-1.65	-0.19	-1.84	1.1e-13	1	1.5e-13	-=
+8008	SB:SORBI_3001G411400	PRR73	day/evening	4655	-1.24	-0.2	-1.43	0.0096	1	0.008	-=
+8008	SB:SORBI_3004G216700	TOC1	day/evening	403	-1.51	0.08	-1.43	4.9e-05	1	0.00097	-=
+8008	SB:SORBI_3007G047400	CCA1/LHY	morning	4102	1.35	1.7	3.05	6.9e-05	0.00047	3.4e-18	++
+5000	SB:SORBI_3002G384400	THI1	clock-controlled output	363	-2.6	-0.4	-3	0.0081	0.86	2.1e-05	-=
+5000	U:POJ2878081746	THI1	clock-controlled output	311	-0.93	-2.55	-3.49	0.47	0.011	4e-08	0-
+5000	U:POJ2878241824	THI1	clock-controlled output	294	-1.49	-1.08	-2.57	0.74	0.84	0.21	none
+5000	SB:SORBI_3003G191000	THI1	clock-controlled output	293	-0.86	-2.25	-3.11	0.14	1.9e-05	2.4e-17	0-
+5000	U:POJ2878087986	THI1	clock-controlled output	178	-1.05	-2.09	-3.14	0.091	0.00054	1.1e-14	0-
+5000	U:POJ2878281656	THI1	clock-controlled output	162	-1.26	-0.94	-2.2	0.27	0.53	0.0013	0-
+5000	U:POJ2878170178	THI1	clock-controlled output	157	-1.6	-1.75	-3.35	0.41	0.41	0.0015	0-
+5000	U:POJ2878319406	THI1	clock-controlled output	140	-0.58	-1.71	-2.29	0.59	0.054	3.9e-05	0-
+5000	U:POJ2878150275	THI1	clock-controlled output	117	-0.91	-2.82	-3.73	0.58	0.034	1.2e-05	0-
+5000	U:POJ2878011055	THI1	clock-controlled output	94	0.01	-3.26	-3.26	1	0.0031	1.7e-05	0-
+5000	U:POJ2878015893	THI1	clock-controlled output	21	-6.89	7.01	0.12	0.67	0.69	0.99	none
+5000	U:POJ2878276104	THI1	clock-controlled output	7	-5.68	5.89	0.21			0.99	none
+5000	SB:SORBI_3003G040900	GI	day/evening	156	-3.39	1.21	-2.17	1.8e-05	0.33	0.00045	-=
+5000	SB:SORBI_3006G057866	PRR37	day/evening	120	-4.04	-0.78	-4.81	9.2e-06	0.69	7.2e-12	-=
+5000	SB:SORBI_3002G275100	PRR59/95	day/evening	2266	-1.1	0.76	-0.34	1.9e-06	0.0071	0.1	-=
+5000	SB:SORBI_3001G411400	PRR73	day/evening	2473	-0.61	-0.37	-0.98	0.2	0.58	7e-04	none
+5000	SB:SORBI_3004G216700	TOC1	day/evening	368	0.04	1.25	1.29	0.98	0.047	0.0011	0+
+5000	SB:SORBI_3007G047400	CCA1/LHY	morning	4572	-1.85	1.19	-0.67	2.1e-10	0.00066	0.0083	-+

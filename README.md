@@ -485,11 +485,33 @@ Every propagule comparison against Fw_D1 therefore rests on one plant in each ge
 ### 5.5 Age and time of day
 
 - **Age.** D1 leaves are 30 days younger than the watered controls (Figure 1).
-- **Time of day.** In 8008, D1 leaves differ from watered leaves in **clock genes**:
-  - the morning gene CCA1/LHY is up;
-  - PRR7, TOC1, GI and ELF3, which peak later in the day, are down.
+- **Time of day.** Each sampling started early in the morning and in some cases lasted until past midday, and the hour of each plant was not recorded (section 5.2). The clock genes of each library tell us what can be said about it.
 
-  Drought can shift the plant's internal clock. But the same pattern appears if two groups were simply sampled at different hours, and they may well have been: samplings ran from early morning to past midday and the hour of each plant was not recorded (section 5.2). Clock genes and clock-controlled genes are therefore reported, and not counted as evidence of memory.
+> **Concept: reading the hour from clock genes.** The plant's daily clock is a loop of genes that peak one after another. CCA1/LHY peaks at dawn and falls during the morning. The PRR genes, GI and TOC1 rise later, towards midday and the evening. So between early morning and midday, a later hour means **less CCA1/LHY and more of the day and evening genes**. Two libraries that differ in both, in opposite directions, were probably sampled at different hours. Drought can also act on these genes, so the reading is a hint, not a clock.
+
+We took six clock groups: CCA1/LHY (the **morning score**) and PRR73, PRR37, PRR59/95, GI and TOC1 (their mean is the **day/evening score**). Expression is log2, centred within leaves and within buds (`../code/23_clock_check.R`).
+
+![Clock scores](analysis/results/clock/clock_scores.png)
+
+*Clock scores of every library. Top: morning score. Bottom: day/evening score. Dots = plants. Source: `clock/clock_index.tsv`.*
+
+What the scores show (`clock/clock_by_contrast.tsv`):
+- **Plants of one group share their internal time.** In leaves, 99% of the variation of the scores is between groups (spread within a group 0.22, range between groups 5.5). The groups were sampled one after another. So hour is tied to the group, and it cannot be put in a model: we tried the scores as a covariate, and every test lost all its power.
+- **Drought against watered leaves: the largest differences.**
+  - In 8008 the watered leaves look later in the day on both scores (morning score 1.2 to 2.8 lower, day/evening score 1.5 to 1.6 higher than in drought leaves).
+  - In 5000 both scores are lower under drought, which is not the pattern of a time shift.
+  - The day and evening genes are lower under drought in both cultivars, so part of this is a drought effect. Genes of the daily clock are not interpreted in these contrasts.
+- **3rd against 1st drought (the memory test): the day and evening genes do not move.** The day/evening score differs by −0.10 in 8008 and +0.29 in 5000. A difference of several hours would move it. Only CCA1/LHY is higher at D3: 3 times in 8008 (+1.6), 2 times in 5000 (+1.1).
+- **Buds, T against M:** the same internal time in 5000; in 8008 CCA1/LHY is a little higher in T (+0.7) and the day/evening score is equal.
+- **Propagules of stressed against watered mothers under drought:** the scores differ by 0.7 at most.
+- **`258_S5`,** the Mt_W library of 8008 that stands apart (section 5.2), has a day/evening score of 2.2 against 0.8 and 0.9 in the other two. It looks sampled later than they were.
+
+**THI1 and CCA1/LHY** (`clock/clock_genes_de.tsv`). THI1, a thiamine synthesis gene controlled by the clock, and CCA1/LHY are among the 8008 memory genes (section 6.2).
+- **THI1 is repressed by drought, whatever the hour.** In 8008, 11 of the 13 THI1 groups fall at D1 (17 to 170 times; the other two are barely expressed). In 5000, 9 of the 10 expressed THI1 groups are lower at D3 than in watered leaves. The clock scores of the two cultivars move in opposite directions in these contrasts, and THI1 falls in both.
+- **Its further fall at D3 goes together with the rise of CCA1/LHY.** THI1 is lower at D3 than at D1 in 12 of 13 groups in 8008 (significant in 2) and in all 10 in 5000 (significant in 5, on one D1 plant). In both cultivars CCA1/LHY is higher at D3 and the day and evening genes are unchanged.
+- **Two readings remain.** The D3 leaves were sampled a little earlier in the morning than the D1 leaves, in both cultivars: CCA1/LHY falls fast after dawn, before the day and evening genes start to rise. Or the 3rd drought raises CCA1/LHY. The data cannot tell which.
+
+**Verdict:** THI1 is a drought-repressed gene for certain. THI1 and CCA1/LHY as memory genes stay open, and they count as one signal, not two. The other memory genes are drying-protection genes; a large difference in hour between D1 and D3 is unlikely, since the day and evening genes are equal.
 
 ### 5.6 Two notes for reading the tables
 
@@ -593,7 +615,7 @@ Figure 14 makes the classes concrete:
 - **THI1 (8008):** a thiamine (vitamin B1) biosynthesis gene. It drops at D1 and **drops further** at D3 (`--`).
 - **5000 (right column):** the same genes fall in other classes. RAB18 is `+=`, LEA3 even goes down, and HAI1 is `++`. Remember that the 5000 D1 group is one plant.
 
-One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadian clock, are among the memory genes. The hour of sampling differs between groups and was not recorded, so for these two genes "memory" cannot be told apart from time of day (section 5.5). The drying-protection genes of Table 6 are not clock genes.
+One caution for 8008. THI1 and CCA1/LHY, both tied to the daily clock, are among the memory genes. The clock genes of each library were checked (section 5.5): the day and evening clock genes are equal at D1 and D3, THI1 is repressed by drought for certain, and its further fall at D3 goes together with the rise of CCA1/LHY. Whether that pair is memory or a slightly earlier sampling hour stays open. The drying-protection genes of Table 6 are not clock genes.
 
 ### 6.3 5000: a bigger response at D3, but on one plant
 
@@ -1030,9 +1052,8 @@ The 8008 leaf result and the T vs M bud result are solid. The propagule result i
 There is no budget for new sequencing or new experiments, and the lab has already answered what it could about the sampling (hour of sampling: early morning to past midday, not recorded per plant). These 48 libraries are the data. Each result therefore keeps the confidence its design allows (section 14), and the lists below separate what can still be done from what would be needed if resources ever appear.
 
 **What can still be done with the data in hand:**
-1. **Estimate the internal time of each library from its clock genes** (CCA1/LHY against TOC1, GI, PRR7, ELF3) and repeat the D3 vs D1 test with that estimate in the model. Memory genes that stay are independent of the hour. This is the one way left to address the sampling hour (sections 5.5 and 6.2).
-2. **Use the physiology that already exists.** If the lab kept leaf water potential, relative water content, soil moisture or gas exchange per plant, it is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 describe the physiology of such propagules.
-3. **Extend the lncRNA pilot to the whole genome** (section 13.4).
+1. **Use the physiology that already exists.** If the lab kept leaf water potential, relative water content, soil moisture or gas exchange per plant, it is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 describe the physiology of such propagules.
+2. **Extend the lncRNA pilot to the whole genome** (section 13.4).
 
 **What stays open, and what it would take (for the record, not planned):**
 1. **Stressed vs never-stressed buds:** two W, two T and two M buds per genotype, prepared and sequenced together (section 5.3).
@@ -1061,6 +1082,7 @@ Paths are relative to `analysis/results/`. To read the reports on a laptop, `DOL
 | Which group the excluded libraries resemble (section 5.1) | `qc/relabel_check/` | `../code/19_relabel_check.R` |
 | Library type, poly-A check | `qc/library_type/` | `../code/17_library_type.sh` |
 | Distance between libraries within and across runs (section 5.2) | `qc/run_pair_distances.tsv` | `../code/20_run_check.R` |
+| Clock genes and sampling hour (section 5.5) | `clock/` | `../code/23_clock_check.R` |
 | Bud batch check (section 5.3) | `bud_batch/` | `../code/11_bud_batch.R` |
 | H2, genotype × cycle (section 7) | `h2_genotype_cycle/` | `../code/10_genotype_cycle.R` |
 | H5, rank-based tests (section 11) | `h5_rank/` | `../code/12_h5_rank.R` |
