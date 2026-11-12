@@ -1,0 +1,4 @@
+sample	labelled	true_genotype	best	margin	scores	nearest
+5000_Tillering_D_FIDH35000_S29	5000 T	8008	T	1.274	T 0.64; M -0.64	Tillering_D_FIDH38000_S32 (T) 0.613; Tillering_D_FIDH28000_S31 (T) 0.507; Tillering_D_FIDH1800_S30 (T) 0.453
+8008_Maturation_D_21DH8_S24	8008 M	5000	M	0.764	M 0.38; T -0.38	Maturation_D_21DH5_S21 (M) 0.481; Tillering_D_FIDH15000_S27 (T) 0.415; Maturation_D_23DH5_S23 (M) 0.400
+5000_Mt_W_251_S3	5000 Mt_W	8008	Mm_W	0.092	Mm_W 0.88; Mt_W 0.79; Fw_W 0.44; Mt_D1 -0.28; Mt_D3 -0.51; Fw_D1 -0.73; Ft_D1 -0.80	Mm_W_162_S20 (Mm_W) 0.814; Mm_W_161_S13 (Mm_W) 0.805; Mm_W_163_S7 (Mm_W) 0.776

@@ -1,0 +1,5 @@
+same_run	what	n_pairs	median_rms	min	max
+TRUE	leaf, runs 51/52	11	0.655	0.42	0.771
+FALSE	leaf, runs 51/52	5	0.484	0.352	0.624
+FALSE	Mt_W, runs 61/63/73	3	1.064	0.537	1.168
+TRUE	Mt_W, runs 61/63/73	1	0.536	0.536	0.536

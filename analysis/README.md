@@ -1,4 +1,6 @@
-# Drought-memory analysis: DE and known memory genes
+# Drought-memory analysis: plan, steps and scripts
+
+This file lists the comparisons and the scripts. The results are documented in full in the project [`README.md`](../README.md), and in short in [`results/report_story.md`](results/report_story.md).
 
 Plan agreed on 2026-10-29. Each genotype is analysed separately, because the two cultivars are expected to respond
 differently. Groups with one replicate stay in the models, where they help estimate variance, but no conclusions rest
@@ -23,7 +25,7 @@ on them. Maturation mother leaves are descriptive only. Alleles are grouped thro
 
 A DEG is padj < 0.05 and |log2FC| ≥ 1.
 
-**Results summary and next steps: [`results/report.md`](results/report.md) (short) and [`results/report_story.md`](results/report_story.md) (narrative, with concepts explained). To read them on a laptop: `results/DOLORES_report.zip` (all as HTML, plus every file they reference; rebuild with `code/09_report_package.py`).**
+**To read the documents on a laptop:** `results/DOLORES_report.zip` holds both as HTML, plus every file they name (rebuild with `code/09_report_package.py`). [`results/report.md`](results/report.md) is the older technical summary of 2026-11-03; it is kept for reference and is no longer updated.
 
 ## Steps and scripts (`code/`)
 
@@ -38,7 +40,7 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
 | Plots: PCA, UpSet, top GO terms (scico palettes) | `06_plots.R` | `run_plots.sh` | `results/plots/` |
 | Extra numbers for the report (H1, H4, H5) | `07_report_stats.R` | runs in seconds, no job needed | `results/report_tables/` |
 | Explanatory figures for the narrative report | `08_story_figures.R` | `run_story.sh` | `results/plots/story/`, `results/qc/sequencing_runs.tsv` |
-| HTML reports + zip with every file they reference, to read off the server | `09_report_package.py` | runs in seconds in `r_RNASEQ` (needs pandoc), no job needed | `results/DOLORES_report.zip` |
+| HTML pages (short story + full documentation) and a zip with every file they reference, to read off the server | `09_report_package.py` | runs in seconds in `r_RNASEQ` (needs pandoc), no job needed | `results/DOLORES_report.zip` |
 | Shared settings and helpers for steps 10–16 | `common.R` | `run_r.sh` (generic: `qsub -N name [-v RENV=env] code/run_r.sh code/X.R`) | |
 | H2: genotype × cycle interaction, downsampling check | `10_genotype_cycle.R` | `run_r.sh` | `results/h2_genotype_cycle/` |
 | Bud batch check: run QC metrics, GC/length bias, control genes, RUVg | `11_bud_batch.R` | `run_r.sh` | `results/bud_batch/` |
@@ -47,6 +49,8 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
 | WGCNA input (leaf VST, genotype removed; traits) | `14_wgcna_prep.R` | `run_r.sh` | `results/wgcna/input_*` |
 | WGCNA network and modules | `15_wgcna.R` | `run_r.sh` with `RENV=/Storage/data2/jorge.munoz/conda_envs/r_wgcna` | `results/wgcna/modules.tsv`, `eigengenes.tsv` |
 | Module–trait tests, GO, overlaps, buds | `16_wgcna_traits.R` | `run_r.sh` | `results/wgcna/` |
+| Which group the three excluded libraries resemble (nearest centroid, leave-one-out calibration) | `19_relabel_check.R` | `run_r.sh` | `results/qc/relabel_check/` |
+| Distance between libraries of a group, within and across sequencing runs | `20_run_check.R` | runs in seconds, no job needed | `results/qc/run_pair_distances*.tsv` |
 | Library type: poly-A vs total RNA (intron reads, HISAT2 on 2 chromosomes) | `17_library_type.sh` | itself (`qsub -N libtype code/17_library_type.sh`) | `results/qc/library_type/` |
 | lncRNA pilot on chromosome 1 (HISAT2, StringTie, CPC2, DIAMOND) | `18_lnc_pilot.sh` | itself (`qsub -N lncpilot code/18_lnc_pilot.sh`; env `/Storage/data2/jorge.munoz/conda_envs/lnc`) | `results/lncrna_pilot/` |
 
@@ -63,11 +67,11 @@ A DEG is padj < 0.05 and |log2FC| ≥ 1.
    - `21DH8_S24`: labelled 8008 maturation bud, matches 5000. This and `FIDH35000_S29` look like a swap.
    - `251_S3`: labelled 5000 Mt_W leaf, matches 8008.
 
-   **They are excluded from DE** (`data/excluded_samples.tsv`) until Dolores confirms. To relabel instead, fix the genotype in the metadata and remove them from that file.
+   **They are excluded from every model** (`data/excluded_samples.tsv`; decided 2026-11-04). Dolores's sample table is correct, so the mix-up happened at sampling. An expression check (`results/qc/relabel_check/`) suggests each keeps the treatment on its label, in the other cultivar, but every group was designed with 3 plants and relabelling would give 4. To relabel anyway, correct the cultivar and group in `data/samples.tsv`, remove the library from `data/excluded_samples.tsv` and rerun from `03_de.R`.
 2. **Batch confounding, from the read headers (instrument VH00942):**
    - **Buds:** all 6 watered buds were sequenced on run 44 and all 12 stressed buds on run 45. Bud `T_vs_W` and `M_vs_W` are therefore confounded with sequencing run. `T_vs_M` is clean, since both are on run 45. In the PCA, watered buds separate from stressed buds on PC2 in both genotypes, while T and M buds overlap.
    - **Mother leaves:** the tillering controls (Mt_W) were sequenced on later runs (61, 63, 73), and every drought leaf on runs 51/52. `Mt_D1_vs_Mt_W` and `Mt_D3_vs_Mt_W` are therefore partly confounded with run. The memory contrast `Mt_D3_vs_Mt_D1` is within runs 51/52, so it is clean. The maturation controls (Mm_W) are on runs 51/52.
-   - **Propagules:** all on runs 51/52, so there is no confounding.
+   - **Propagules:** all on runs 51/52. Each Fw_D1 reference plant is on the other run from the plants compared with it, in opposite arrangements in the two cultivars. Runs 51 and 52 behave as one batch (`results/qc/run_pair_distances_summary.tsv`).
 3. **Sample structure:** in leaves, drought dominates PC1. In buds, genotype is PC1.
 
 ## Sampling times (from the experiment figures; to confirm with Dolores)

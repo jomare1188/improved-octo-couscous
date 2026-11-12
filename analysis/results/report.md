@@ -1,5 +1,7 @@
 # DOLORES: drought memory in sugarcane, results report
 
+> **Superseded (2026-11-12).** This technical summary is kept for reference and is no longer updated. The full documentation is the project [`README.md`](../../README.md); the short version is [`report_story.md`](report_story.md). One thing has changed since: the three libraries with the other cultivar's alleles stay excluded for good (README section 5.1).
+
 2026-10-29, updated 2026-11-03 with the follow-up analyses (H2 interaction test, bud batch check, rank-based H5 tests, allele-level view, WGCNA). The full narrative is [`report_story.md`](report_story.md). Results are at the allele-group level (78,613 groups) unless stated otherwise. 48 libraries are in the models.
 
 ## In short

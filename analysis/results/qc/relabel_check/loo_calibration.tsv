@@ -1,0 +1,26 @@
+reference	sample	true	predicted	correct	score_true	margin	true_class_still_present
+8008 bud	8008_Tillering_D_FIDH1800_S30	T	T	TRUE	0.423	0.845	TRUE
+8008 bud	8008_Tillering_D_FIDH28000_S31	T	T	TRUE	0.448	0.896	TRUE
+8008 bud	8008_Tillering_D_FIDH38000_S32	T	T	TRUE	0.271	0.543	TRUE
+8008 bud	8008_Maturation_D_22DH8_S25	M	T	FALSE	-0.131	0.261	TRUE
+8008 bud	8008_Maturation_D_23DH8_S26	M	M	TRUE	0.101	0.202	TRUE
+5000 bud	5000_Tillering_D_FIDH15000_S27	T	M	FALSE	-0.306	0.612	TRUE
+5000 bud	5000_Tillering_D_FIDH25000_S28	T	M	FALSE	-0.324	0.648	TRUE
+5000 bud	5000_Maturation_D_21DH5_S21	M	M	TRUE	0.068	0.137	TRUE
+5000 bud	5000_Maturation_D_22DH5_S22	M	T	FALSE	-0.035	0.07	TRUE
+5000 bud	5000_Maturation_D_23DH5_S23	M	M	TRUE	0.189	0.377	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_W_Dolores_257_S5	Mt_W	Mt_W	TRUE	0.941	0.087	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_W_258_S5	Mt_W	Mt_W	TRUE	0.901	0.113	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_W_Dolores_259_S6	Mt_W	Mt_W	TRUE	0.96	0.085	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_D1_165_a_S40	Mt_D1	Mt_D1	TRUE	0.775	0.157	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_D1_166_S23	Mt_D1	Mt_D1	TRUE	0.815	0.092	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_D1_168_S25	Mt_D1	Mt_D1	TRUE	0.564	0.026	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_D3_230_S15	Mt_D3	Mt_D1	FALSE	0.691	0.018	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mt_D3_232_S8	Mt_D3	Mt_D3	TRUE	0.747	0.104	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mm_W_161_S13	Mm_W	Mm_W	TRUE	0.943	0.092	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mm_W_162_S20	Mm_W	Mm_W	TRUE	0.932	0.056	TRUE
+8008 mother_leaf+propagule_leaf	8008_Mm_W_163_S7	Mm_W	Mm_W	TRUE	0.904	0.109	TRUE
+8008 mother_leaf+propagule_leaf	8008_Fw_W_70_S34	Fw_W	Mm_W	FALSE		0.101	FALSE
+8008 mother_leaf+propagule_leaf	8008_Fw_D1_79_S6	Fw_D1	Ft_D1	FALSE		0.258	FALSE
+8008 mother_leaf+propagule_leaf	8008_Ft_D1_89_S30	Ft_D1	Ft_D1	TRUE	0.709	0.048	TRUE
+8008 mother_leaf+propagule_leaf	8008_Ft_D1_91_S37	Ft_D1	Ft_D1	TRUE	0.717	0.097	TRUE

@@ -1,0 +1,41 @@
+gene_id	symbol	category	why
+AT5G52300	RD29B	ABA/dehydration marker	trainable (+/+) memory gene (Ding 2012, 2013)
+AT5G66400	RAB18	LEA/dehydrin	trainable (+/+) memory gene (Ding 2012, 2013)
+AT5G52310	RD29A	ABA/dehydration marker	non-memory control (Ding 2012)
+AT2G42540	COR15A	LEA	non-memory control (Ding 2012)
+AT5G59310	LTP4	lipid transfer protein	+/+ memory gene (Ding 2013)
+AT5G59320	LTP3	lipid transfer protein	+/+ memory gene (Ding 2013)
+AT3G50970	LTI30	LEA/dehydrin	dehydrin
+AT1G20450	ERD10	LEA/dehydrin	dehydrin
+AT1G76180	ERD14	LEA/dehydrin	dehydrin
+AT3G51810	EM1	LEA	seed/ABA LEA
+AT3G14440	NCED3	ABA biosynthesis	rate-limiting ABA synthesis
+AT4G26080	ABI1	ABA signalling (PP2C)	clade A PP2C
+AT5G57050	ABI2	ABA signalling (PP2C)	clade A PP2C
+AT1G72770	HAB1	ABA signalling (PP2C)	clade A PP2C
+AT5G59220	HAI1	ABA signalling (PP2C)	clade A PP2C, drought induced
+AT4G33950	OST1	ABA signalling (SnRK2)	SnRK2.6
+AT1G45249	ABF2	ABA signalling (bZIP)	AREB1
+AT4G34000	ABF3	ABA signalling (bZIP)	AREB/ABF
+AT3G19290	ABF4	ABA signalling (bZIP)	AREB2
+AT5G05410	DREB2A	TF, ABA-independent	dehydration TF
+AT4G27410	RD26	TF (NAC)	dehydration NAC
+AT1G32640	MYC2	TF (bHLH)	needed for revised-response memory genes (Liu et al. 2014)
+AT2G39800	P5CS1	osmolyte (proline)	proline synthesis; proline higher in primed propagules (Marcos 2018)
+AT1G56600	GolS2	osmolyte (raffinose)	galactinol synthase
+AT1G78580	TPS1	osmolyte (trehalose)	trehalose-6-P synthase
+AT3G53420	PIP2A	aquaporin	PIP2;1
+AT2G26150	HSFA2	TF (heat memory)	heat stress memory regulator
+AT2G46020	BRM	chromatin remodelling	SWI/SNF ATPase, stress memory
+AT1G79350	FGT1	chromatin	heat memory (Brzezinka 2016)
+AT2G31650	ATX1	chromatin (H3K4me3)	H3K4 methyltransferase linked to dehydration memory
+AT5G66750	DDM1	chromatin/DNA methylation	maintains DNA methylation
+AT5G49160	MET1	DNA methylation	CG maintenance
+AT1G69770	CMT3	DNA methylation	CHG methylation
+AT5G14620	DRM2	DNA methylation (RdDM)	de novo methylation
+AT2G36490	ROS1	DNA demethylation	DNA glycosylase
+AT5G04560	DME	DNA demethylation	DNA glycosylase
+AT2G27040	AGO4	RdDM	ARGONAUTE 4
+AT1G63020	NRPD1	RdDM	Pol IV largest subunit
+AT3G43920	DCL3	RdDM	DICER-LIKE 3
+AT4G11130	RDR2	RdDM	RNA-dependent RNA polymerase 2
