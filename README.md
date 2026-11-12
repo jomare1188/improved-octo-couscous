@@ -391,7 +391,7 @@ What the table and Figure 6 show:
 - **Mother leaves.** The watered tillering controls (Mt_W) were sequenced on later runs (61, 63, 73), and every drought leaf on runs 51/52. So D1 vs W and D3 vs W are partly confounded. **D3 vs D1, the actual memory test, is within runs 51/52.**
 - **Runs 51 and 52 behave as one batch.** Some contrasts cross them: in 5000 the D1 plant is on run 51 and both D3 plants on run 52, and each propagule reference plant (Fw_D1) is on the other run from the plants compared with it. Libraries of the same group on the two runs are as alike as libraries on the same run (median distance 0.48 across runs, 0.66 within a run; `qc/run_pair_distances_summary.tsv`, `../code/20_run_check.R`). And in the propagules the arrangement is reversed between the cultivars, so a run effect would push the two cultivars in opposite directions.
 - **One Mt_W library stands apart.** In 8008, `258_S5` (run 63) is twice as far from the two Mt_W libraries of run 73 as they are from each other (distance 1.06–1.17 vs 0.54; `qc/run_pair_distances.tsv`). It adds noise to the 8008 contrasts against Mt_W.
-- **Hour of sampling.** It is not recorded for any group. It matters most where clock genes show up (section 5.5).
+- **Hour of sampling.** The lab confirmed that each sampling started early in the morning and in some cases lasted until past midday; the hour of each plant was not recorded. So every contrast is also confounded with time of day, by up to several hours, and this cannot be corrected. It matters most where clock genes show up (section 5.5).
 
 ### 5.3 How big is the bud run effect, and can it be removed?
 
@@ -489,7 +489,7 @@ Every propagule comparison against Fw_D1 therefore rests on one plant in each ge
   - the morning gene CCA1/LHY is up;
   - PRR7, TOC1, GI and ELF3, which peak later in the day, are down.
 
-  Drought can shift the plant's internal clock. But the same pattern appears if two groups were simply sampled at different hours. Only the lab notes can say.
+  Drought can shift the plant's internal clock. But the same pattern appears if two groups were simply sampled at different hours, and they may well have been: samplings ran from early morning to past midday and the hour of each plant was not recorded (section 5.2). Clock genes and clock-controlled genes are therefore reported, and not counted as evidence of memory.
 
 ### 5.6 Two notes for reading the tables
 
@@ -593,7 +593,7 @@ Figure 14 makes the classes concrete:
 - **THI1 (8008):** a thiamine (vitamin B1) biosynthesis gene. It drops at D1 and **drops further** at D3 (`--`).
 - **5000 (right column):** the same genes fall in other classes. RAB18 is `+=`, LEA3 even goes down, and HAI1 is `++`. Remember that the 5000 D1 group is one plant.
 
-One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadian clock, are among the memory genes. If D1 and D3 leaves were sampled at different hours, part of this "memory" could be time of day (section 5.5).
+One caution for 8008. THI1 and CCA1/LHY, both strongly controlled by the circadian clock, are among the memory genes. The hour of sampling differs between groups and was not recorded, so for these two genes "memory" cannot be told apart from time of day (section 5.5). The drying-protection genes of Table 6 are not clock genes.
 
 ### 6.3 5000: a bigger response at D3, but on one plant
 
@@ -1021,34 +1021,24 @@ In one paragraph:
 - **Propagules:** propagules of stressed mothers respond more mildly to drought, sparing photosynthesis and growth genes, in both cultivars.
 - **Caveat across the leaves:** the watered tillering leaves (Mt_W) carry a run fingerprint, mostly in 8008. Large leaf responses are unaffected, but small differences against Mt_W need care.
 
-The 8008 leaf result and the T vs M bud result are solid. The propagule result is consistent in both cultivars and needs the checks below to be confirmed. H2, H5 and H6 are too weak to carry the story for now.
+The 8008 leaf result and the T vs M bud result are solid. The propagule result is consistent in both cultivars and stays exploratory, since it rests on one reference plant per cultivar. H2, H5 and H6 are too weak to carry the story for now.
 
 ---
 
 ## 15. Where to go next, and why
 
-The biggest uncertainties are about the samples, not the statistics, so the cheapest steps come first. Everything that could be done with the existing data has been done (sections 5.3, 7, 11, 12 and 13).
+There is no budget for new sequencing or new experiments, and the lab has already answered what it could about the sampling (hour of sampling: early morning to past midday, not recorded per plant). These 48 libraries are the data. Each result therefore keeps the confidence its design allows (section 14), and the lists below separate what can still be done from what would be needed if resources ever appear.
 
-**Ask Dolores and the lab (free):**
-1. **Library preparation of the buds.** The data say the watered buds' libraries were prepared differently from the T and M buds' libraries (shorter fragments, more adapter; section 5.3). The lab notes can confirm it, and say whether tissue or RNA is left to re-prepare them.
-2. **Sampling time of day for every group.** This decides whether the clock and THI1 genes among the "memory" genes are biology or the hour of sampling (sections 5.5 and 6.2).
-3. **How stressed each sampled plant was:** leaf water potential or relative water content, soil moisture, gas exchange. This is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 may already have the propagule data.
-4. **Leftover RNA or tissue,** for the groups with one plant and for the never-sequenced T/W and M/W propagules.
+**What can still be done with the data in hand:**
+1. **Estimate the internal time of each library from its clock genes** (CCA1/LHY against TOC1, GI, PRR7, ELF3) and repeat the D3 vs D1 test with that estimate in the model. Memory genes that stay are independent of the hour. This is the one way left to address the sampling hour (sections 5.5 and 6.2).
+2. **Use the physiology that already exists.** If the lab kept leaf water potential, relative water content, soil moisture or gas exchange per plant, it is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 describe the physiology of such propagules.
+3. **Extend the lncRNA pilot to the whole genome** (section 13.4).
 
-**In the lab, if there is budget:**
-1. **Re-prepare and re-sequence a few existing libraries together:** two W, two T and two M buds per genotype, plus a few watered and drought leaves. Shallow sequencing is enough. This is the only way to rescue the strongest bud test.
-2. **Add plants where everything rests on one:**
-   - 5000 Mt_D1 (H1, H2);
-   - Fw_D1 in both genotypes, and a better 8008 Fw_D1 than `79_S6` (H4);
-   - if possible, T/W propagules (H5).
-3. **RT-qPCR on a short list, in every available plant:**
-   - RAB18, LEA3 and the seed-storage protein (memory candidates);
-   - THI1 and CCA1/LHY (memory or clock?), with copy-specific primers for THI1 (section 12);
-   - PAL (the bud signature);
-   - photosynthesis genes (the propagule signature).
-4. **Only after the qPCR holds, the mechanism.** In *Arabidopsis*, trained genes keep a chromatin mark (H3K4me3) between droughts. ChIP-qPCR for that mark at RAB18 and LEA3, at D1 vs D3, would test whether sugarcane uses the same mechanism.
-
----
+**What stays open, and what it would take (for the record, not planned):**
+1. **Stressed vs never-stressed buds:** two W, two T and two M buds per genotype, prepared and sequenced together (section 5.3).
+2. **Groups that rest on one plant:** 5000 Mt_D1 (H1, H2); Fw_D1 in both genotypes, with a better 8008 library than `79_S6` (H4); T/W propagules (H5).
+3. **Validation by RT-qPCR in every available plant:** RAB18, LEA3 and the seed-storage protein (memory candidates); THI1 and CCA1/LHY at a fixed hour (memory or clock); PAL (buds); photosynthesis genes (propagules).
+4. **The mechanism:** in *Arabidopsis*, trained genes keep a chromatin mark (H3K4me3) between droughts. ChIP-qPCR at RAB18 and LEA3, D1 vs D3, would test whether sugarcane does the same.
 
 ---
 
