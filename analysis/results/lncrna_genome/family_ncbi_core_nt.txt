@@ -1,0 +1,81 @@
+<p><!--
+QBlastInfoBegin
+	Status=READY
+QBlastInfoEnd
+--><p>
+<PRE>
+
+BLASTN 2.17.0+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and
+Webb Miller (2000), "A greedy algorithm for aligning DNA
+sequences", J Comput Biol 2000; 7(1-2):203-14.
+
+
+Reference for database indexing: Aleksandr Morgulis, George
+Coulouris, Yan Raytselis, Thomas L. Madden, Richa Agarwala,
+Alejandro A. Schaffer (2008), "Database Indexing for
+Production MegaBLAST Searches", Bioinformatics 24:1757-1764.
+
+
+RID: FEUJD4G3014
+
+
+Database: Core nucleotide BLAST database
+           132,880,589 sequences; 1,094,966,205,521 total letters
+Query= MSTRG.182280.1
+
+Length=2623
+
+
+                                                                   Score     E      Max
+Sequences producing significant alignments:                       (Bits)  Value   Ident
+
+KF184738.1 Saccharum hybrid cultivar R570 clone BAC 160F01 seq...  2514    0.0     90%       
+KF184809.1 Saccharum hybrid cultivar R570 clone BAC 027I07 seq...  1062    0.0     82%       
+MF737072.1 Saccharum hybrid cultivar SP80-3280 isolate Shy3280...  832     0.0     79%       
+LC187189.1 Saccharum hybrid cultivar DNA, resistance gene anal...  822     0.0     96%       
+KF184962.1 Saccharum hybrid cultivar R570 clone BAC 062F01 com...  643     5e-179  82%       
+KF184814.1 Saccharum hybrid cultivar R570 clone BAC 211I07 com...  435     3e-116  74%       
+KF184760.1 Saccharum hybrid cultivar R570 clone BAC 172F05 com...  361     5e-94   79%       
+EU048772.1 Saccharum officinarum clone M4R5T6 zinc finger ZZ-t...  270     9e-67   89%       
+MH182569.1 Saccharum officinarum clone BAC So127G11 hypothetic...  200     1e-45   81%       
+KF184773.1 Saccharum hybrid cultivar R570 clone BAC 032N13 seq...  137     9e-27   79%       
+CP137585.1 Eragrostis tef cultivar Dabbi chromosome 2B             80.5    2e-09   86%       
+CP137584.1 Eragrostis tef cultivar Dabbi chromosome 2A             80.5    2e-09   86%       
+CP137582.1 Eragrostis tef cultivar Dabbi chromosome 1A             71.3    1e-06   95%       
+CP137592.1 Eragrostis tef cultivar Dabbi chromosome 6A             56.5    0.027   100%      
+  Database: Core nucleotide BLAST database
+    Posted date:  Nov 12, 2026  1:19 AM
+  Number of letters in database: 1,094,966,205,521
+  Number of sequences in database:  132,880,589
+
+Lambda      K        H
+    1.33    0.621     1.12 
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+Matrix: blastn matrix:1 -2
+Gap Penalties: Existence: 0, Extension: 0
+Number of Sequences: 132880589
+Number of Hits to DB: 0
+Number of extensions: 0
+Number of successful extensions: 0
+Number of sequences better than 10: 1
+Number of HSP's better than 10 without gapping: 0
+Number of HSP's gapped: 1
+Number of HSP's successfully gapped: 1
+Length of query: 2623
+Length of database: 1094966205521
+Length adjustment: 38
+Effective length of query: 2585
+Effective length of database: 1089916743139
+Effective search space: 2817434781014315
+Effective search space used: 2817434781014315
+A: 0
+X1: 13 (25.0 bits)
+X2: 32 (59.1 bits)
+X3: 54 (99.7 bits)
+S1: 13 (25.1 bits)
+S2: 26 (49.1 bits)
+
+

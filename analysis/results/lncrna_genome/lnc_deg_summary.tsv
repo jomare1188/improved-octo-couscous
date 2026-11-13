@@ -1,0 +1,18 @@
+genotype	contrast	n1	n2	status	lnc_tested	lnc_up	lnc_down	lnc_hc_up	lnc_hc_down	coding_up	coding_down
+8008	Mt_D1_vs_Mt_W	3	3	conclusive	6961	765	562	346	390	3903	4704
+8008	Mt_D3_vs_Mt_W	2	3	conclusive	6789	707	463	319	340	3617	4445
+8008	Mt_D3_vs_Mt_D1	2	3	conclusive	4147	1	1	1	1	44	40
+8008	Fw_D1_vs_Fw_W	1	1	exploratory	3772	125	152	69	121	1816	955
+8008	Ft_D1_vs_Fw_D1	2	1	exploratory	1623	22	8	18	7	149	86
+8008	T_vs_M	3	2	conclusive	6261	16	61	8	44	317	140
+8008	T_vs_W	3	3	confounded with run	7773	713	475	440	247	4236	1801
+8008	M_vs_W	2	3	confounded with run	7668	643	250	425	112	2945	1873
+5000	Mt_D1_vs_Mt_W	1	2	exploratory	4523	213	179	93	121	2157	1847
+5000	Mt_D3_vs_Mt_W	2	2	conclusive	5942	679	527	309	346	4723	5011
+5000	Mt_D3_vs_Mt_D1	2	1	exploratory	2997	56	27	28	18	504	822
+5000	Fw_D1_vs_Fw_W	1	2	exploratory	4877	280	357	122	250	2939	2939
+5000	Ft_D1_vs_Fw_D1	1	1	exploratory	1933	26	7	23	5	221	156
+5000	Fm_D1_vs_Fw_D1	3	1	exploratory	2507	10	1	9	0	53	39
+5000	T_vs_M	2	3	conclusive	6936	5	19	5	14	28	100
+5000	T_vs_W	2	3	confounded with run	7416	402	198	256	107	2712	1208
+5000	M_vs_W	3	3	confounded with run	7416	522	241	341	109	3434	1157

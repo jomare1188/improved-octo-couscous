@@ -1016,9 +1016,20 @@ We also scored every module in the buds (the mean of its genes, `wgcna/bud_modul
 
 **Verdict:** in these leaves, co-expression follows current drought and plant type, not drought history. The only history-related module, M07, repeats the milder propagule response and rests on the same single Fw_D1 plants.
 
-### 13.4 Side analysis: a lncRNA pilot
+### 13.4 Side analysis: lncRNAs
 
 All analyses above use the annotated protein-coding genes. A pilot on the 13 copies of chromosome 1 (14% of the genome) and eight libraries asked whether long non-coding RNAs can be recovered from these data (`lncrna_pilot/README.md`, `../code/18_lnc_pilot.sh`). After assembling transcripts (HISAT2, StringTie) and removing anything coding (CPC2, ORF length, DIAMOND against the POJ2878 proteome) or next to a gene, 6,773 candidates remain. Of these, 2,975 are high-confidence (2 or more exons, TPM ≥ 1 in 2 or more libraries), about 1,425 distinct after collapsing allele copies. Extrapolated to the genome, that is roughly 10,000 lncRNAs. There is no drought test yet: the pilot has one library per group.
+
+**Whole genome.** The search was then run on the whole genome and the 48 libraries (`lncrna_genome/`, scripts `21`, `22`, `24` to `27`), with the same filters, followed by Salmon quantification and the DESeq2 design of section 6 on coding groups plus lncRNA clusters (copies at 90% identity or more).
+
+![lncRNA search](analysis/results/plots/story/lncrna.png)
+
+- **Candidates:** 683,415 assembled transcripts → 130,738 new and 200 nt or longer → 40,733 without coding signal → 11,677 clusters, 7,399 of high confidence.
+- **Drought:** 1,327 clusters change in 8008 leaves at the 1st drought and 1,206 in 5000 at the 3rd; 459 in the same direction in both, 22 in opposite directions (`lnc_deg_summary.tsv`).
+- **Leaf memory:** two clusters differ between D3 and D1 in 8008, so no support for H1 from lncRNAs.
+- **Buds, T vs M:** 18 lncRNAs are shared by both genotypes in the same direction (0.2 expected). 13 belong to one family of 37 clusters and 815 genomic copies, 7 times (8008) and 4 times (5000) lower in T than in M buds, and repressed about 14 times by drought in 8008 leaves (`bud_shared_lncRNAs.tsv`, `bud_family_clusters.tsv`, `family_tpm_by_library.tsv`).
+- **Identity:** the family matches only unannotated *Saccharum* genomic clones in NCBI core_nt, and nothing in nr, RepBase, the RepeatMasker library or Rfam; it is transcribed in SP80-3280 too (`family_identity.md`). Three of the other five shared lncRNAs are small protein genes missing from the annotation: a glycine-rich cell wall protein (two copies, higher in M) and a wound-induced basic protein (higher in T).
+- **Limit:** the ORF filter (100 aa) lets small unannotated proteins through; the clusters were not all searched against nr.
 
 ---
 
@@ -1053,7 +1064,7 @@ There is no budget for new sequencing or new experiments, and the lab has alread
 
 **What can still be done with the data in hand:**
 1. **Use the physiology that already exists.** If the lab kept leaf water potential, relative water content, soil moisture or gas exchange per plant, it is the only way to tell memory apart from "this plant was simply drier". That question sits behind the 5000 D3 result (section 7) and the propagule result (section 10). Marcos et al. 2018 describe the physiology of such propagules.
-2. **Extend the lncRNA pilot to the whole genome** (section 13.4).
+2. **Name the bud lncRNA family** (section 13.4): no database identifies it; its genomic neighbourhood and its copies in other sugarcane genomes are the next places to look.
 
 **What stays open, and what it would take (for the record, not planned):**
 1. **Stressed vs never-stressed buds:** two W, two T and two M buds per genotype, prepared and sequenced together (section 5.3).
@@ -1088,6 +1099,7 @@ Paths are relative to `analysis/results/`. To read the reports on a laptop, `DOL
 | H5, rank-based tests (section 11) | `h5_rank/` | `../code/12_h5_rank.R` |
 | Gene copies (section 12) | `alleles/` | `../code/13_alleles.R` |
 | lncRNA pilot (section 13.4) | `lncrna_pilot/` | `../code/18_lnc_pilot.sh` |
+| lncRNA search on the whole genome (section 13.4) | `lncrna_genome/` | `../code/21_lnc_index.sh`, `22_lnc_align.sh`, `24_lnc_candidates.sh`, `25_lnc_quant.sh`, `26_lnc_de.R`, `27_lnc_family.R` |
 | Gene modules (section 13) | `wgcna/` | `../code/14_wgcna_prep.R`, `../code/15_wgcna.R`, `../code/16_wgcna_traits.R` |
 
 ---

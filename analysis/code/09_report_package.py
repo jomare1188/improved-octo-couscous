@@ -48,6 +48,7 @@ DIRS = {
     "wgcna": RES / "wgcna",
     "clock": RES / "clock",
     "lncrna_pilot": RES / "lncrna_pilot",
+    "lncrna_genome": RES / "lncrna_genome",
 }
 SKIP = re.compile(r"\.rds$")          # R objects, 230 MB in de/group alone
 SERVER_ONLY = ("de/gene",)             # allele-level tables, 531 MB
@@ -470,6 +471,7 @@ the reports name is here, and the file links in the pages open it:
   plots/  qc/  de/group/  memory_genes/  enrichment/  report_tables/   results
   h2_genotype_cycle/  bud_batch/  h5_rank/  alleles/  wgcna/      results
   lncrna_pilot/    lncRNA pilot on chromosome 1
+  lncrna_genome/   lncRNA search on the whole genome
   figs/            experiment schematics (Figures 1 and 2)
   data/            sample sheet and excluded libraries
   code/            the analysis scripts that made all of this

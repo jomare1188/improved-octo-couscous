@@ -240,7 +240,28 @@ Two checks support the main results: gene copies within a group move together, s
 
 ---
 
-## 8. Where this leaves us
+## 8. A side result: non-coding RNAs point to the same bud difference
+
+Everything above uses the annotated protein-coding genes. As a side analysis we searched the whole genome for long non-coding RNAs (lncRNAs), transcripts that do not make a protein, and ran the same drought tests on them.
+
+![lncRNA search](plots/story/lncrna.png)
+
+*Figure 6. The lncRNA search. **A.** The filters, from all transcripts assembled from the reads to the candidates: a transcript must be new (outside the annotated genes), at least 200 nt long, and show no sign of coding for a protein. Copies of the same sequence are then joined in clusters, the unit we test. **B.** The one sequence family that stands out. Each dot is one bud library; y is the log2 of the summed expression (TPM) of the whole family; the bar is the mean. The grey band marks the watered buds, sequenced on another run.*
+
+- **lncRNAs respond to drought like coding genes do.** In 8008 leaves, 1,327 clusters change at the 1st drought; in 5000, 1,206 at the 3rd. 459 change in the same direction in both cultivars and 22 in opposite directions.
+- **They add no evidence for leaf memory.** Only two clusters differ between the 3rd and the 1st drought in 8008.
+- **In buds they repeat H3.** 18 lncRNAs differ between T and M buds in both cultivars, in the same direction, where chance predicts 0.2. Of these, 13 are copies of one sequence family.
+- **The family is higher in M buds, the ones stressed 6 days before.** It has 37 clusters and 815 copies in the genome. It is about 7 times lower in T than in M buds in 8008 and 4 times in 5000, and in M buds it reaches about 1% of all transcripts in 8008. In 8008 leaves drought represses it (about 14 times).
+- **We could not name it.** It matches only unannotated sugarcane DNA at NCBI (R570, SP80-3280, *S. officinarum*), and no known protein, repeat or RNA family. It is also transcribed in SP80-3280. It is specific to sugarcane and, with so many copies, probably derived from a repeat.
+- **Three of the other five are small protein genes missing from the annotation.** Two are copies of a glycine-rich cell wall protein, called cold and drought-regulated (CORA) in maize, higher in M buds. One is a wound-induced protein, higher in T buds.
+
+**In one line:** with non-coding RNAs, on transcripts the main analysis never saw, T and M buds again differ in both cultivars. This supports H3, but the function of the family is unknown.
+
+**Where:** `lncrna_genome/lnc_deg_summary.tsv` (counts per contrast), `lncrna_genome/bud_shared_lncRNAs.tsv` (the 18), `lncrna_genome/bud_family_clusters.tsv` and `family_tpm_by_library.tsv` (the family), `lncrna_genome/family_identity.md` (database searches). README section 13.4.
+
+---
+
+## 9. Where this leaves us
 
 There is no budget for new sequencing or new experiments, and the lab has already answered what it could about the sampling. These 48 libraries are the data, so each result is stated with the confidence the design allows:
 
@@ -251,6 +272,7 @@ There is no budget for new sequencing or new experiments, and the lab has alread
 | H4: milder response in propagules of stressed mothers | Exploratory, and seen in both cultivars | One Fw_D1 plant per cultivar; no measure of how dry each plant was |
 | H1 in 5000, H2 | Exploratory | One D1 plant |
 | Stressed vs watered buds | Not answerable | Run and library preparation are the same thing as treatment |
+| lncRNAs: one sugarcane-specific family differs between T and M buds (section 8) | Firm as a difference, in both cultivars, same run | Its function is unknown |
 | THI1 and CCA1/LHY as memory | Open, and narrowed: THI1 is repressed by drought for certain; its further fall at the 3rd drought follows CCA1/LHY | A small difference in sampling hour and a real rise of CCA1/LHY look the same |
 
 **What can still be done with the data in hand:** use the physiology that already exists. Marcos et al. 2018 describe the physiology of such propagules; if the lab kept water status or gas exchange per plant, it would say whether the Fw_D1 reference plants were simply drier.
