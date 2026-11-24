@@ -1,0 +1,19 @@
+x	sets	8008	5000
+1	D3 vs W down	1201	2688
+2	D3 vs W up	656	2549
+3	D1 vs W down	1440	281
+4	D1 vs W up	972	181
+5	D3 vs D1 down	1	72
+6	D3 vs D1 up	0	66
+7	D1 vs W up & D3 vs W up	2904	1747
+8	D1 vs W down & D3 vs W down	2734	1330
+9	D3 vs W down & D3 vs D1 down	31	566
+10	D3 vs W up & D3 vs D1 up	1	223
+11	D1 vs W down & D3 vs D1 up	9	69
+12	D1 vs W up & D3 vs D1 down	6	33
+13	D1 vs W up & D3 vs W up & D3 vs D1 up	22	117
+14	D1 vs W down & D3 vs W down & D3 vs D1 down	10	45
+15	D1 vs W down & D3 vs W down & D3 vs D1 up	2	24
+16	D1 vs W up & D3 vs W up & D3 vs D1 down	1	9
+17	D1 vs W up & D3 vs W down & D3 vs D1 down	0	4
+18	D1 vs W down & D3 vs W up & D3 vs D1 up	1	1
