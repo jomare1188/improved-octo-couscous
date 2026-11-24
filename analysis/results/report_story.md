@@ -30,6 +30,15 @@ The other hypotheses (H2, H5, H6) are too weak to conclude from with the present
 
 78 samples were planned (26 groups of 3 plants). **48 libraries are in the analysis.**
 
+![PCA per cultivar and sample set](plots/story/pca.png)
+
+*Figure 2. Principal component analysis of the libraries in the analysis, one panel per cultivar and sample set (expression of the 2,000 most variable groups). Each dot is one library; colour is the treatment. The PCs are computed without the three excluded libraries; each of them (×) is then placed on the PCs of the group named on its label. The percentage on each axis is the share of the variation it holds.*
+
+- **Drought is the main signal in leaves.** In mother leaves the first component separates drought from watered plants (62% of the variation in 8008, 69% in 5000), and D1 and D3 plants lie together.
+- **In buds the first component separates watered from stressed buds** (52% and 53%), but watered buds were also sequenced on another run with another library preparation (section 3), so this split cannot be read as treatment. T and M buds overlap.
+- **Propagules are noisier**, as expected from groups of one or two plants. In 8008 the drought-stressed propagule of a watered mother is the failed library `79_S6`, far from every other library.
+- **The three excluded libraries do not sit with the group on their label.** Each falls between groups, which fits the other cultivar's alleles they carry (table below).
+
 | Problem | Libraries | What we did |
 |---|---|---|
 | Never available | 9 samples | Nothing to analyse. |
@@ -38,7 +47,7 @@ The other hypotheses (H2, H5, H6) are too weak to conclude from with the present
 | Failed poly-A selection | `79_S6` (76% rRNA, 1 million usable reads) | **Kept and flagged.** It is the only 8008 propagule of a watered mother under drought. |
 | Groups with one plant | 5000: Mt_D1, Mm_D1, Mm_D3, Fw_D1, Ft_D1. 8008: Fw_W, Fw_D1 | **Kept.** Contrasts that use them are called **exploratory**: they can be computed, but one unusual plant would go unnoticed. |
 
-The sample table from the lab is correct, so the cultivar mix-up happened when the tissue was sampled or the tubes were handled. **Where:** list of libraries `../data/samples.tsv`, excluded ones `../data/excluded_samples.tsv`; cultivar check `qc/genotype_check/`; which group each excluded library resembles `qc/relabel_check/`; poly-A check `qc/library_type/`. README sections 3.1 and 5.1.
+The sample table from the lab is correct, so the cultivar mix-up happened when the tissue was sampled or the tubes were handled. **Where:** list of libraries `../data/samples.tsv`, excluded ones `../data/excluded_samples.tsv`; cultivar check `qc/genotype_check/`; which group each excluded library resembles `qc/relabel_check/`; poly-A check `qc/library_type/`; Figures 2 and 3 are made by `../code/28_story_pca_upset.R` (PNG, SVG and PDF in `plots/story/`). README sections 3.1 and 5.1.
 
 ---
 
@@ -79,6 +88,14 @@ The libraries were sequenced on several runs, and leaves of different ages were 
 
 *DEG counts in tillering mother leaves.*
 
+![Shared DEGs in tillering leaves](plots/story/upset_leaf.png)
+
+*Figure 3. Which DEGs the three leaf contrasts share. Each of the three contrasts is split into its up and its down DEGs, giving six sets (rows; bars on the left give their size). Each column is a combination of sets, marked by the joined dots, and the bar above it counts the groups that are DEGs in exactly that combination and in no other set. Columns are the same in both cultivars and are grouped by how many sets they join. Colour: all up, all down, or up in one set and down in another. **A** 8008. **B** 5000, whose D1 group is one plant.*
+
+- **Most drought genes respond at both droughts, in the same direction.** In 8008, 2,904 groups are up and 2,734 down at both D1 and D3 against watered leaves: about 70% of the D1 DEGs. Only one group goes up at one drought and down at the other.
+- **The D3 vs D1 DEGs sit inside the drought response.** In 8008, 32 of the 84 are also DEGs at both droughts against watered: these are the memory genes of section 4.2 (22 all up, 10 all down). 31 more are lower at D3 than at D1 and down at D3 against watered only. 15 are induced or repressed at D1 and come back at D3 (grey columns).
+- **5000 has many more DEGs at D3 only** (2,688 down, 2,549 up) and many more D3 vs D1 DEGs. Most of those also change in the same direction at D3 against watered (84% of the lower ones, 68% of the higher ones), so in 5000 the 3rd drought looks like a stronger response than the 1st. With one D1 plant this stays exploratory (section 4.2).
+
 What these genes do, from GO and KEGG enrichment:
 
 | Contrast | Higher (up) | Lower (down) |
@@ -92,17 +109,17 @@ What these genes do, from GO and KEGG enrichment:
 
 Both cultivars run the same programme: protection and secondary metabolism go up, photosynthesis and protein synthesis go down.
 
-**Where:** DEG counts `de/group/deg_summary.tsv`; one table per contrast `de/group/de_<cultivar>_<contrast>.tsv.gz`; GO and KEGG `enrichment/go_enrichment.tsv`, `enrichment/kegg_enrichment.tsv`, plots in `plots/go/`. README section 6.1.
+**Where:** DEG counts `de/group/deg_summary.tsv`; intersections of Figure 3 `report_tables/upset_leaf_intersections.tsv`; one table per contrast `de/group/de_<cultivar>_<contrast>.tsv.gz`; GO and KEGG `enrichment/go_enrichment.tsv`, `enrichment/kegg_enrichment.tsv`, plots in `plots/go/`. README section 6.1.
 
 ### 4.2 The 3rd drought replays the 1st, and some genes stand out
 
 ![D1 vs D3 response](plots/story/d1_vs_d3.png)
 
-*Figure 2. Each dot is a group that responds to drought at D1 or at D3. x = response at the 1st drought (log2FC, D1 vs watered), y = response at the 3rd (D3 vs watered). On the dashed diagonal the two are equal; the further a dot is from it, the more the 3rd response differs from the 1st.*
+*Figure 4. Each dot is a group that responds to drought at D1 or at D3. x = response at the 1st drought (log2FC, D1 vs watered), y = response at the 3rd (D3 vs watered). On the dashed diagonal the two are equal; the further a dot is from it, the more the 3rd response differs from the 1st.*
 
-Each group gets a **memory class** of two signs (Ding et al.). The first sign is the 1st drought against watered: induced `+`, repressed `-`, no response `0`. The second sign is the 3rd drought against the 1st: higher `+`, lower `-`, the same `=`. In Figure 2:
+Each group gets a **memory class** of two signs (Ding et al.). The first sign is the 1st drought against watered: induced `+`, repressed `-`, no response `0`. The second sign is the 3rd drought against the 1st: higher `+`, lower `-`, the same `=`. In Figure 4:
 
-| Class | Meaning | Where in Figure 2 | 8008 | 5000 |
+| Class | Meaning | Where in Figure 4 | 8008 | 5000 |
 |---|---|---|---|---|
 | `+=` | induced, and the same at the 3rd drought: no memory | grey, upper right, along the diagonal | 3,876 | 1,928 |
 | `-=` | repressed, and the same at the 3rd drought: no memory | grey, lower left, along the diagonal | 4,174 | 1,611 |
@@ -138,7 +155,7 @@ RAB18 is a known *Arabidopsis* gene that remembers drought, and its maize orthol
 
 ![Example genes](plots/story/example_genes.png)
 
-*Figure 3. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left 8008, right 5000. RAB18 and LEA3 keep rising at D3 in 8008; HAI1 rises and stays; THI1 drops and drops further.*
+*Figure 5. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left 8008, right 5000. RAB18 and LEA3 keep rising at D3 in 8008; HAI1 rises and stays; THI1 drops and drops further.*
 
 On the repressed side, thiamine synthesis (THI1) is shut down by drought and shut down further at the 3rd drought. THI1 follows the daily clock, so we checked it against the clock genes (section 3):
 - **THI1 is a drought-repressed gene, whatever the hour.** In 8008, 11 of the 13 THI1 groups fall 17 to 170 times at the 1st drought (the other two are barely expressed), and 5000 represses them too, although the clock genes of the two cultivars move in opposite directions in that contrast.
@@ -163,7 +180,7 @@ Buds become the next plants, so this is where an inherited memory would have to 
 
 ![PAL in buds](plots/story/bud_pal.png)
 
-*Figure 4. PAL expression in buds. Sugarcane has 56 groups annotated as phenylalanine ammonia-lyase (PAL). For each bud library we added up the normalised read counts of all 56, so each dot is the total PAL expression of one plant (y = log2 of that sum). The bar is the mean of the group. The grey band marks the watered buds, which were sequenced on another run and cannot be compared with T and M.*
+*Figure 6. PAL expression in buds. Sugarcane has 56 groups annotated as phenylalanine ammonia-lyase (PAL). For each bud library we added up the normalised read counts of all 56, so each dot is the total PAL expression of one plant (y = log2 of that sum). The bar is the mean of the group. The grey band marks the watered buds, which were sequenced on another run and cannot be compared with T and M.*
 
 - **PAL leads the list in both cultivars, in opposite directions.** PAL is the entry enzyme of the phenylpropanoid pathway, which makes lignin, flavonoids and a route to salicylic acid. It is higher in T buds in 8008 and higher in M buds in 5000. So how long ago the stress happened changes the phenylpropanoid state of the bud, and each cultivar does it its own way.
 - **8008 T buds keep part of the mother's leaf drought programme.** Genes that 8008 mother leaves switch on under drought, and the genes that rise more at the 3rd drought, are slightly higher in T buds than in M buds (FDR 0.01 and 0.001), although T buds are 135 days past their last drought. That is what a long-term mark would look like. 5000 does not show it.
@@ -197,7 +214,7 @@ For each propagule group under drought (Fw_D1, Ft_D1, Fm_D1) we then took the lo
 
 ![Propagule response](plots/story/propagule_response.png)
 
-*Figure 5. Drought response of propagules on the mother-leaf drought genes. Left panels: the induced genes; right panels: the repressed genes. y = log2FC of each gene in the propagule group against watered propagules (Fw_W). Each box holds the middle half of the genes and the label is the median. A median of +1 means that the typical gene of the list doubles under drought, −1 that it halves, 0 that it does not respond.*
+*Figure 7. Drought response of propagules on the mother-leaf drought genes. Left panels: the induced genes; right panels: the repressed genes. y = log2FC of each gene in the propagule group against watered propagules (Fw_W). Each box holds the middle half of the genes and the label is the median. A median of +1 means that the typical gene of the list doubles under drought, −1 that it halves, 0 that it does not respond.*
 
 - **Induced genes are induced in every group, by a similar amount.** The typical induced gene rises 2.1 to 2.4 times in 8008 (median log2FC +1.06 in Fw, +1.27 in Ft) and 2.6 to 3.3 times in 5000 (+1.73 in Fw, +1.39 in Ft, +1.46 in Fm). The mother's history does not change this side in a consistent direction.
 - **Repressed genes are repressed less** in propagules of stressed mothers. In 8008 the typical repressed gene falls to 48% of its watered level in Fw and only to 68% in Ft:
@@ -222,7 +239,7 @@ This fits the physiology: Marcos et al. 2018 found that propagules of stressed m
 
 **H4 in one line:** in both cultivars, propagules of drought-stressed mothers hold on to photosynthesis and growth genes under drought.
 
-**Where:** medians of Figure 5 `report_tables/h4_propagule_response.tsv`; contrasts `de/group/de_<cultivar>_Ft_D1_vs_Fw_D1.tsv.gz` and `…Fm_D1_vs_Fw_D1.tsv.gz`; set tests and agreement of the cultivars `h5_rank/h5_rank_tests.tsv`, `h5_rank/contrast_correlations.tsv`, `memory_genes/camera_literature_sets.tsv`; modules `wgcna/module_trait_tests.tsv`, `wgcna/module_list_overlaps.tsv`, `wgcna/history_modules.png`. README sections 10 and 13.
+**Where:** medians of Figure 7 `report_tables/h4_propagule_response.tsv`; contrasts `de/group/de_<cultivar>_Ft_D1_vs_Fw_D1.tsv.gz` and `…Fm_D1_vs_Fw_D1.tsv.gz`; set tests and agreement of the cultivars `h5_rank/h5_rank_tests.tsv`, `h5_rank/contrast_correlations.tsv`, `memory_genes/camera_literature_sets.tsv`; modules `wgcna/module_trait_tests.tsv`, `wgcna/module_list_overlaps.tsv`, `wgcna/history_modules.png`. README sections 10 and 13.
 
 ---
 
@@ -246,7 +263,7 @@ Everything above uses the annotated protein-coding genes. As a side analysis we 
 
 ![lncRNA search](plots/story/lncrna.png)
 
-*Figure 6. The lncRNA search. **A.** The filters, from all transcripts assembled from the reads to the candidates: a transcript must be new (outside the annotated genes), at least 200 nt long, and show no sign of coding for a protein. Copies of the same sequence are then joined in clusters, the unit we test. **B.** The one sequence family that stands out. Each dot is one bud library; y is the log2 of the summed expression (TPM) of the whole family; the bar is the mean. The grey band marks the watered buds, sequenced on another run.*
+*Figure 8. The lncRNA search. **A.** The filters, from all transcripts assembled from the reads to the candidates: a transcript must be new (outside the annotated genes), at least 200 nt long, and show no sign of coding for a protein. Copies of the same sequence are then joined in clusters, the unit we test. **B.** The one sequence family that stands out. Each dot is one bud library; y is the log2 of the summed expression (TPM) of the whole family; the bar is the mean. The grey band marks the watered buds, sequenced on another run.*
 
 - **lncRNAs respond to drought like coding genes do.** In 8008 leaves, 1,327 clusters change at the 1st drought; in 5000, 1,206 at the 3rd. 459 change in the same direction in both cultivars and 22 in opposite directions.
 - **They add no evidence for leaf memory.** Only two clusters differ between the 3rd and the 1st drought in 8008.
