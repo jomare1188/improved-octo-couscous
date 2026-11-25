@@ -47,13 +47,13 @@ The other hypotheses (H2, H5, H6) are too weak to conclude from with the present
 | Failed poly-A selection | `79_S6` (76% rRNA, 1 million usable reads) | **Kept and flagged.** It is the only 8008 propagule of a watered mother under drought. |
 | Groups with one plant | 5000: Mt_D1, Mm_D1, Mm_D3, Fw_D1, Ft_D1. 8008: Fw_W, Fw_D1 | **Kept.** Contrasts that use them are called **exploratory**: they can be computed, but one unusual plant would go unnoticed. |
 
-The sample table from the lab is correct, so the cultivar mix-up happened when the tissue was sampled or the tubes were handled. **Where:** list of libraries `../data/samples.tsv`, excluded ones `../data/excluded_samples.tsv`; cultivar check `qc/genotype_check/`; which group each excluded library resembles `qc/relabel_check/`; poly-A check `qc/library_type/`; Figures 2 and 3 are made by `../code/28_story_pca_upset.R` (PNG, SVG and PDF in `plots/story/`). README sections 3.1 and 5.1.
+**Where:** list of libraries `../data/samples.tsv`, excluded ones `../data/excluded_samples.tsv`; cultivar check `qc/genotype_check/`; which group each excluded library resembles `qc/relabel_check/`; poly-A check `qc/library_type/`; Figures 2 and 3 are made by `../code/28_story_pca_upset.R` (PNG, SVG and PDF in `plots/story/`). README sections 3.1 and 5.1.
 
 ---
 
 ## 3. Which contrasts can be biased by sequencing run or sampling time
 
-The libraries were sequenced on several runs, and leaves of different ages were sampled on different days. Some contrasts compare groups that differ in run or day as well as in treatment.
+We noticed that the libraries were sequenced on several runs and leaves of different ages were sampled on different days. Some contrasts compare groups that differ in run or day as well as in treatment.
 
 | Contrast | Sequencing run | Sampling day | Can it be trusted? |
 |---|---|---|---|
@@ -64,14 +64,6 @@ The libraries were sequenced on several runs, and leaves of different ages were 
 | **Bud T vs M** (H3) | both on run 45 | both day 180 | **Clean.** The stress happened 135 days (T) or 6 days (M) before, which is the comparison itself. |
 | **Propagules** (H4) | all on runs 51/52; the reference plant is on the other run from the plants compared with it | same drought cycle | **Clean for run:** runs 51 and 52 behave as one batch, and the arrangement is reversed between the cultivars. Exploratory because of the single reference plant. |
 | Maturation leaves | runs 51/52 | D1 day 144, D3 and watered day 174 | Descriptive only: one plant per drought group, 5000 only. |
-
-**The hour of sampling is very important, and every contrast is confounded with it.** The lab confirmed that each sampling started early in the morning and in some cases lasted until past midday, and the hour of each plant was not recorded. Two groups in one contrast can therefore differ by several hours of the day, and this cannot be corrected. What it touches:
-- **What the clock genes say.** We read the internal time of each library from six clock genes: the morning gene CCA1/LHY, which falls after dawn, and five day and evening genes (PRR73, PRR37, PRR59/95, GI, TOC1), which rise towards midday. A later hour lowers the first and raises the others.
-  - Plants of one group share their internal time (99% of the variation is between groups), so the groups were sampled one after another. Hour is therefore tied to the group, and no model can remove it.
-  - **1st and 3rd drought leaves** have the same level of the five day and evening genes, in both cultivars. A difference of several hours between them is unlikely. Only CCA1/LHY is higher at the 3rd drought (3 times in 8008, 2 times in 5000).
-  - **T and M buds** and the **propagule groups** differ little in these genes.
-  - **Drought against watered leaves** is where the clock genes differ most (in 8008 the watered leaves look later in the day), so genes of the daily clock are not interpreted in those contrasts.
-- **The main results, less so.** The H1 memory genes are drying-protection genes, not clock genes, and an hour effect would not pick protection genes out of 8,000. T and M buds (H3) were collected on the same day, in an order we do not know. The propagule result (H4) is a shift of thousands of genes in the same direction in two cultivars. An hour effect on a single gene can never be excluded.
 
 **Where:** runs per library `qc/sequencing_runs.tsv` and `plots/story/design_runs.png`; distance between libraries within and across runs `qc/run_pair_distances.tsv`; bud run effect `bud_batch/`; clock genes `clock/clock_by_contrast.tsv`, `clock/clock_scores.png`, made by `../code/23_clock_check.R`. README sections 5.2, 5.3 and 5.5.
 
@@ -117,7 +109,7 @@ Both cultivars run the same programme: protection and secondary metabolism go up
 
 *Figure 4. Each dot is a group that responds to drought at D1 or at D3. x = response at the 1st drought (log2FC, D1 vs watered), y = response at the 3rd (D3 vs watered). On the dashed diagonal the two are equal; the further a dot is from it, the more the 3rd response differs from the 1st.*
 
-Each group gets a **memory class** of two signs (Ding et al.). The first sign is the 1st drought against watered: induced `+`, repressed `-`, no response `0`. The second sign is the 3rd drought against the 1st: higher `+`, lower `-`, the same `=`. In Figure 4:
+Each group gets a **memory class** of two signs (Ding et al. 2013). The first sign is the 1st drought against watered: induced `+`, repressed `-`, no response `0`. The second sign is the 3rd drought against the 1st: higher `+`, lower `-`, the same `=`. In Figure 4:
 
 | Class | Meaning | Where in Figure 4 | 8008 | 5000 |
 |---|---|---|---|---|
@@ -132,10 +124,10 @@ Each group gets a **memory class** of two signs (Ding et al.). The first sign is
 
 *Number of groups per class in tillering mother leaves. The 5000 numbers rest on one D1 plant.*
 
-In 8008 the two responses correlate at **r = 0.90**, and of 5,674 groups that respond at both droughts, 5,673 respond in the same direction. This reproducibility is the sea against which the memory genes are visible:
-- **84 groups** respond differently at the 3rd drought (35 higher, 49 lower).
-- **32 are memory genes** in the sense of Ding et al.: 22 respond to drought and respond more strongly the 3rd time (`++`), 10 are repressed and more repressed the 3rd time (`--`).
-- **1,889 more respond at the 3rd drought only** (`0+` and `0-`; flavonoid and phenylpropanoid synthesis up; circadian rhythm and protein folding down). They can be a late response or an effect of the 30 days of age between the two samplings, so they are not counted as memory.
+In 8008 both drought responses are very similar, they correlate at **r = 0.90**, and nearly all gene groups that respond in both droughts respond in the same direction (5,673/5,674):
+- **84 groups** respond differently at the 3rd drought (D1 vs D3, 35 higher, 49 lower).
+- **32 are memory genes**: 22 respond to drought and respond more strongly the 3rd time (`++`), 10 are repressed and more repressed the 3rd time (`--`).
+- **1,889 respond at the 3rd drought only** (`0+` and `0-`; flavonoid and phenylpropanoid synthesis up; circadian rhythm and protein folding down). They can be a late response or an effect of the 30 days of age between the two samplings, so they are not counted as memory.
 
 The `++` genes are **drying-protection genes**:
 
@@ -148,18 +140,17 @@ The `++` genes are **drying-protection genes**:
 | embryo-specific protein 3 | +9.3 | +1.8 |
 | sugar transporter | +9.0 | +2.3 |
 
-RAB18 is a known *Arabidopsis* gene that remembers drought, and its maize orthologue is a memory gene too. We compared our list with the published one:
+RAB18 is a known *Arabidopsis* gene that remembers drought (Ding et al. 2012), and its maize orthologue is a memory gene too (Ding et al. 2014). We compared our list with the published one:
 - **"Shares" means the same gene is in both lists.** Ding et al. 2013 list the *Arabidopsis* `++` genes. Their sugarcane orthologues are 240 groups. Three of them (RAB18, LEA3 and PIT1) are also among our 22 `++` groups.
-- **By chance we would expect about 0.14 shared groups, and we find 3.** Our 22 groups are 0.06% of the 37,767 groups tested, so 240 groups picked at random would hold 0.14 of them.
-- **The odds ratio of 25 says the same thing as one number.** A sugarcane group whose *Arabidopsis* orthologue is a `++` memory gene has 25 times higher odds of being `++` here than any other group. An odds ratio of 1 would mean no link. The FDR of 0.003 is the probability of an overlap this large by chance, corrected for the number of class pairs tested.
+- **By chance we would expect about 0.14 shared groups, and we find 3.**
 
 ![Example genes](plots/story/example_genes.png)
 
 *Figure 5. Four genes plant by plant in tillering mother leaves (y = log2 expression). Left 8008, right 5000. RAB18 and LEA3 keep rising at D3 in 8008; HAI1 rises and stays; THI1 drops and drops further.*
 
-On the repressed side, thiamine synthesis (THI1) is shut down by drought and shut down further at the 3rd drought. THI1 follows the daily clock, so we checked it against the clock genes (section 3):
+On the repressed side, thiamine synthesis (THI1) is shut down by drought and shut down further at the 3rd drought. THI1 follows the daily clock, so we checked it against the clock genes:
 - **THI1 is a drought-repressed gene, whatever the hour.** In 8008, 11 of the 13 THI1 groups fall 17 to 170 times at the 1st drought (the other two are barely expressed), and 5000 represses them too, although the clock genes of the two cultivars move in opposite directions in that contrast.
-- **Its further fall at the 3rd drought goes together with the rise of CCA1/LHY,** in both cultivars, while the five day and evening clock genes do not move. Either the 3rd-drought leaves were sampled a little earlier in the morning, or the 3rd drought raises CCA1/LHY. The data cannot tell which. So THI1 and CCA1/LHY count as one open signal, and not as two memory genes.
+- **Its further fall at the 3rd drought goes together with the rise of CCA1/LHY (a morning gene),** in both cultivars, while five day and evening clock genes (PRR73, PRR37, PRR59/95, GI, TOC1) do not move: among the mother-leaf contrasts, D3 vs D1 is the one where CCA1/LHY alone differs, in both cultivars (table `clock/clock_by_contrast.tsv`, figure `clock/clock_scores.png`). Either the 3rd-drought leaves were sampled a little earlier in the morning, or the 3rd drought raises CCA1/LHY. The data cannot tell which. So THI1 and CCA1/LHY count as one open signal, and not as two memory genes.
 
 **5000** changes more between the droughts: 1,229 groups, 162 of them in the memory classes, with a broad further shutdown of translation and stronger ABA signalling. This is a real difference in the data, but its 1st-drought group is one plant, and refitting 8008 with a single D1 plant can produce a similar picture. With one D1 plant it stays exploratory.
 
@@ -183,7 +174,7 @@ Buds become the next plants, so this is where an inherited memory would have to 
 *Figure 6. PAL expression in buds. Sugarcane has 56 groups annotated as phenylalanine ammonia-lyase (PAL). For each bud library we added up the normalised read counts of all 56, so each dot is the total PAL expression of one plant (y = log2 of that sum). The bar is the mean of the group. The grey band marks the watered buds, which were sequenced on another run and cannot be compared with T and M.*
 
 - **PAL leads the list in both cultivars, in opposite directions.** PAL is the entry enzyme of the phenylpropanoid pathway, which makes lignin, flavonoids and a route to salicylic acid. It is higher in T buds in 8008 and higher in M buds in 5000. So how long ago the stress happened changes the phenylpropanoid state of the bud, and each cultivar does it its own way.
-- **8008 T buds keep part of the mother's leaf drought programme.** Genes that 8008 mother leaves switch on under drought, and the genes that rise more at the 3rd drought, are slightly higher in T buds than in M buds (FDR 0.01 and 0.001), although T buds are 135 days past their last drought. That is what a long-term mark would look like. 5000 does not show it.
+- **8008 T buds keep part of the mother's leaf drought programme.** Genes that 8008 mother leaves switch on under drought are slightly higher in T buds than in M buds, and genes they switch off are slightly lower (FDR 0.01 and 0.0008), although T buds are 135 days past their last drought and M buds only 6. The genes that rise more at the 3rd drought are higher in T buds as well (FDR 0.001). That is what a long-term mark would look like. In 5000 only one trace of it appears: genes that fall more at the 3rd drought are lower in T buds (FDR 0.001).
 - **M buds look like a tissue just out of stress:** raffinose-family sugars and thiamine are typical of it, which fits 6 days of recovery.
 
 **What is still hidden:** whether stressed buds differ from never-stressed buds. That comparison shows thousands of DEGs, but the watered buds' libraries were prepared differently (shorter fragments, three times more adapter) and sequenced on another run. One hint survived the correction attempt: after removing the run factor, the leaf drought genes come out higher in 8008 stressed buds than in watered buds. This is a loose hint and is not reported as a result (README section 5.3).
@@ -206,11 +197,11 @@ Against the propagules of watered mothers under the same drought:
 | 5000 Ft_D1 vs Fw_D1 | 231 / 145 | Small heat-shock proteins and other chaperones; chlorophyll a/b-binding and light-harvesting proteins; response to high light; translation | ABC transporters, PP2C phosphatases, wax synthesis, MYB transcription factors |
 | 5000 Fm_D1 vs Fw_D1 | 49 / 36 | Light harvesting in photosystem I, ferredoxin-NADP reductase, chaperonins | Aminotransferases, wax synthesis |
 
-To measure the size of the response fairly, we chose the genes in other plants, the mother leaves, and then followed them in the propagules:
-- **Induced genes:** the groups that are DEGs **up** in mother leaves at the 1st drought (`Mt_D1_vs_Mt_W`): 3,905 groups in 8008 and 2,091 in 5000.
-- **Repressed genes:** the groups that are DEGs **down** in the same contrast: 4,196 in 8008 and 1,750 in 5000.
+To compare how strongly each propagule group responds, we need a list of drought genes that none of them helped to choose. Otherwise the group used to choose the genes would look strongest by chance. We took it from the mother leaves at the 1st drought (`Mt_D1_vs_Mt_W`):
+- **Induced genes:** the groups drought switches on, 3,905 in 8008 and 2,091 in 5000.
+- **Repressed genes:** the groups drought switches off, 4,196 in 8008 and 1,750 in 5000.
 
-For each propagule group under drought (Fw_D1, Ft_D1, Fm_D1) we then took the log2FC of every one of these genes against the same watered propagules (Fw_W).
+Then, for each propagule group under drought (Fw_D1, Ft_D1, Fm_D1), we measured how much each of these genes changed against the same watered propagules (Fw_W).
 
 ![Propagule response](plots/story/propagule_response.png)
 
@@ -293,6 +284,15 @@ There is no budget for new sequencing or new experiments, and the lab has alread
 | THI1 and CCA1/LHY as memory | Open, and narrowed: THI1 is repressed by drought for certain; its further fall at the 3rd drought follows CCA1/LHY | A small difference in sampling hour and a real rise of CCA1/LHY look the same |
 
 **What can still be done with the data in hand:** use the physiology that already exists. Marcos et al. 2018 describe the physiology of such propagules; if the lab kept water status or gas exchange per plant, it would say whether the Fw_D1 reference plants were simply drier.
+
+---
+
+## References
+
+- Ding Y, Fromm M, Avramova Z (2012). Multiple exposures to drought 'train' transcriptional responses in *Arabidopsis*. *Nature Communications* 3:740. https://doi.org/10.1038/ncomms1732
+- Ding Y, Liu N, Virlouvet L, Riethoven JJ, Fromm M, Avramova Z (2013). Four distinct types of dehydration stress memory genes in *Arabidopsis thaliana*. *BMC Plant Biology* 13:229. https://doi.org/10.1186/1471-2229-13-229
+- Ding Y, Virlouvet L, Liu N, Riethoven JJ, Fromm M, Avramova Z (2014). Dehydration stress memory genes of *Zea mays*; comparison with *Arabidopsis thaliana*. *BMC Plant Biology* 14:141. https://doi.org/10.1186/1471-2229-14-141
+- Marcos FCC, Silveira NM, Marchiori PER, Machado EC, Souza GM, Landell MGA, Ribeiro RV (2018). Drought tolerance of sugarcane propagules is improved when origin material faces water deficit. *PLoS One* 13(12):e0206716. https://doi.org/10.1371/journal.pone.0206716
 
 ---
 
